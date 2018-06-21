@@ -4,7 +4,7 @@ This project will help you practice the skills and concepts you learned related 
 
 The screen recording below shows you what the final product should do:
 
-![Screen Recording](ScreenRecording.mp4)
+![Screen Recording](https://github.com/LambdaSchool/SwiftVocabulary/blob/master/ScreenRecording.mp4)
 
 ### Create an Xcode Project
 
