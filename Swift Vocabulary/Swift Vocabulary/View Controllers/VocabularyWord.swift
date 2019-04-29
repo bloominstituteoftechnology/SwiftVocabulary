@@ -11,5 +11,4 @@ import Foundation
 struct VocabularyWord {
     var word: String
     var definition: String
-    
 }
