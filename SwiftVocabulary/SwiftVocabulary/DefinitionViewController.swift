@@ -17,7 +17,8 @@ class DefinitionViewController: UIViewController {
         if let vocabularyWord = vocabWord?.word,
             let vocabularyDefinition = vocabWord?.definition {
             
-            
+            vocabularyWordName.text = vocabularyWord
+            DefinitionText.text = vocabularyDefinition
         }
     }
     
@@ -34,6 +35,7 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var DefinitionText: UITextView!
     
     @IBOutlet weak var vocabularyWordName: UILabel!
+    
     
     var vocabWord: vocabularyWord? {
         
