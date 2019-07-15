@@ -49,7 +49,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zmB-6X-3oM">
                             <connections>
                                 <action selector="addVocabWordButtonTapped:" destination="w7R-Nm-KfG" id="kEO-gt-ZoG"/>
-                                <segue destination="Hr1-3Q-ixv" kind="show" id="wks-0J-1nA"/>
+                                <segue destination="Hr1-3Q-ixv" kind="show" identifier="AddWord" id="wks-0J-1nA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

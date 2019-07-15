@@ -19,6 +19,9 @@ class WordsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -48,8 +51,13 @@ class WordsTableViewController: UITableViewController {
                 let detailVC = segue.destination as? DefinitionViewController else { return }
             
             detailVC.vocabWord = self.vocabController.vocabWords[indexPath.row]
+        } else if segue.identifier == "AddWord" {
+            guard let addWordVC = segue.destination as? AddWordViewController else { return }
+            
+            addWordVC.vocabController = vocabController
         }
     }
+    
     @IBAction func addVocabWordButtonTapped(_ sender: UIBarButtonItem) {
         
     }

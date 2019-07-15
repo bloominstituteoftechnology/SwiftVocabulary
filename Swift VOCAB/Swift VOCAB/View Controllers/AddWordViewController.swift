@@ -15,6 +15,7 @@ class AddWordViewController: UIViewController {
     
     
     var vocabController: VocabularyController?
+    var wordsTableVC: WordsTableViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,7 @@ class AddWordViewController: UIViewController {
         if let word = wordTextField.text,
             let definition = definitionTextField.text {
             vocabController.vocabWords.append(VocabularyWord(word: word, definition: definition))
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
