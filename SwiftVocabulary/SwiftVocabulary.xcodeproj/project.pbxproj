@@ -14,6 +14,7 @@
 		F55DD30E22DD1C5500FDAD92 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DD30D22DD1C5500FDAD92 /* WordsTableViewController.swift */; };
 		F55DD31022DD1C6A00FDAD92 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DD30F22DD1C6A00FDAD92 /* DefinitionViewController.swift */; };
 		F55DD31222DD1F1C00FDAD92 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DD31122DD1F1C00FDAD92 /* VocabularyWord.swift */; };
+		F55DD31622DD2F0500FDAD92 /* VocabularyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DD31522DD2F0500FDAD92 /* VocabularyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F55DD30D22DD1C5500FDAD92 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		F55DD30F22DD1C6A00FDAD92 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		F55DD31122DD1F1C00FDAD92 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		F55DD31522DD2F0500FDAD92 /* VocabularyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				F55DD30D22DD1C5500FDAD92 /* WordsTableViewController.swift */,
+				F55DD31522DD2F0500FDAD92 /* VocabularyController.swift */,
 				F55DD30F22DD1C6A00FDAD92 /* DefinitionViewController.swift */,
+				F55DD31122DD1F1C00FDAD92 /* VocabularyWord.swift */,
 				F55DD2FB22DD1C2500FDAD92 /* AppDelegate.swift */,
 				F55DD2FF22DD1C2500FDAD92 /* Main.storyboard */,
-				F55DD31122DD1F1C00FDAD92 /* VocabularyWord.swift */,
 				F55DD30222DD1C2700FDAD92 /* Assets.xcassets */,
 				F55DD30422DD1C2700FDAD92 /* LaunchScreen.storyboard */,
 				F55DD30722DD1C2700FDAD92 /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F55DD31022DD1C6A00FDAD92 /* DefinitionViewController.swift in Sources */,
+				F55DD31622DD2F0500FDAD92 /* VocabularyController.swift in Sources */,
 				F55DD2FC22DD1C2500FDAD92 /* AppDelegate.swift in Sources */,
 				F55DD30E22DD1C5500FDAD92 /* WordsTableViewController.swift in Sources */,
 				F55DD31222DD1F1C00FDAD92 /* VocabularyWord.swift in Sources */,

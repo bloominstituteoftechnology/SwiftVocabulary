@@ -9,9 +9,13 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
+	
+	let vocabController: VocabularyController = VocabularyController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		title = "Vocabulary Words"
 
     }
 
@@ -24,7 +28,7 @@ class WordsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return vocabController.vocabWords.count
     }
 
 	
@@ -32,7 +36,10 @@ class WordsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
         // Configure the cell...
-
+		
+		let words = vocabController.vocabWords[indexPath.row]
+		cell.textLabel?.text = words.word
+		
         return cell
     }
 	
@@ -72,14 +79,18 @@ class WordsTableViewController: UITableViewController {
     }
     */
 
-    /*
+	
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+		if segue.identifier == "ShowDefinition" {
+			guard let indexPath = tableView.indexPathForSelectedRow,
+				let DetailVC = segue.destination as? DefinitionViewController else { return }
+			let vocabWord = vocabController.vocabWords[indexPath.row]
+			DetailVC.vocabWord = vocabWord
+		}
     }
-    */
+
 
 }
