@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXp-VY-9HU">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vocabulary Word Table View Controller-->
+        <scene sceneID="faQ-uL-JlQ">
+            <objects>
+                <tableViewController id="vn5-xX-6l7" customClass="VocabularyWordTableViewController" customModule="swiftVocabulary2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8Ek-2q-ywR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VocabularyCell" id="Qze-gl-KC2">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qze-gl-KC2" id="Kb9-wv-gJV">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="v5w-tf-ual" kind="show" identifier="ShowDefinitionDetail" id="aqd-JX-nF9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vn5-xX-6l7" id="Xfd-Hu-Hki"/>
+                            <outlet property="delegate" destination="vn5-xX-6l7" id="LmC-fW-kff"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="AxB-pu-bYz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="993-qW-KSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="97.767857142857139"/>
+        </scene>
+        <!--Definition View Controller-->
+        <scene sceneID="NAk-AR-WLg">
+            <objects>
+                <viewController id="v5w-tf-ual" customClass="DefinitionViewController" customModule="swiftVocabulary2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o43-LE-tni">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sp6-L5-x5q">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7n8-cv-YGx" firstAttribute="bottom" secondItem="Sp6-L5-x5q" secondAttribute="bottom" id="R3S-2l-oMr"/>
+                            <constraint firstItem="Sp6-L5-x5q" firstAttribute="leading" secondItem="7n8-cv-YGx" secondAttribute="leading" id="knd-Th-mKk"/>
+                            <constraint firstItem="Sp6-L5-x5q" firstAttribute="top" secondItem="7n8-cv-YGx" secondAttribute="top" id="mZ4-gy-dnZ"/>
+                            <constraint firstItem="7n8-cv-YGx" firstAttribute="trailing" secondItem="Sp6-L5-x5q" secondAttribute="trailing" id="xw7-uB-RM9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7n8-cv-YGx"/>
+                    </view>
+                    <connections>
+                        <outlet property="definitionTextField" destination="Sp6-L5-x5q" id="G9V-y2-ZYL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B4J-cR-5Pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485.5072463768117" y="101.78571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f8R-tt-YJU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vXp-VY-9HU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AWJ-hh-ufl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vn5-xX-6l7" kind="relationship" relationship="rootViewController" id="PLr-ac-sZP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7r-az-css" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="102"/>
+        </scene>
+    </scenes>
+</document>
