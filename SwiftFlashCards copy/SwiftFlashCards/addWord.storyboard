@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZ4-BH-4JH">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Word View Controller-->
+        <scene sceneID="QnM-ea-Oa6">
+            <objects>
+                <viewController id="fZ4-BH-4JH" customClass="AddWordViewController" customModule="SwiftFlashCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S2R-tm-ISk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQa-ao-Rvx">
+                                <rect key="frame" x="91" y="223" width="233" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwz-hU-6ar">
+                                <rect key="frame" x="91" y="177" width="233" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Definition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxZ-Gm-hHC">
+                                <rect key="frame" x="91" y="273" width="233" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lne-Pg-89w">
+                                <rect key="frame" x="91" y="313" width="233" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rer-Gg-CxR">
+                                <rect key="frame" x="190" y="406" width="36" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addFLashCardButtonPressed:" destination="fZ4-BH-4JH" eventType="touchUpInside" id="ERD-pY-N9K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cQa-ao-Rvx" firstAttribute="top" secondItem="hwz-hU-6ar" secondAttribute="bottom" constant="22" id="3wr-V8-uZS"/>
+                            <constraint firstItem="Rer-Gg-CxR" firstAttribute="leading" secondItem="7dt-ik-CLq" secondAttribute="leading" constant="190" id="DaA-6x-QiP"/>
+                            <constraint firstItem="7dt-ik-CLq" firstAttribute="trailing" secondItem="cQa-ao-Rvx" secondAttribute="trailing" constant="90" id="DbV-Vp-1sr"/>
+                            <constraint firstItem="7dt-ik-CLq" firstAttribute="bottom" secondItem="Rer-Gg-CxR" secondAttribute="bottom" constant="420" id="FEO-ei-5bK"/>
+                            <constraint firstItem="uxZ-Gm-hHC" firstAttribute="top" secondItem="cQa-ao-Rvx" secondAttribute="bottom" constant="20" id="SK2-w4-HB3"/>
+                            <constraint firstItem="7dt-ik-CLq" firstAttribute="trailing" secondItem="uxZ-Gm-hHC" secondAttribute="trailing" constant="90" id="T4i-XO-4n9"/>
+                            <constraint firstItem="cQa-ao-Rvx" firstAttribute="leading" secondItem="7dt-ik-CLq" secondAttribute="leading" constant="91" id="Wgl-gd-ODS"/>
+                            <constraint firstItem="Lne-Pg-89w" firstAttribute="top" secondItem="uxZ-Gm-hHC" secondAttribute="bottom" constant="16" id="X3b-ed-eVU"/>
+                            <constraint firstItem="7dt-ik-CLq" firstAttribute="trailing" secondItem="hwz-hU-6ar" secondAttribute="trailing" constant="90" id="b5L-30-b1b"/>
+                            <constraint firstItem="Lne-Pg-89w" firstAttribute="leading" secondItem="7dt-ik-CLq" secondAttribute="leading" constant="91" id="cTg-Tg-S9X"/>
+                            <constraint firstItem="Rer-Gg-CxR" firstAttribute="top" secondItem="Lne-Pg-89w" secondAttribute="bottom" constant="63" id="hID-X5-VNi"/>
+                            <constraint firstItem="uxZ-Gm-hHC" firstAttribute="leading" secondItem="7dt-ik-CLq" secondAttribute="leading" constant="91" id="hL0-JS-wBd"/>
+                            <constraint firstItem="hwz-hU-6ar" firstAttribute="leading" secondItem="7dt-ik-CLq" secondAttribute="leading" constant="91" id="jRT-NX-bnW"/>
+                            <constraint firstItem="7dt-ik-CLq" firstAttribute="trailing" secondItem="Rer-Gg-CxR" secondAttribute="trailing" constant="188" id="lxP-He-xUa"/>
+                            <constraint firstItem="7dt-ik-CLq" firstAttribute="trailing" secondItem="Lne-Pg-89w" secondAttribute="trailing" constant="90" id="pcy-SW-vOr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7dt-ik-CLq"/>
+                    </view>
+                    <connections>
+                        <outlet property="addDefinitionTextField" destination="Lne-Pg-89w" id="MIw-dF-iDz"/>
+                        <outlet property="addWordTextField" destination="cQa-ao-Rvx" id="5d5-Yu-RyQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3y-h9-kYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="72.991071428571431"/>
+        </scene>
+    </scenes>
+</document>
