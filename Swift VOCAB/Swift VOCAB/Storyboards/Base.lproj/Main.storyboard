@@ -117,6 +117,7 @@
                     <navigationItem key="navigationItem" title="Add New Word:" id="YLq-9A-f2l"/>
                     <connections>
                         <outlet property="definitionTextField" destination="7Da-UG-KAw" id="fav-Df-gdD"/>
+                        <outlet property="saveButton" destination="O4Z-w0-1Qg" id="4Uv-1d-awO"/>
                         <outlet property="wordTextField" destination="zR5-r7-Ga7" id="5TA-tW-bCP"/>
                     </connections>
                 </viewController>

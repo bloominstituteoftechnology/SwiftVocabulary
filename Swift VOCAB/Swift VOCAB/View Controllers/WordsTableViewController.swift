@@ -10,12 +10,14 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
+    //MARK: - Properties
     var vocabController = VocabularyController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Words"
+        
     }
 
     // MARK: - Table view data source
@@ -32,7 +34,6 @@ class WordsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return vocabController.vocabWords.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
@@ -40,11 +41,8 @@ class WordsTableViewController: UITableViewController {
 
         return cell
     }
-
     
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDefinition" {
             guard let indexPath = tableView.indexPathForSelectedRow,
@@ -57,7 +55,7 @@ class WordsTableViewController: UITableViewController {
             addWordVC.vocabController = vocabController
         }
     }
-    
+    // MARK: - IBActions
     @IBAction func addVocabWordButtonTapped(_ sender: UIBarButtonItem) {
         
     }

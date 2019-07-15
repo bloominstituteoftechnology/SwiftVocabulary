@@ -9,37 +9,27 @@
 import UIKit
 
 class AddWordViewController: UIViewController {
+    //MARK: - IBOutlets and properties
     
     @IBOutlet weak var wordTextField: UITextField!
     @IBOutlet weak var definitionTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
     
     var vocabController: VocabularyController?
-    var wordsTableVC: WordsTableViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        saveButton.layer.cornerRadius = 18
     }
-    
+    // MARK: - IBActions and methods
     @IBAction func saveButtonTapped(_ sender: UIButton) {
         guard let vocabController = vocabController else { return }
         if let word = wordTextField.text,
             let definition = definitionTextField.text {
             vocabController.vocabWords.append(VocabularyWord(word: word, definition: definition))
-            self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
