@@ -11,7 +11,7 @@ import UIKit
 class VocabDetailsVC: UIViewController {
 	
 	@IBOutlet weak var titleLbl: UILabel!
-	@IBOutlet weak var definitionTextField: UITextField!
+	@IBOutlet weak var definitionTextView: UITextView!
 	@IBOutlet weak var tagsLbl: UILabel!
 	
 	var selectedWord: Word?
@@ -25,7 +25,7 @@ class VocabDetailsVC: UIViewController {
 	private func configDetails() {
 		if let word = selectedWord {
 			titleLbl.text = word.title
-			definitionTextField.text = word.definition
+			definitionTextView.text = word.definition
 			tagsLbl.text = configTags()
 		}
 	}

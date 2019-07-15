@@ -11,6 +11,6 @@ import Foundation
 
 struct Word {
 	var title: String
-	var definition: String
+	var definition: String?
 	var tags: [String]?
 }

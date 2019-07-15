@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Vocab TableVC-->
+        <!--Vocabulary-->
         <scene sceneID="2h4-js-G9n">
             <objects>
                 <tableViewController id="fxd-zf-I33" customClass="VocabTableVC" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,13 @@
                             <outlet property="delegate" destination="fxd-zf-I33" id="dxV-0c-fJc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="sNb-j7-xnl"/>
+                    <navigationItem key="navigationItem" title="Vocabulary" id="sNb-j7-xnl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FSc-uL-Jdv">
+                            <connections>
+                                <action selector="addVocabAction:" destination="fxd-zf-I33" id="1yh-o8-7L6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3I-69-Gzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,15 +74,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TgW-CZ-i7i">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZBj-Ex-sFe">
                                         <rect key="frame" x="0.0" y="52" width="331" height="365.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgs-ge-gUU">
                                         <rect key="frame" x="0.0" y="427.5" width="331" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -93,7 +100,7 @@
                         <viewLayoutGuide key="safeArea" id="jNq-EI-2OD"/>
                     </view>
                     <connections>
-                        <outlet property="definitionTextField" destination="TgW-CZ-i7i" id="MWc-E6-9q4"/>
+                        <outlet property="definitionTextView" destination="ZBj-Ex-sFe" id="JJ6-gu-Zsd"/>
                         <outlet property="tagsLbl" destination="Cgs-ge-gUU" id="I9p-wT-RSM"/>
                         <outlet property="titleLbl" destination="3ZF-9t-a6V" id="zbB-6i-Mgr"/>
                     </connections>
