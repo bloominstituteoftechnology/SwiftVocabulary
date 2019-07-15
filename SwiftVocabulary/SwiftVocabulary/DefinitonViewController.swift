@@ -10,11 +10,7 @@ import UIKit
 
 class DefinitonViewController: UIViewController {
 
-    var vocabWord: VocabularyWord? {
-        didSet {
-            updateViews()
-        }
-    }
+    var vocabWord: VocabularyWord?
     
     
     
@@ -25,7 +21,7 @@ class DefinitonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        updateViews()
 
         // Do any additional setup after loading the view.
     }

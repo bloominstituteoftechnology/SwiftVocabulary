@@ -10,7 +10,9 @@ import UIKit
 
 class WordsTableTableViewController: UITableViewController {
 
-   // var vocabController: VocabularyController
+   //var vocabController: VocabularyController
+    
+    let vocabController
     
     override func viewDidLoad() {
         super.viewDidLoad()

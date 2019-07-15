@@ -11,8 +11,8 @@ import Foundation
 class VocabularyController {
     let vocabWords: [VocabularyWord]
     init () {
-        vocabWords = [VocabularyWord(word: "variable", definition: ""),
-        VocabularyWord(word: "Constant", definition: "<#T##String#>"),
-        VocabularyWord(word: "Function", definition: "<#T##String#>")]
+        vocabWords = [VocabularyWord(word: "variable", definition: "A name associated with a changeable value of a particular type."),
+        VocabularyWord(word: "Constant", definition: "A name associated with an unchanging value of a particular type."),
+        VocabularyWord(word: "Function", definition: "Self contained chunks of code that perform a specific task.")]
     }
 }
