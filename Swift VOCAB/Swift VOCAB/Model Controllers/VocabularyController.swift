@@ -9,7 +9,7 @@
 import Foundation
 
 class VocabularyController {
-    let vocabWords: [VocabularyWord]
+    var vocabWords: [VocabularyWord]
     
     init() {
         vocabWords = [VocabularyWord(word: "iOS", definition: "An operating system used for mobile devices manufactured by Apple Inc."),

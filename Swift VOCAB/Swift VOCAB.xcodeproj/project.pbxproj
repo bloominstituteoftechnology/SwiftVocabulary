@@ -15,6 +15,7 @@
 		A2593A3A22DD125A00E42669 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2593A3922DD125A00E42669 /* DefinitionViewController.swift */; };
 		A2593A3C22DD16E500E42669 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2593A3B22DD16E500E42669 /* VocabularyWord.swift */; };
 		A2593A3E22DD172900E42669 /* VocabularyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2593A3D22DD172800E42669 /* VocabularyController.swift */; };
+		A2593A4422DD28FF00E42669 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2593A4322DD28FF00E42669 /* AddWordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A2593A3922DD125A00E42669 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		A2593A3B22DD16E500E42669 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 		A2593A3D22DD172800E42669 /* VocabularyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyController.swift; sourceTree = "<group>"; };
+		A2593A4322DD28FF00E42669 /* AddWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				A2593A3722DD116100E42669 /* WordsTableViewController.swift */,
 				A2593A3922DD125A00E42669 /* DefinitionViewController.swift */,
+				A2593A4322DD28FF00E42669 /* AddWordViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				A2593A2622DD10B400E42669 /* AppDelegate.swift in Sources */,
 				A2593A3E22DD172900E42669 /* VocabularyController.swift in Sources */,
+				A2593A4422DD28FF00E42669 /* AddWordViewController.swift in Sources */,
 				A2593A3A22DD125A00E42669 /* DefinitionViewController.swift in Sources */,
 				A2593A3822DD116100E42669 /* WordsTableViewController.swift in Sources */,
 				A2593A3C22DD16E500E42669 /* VocabularyWord.swift in Sources */,
