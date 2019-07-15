@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class VocabularyController {
+    let vocabWords: [VocabularyWord]
+    init () {
+        vocabWords = [VocabularyWord(word: "variable", definition: ""),
+        VocabularyWord(word: "Constant", definition: "<#T##String#>"),
+        VocabularyWord(word: "Function", definition: "<#T##String#>")]
+    }
+}
