@@ -18,59 +18,58 @@ class VocabTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func addVocabAction(_ sender: Any) {
+        let alert = UIAlertController(title: "New Vocabulary", message: nil, preferredStyle: .alert)
         
-        
-      func addVocabAction(_ sender: Any) {
-            let alert = UIAlertController(title: "New Vocabulary", message: nil, preferredStyle: .alert)
-            
-            alert.addTextField { (textField) in
-                textField.placeholder = "Title"
-            }
-            alert.addTextField { (textField) in
-                textField.placeholder = "Definition"
-            }
-            alert.addTextField { (textField) in
-                textField.placeholder = "Tags"
-            }
-            
-            let SaveAction = UIAlertAction(title: "Save", style: .default) { [unowned alert] _ in
-                guard let textfields = alert.textFields, let title = textfields[0].text else { return }
-                let definition = textfields[1].text
-                let tags = textfields[2].text?.components(separatedBy: ",")
-                let word = Word(title: title, definition: definition, tags: tags)
-                
-                self.vocabulary.append(word)
-                self.tableView.reloadData()
-            }
-            let CancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-            
-            alert.addAction(SaveAction)
-            alert.addAction(CancelAction)
-            
-            present(alert, animated: true, completion: nil)
+        alert.addTextField { (textField) in
+            textField.placeholder = "Title"
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Definition"
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Tags"
         }
         
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return vocabulary.count
-        }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "VocabCell", for: indexPath)
-            let word = vocabulary[indexPath.row]
+        let SaveAction = UIAlertAction(title: "Save", style: .default) { [unowned alert] _ in
+            guard let textfields = alert.textFields, let title = textfields[0].text else { return }
+            let definition = textfields[1].text
+            let tags = textfields[2].text?.components(separatedBy: ",")
+            let word = Word(title: title, definition: definition, tags: tags)
             
-            cell.textLabel?.text = word.title
-            
-            return cell
+            self.vocabulary.append(word)
+            self.tableView.reloadData()
         }
+        let CancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
+        alert.addAction(SaveAction)
+        alert.addAction(CancelAction)
         
-//        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            guard let IndexPath = tableView.indexPathForSelectedRow else { return
-//                if let vocabDetailsVC = segue.destination as? VocabDetailsVC {
-//                    vocabDetailsVC.selectedWord = vocabulary[IndexPath.row]
-//                }
-//            }
-//
-
-}
+        present(alert, animated: true, completion: nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return vocabulary.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VocabCell", for: indexPath)
+        let word = vocabulary[indexPath.row]
+        
+        cell.textLabel?.text = word.title
+        
+        return cell
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard  let IndexPath = tableView.indexPathForSelectedRow else { return }
+        if let vocabDetailsVC = segue.destination as? VocabDetailsVC {
+            vocabDetailsVC.selectedWord = vocabulary[IndexPath.row]
+        }
+    }
+    
+    
 }
