@@ -10,6 +10,7 @@ import UIKit
 
 class WordsTableTableViewController: UITableViewController {
   
+  
     
     var vocabWord : [VocabularyWord] = [vocabVariable, vocabConstant, vocabFunction]
     
@@ -17,7 +18,6 @@ class WordsTableTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -29,7 +29,7 @@ class WordsTableTableViewController: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,10 +40,11 @@ class WordsTableTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
-        
-        let words = vocabWord[indexPath.row]
-        cell.textLabel?.text = words.word
+      
+       let words = vocabWord[indexPath.row].word
+        cell.textLabel?.text = words
         return cell
+    
     }
     
     
@@ -87,27 +88,15 @@ class WordsTableTableViewController: UITableViewController {
     
     //     In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //         Get the new view controller using segue.destination.
-        //         Pass the selected object to the new view controller.
-        // 2.
-        if segue.identifier == "ShowDefinitionSegue" {
-            
-            // 3.
-            guard let definitionVC = segue.destination as? DefinitionViewController else { return }
-            
-            // 4.
-            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            
-            // 5.
-            let vocabWordUsed = vocabWord[indexPath.row]
-            let definitionForWord = vocabWord[indexPath.row]
-            // 6.
-            //            contactDetailVC.contact = contact
-            definitionVC.definitionLabel.text = vocabWordUsed.word
-            definitionVC.definitionTextView.text = definitionForWord.definition
-        }
+        
+        
+        let selectedIndexPath = tableView.indexPathForSelectedRow!
+        let vocabWordUsed = vocabWord[selectedIndexPath.row]
+        let definitionVC = segue.destination as? DefinitionViewController
+        definitionVC?.vocabWord = vocabWordUsed
+        
+        
         
     }
-    
     
 }
