@@ -9,16 +9,15 @@
 import UIKit
 
 class WordsTableTableViewController: UITableViewController {
+  
     
-   let wordVariable = VocabularyWord.init(word: "Variable", definition: "In programming, a variable is a value that can change, depending on conditions or on information passed to the program. Typically, a program consists of instruction s that tell the computer what to do and data that the program uses when it is running.")
-    
-    var vocabWord : [VocabularyWord] = []
+    var vocabWord : [VocabularyWord] = [vocabVariable, vocabConstant, vocabFunction]
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+      
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -40,14 +39,10 @@ class WordsTableTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Vocabulary Word", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
         
         let words = vocabWord[indexPath.row]
         cell.textLabel?.text = words.word
-        
-        
-        
-        
         return cell
     }
     
