@@ -18,6 +18,9 @@ class WordsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Swift Vocabulary"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        createWords()
     }
 
     // MARK: - Table view data source
@@ -44,5 +47,13 @@ class WordsTableViewController: UITableViewController {
                 }
             }
         }
+    }
+    
+    // MARK: - Private methods
+    
+    func createWords() {
+        vocabWords.append(VocabularyWord(word: "Variable", definition: "A named value used to store information. Variables can be changed after being created."))
+        vocabWords.append(VocabularyWord(word: "Constant", definition: "A named value used to store information. Constants can not be changed after being created."))
+        vocabWords.append(VocabularyWord(word: "Function", definition: "A set of statements organized together to perform a specific task."))
     }
 }
