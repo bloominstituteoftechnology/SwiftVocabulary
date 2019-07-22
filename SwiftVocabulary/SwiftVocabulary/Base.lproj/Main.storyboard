@@ -45,7 +45,13 @@
                             <outlet property="delegate" destination="Dl6-EL-jao" id="5ta-Yz-Pzm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="UnD-oG-fL2"/>
+                    <navigationItem key="navigationItem" id="UnD-oG-fL2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pTl-d1-GpA">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="Dl6-EL-jao" id="Cou-dr-2eU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWb-gt-OpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

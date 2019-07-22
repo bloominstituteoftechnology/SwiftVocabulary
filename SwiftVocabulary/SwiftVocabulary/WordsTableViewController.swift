@@ -49,6 +49,31 @@ class WordsTableViewController: UITableViewController {
         }
     }
     
+    // MARK: - IBActions
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        let alertController = UIAlertController(title: "Add Word", message: "Add a new vocabulary word", preferredStyle: .alert)
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Word"
+        }
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Definition"
+        }
+        
+        let addAction = UIAlertAction(title: "Add", style: .default) { (action) in
+            
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(addAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
     // MARK: - Private methods
     
     func createWords() {
