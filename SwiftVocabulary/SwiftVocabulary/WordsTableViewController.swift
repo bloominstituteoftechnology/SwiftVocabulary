@@ -13,7 +13,9 @@ class WordsTableViewController: UITableViewController {
     // MARK: - Properties
     
     var vocabWords = [VocabularyWord]()
-
+    
+    // MARK: - View methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

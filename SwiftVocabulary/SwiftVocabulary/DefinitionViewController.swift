@@ -17,6 +17,8 @@ class DefinitionViewController: UIViewController {
     
     var vocabWord: VocabularyWord?
     
+    // MARK: - View methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
