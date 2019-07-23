@@ -26,9 +26,8 @@ class DefinitionViewController: UIViewController {
     func  updateViews() {
 
        let wordLabel + definitionTextView = vocabWord else { return }
-        if let vocabWord = vocabWord {
-            
-        }
+        
+        
     
     
     
