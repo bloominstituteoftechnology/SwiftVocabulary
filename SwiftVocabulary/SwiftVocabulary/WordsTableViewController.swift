@@ -41,11 +41,9 @@ class WordsTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDefinitionSegue" {
-            if let destinationVC = segue.destination as? DefinitionViewController {
-                if let indexPath = tableView.indexPathForSelectedRow {
-                    destinationVC.vocabWord = vocabWords[indexPath.row]
-                }
-            }
+            guard let indexPath = tableView.indexPathForSelectedRow,
+                let destinationVC = segue.destination as? DefinitionViewController else { return }
+            destinationVC.vocabWord = vocabWords[indexPath.row]
         }
     }
     
