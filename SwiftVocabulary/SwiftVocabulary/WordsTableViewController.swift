@@ -31,9 +31,7 @@ class WordsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
-
         cell.textLabel?.text = vocabWords[indexPath.row].word
-
         return cell
     }
     
@@ -50,18 +48,21 @@ class WordsTableViewController: UITableViewController {
     // MARK: - IBActions
     
     @IBAction func addButtonTapped(_ sender: Any) {
-        let alertController = UIAlertController(title: "Add Word", message: "Add a new vocabulary word", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Add Word", message: "Add a new vocabulary word and its defintion", preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
             textField.placeholder = "Word"
         }
-        
+
         alertController.addTextField { (textField) in
             textField.placeholder = "Definition"
         }
         
         let addAction = UIAlertAction(title: "Add", style: .default) { (action) in
-            
+            guard let wordTextField = alertController.textFields?[0],
+                let definitionTextField = alertController.textFields?[1] else { return }
+            self.vocabWords.append(VocabularyWord(word: wordTextField.text ?? "", definition: definitionTextField.text ?? ""))
+            self.tableView.reloadData()
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -70,6 +71,7 @@ class WordsTableViewController: UITableViewController {
         alertController.addAction(cancelAction)
         
         present(alertController, animated: true, completion: nil)
+        
     }
     
     // MARK: - Private methods
