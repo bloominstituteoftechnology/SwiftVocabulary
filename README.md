@@ -20,12 +20,12 @@ The screen recording below shows you what the final product should do:
 
 ### Add Screens to Main.storyboard
 
-- [ ] 1. Open the app's Main.storyboard file.
-- [ ] 2. Delete the default view controller. You can also delete the corresponding ViewController.swift file from your project.
-- [ ] 3. Drag out a Table View Controller.
-- [ ] 4. Set the Table View Controller as the `initial view controller` (the little arrow should appear on the left of the scene).
-- [ ] 5. Embed it in a Navigation Controller.
-- [ ] 6. Set the class of the table view controller to `WordsTableViewController`.
+- [x] 1. Open the app's Main.storyboard file.
+- [x] 2. Delete the default view controller. You can also delete the corresponding ViewController.swift file from your project.
+- [x] 3. Drag out a Table View Controller.
+- [x] 4. Set the Table View Controller as the `initial view controller` (the little arrow should appear on the left of the scene).
+- [x] 5. Embed it in a Navigation Controller.
+- [x] 6. Set the class of the table view controller to `WordsTableViewController`.
 - [ ] 7. Make the table view's prototype cell type "Basic".
 - [ ] 8. Set the table view's reuse identifier to "WordCell".
 - [ ] 9. Drag out a regular view controller.
