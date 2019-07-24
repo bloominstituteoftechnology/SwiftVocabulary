@@ -12,7 +12,7 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var definitionLabel: UILabel!
     @IBOutlet weak var definitionTextView: UITextView!
     
-   var vocabWord: VocabularyWord?
+    var vocabWord: VocabularyWord?
     
     func updateViews() {
         guard let vocab = vocabWord else {
@@ -31,10 +31,6 @@ class DefinitionViewController: UIViewController {
         // Do any additional setup after loading the view.
     updateViews()
     }
-    
-    
-    
-  
     
     
     

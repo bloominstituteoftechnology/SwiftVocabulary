@@ -12,7 +12,7 @@ class WordsTableTableViewController: UITableViewController {
   
   
     
-    var vocabWord : [VocabularyWord] = [vocabVariable, vocabConstant, vocabFunction]
+    var vocabWord : [VocabularyWord] = [vocabVariable, vocabConstant, vocabFunction, voacabOptional]
     
     
     
