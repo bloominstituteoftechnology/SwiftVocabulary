@@ -26,15 +26,15 @@ The screen recording below shows you what the final product should do:
 - [x] 4. Set the Table View Controller as the `initial view controller` (the little arrow should appear on the left of the scene).
 - [x] 5. Embed it in a Navigation Controller.
 - [x] 6. Set the class of the table view controller to `WordsTableViewController`.
-- [ ] 7. Make the table view's prototype cell type "Basic".
-- [ ] 8. Set the table view's reuse identifier to "WordCell".
-- [ ] 9. Drag out a regular view controller.
-- [ ] 10. Set its class to `DefinitionViewController`
-- [ ] 11. Create a Show segue from the table view cell to the `DefinitionViewController` by control-dragging from the cell to the view controller.
-- [ ] 12. Give the segue an identifier of `ShowDefinitionSegue`.
-- [ ] 13. On the definition view controller, add a label for the word, and below that, a text view for the definition.
-- [ ] 14. Use Add Missing Constraints to add constraints.
-- [ ] 15. Add outlets from the definition view controller to the label and text view.
+- [x] 7. Make the table view's prototype cell type "Basic".
+- [x] 8. Set the table view's reuse identifier to "WordCell".
+- [x] 9. Drag out a regular view controller.
+- [x] 10. Set its class to `DefinitionViewController`
+- [x] 11. Create a Show segue from the table view cell to the `DefinitionViewController` by control-dragging from the cell to the view controller.
+- [x] 12. Give the segue an identifier of `ShowDefinitionSegue`.
+- [x] 13. On the definition view controller, add a label for the word, and below that, a text view for the definition.
+- [x] 14. Use Add Missing Constraints to add constraints.
+- [x] 15. Add outlets from the definition view controller to the label and text view.
 
 ### Create a `VocabularyWord` Model Struct
 
