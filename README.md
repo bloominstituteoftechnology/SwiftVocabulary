@@ -8,15 +8,15 @@ The screen recording below shows you what the final product should do:
 
 ### Create an Xcode Project
 
-- [ ] 1. Create a new Xcode single view app project
-- [ ] 2. Name the project "Swift Vocabulary"
-- [ ] 3. Make sure you select Swift as the development language
+- [x] 1. Create a new Xcode single view app project
+- [x] 2. Name the project "Swift Vocabulary"
+- [x] 3. Make sure you select Swift as the development language
 
 ### Create View Controllers
 
-- [ ] 1. Create a new file in your Xcode project. Select the Cocoa Touch Class template.
-- [ ] 2. When you're asked for the class name for the new file choose `WordsTableViewController`, and make it a subclass of `UITableViewController`.
-- [ ] 3. Create another file for `DefinitionViewController`, which should be a subclass of `UIViewController`.
+- [x] 1. Create a new file in your Xcode project. Select the Cocoa Touch Class template.
+- [x] 2. When you're asked for the class name for the new file choose `WordsTableViewController`, and make it a subclass of `UITableViewController`.
+- [x] 3. Create another file for `DefinitionViewController`, which should be a subclass of `UIViewController`.
 
 ### Add Screens to Main.storyboard
 
