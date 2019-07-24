@@ -10,7 +10,7 @@ import Foundation
 
 class VocabularyController {
     
-    let vocabWords: Array<VocabularyWord>
+    var vocabWords: Array<VocabularyWord>
     
     init() {
         vocabWords = [VocabularyWord(word: "Variable",

@@ -11,7 +11,8 @@ import UIKit
 class WordsTableViewController: UITableViewController {
 
     let vocabController = VocabularyController()
-    let alert = UIAlertController(title: "Add a Word", message: "If you'd like to add a word...", preferredStyle: UIAlertController.Style.alert)
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,32 @@ class WordsTableViewController: UITableViewController {
         title = "Swift Vocabulary"
     }
 
+    @IBAction func addWordButton(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Add a new vocabulary word",
+                                      message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Word"
+        })
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Definition"
+        })
+        
+        alert.addAction(UIAlertAction(title: "ADD", style: .default, handler: { action in
+            
+            if let word = alert.textFields?.first?.text, let definition = alert.textFields?.last?.text {
+                print("Word: \(word)")
+                print("Definition: \(definition)")
+                let newWord = VocabularyWord(word: word, definition: definition)
+                self.vocabController.vocabWords.append(newWord)
+                
+            }
+        }))
+        
+        self.present(alert, animated: true)
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -59,6 +86,8 @@ class WordsTableViewController: UITableViewController {
             definitionVC.vocabWord = definition
         }
     }
- 
-
+//
+//    func updateList() {
+//        tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
+//    }
 }
