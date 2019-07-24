@@ -40,7 +40,7 @@ class WordsTableViewController: UITableViewController {
                 print("Definition: \(definition)")
                 let newWord = VocabularyWord(word: word, definition: definition)
                 self.vocabController.vocabWords.append(newWord)
-                
+                self.refresh()
             }
         }))
         
@@ -86,8 +86,10 @@ class WordsTableViewController: UITableViewController {
             definitionVC.vocabWord = definition
         }
     }
-//
-//    func updateList() {
-//        tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
-//    }
+
+    func refresh(){
+        print("refreshed")
+        self.tableView.reloadData()
+    }
+
 }
