@@ -58,7 +58,11 @@ class WordsTableViewController: UITableViewController {
             guard let definitionVC = segue.destination as? DefinitionViewController,
                 let indexPath = tableView.indexPathForSelectedRow else { return }
             
-            
+//            let cellColor = colors[indexPath.row]
+//
+//            colorDetailVC.cellColor = cellColor
+            let word = vocabWords[indexPath.row]
+            definitionVC.vocabWord = word
         }
     }
  
