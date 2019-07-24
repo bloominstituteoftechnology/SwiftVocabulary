@@ -10,7 +10,7 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
 
-    var vocabWords: [VocabularyWord]
+    let vocabController = VocabularyController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class WordsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return vocabWords.count
+        return vocabController.vocabWords.count
     }
 
     
@@ -39,7 +39,7 @@ class WordsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
         // Configure the cell...
-        let word = vocabWords[indexPath.row]
+        let word = vocabController.vocabWords[indexPath.row]
         
         cell.textLabel?.text = word.word
 
@@ -58,11 +58,8 @@ class WordsTableViewController: UITableViewController {
             guard let definitionVC = segue.destination as? DefinitionViewController,
                 let indexPath = tableView.indexPathForSelectedRow else { return }
             
-//            let cellColor = colors[indexPath.row]
-//
-//            colorDetailVC.cellColor = cellColor
-            let word = vocabWords[indexPath.row]
-            definitionVC.vocabWord = word
+            let definition = vocabController.vocabWords[indexPath.row]
+            definitionVC.vocabWord = definition
         }
     }
  

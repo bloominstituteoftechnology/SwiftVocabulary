@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95182C9622E8D1550068FA7E /* vocabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95182C9522E8D1550068FA7E /* vocabController.swift */; };
 		953D104E22E806AB008221AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D104D22E806AB008221AA /* AppDelegate.swift */; };
 		953D105322E806AB008221AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953D105122E806AB008221AA /* Main.storyboard */; };
 		953D105522E806AD008221AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D105422E806AD008221AA /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95182C9522E8D1550068FA7E /* vocabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocabController.swift; sourceTree = "<group>"; };
 		953D104A22E806AB008221AA /* SwiftVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953D104D22E806AB008221AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953D105222E806AB008221AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				953D106522E808D1008221AA /* VocabularyWord.swift */,
+				95182C9522E8D1550068FA7E /* vocabController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95182C9622E8D1550068FA7E /* vocabController.swift in Sources */,
 				953D106322E80731008221AA /* DefinitionViewController.swift in Sources */,
 				953D104E22E806AB008221AA /* AppDelegate.swift in Sources */,
 				953D106122E80713008221AA /* WordsTableViewController.swift in Sources */,
