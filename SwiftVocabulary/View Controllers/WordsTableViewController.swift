@@ -11,6 +11,7 @@ import UIKit
 class WordsTableViewController: UITableViewController {
 
     let vocabController = VocabularyController()
+    let alert = UIAlertController(title: "Add a Word", message: "If you'd like to add a word...", preferredStyle: UIAlertController.Style.alert)
     
     override func viewDidLoad() {
         super.viewDidLoad()

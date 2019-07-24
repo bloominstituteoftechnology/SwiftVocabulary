@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		95182C9622E8D1550068FA7E /* vocabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95182C9522E8D1550068FA7E /* vocabController.swift */; };
+		95182C9622E8D1550068FA7E /* VocabularyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95182C9522E8D1550068FA7E /* VocabularyController.swift */; };
+		95182C9822E8DE460068FA7E /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95182C9722E8DE460068FA7E /* AddWordViewController.swift */; };
 		953D104E22E806AB008221AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D104D22E806AB008221AA /* AppDelegate.swift */; };
 		953D105322E806AB008221AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953D105122E806AB008221AA /* Main.storyboard */; };
 		953D105522E806AD008221AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D105422E806AD008221AA /* Assets.xcassets */; };
@@ -18,7 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		95182C9522E8D1550068FA7E /* vocabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocabController.swift; sourceTree = "<group>"; };
+		95182C9522E8D1550068FA7E /* VocabularyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyController.swift; sourceTree = "<group>"; };
+		95182C9722E8DE460068FA7E /* AddWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
 		953D104A22E806AB008221AA /* SwiftVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953D104D22E806AB008221AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953D105222E806AB008221AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				953D106022E80713008221AA /* WordsTableViewController.swift */,
 				953D106222E80731008221AA /* DefinitionViewController.swift */,
+				95182C9722E8DE460068FA7E /* AddWordViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -84,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				953D106522E808D1008221AA /* VocabularyWord.swift */,
-				95182C9522E8D1550068FA7E /* vocabController.swift */,
+				95182C9522E8D1550068FA7E /* VocabularyController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,8 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95182C9622E8D1550068FA7E /* vocabController.swift in Sources */,
+				95182C9622E8D1550068FA7E /* VocabularyController.swift in Sources */,
 				953D106322E80731008221AA /* DefinitionViewController.swift in Sources */,
+				95182C9822E8DE460068FA7E /* AddWordViewController.swift in Sources */,
 				953D104E22E806AB008221AA /* AppDelegate.swift in Sources */,
 				953D106122E80713008221AA /* WordsTableViewController.swift in Sources */,
 				953D106622E808D1008221AA /* VocabularyWord.swift in Sources */,
