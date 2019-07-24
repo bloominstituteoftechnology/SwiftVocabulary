@@ -60,27 +60,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAW-e5-0cd">
-                                <rect key="frame" x="20" y="116" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="116" width="72" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F3V-e2-o6J">
-                                <rect key="frame" x="20" y="172" width="240" height="128"/>
+                                <rect key="frame" x="20" y="171" width="374" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="F3V-e2-o6J" firstAttribute="leading" secondItem="TAW-e5-0cd" secondAttribute="leading" id="8nE-QA-frY"/>
-                            <constraint firstItem="TAW-e5-0cd" firstAttribute="leading" secondItem="XZk-nB-25y" secondAttribute="leadingMargin" id="90k-fM-J4p"/>
-                            <constraint firstItem="F3V-e2-o6J" firstAttribute="top" secondItem="TAW-e5-0cd" secondAttribute="bottom" constant="35" id="Guq-wd-IxV"/>
-                            <constraint firstItem="TAW-e5-0cd" firstAttribute="top" secondItem="Hlg-Ic-OwC" secondAttribute="top" constant="28" id="H8o-3c-8ZU"/>
-                            <constraint firstItem="Hlg-Ic-OwC" firstAttribute="trailing" secondItem="F3V-e2-o6J" secondAttribute="trailing" constant="154" id="MYA-pR-uTs"/>
-                            <constraint firstItem="Hlg-Ic-OwC" firstAttribute="bottom" secondItem="F3V-e2-o6J" secondAttribute="bottom" constant="562" id="eWz-Sz-uvV"/>
+                            <constraint firstItem="TAW-e5-0cd" firstAttribute="top" secondItem="Hlg-Ic-OwC" secondAttribute="top" constant="28" id="CR0-8u-yhd"/>
+                            <constraint firstItem="TAW-e5-0cd" firstAttribute="leading" secondItem="XZk-nB-25y" secondAttribute="leadingMargin" id="F1p-tq-LMh"/>
+                            <constraint firstItem="Hlg-Ic-OwC" firstAttribute="bottom" secondItem="F3V-e2-o6J" secondAttribute="bottom" constant="571" id="KGV-Hj-jiP"/>
+                            <constraint firstItem="F3V-e2-o6J" firstAttribute="trailing" secondItem="XZk-nB-25y" secondAttribute="trailingMargin" id="fNe-j7-UNM"/>
+                            <constraint firstItem="TAW-e5-0cd" firstAttribute="leading" secondItem="F3V-e2-o6J" secondAttribute="leading" id="kdg-rh-7ex"/>
+                            <constraint firstItem="F3V-e2-o6J" firstAttribute="top" secondItem="TAW-e5-0cd" secondAttribute="bottom" constant="21" id="nr5-nk-aNK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hlg-Ic-OwC"/>
                     </view>
@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvY-Rr-XMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="80"/>
+            <point key="canvasLocation" x="769.56521739130437" y="79.6875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XP8-sx-iiR">
