@@ -13,6 +13,7 @@
 		953D105822E806AD008221AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953D105622E806AD008221AA /* LaunchScreen.storyboard */; };
 		953D106122E80713008221AA /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D106022E80713008221AA /* WordsTableViewController.swift */; };
 		953D106322E80731008221AA /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D106222E80731008221AA /* DefinitionViewController.swift */; };
+		953D106622E808D1008221AA /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D106522E808D1008221AA /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		953D105922E806AD008221AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		953D106022E80713008221AA /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		953D106222E80731008221AA /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		953D106522E808D1008221AA /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		953D104C22E806AB008221AA /* SwiftVocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				953D106422E808B1008221AA /* Models */,
 				953D105F22E806EF008221AA /* View Controllers */,
 				953D104D22E806AB008221AA /* AppDelegate.swift */,
 				953D105122E806AB008221AA /* Main.storyboard */,
@@ -73,6 +76,14 @@
 				953D106222E80731008221AA /* DefinitionViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		953D106422E808B1008221AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				953D106522E808D1008221AA /* VocabularyWord.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				953D106322E80731008221AA /* DefinitionViewController.swift in Sources */,
 				953D104E22E806AB008221AA /* AppDelegate.swift in Sources */,
 				953D106122E80713008221AA /* WordsTableViewController.swift in Sources */,
+				953D106622E808D1008221AA /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
