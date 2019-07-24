@@ -64,10 +64,10 @@ The screen recording below shows you what the final product should do:
 
 ### Build, Run, and Test Your App
 
-- [ ] 1. Build and run your app using the simulator
-- [ ] 2. Check to make sure your vocabulary words show up.
-- [ ] 3. Tap on a vocabulary word, and verify that the definition screen appears with the correct definition.
-- [ ] 4. Test going back to the list of vocab words.
+- [x] 1. Build and run your app using the simulator
+- [x] 2. Check to make sure your vocabulary words show up.
+- [x] 3. Tap on a vocabulary word, and verify that the definition screen appears with the correct definition.
+- [x] 4. Test going back to the list of vocab words.
 
 ### Stretch Goals (Optional)
 
