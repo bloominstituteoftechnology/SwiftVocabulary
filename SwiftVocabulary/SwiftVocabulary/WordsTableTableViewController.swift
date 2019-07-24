@@ -63,23 +63,37 @@ class WordsTableTableViewController: UITableViewController {
     //MARK: - AddItems
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
-        
-        var textfieldForName = UITextField()
-        var newWord : [VocabularyWord] = []
-        
+       
         let alert = UIAlertController(title: "Add new Vocabulary Word", message: "", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
-//            self.vocabWord.append()
+        
+        alert.addTextField()
+        alert.addTextField()
+        alert.textFields![0].placeholder = "Word"
+        alert.textFields![1].placeholder = "Definition"
+        
+        alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { action in
+            guard let newWord = alert.textFields?[0].text,
+                let newDefinition = alert.textFields?[1].text else { return }
+            
+            if newWord.count < 1 || newDefinition.count < 1 {
+                let noValueAlert = UIAlertController(title: "Whoops...", message: "You have left something empty! We need a name and a definition!", preferredStyle: .alert)
+                noValueAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(noValueAlert, animated: true)
+            } else {
+                self.newWordAdded(newWord: newWord, newDefinition: newDefinition)
+            }
+        }))
+        
+        present(alert, animated: true)
         }
+
+    func newWordAdded(newWord: String, newDefinition: String) {
         
+        let newVocabWord = VocabularyWord(word: newWord, definition: newDefinition)
+        vocabWord.append(newVocabWord)
         
-        
-        alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "create name for word"
-            textfieldForName = alertTextField
-        }
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+        self.tableView.reloadData()
     }
-    
 }
+    
+
