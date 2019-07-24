@@ -84,6 +84,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hlg-Ic-OwC"/>
                     </view>
+                    <connections>
+                        <outlet property="definitionTextView" destination="F3V-e2-o6J" id="xaN-1u-EsS"/>
+                        <outlet property="wordLabel" destination="TAW-e5-0cd" id="VV5-LJ-YiN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvY-Rr-XMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
