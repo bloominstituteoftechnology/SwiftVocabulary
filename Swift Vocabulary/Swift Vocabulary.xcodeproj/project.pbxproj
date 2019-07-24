@@ -61,11 +61,11 @@
 				924256DE22E80B1500A748F5 /* AppDelegate.swift */,
 				924256F022E80BDC00A748F5 /* WordsTableViewController.swift */,
 				924256F222E80BF900A748F5 /* DefinitionViewController.swift */,
+				924256F422E80E0600A748F5 /* VocabularyWord.swift */,
 				924256E222E80B1500A748F5 /* Main.storyboard */,
 				924256E522E80B1600A748F5 /* Assets.xcassets */,
 				924256E722E80B1600A748F5 /* LaunchScreen.storyboard */,
 				924256EA22E80B1600A748F5 /* Info.plist */,
-				924256F422E80E0600A748F5 /* VocabularyWord.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";

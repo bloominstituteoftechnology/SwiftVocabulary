@@ -9,6 +9,6 @@
 
 
 struct VocabularyWord {
-    let word: String
+    let name: String
     let definition: String
 }
