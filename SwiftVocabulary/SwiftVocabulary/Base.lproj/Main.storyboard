@@ -22,7 +22,7 @@
                         <color key="sectionIndexBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="WordCell" textLabel="REm-5s-Law" style="IBUITableViewCellStyleDefault" id="w5R-pq-akh">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="WordCell" textLabel="REm-5s-Law" style="IBUITableViewCellStyleDefault" id="w5R-pq-akh">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w5R-pq-akh" id="Ub0-C8-oOq">
@@ -50,7 +50,13 @@
                             <outlet property="delegate" destination="Lsm-Ef-HmC" id="5aC-iQ-RZ6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="HjB-fd-U6n"/>
+                    <navigationItem key="navigationItem" id="HjB-fd-U6n">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cHq-oU-xfW">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="Lsm-Ef-HmC" id="c4u-sJ-z4G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQ0-MB-xfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
