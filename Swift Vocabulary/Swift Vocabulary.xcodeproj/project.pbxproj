@@ -13,6 +13,7 @@
 		924256E922E80B1600A748F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924256E722E80B1600A748F5 /* LaunchScreen.storyboard */; };
 		924256F122E80BDC00A748F5 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924256F022E80BDC00A748F5 /* WordsTableViewController.swift */; };
 		924256F322E80BF900A748F5 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924256F222E80BF900A748F5 /* DefinitionViewController.swift */; };
+		924256F522E80E0600A748F5 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924256F422E80E0600A748F5 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		924256EA22E80B1600A748F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		924256F022E80BDC00A748F5 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		924256F222E80BF900A748F5 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		924256F422E80E0600A748F5 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				924256E522E80B1600A748F5 /* Assets.xcassets */,
 				924256E722E80B1600A748F5 /* LaunchScreen.storyboard */,
 				924256EA22E80B1600A748F5 /* Info.plist */,
+				924256F422E80E0600A748F5 /* VocabularyWord.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				924256F322E80BF900A748F5 /* DefinitionViewController.swift in Sources */,
 				924256DF22E80B1500A748F5 /* AppDelegate.swift in Sources */,
 				924256F122E80BDC00A748F5 /* WordsTableViewController.swift in Sources */,
+				924256F522E80E0600A748F5 /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
