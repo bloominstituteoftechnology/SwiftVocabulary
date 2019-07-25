@@ -38,36 +38,36 @@ The screen recording below shows you what the final product should do:
 
 ### Create a `VocabularyWord` Model Struct
 
-- [ ] 1. Create a new file called "VocabularyWord.swift"
-- [ ] 2. Create a struct inside the file called `VocabularyWord`
-- [ ] 3. Add `word: String` and `definition: String` properties.
+- [x] 1. Create a new file called "VocabularyWord.swift"
+- [x] 2. Create a struct inside the file called `VocabularyWord`
+- [x] 3. Add `word: String` and `definition: String` properties.
 
 ### Implement `WordsTableViewController`
 
-- [ ] 1. Open `WordsTableViewController.swift`.
-- [ ] 2. Add a variable property called `vocabWords` of type `[VocabularyWord]` (array of `VocabularyWord` objects)
-- [ ] 3. Implement `tableView(_ tableView:, numberOfRowsInSection section:)`. Make it return the number of vocab words in `vocabWords` property.
-- [ ] 4. Implement `tableView(_ tableView:, cellForRowAt indexPath:)`. Dequeue the cell, get the right `VocabularyWord` for the index path, then set the cell's `textLabel`'s text to the vocab word's `word` property.
-- [ ] 5. In the `prepare(for:sender:)`(uncomment the method so it is live code):
-    - [ ] * Check to make sure the segue's identifier is `"ShowDefinitionSegue"`.
-    - [ ] * Get the destination `DefinitionViewController` by conditionally casting `segue.destination` to `DefinitionViewController`.
-    - [ ] * Get the index path for the selected row using `tableView.indexPathForSelectedRow`.
-    - [ ] * Use that index path to get the appropriate `VocabularyWord` instance from `vocabController`'s `vocabWords` array.
-    - [ ] * Assign the vocabulary word to the `DefinitionViewController`'s `vocabWord` property.
+- [x] 1. Open `WordsTableViewController.swift`.
+- [x] 2. Add a variable property called `vocabWords` of type `[VocabularyWord]` (array of `VocabularyWord` objects)
+- [x] 3. Implement `tableView(_ tableView:, numberOfRowsInSection section:)`. Make it return the number of vocab words in `vocabWords` property.
+- [x] 4. Implement `tableView(_ tableView:, cellForRowAt indexPath:)`. Dequeue the cell, get the right `VocabularyWord` for the index path, then set the cell's `textLabel`'s text to the vocab word's `word` property.
+- [x] 5. In the `prepare(for:sender:)`(uncomment the method so it is live code):
+    - [x] * Check to make sure the segue's identifier is `"ShowDefinitionSegue"`.
+    - [x] * Get the destination `DefinitionViewController` by conditionally casting `segue.destination` to `DefinitionViewController`.
+    - [x] * Get the index path for the selected row using `tableView.indexPathForSelectedRow`.
+    - [x] * Use that index path to get the appropriate `VocabularyWord` instance from `vocabController`'s `vocabWords` array.
+    - [x] * Assign the vocabulary word to the `DefinitionViewController`'s `vocabWord` property.
 
 ### Implement `DefinitionViewController`
 
-- [ ] 1. Add a `vocabWord: VocabularyWord?` property.
-- [ ] 2. Add a method called `updateViews()`. 
-- [ ] 3. In this method, unwrap the `vocabWord` property. If it is not nil, use its `word` and `definition` properties to populate the label and text view.
-- [ ] 4. Inside `viewDidLoad`, call `updateViews()`.
+- [x] 1. Add a `vocabWord: VocabularyWord?` property.
+- [x] 2. Add a method called `updateViews()`. 
+- [x] 3. In this method, unwrap the `vocabWord` property. If it is not nil, use its `word` and `definition` properties to populate the label and text view.
+- [x] 4. Inside `viewDidLoad`, call `updateViews()`.
 
 ### Build, Run, and Test Your App
 
-- [ ] 1. Build and run your app using the simulator
-- [ ] 2. Check to make sure your vocabulary words show up.
-- [ ] 3. Tap on a vocabulary word, and verify that the definition screen appears with the correct definition.
-- [ ] 4. Test going back to the list of vocab words.
+- [x] 1. Build and run your app using the simulator
+- [x] 2. Check to make sure your vocabulary words show up.
+- [x] 3. Tap on a vocabulary word, and verify that the definition screen appears with the correct definition.
+- [x] 4. Test going back to the list of vocab words.
 
 ### Stretch Goals (Optional)
 
