@@ -11,24 +11,27 @@ import UIKit
 class VocabDetailViewController: UIViewController {
 
     @IBOutlet weak var vocabLabel: UILabel!
+    @IBOutlet weak var vocabView: UITextView!
     
-    var vocabTitle: VocabularyWord?
+    var vocabWord: VocabularyWord?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+            updateViews()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        
+        if let word = vocabWord {
+            vocabLabel.text = word.name
+            vocabView.text = word.definition
+            
+        }
+        
+        
     }
-    */
+
+    
 
 }

@@ -72,29 +72,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defintion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUR-4R-Ap5">
-                                <rect key="frame" x="39" y="260" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kru-Iy-kH0">
+                                <rect key="frame" x="20" y="267" width="374" height="164"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="QUR-4R-Ap5" firstAttribute="top" secondItem="vm8-tV-O1y" secondAttribute="bottom" constant="51" id="9hC-7H-SbG"/>
-                            <constraint firstItem="QUR-4R-Ap5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="B4F-ie-34B"/>
+                            <constraint firstItem="Kru-Iy-kH0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3p2-Cx-eW0"/>
+                            <constraint firstItem="Kru-Iy-kH0" firstAttribute="top" secondItem="vm8-tV-O1y" secondAttribute="bottom" constant="58" id="7ay-ai-E4w"/>
                             <constraint firstItem="vm8-tV-O1y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EGR-pG-778"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kru-Iy-kH0" secondAttribute="bottom" constant="431" id="Zem-ZQ-MWx"/>
+                            <constraint firstItem="Kru-Iy-kH0" firstAttribute="leading" secondItem="vm8-tV-O1y" secondAttribute="leading" id="dVj-xn-QM2"/>
                             <constraint firstItem="vm8-tV-O1y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="uzY-J7-c07"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="vocabLabel" destination="vm8-tV-O1y" id="Gsd-mb-WLj"/>
+                        <outlet property="vocabView" destination="Kru-Iy-kH0" id="etZ-RI-50k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="123"/>
+            <point key="canvasLocation" x="944.92753623188412" y="122.54464285714285"/>
         </scene>
     </scenes>
 </document>

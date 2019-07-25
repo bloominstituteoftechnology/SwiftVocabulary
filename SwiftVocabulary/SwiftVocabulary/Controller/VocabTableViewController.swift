@@ -53,7 +53,7 @@ class VocabTableViewController: UITableViewController {
         if segue.identifier == "ShowDefinitionSegue" {
             guard let indexPath = tableView.indexPathForSelectedRow, let vc = segue.destination as? VocabDetailViewController else { return }
             let vocabCells = vocabWords[indexPath.row]
-            vc.vocabTitle = vocabCells
+            vc.vocabWord = vocabCells
             
         }
         
