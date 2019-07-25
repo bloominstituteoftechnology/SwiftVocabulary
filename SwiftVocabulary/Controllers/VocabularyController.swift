@@ -19,10 +19,12 @@ class VocabularyController {
         ]
     }
     
+    // adding
     func addVocab(_ item: VocabularyWord) {
         vocabWords.append(item)
     }
     
+    // deleting
     func deleteVocab(at index: Int) {
         vocabWords.remove(at: index)
     }
