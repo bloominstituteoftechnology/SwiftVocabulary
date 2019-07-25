@@ -72,9 +72,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defintion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUR-4R-Ap5">
+                                <rect key="frame" x="39" y="260" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="QUR-4R-Ap5" firstAttribute="top" secondItem="vm8-tV-O1y" secondAttribute="bottom" constant="51" id="9hC-7H-SbG"/>
+                            <constraint firstItem="QUR-4R-Ap5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="B4F-ie-34B"/>
                             <constraint firstItem="vm8-tV-O1y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EGR-pG-778"/>
                             <constraint firstItem="vm8-tV-O1y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="uzY-J7-c07"/>
                         </constraints>

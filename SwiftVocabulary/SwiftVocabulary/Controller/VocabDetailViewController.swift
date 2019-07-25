@@ -9,10 +9,10 @@
 import UIKit
 
 class VocabDetailViewController: UIViewController {
-    
-
 
     @IBOutlet weak var vocabLabel: UILabel!
+    
+    var vocabTitle: VocabularyWord?
     
     override func viewDidLoad() {
         super.viewDidLoad()
