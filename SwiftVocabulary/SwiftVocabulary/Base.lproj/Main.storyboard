@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ppw-EG-OYI">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swift Vocabulary-->
+        <scene sceneID="bG4-yf-m0Y">
+            <objects>
+                <tableViewController id="h60-hf-Taf" customClass="WordsTableViewController" customModule="SwiftVocabulary" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8iD-bV-pUF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="12" reuseIdentifier="WordCell" textLabel="JLw-Oa-6e1" rowHeight="76" style="IBUITableViewCellStyleDefault" id="A0G-x2-WjO">
+                                <rect key="frame" x="0.0" y="28" width="414" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A0G-x2-WjO" id="vh7-xE-XDz">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="75.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Swift Vocabulary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JLw-Oa-6e1">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="75.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Z4v-sK-nBw" kind="show" identifier="ShowDefinitionSegue" id="4xB-n6-oi9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="h60-hf-Taf" id="89j-WN-qwj"/>
+                            <outlet property="delegate" destination="h60-hf-Taf" id="KuF-TF-5Na"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="6lj-zT-uuO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vU-cY-BAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247.82608695652175" y="114.50892857142857"/>
+        </scene>
+        <!--Definition View Controller-->
+        <scene sceneID="Rui-9M-aLO">
+            <objects>
+                <viewController id="Z4v-sK-nBw" customClass="DefinitionViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l9p-6i-kQT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buF-Gg-miq">
+                                <rect key="frame" x="43" y="125" width="52" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yL7-DU-YSu">
+                                <rect key="frame" x="43" y="175" width="351" height="184"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S18-AZ-nfd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="buF-Gg-miq" secondAttribute="trailing" symbolic="YES" id="FYp-92-2KQ"/>
+                            <constraint firstItem="yL7-DU-YSu" firstAttribute="top" secondItem="buF-Gg-miq" secondAttribute="bottom" constant="28" id="FYz-q4-PB8"/>
+                            <constraint firstItem="S18-AZ-nfd" firstAttribute="bottom" secondItem="yL7-DU-YSu" secondAttribute="bottom" constant="604" id="JK8-so-UlB"/>
+                            <constraint firstItem="S18-AZ-nfd" firstAttribute="trailing" secondItem="yL7-DU-YSu" secondAttribute="trailing" constant="131" id="Pfj-3j-Gaj"/>
+                            <constraint firstItem="buF-Gg-miq" firstAttribute="leading" secondItem="yL7-DU-YSu" secondAttribute="leading" id="koR-M1-1qG"/>
+                            <constraint firstItem="buF-Gg-miq" firstAttribute="top" secondItem="S18-AZ-nfd" secondAttribute="top" constant="37" id="oYF-ur-xrn"/>
+                            <constraint firstItem="buF-Gg-miq" firstAttribute="leading" secondItem="S18-AZ-nfd" secondAttribute="leading" constant="43" id="xOI-Ii-4nJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S18-AZ-nfd"/>
+                    </view>
+                    <connections>
+                        <outlet property="definitionLabel" destination="yL7-DU-YSu" id="s3f-kF-N1T"/>
+                        <outlet property="wordLabel" destination="buF-Gg-miq" id="HgV-K6-CTT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uE1-1e-33X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.60869565217399" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mrV-xe-dqt">
+            <objects>
+                <navigationController id="ppw-EG-OYI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zTW-ef-DVG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="h60-hf-Taf" kind="relationship" relationship="rootViewController" id="gEb-CH-jk2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aje-Sk-Bvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-491" y="115"/>
+        </scene>
+    </scenes>
+</document>
