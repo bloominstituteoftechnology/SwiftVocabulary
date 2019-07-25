@@ -65,15 +65,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vw-NK-qtE">
-                                <rect key="frame" x="20" y="180" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vw-NK-qtE">
+                                <rect key="frame" x="20" y="108" width="374" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k4b-RA-mM6">
-                                <rect key="frame" x="87" y="157" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k4b-RA-mM6">
+                                <rect key="frame" x="20" y="161" width="374" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="EB6-yf-eZG"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -81,10 +84,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8vw-NK-qtE" firstAttribute="leading" secondItem="4LE-JV-Mol" secondAttribute="leadingMargin" id="5f3-9w-9fW"/>
+                            <constraint firstItem="8vw-NK-qtE" firstAttribute="leading" secondItem="VWf-4S-GYW" secondAttribute="leading" constant="20" id="5f3-9w-9fW"/>
+                            <constraint firstItem="k4b-RA-mM6" firstAttribute="leading" secondItem="VWf-4S-GYW" secondAttribute="leading" constant="20" id="9QC-QC-lBf"/>
+                            <constraint firstItem="k4b-RA-mM6" firstAttribute="top" secondItem="8vw-NK-qtE" secondAttribute="bottom" constant="10" id="I9r-Mx-8TX"/>
                             <constraint firstItem="k4b-RA-mM6" firstAttribute="centerX" secondItem="4LE-JV-Mol" secondAttribute="centerX" id="OJF-Xv-1AQ"/>
-                            <constraint firstItem="8vw-NK-qtE" firstAttribute="top" secondItem="VWf-4S-GYW" secondAttribute="top" constant="40" id="cIR-PE-BDB"/>
+                            <constraint firstItem="8vw-NK-qtE" firstAttribute="top" secondItem="VWf-4S-GYW" secondAttribute="top" constant="20" id="cIR-PE-BDB"/>
                             <constraint firstItem="8vw-NK-qtE" firstAttribute="centerX" secondItem="4LE-JV-Mol" secondAttribute="centerX" id="dsQ-wL-865"/>
+                            <constraint firstItem="VWf-4S-GYW" firstAttribute="trailing" secondItem="k4b-RA-mM6" secondAttribute="trailing" constant="20" id="g9h-Ba-wwj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VWf-4S-GYW"/>
                     </view>
@@ -102,8 +108,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G4E-wJ-Z1J" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SjN-Ky-Uf1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SjN-Ky-Uf1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
