@@ -12,9 +12,9 @@ class DefinitionViewController: UIViewController {
     
     var vocabWord: VocabularyWord?
     
-
+    @IBOutlet weak var wordLabel: UILabel!
     
-    
+    @IBOutlet weak var definitionTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,17 +23,13 @@ class DefinitionViewController: UIViewController {
       
     }
     
-    func  updateViews() {
-
-       let wordLabel + definitionTextView = vocabWord else { return }
+    func updateViews() {
+        guard let vocabWord = vocabWord else {return}
+        definitionTextView.text = vocabWord.definition
+        wordLabel.text = vocabWord.word
         
-        
+    }
     
-    
-    
-        weak var wordLabel: UILabel!
-    
-        weak var definitionTextView: UITextView!
     
    
     // MARK: - Navigation
