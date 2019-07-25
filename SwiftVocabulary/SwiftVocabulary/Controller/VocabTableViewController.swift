@@ -10,6 +10,8 @@ import UIKit
 
 class VocabTableViewController: UITableViewController {
     
+    
+    
     var vocabWords: [VocabularyWord] = []
 
     override func viewDidLoad() {
@@ -59,6 +61,38 @@ class VocabTableViewController: UITableViewController {
         
         
     }
+    
+    private func addVocabItem(word: String, definition: String) {
+        
+        let newWord = VocabularyWord(name: word, definition: definition)
+        vocabWords.append(newWord)
+        tableView.reloadData()
+    }
+    
+    //TODO: - UIAlert to add more data into app
+    @IBAction func addVocabButtonPressed(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "New Vocabulary Item", message: nil, preferredStyle: .alert)
+        alert.addTextField()
+        alert.addTextField()
+      
+        let addWordAction = UIAlertAction(title: "Add Word", style: .default) { action in
+            guard let word = alert.textFields?[0].text,
+            let definition = alert.textFields?[1].text
+                else { return }
+            self.addVocabItem(word: word, definition: definition)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+       
+        alert.addAction(addWordAction)
+         alert.addAction(cancelAction)
+        
+        present(alert, animated: true)
+        
+        
+    }
+    
  
 
 }

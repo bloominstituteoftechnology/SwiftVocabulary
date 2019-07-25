@@ -36,7 +36,13 @@
                             <outlet property="delegate" destination="6yO-Xm-giW" id="jeI-aw-Z3c"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="QL1-Ia-EWd"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="QL1-Ia-EWd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YaL-pI-gxv">
+                            <connections>
+                                <action selector="addVocabButtonPressed:" destination="6yO-Xm-giW" id="JYG-4I-yJd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RmD-vZ-OeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
