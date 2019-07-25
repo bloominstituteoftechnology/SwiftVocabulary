@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F9F4C01122E953CB005F82F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C01022E953CB005F82F8 /* AppDelegate.swift */; };
-		F9F4C01322E953CB005F82F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C01222E953CB005F82F8 /* ViewController.swift */; };
 		F9F4C01622E953CB005F82F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F4C01422E953CB005F82F8 /* Main.storyboard */; };
 		F9F4C01822E953CE005F82F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9F4C01722E953CE005F82F8 /* Assets.xcassets */; };
 		F9F4C01B22E953CE005F82F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F4C01922E953CE005F82F8 /* LaunchScreen.storyboard */; };
 		F9F4C02322E95431005F82F8 /* WordsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C02222E95431005F82F8 /* WordsTableTableViewController.swift */; };
 		F9F4C02522E95473005F82F8 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C02422E95473005F82F8 /* DefinitionViewController.swift */; };
+		F9F4C02722EA3060005F82F8 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C02622EA3060005F82F8 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F9F4C00D22E953CB005F82F8 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F4C01022E953CB005F82F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9F4C01222E953CB005F82F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9F4C01522E953CB005F82F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9F4C01722E953CE005F82F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9F4C01A22E953CE005F82F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9F4C01C22E953CE005F82F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9F4C02222E95431005F82F8 /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
 		F9F4C02422E95473005F82F8 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		F9F4C02622EA3060005F82F8 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				F9F4C01022E953CB005F82F8 /* AppDelegate.swift */,
-				F9F4C01222E953CB005F82F8 /* ViewController.swift */,
 				F9F4C01422E953CB005F82F8 /* Main.storyboard */,
 				F9F4C01722E953CE005F82F8 /* Assets.xcassets */,
 				F9F4C01922E953CE005F82F8 /* LaunchScreen.storyboard */,
 				F9F4C01C22E953CE005F82F8 /* Info.plist */,
 				F9F4C02222E95431005F82F8 /* WordsTableTableViewController.swift */,
 				F9F4C02422E95473005F82F8 /* DefinitionViewController.swift */,
+				F9F4C02622EA3060005F82F8 /* VocabularyWord.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -141,10 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9F4C01322E953CB005F82F8 /* ViewController.swift in Sources */,
 				F9F4C02522E95473005F82F8 /* DefinitionViewController.swift in Sources */,
 				F9F4C01122E953CB005F82F8 /* AppDelegate.swift in Sources */,
 				F9F4C02322E95431005F82F8 /* WordsTableTableViewController.swift in Sources */,
+				F9F4C02722EA3060005F82F8 /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
