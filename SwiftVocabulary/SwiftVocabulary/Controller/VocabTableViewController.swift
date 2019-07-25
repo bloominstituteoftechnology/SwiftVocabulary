@@ -45,7 +45,13 @@ class VocabTableViewController: UITableViewController {
         return vocabCell
     }
 
-
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            vocabWords.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .left)
+        }
+    }
  
     // MARK: - Navigation
 
@@ -69,7 +75,7 @@ class VocabTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    //TODO: - UIAlert to add more data into app
+    //MARK: - UIAlert to add more data into app
     @IBAction func addVocabButtonPressed(_ sender: Any) {
         
         let alert = UIAlertController(title: "New Vocabulary Item", message: nil, preferredStyle: .alert)
