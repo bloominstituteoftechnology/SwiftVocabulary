@@ -1,5 +1,5 @@
 //
-//  WordsTableTableViewController.swift
+//  WordsTableViewController.swift
 //  SwiftVocabulary
 //
 //  Created by Casualty on 7/24/19.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class WordsTableTableViewController: UITableViewController {
+class WordsTableViewController: UITableViewController {
     
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "word1", definition: "definition1"), VocabularyWord(word: "word2", definition: "definition2")]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A named value used to store information. Variables can be changed after being created.", example: "var number = 5"), VocabularyWord(word: "Constant", definition: "A named value used to store information. Constants can not be changed after being created.", example: "let number = 5")]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,9 @@ class WordsTableTableViewController: UITableViewController {
             
         }
     }
- 
-
+    
+    @IBAction func addButtonTapped(_ sender: AnyObject) {
+        title = "test"
+        
+        }
 }

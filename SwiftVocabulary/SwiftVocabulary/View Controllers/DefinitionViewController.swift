@@ -14,24 +14,27 @@ class DefinitionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateView()
+    }
+    
+    func updateView() {
         if let cellWord = cellWord {
             
             title = cellWord.word
+            wordLabel.text = cellWord.word
             wordDefinitionTextView.text = cellWord.definition
+            wordExampleLabel.text = cellWord.example
             
         }
-        
-        
     }
-
     
     @IBOutlet weak var wordLabel: UILabel!
     
     @IBOutlet weak var wordDefinitionTextView: UITextView!
 
+    @IBOutlet weak var wordExampleLabel: UILabel!
     
-
+    
     /*
     // MARK: - Navigation
 

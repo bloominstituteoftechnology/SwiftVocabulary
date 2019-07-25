@@ -45,7 +45,19 @@
                             <outlet property="delegate" destination="Xy4-dD-zPK" id="jb7-z7-yoM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="6Dq-kS-Ny0"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="6Dq-kS-Ny0">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="eWA-uE-y0f">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XsN-gZ-fRy">
+                                <rect key="frame" x="302" y="0.0" width="92" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="Xy4-dD-zPK" id="7km-RS-e23"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZtO-y8-4Cq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,44 +66,52 @@
         <!--Definition View Controller-->
         <scene sceneID="cWt-er-vb9">
             <objects>
-                <viewController id="KVh-rJ-6lr" customClass="DefinitionViewController" sceneMemberID="viewController">
+                <viewController id="KVh-rJ-6lr" customClass="DefinitionViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ns-Sp-PrP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwF-GO-InR">
-                                <rect key="frame" x="38" y="150" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S3J-We-Flb">
-                                <rect key="frame" x="38" y="177" width="240" height="128"/>
+                                <rect key="frame" x="38" y="196.5" width="240" height="110.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwF-GO-InR">
+                                <rect key="frame" x="42" y="150" width="75" height="38.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfr-Cr-Uct">
+                                <rect key="frame" x="42" y="330" width="300" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rwF-GO-InR" firstAttribute="leading" secondItem="gmq-I2-hnP" secondAttribute="leading" constant="38" id="CwM-7Q-bQg"/>
-                            <constraint firstItem="rwF-GO-InR" firstAttribute="leading" secondItem="S3J-We-Flb" secondAttribute="leading" id="kB2-xg-MwW"/>
-                            <constraint firstItem="gmq-I2-hnP" firstAttribute="trailing" secondItem="S3J-We-Flb" secondAttribute="trailing" constant="136" id="ldW-QC-D9w"/>
-                            <constraint firstItem="gmq-I2-hnP" firstAttribute="bottom" secondItem="S3J-We-Flb" secondAttribute="bottom" constant="557" id="lh9-Ba-1m7"/>
-                            <constraint firstItem="S3J-We-Flb" firstAttribute="top" secondItem="rwF-GO-InR" secondAttribute="bottom" constant="6" id="zDB-MH-jFQ"/>
-                            <constraint firstItem="rwF-GO-InR" firstAttribute="top" secondItem="gmq-I2-hnP" secondAttribute="top" constant="62" id="zUd-3K-lvN"/>
+                            <constraint firstItem="gmq-I2-hnP" firstAttribute="trailing" secondItem="S3J-We-Flb" secondAttribute="trailing" constant="136" id="8f1-vq-khA"/>
+                            <constraint firstItem="S3J-We-Flb" firstAttribute="top" secondItem="rwF-GO-InR" secondAttribute="bottom" constant="8" symbolic="YES" id="8uI-A6-3CB"/>
+                            <constraint firstItem="rwF-GO-InR" firstAttribute="leading" secondItem="gmq-I2-hnP" secondAttribute="leading" constant="42" id="RLI-uU-tfZ"/>
+                            <constraint firstItem="gmq-I2-hnP" firstAttribute="bottom" secondItem="S3J-We-Flb" secondAttribute="bottom" constant="555" id="h2V-NQ-ShF"/>
+                            <constraint firstItem="S3J-We-Flb" firstAttribute="leading" secondItem="gmq-I2-hnP" secondAttribute="leading" constant="38" id="qFp-nQ-Ys1"/>
+                            <constraint firstItem="rwF-GO-InR" firstAttribute="top" secondItem="gmq-I2-hnP" secondAttribute="top" constant="62" id="sMn-L2-Re5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gmq-I2-hnP"/>
                     </view>
                     <connections>
                         <outlet property="wordDefinitionTextView" destination="S3J-We-Flb" id="rLI-R6-rwK"/>
+                        <outlet property="wordExampleLabel" destination="Wfr-Cr-Uct" id="ykO-cO-w0I"/>
                         <outlet property="wordLabel" destination="rwF-GO-InR" id="JUL-L5-BG6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1P-wK-9pU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1684" y="125"/>
+            <point key="canvasLocation" x="1682.608695652174" y="124.55357142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DU7-eU-zbM">
