@@ -10,6 +10,8 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+    // Create var cellWord of optional type VocabularyWord
+    // We are using cellWord to load the definition page with the word, definition, and example
     var cellWord: VocabularyWord?
     
     override func viewDidLoad() {
@@ -33,16 +35,5 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var wordDefinitionTextView: UITextView!
 
     @IBOutlet weak var wordExampleLabel: UILabel!
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

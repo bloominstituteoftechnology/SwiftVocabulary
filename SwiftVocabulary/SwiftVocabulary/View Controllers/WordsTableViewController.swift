@@ -10,6 +10,7 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
+    // Create vocabWords array of type [VocabularyWord]
     var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A named value used to store information. Variables can be changed after being created.", example: "var number = 5"), VocabularyWord(word: "Constant", definition: "A named value used to store information. Constants can not be changed after being created.", example: "let number = 5")]
     
     
@@ -17,24 +18,29 @@ class WordsTableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
-
+    
+    // Add word button tapped
     @IBAction func addWordButtonTapped(_ sender: UIButton) {
         
-        //Create UIAlertController Object
+        // Create a new alert
         let newWordAlert = UIAlertController(title: "Add New Word", message: "Please type the word, definition, and use an example.", preferredStyle: .alert)
         
-        //Create UIAlertController textFields and add placeholder text
-        newWordAlert.addTextField()
-        newWordAlert.addTextField()
-        newWordAlert.addTextField()
+        // Create three textfields
+        newWordAlert.addTextField() // word
+        newWordAlert.addTextField() // definition
+        newWordAlert.addTextField() // example
+        
+        //Placeholder text
         newWordAlert.textFields![0].placeholder = "word"
         newWordAlert.textFields![1].placeholder = "definition"
         newWordAlert.textFields![2].placeholder = "give example here"
         
+        // Create Add button
         newWordAlert.addAction(UIAlertAction(title: "Add", style: .default, handler: { action in
             guard let newWord = newWordAlert.textFields?[0].text,
                 let newDefinition = newWordAlert.textFields?[1].text, let newExample = newWordAlert.textFields?[2].text else { return }
             
+            // Check if word text field is empty
             if newWord.isEmpty == true {
                 
                 let missingWordAlert = UIAlertController(title: "Error", message: "You forgot to enter a word", preferredStyle: .alert)
@@ -43,6 +49,7 @@ class WordsTableViewController: UITableViewController {
                 
                 self.present(missingWordAlert, animated: true)
                 
+                // Check if definition text field is empty
             } else if newDefinition.isEmpty == true {
                 
                 let missingDefinitionAlert = UIAlertController(title: "Error", message: "You forgot to enter a definition", preferredStyle: .alert)
@@ -51,6 +58,7 @@ class WordsTableViewController: UITableViewController {
                 
                 self.present(missingDefinitionAlert, animated: true)
                 
+                // Check if example text field is empty
             } else if newExample.isEmpty == true {
                 
                 let missingExampleAlert = UIAlertController(title: "Error", message: "You forgot to enter an example", preferredStyle: .alert)
@@ -60,17 +68,20 @@ class WordsTableViewController: UITableViewController {
                 self.present(missingExampleAlert, animated: true)
                 
             } else {
-                
+                // Run addWord function
                 self.addWord(newWord: newWord, newDefinition: newDefinition, newExample: newExample)
             }
         }))
         
+        // Adding cancel button
         newWordAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in } ))
         
+        // Show alert we created
         present(newWordAlert, animated: true)
         
     }
     
+    // Add word function
     func addWord(newWord: String, newDefinition: String, newExample: String) {
         
         let newVocabWord = VocabularyWord(word: newWord, definition: newDefinition, example: newExample)
@@ -85,7 +96,7 @@ class WordsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return vocabWords.count
@@ -115,6 +126,7 @@ class WordsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
         if editingStyle == UITableViewCell.EditingStyle.delete {
             vocabWords.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// Create VocabularyWord struct
 struct VocabularyWord {
     let word: String
     let definition: String
