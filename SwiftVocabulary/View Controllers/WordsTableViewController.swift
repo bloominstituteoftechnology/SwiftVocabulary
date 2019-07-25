@@ -96,9 +96,34 @@ class WordsTableViewController: UITableViewController {
 
             let word = self.vocabController.vocabWords[indexPath.row]
             detailVocabVC.vocabWord = word
-            
-            
-
         }
     }
+    
+    @IBAction func addButton(_ sender: Any) {
+        let alert = UIAlertController(title: "Add Vocabulary", message: nil, preferredStyle: .alert)
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Add a word"
+        }
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Add a definition"
+        }
+        
+        alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { [weak self] action in
+            guard let word = alert.textFields?.first?.text,
+                let definition = alert.textFields?.last?.text else {
+                    return
+            }
+            
+            let newWord = VocabularyWord(word: word, definition: definition)
+            self?.vocabController.addVocab(newWord)
+            self?.tableView.reloadData()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }

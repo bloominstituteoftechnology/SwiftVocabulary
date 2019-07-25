@@ -60,17 +60,41 @@
 		E339C0A922E65A2E0010ED43 /* SwiftVocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				E3C4AC2622E8110700CBC0B4 /* Controllers */,
+				E3C4AC2422E8108E00CBC0B4 /* Models */,
+				E3C4AC2322E8105B00CBC0B4 /* View Controllers */,
 				E339C0AA22E65A2E0010ED43 /* AppDelegate.swift */,
 				E339C0AE22E65A2E0010ED43 /* Main.storyboard */,
 				E339C0B122E65A300010ED43 /* Assets.xcassets */,
 				E339C0B322E65A300010ED43 /* LaunchScreen.storyboard */,
 				E339C0B622E65A300010ED43 /* Info.plist */,
-				E339C0BC22E65AC20010ED43 /* WordsTableViewController.swift */,
-				E339C0BE22E65ADA0010ED43 /* DefinitionViewController.swift */,
-				E339C0C022E65ECA0010ED43 /* VocabularyWord.swift */,
-				E31134A622E68FCE002CEF0B /* VocabularyController.swift */,
 			);
 			path = SwiftVocabulary;
+			sourceTree = "<group>";
+		};
+		E3C4AC2322E8105B00CBC0B4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E339C0BC22E65AC20010ED43 /* WordsTableViewController.swift */,
+				E339C0BE22E65ADA0010ED43 /* DefinitionViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E3C4AC2422E8108E00CBC0B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E339C0C022E65ECA0010ED43 /* VocabularyWord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3C4AC2622E8110700CBC0B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E31134A622E68FCE002CEF0B /* VocabularyController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,7 +9,7 @@
 import Foundation
 
 class VocabularyController {
-    let vocabWords: [VocabularyWord]
+    var vocabWords: [VocabularyWord]
     
     init() {
         self.vocabWords = [
@@ -17,5 +17,9 @@ class VocabularyController {
             VocabularyWord(word: "Constant", definition: "Variables whose values can’t be changed."),
             VocabularyWord(word: "Function", definition: "Self-contained chunks of code that perform a specific task.")
         ]
+    }
+    
+    func addVocab(_ item: VocabularyWord) {
+        vocabWords.append(item)
     }
 }

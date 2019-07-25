@@ -45,7 +45,13 @@
                             <outlet property="delegate" destination="G2i-IZ-M8E" id="HEG-to-LfB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" largeTitleDisplayMode="always" id="Jd0-pX-8yt"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" largeTitleDisplayMode="always" id="Jd0-pX-8yt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YKg-tX-I2E">
+                            <connections>
+                                <action selector="addButton:" destination="G2i-IZ-M8E" id="Ixq-Hh-tDa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ase-QU-QAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vw-NK-qtE">
-                                <rect key="frame" x="20" y="128" width="374" height="21"/>
+                                <rect key="frame" x="20" y="180" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -96,8 +102,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G4E-wJ-Z1J" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SjN-Ky-Uf1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SjN-Ky-Uf1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
