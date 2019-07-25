@@ -65,6 +65,8 @@ class WordsTableViewController: UITableViewController {
             }
         }))
         
+        newWordAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in } ))
+        
         present(newWordAlert, animated: true)
         
     }
@@ -76,7 +78,6 @@ class WordsTableViewController: UITableViewController {
         
         self.tableView.reloadData()
     }
-    
     
     // MARK: - Table view data source
     
@@ -112,6 +113,13 @@ class WordsTableViewController: UITableViewController {
             
         }
     }
-
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            vocabWords.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+        }
+        
+    }
     
 }
