@@ -15,10 +15,8 @@ class DefinitionViewController: UIViewController {
     var vocabWord: VocabularyWord?
     
     func updateViews() {
-        guard let vocab = vocabWord else {
-            return
-        }
-        
+        guard let vocab = vocabWord else {return}
+
         definitionLabel.text = vocab.word
         definitionTextView.text = vocab.definition
         
