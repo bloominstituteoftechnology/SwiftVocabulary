@@ -66,25 +66,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Definition" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NPC-5N-xrt">
-                                <rect key="frame" x="20" y="215" width="374" height="128"/>
+                                <rect key="frame" x="20" y="267" width="374" height="76"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khg-zs-bRc">
-                                <rect key="frame" x="20" y="136" width="374" height="21"/>
+                                <rect key="frame" x="20" y="188" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9j-Ae-MeW">
-                                <rect key="frame" x="20" y="177" width="374" height="30"/>
+                                <rect key="frame" x="20" y="229" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNP-rV-OHQ">
-                                <rect key="frame" x="184" y="399" width="46" height="30"/>
+                                <rect key="frame" x="80" y="399" width="254" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="addWordButtonPressed:" destination="fkN-ij-XuL" eventType="touchUpInside" id="cTA-5P-N0O"/>
@@ -95,14 +95,14 @@
                         <constraints>
                             <constraint firstItem="L9j-Ae-MeW" firstAttribute="leading" secondItem="obY-Vo-BU7" secondAttribute="leading" constant="20" id="0xq-z9-xPT"/>
                             <constraint firstItem="L9j-Ae-MeW" firstAttribute="top" secondItem="khg-zs-bRc" secondAttribute="bottom" constant="20" id="1OD-Py-fP6"/>
-                            <constraint firstItem="NNP-rV-OHQ" firstAttribute="leading" secondItem="obY-Vo-BU7" secondAttribute="leading" constant="184" id="3T9-LZ-aG2"/>
+                            <constraint firstItem="NNP-rV-OHQ" firstAttribute="leading" secondItem="obY-Vo-BU7" secondAttribute="leading" constant="80" id="3T9-LZ-aG2"/>
                             <constraint firstItem="khg-zs-bRc" firstAttribute="top" secondItem="obY-Vo-BU7" secondAttribute="top" constant="48" id="8Za-eA-Qjc"/>
                             <constraint firstItem="obY-Vo-BU7" firstAttribute="trailing" secondItem="L9j-Ae-MeW" secondAttribute="trailing" constant="20" id="Fkw-Du-hfk"/>
                             <constraint firstItem="NPC-5N-xrt" firstAttribute="top" secondItem="L9j-Ae-MeW" secondAttribute="bottom" constant="8" id="O2V-tG-Z4U"/>
                             <constraint firstItem="obY-Vo-BU7" firstAttribute="bottom" secondItem="NNP-rV-OHQ" secondAttribute="bottom" constant="433" id="ZCP-HC-nzm"/>
                             <constraint firstItem="khg-zs-bRc" firstAttribute="centerX" secondItem="RH0-Tz-s7h" secondAttribute="centerX" id="ZUm-R6-ZJI"/>
                             <constraint firstItem="NPC-5N-xrt" firstAttribute="leading" secondItem="obY-Vo-BU7" secondAttribute="leading" constant="20" id="lgr-sE-U6i"/>
-                            <constraint firstItem="obY-Vo-BU7" firstAttribute="trailing" secondItem="NNP-rV-OHQ" secondAttribute="trailing" constant="184" id="oJN-ZY-Vgd"/>
+                            <constraint firstItem="obY-Vo-BU7" firstAttribute="trailing" secondItem="NNP-rV-OHQ" secondAttribute="trailing" constant="80" id="oJN-ZY-Vgd"/>
                             <constraint firstItem="NNP-rV-OHQ" firstAttribute="top" secondItem="NPC-5N-xrt" secondAttribute="bottom" constant="56" id="oYN-8y-O5L"/>
                             <constraint firstItem="obY-Vo-BU7" firstAttribute="trailing" secondItem="khg-zs-bRc" secondAttribute="trailing" constant="20" id="r1N-8y-iw9"/>
                             <constraint firstItem="obY-Vo-BU7" firstAttribute="trailing" secondItem="NPC-5N-xrt" secondAttribute="trailing" constant="20" id="tFv-79-OE0"/>
@@ -130,13 +130,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWG-2C-tMJ">
-                                <rect key="frame" x="30" y="118" width="354" height="21"/>
+                                <rect key="frame" x="30" y="170" width="354" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Definition" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zqa-80-JAv">
-                                <rect key="frame" x="30" y="147" width="354" height="128"/>
+                                <rect key="frame" x="30" y="199" width="354" height="76"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -168,8 +168,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MGS-Lj-y2M" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a78-cw-O4z">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="a78-cw-O4z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

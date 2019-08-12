@@ -26,6 +26,11 @@ class AddVocabWordViewController: UIViewController {
         titleLabel.textColor = .black
         titleLabel.font = UIFont(name: "System Bold", size: 30)
 
+        addWordButton.setTitle("ADD WORD", for: .normal)
+        addWordButton.setTitleColor(.white, for: .normal)
+        addWordButton.backgroundColor = .black
+        addWordButton.layer.cornerRadius = 10
+        addWordButton.heightAnchor.constraint(equalToConstant: 50)
         
     }
     

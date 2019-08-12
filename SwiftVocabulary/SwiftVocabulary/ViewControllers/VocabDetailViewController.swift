@@ -28,7 +28,7 @@ class VocabDetailViewController: UIViewController {
         wordLabel.text = vocabWordSelected.word
         definitonTextView.text = vocabWordSelected.definition
         
-        wordLabel.textColor = .blue
+        wordLabel.textColor = .black
         wordLabel.font = UIFont(name: "System Bold", size: 30)
         
         

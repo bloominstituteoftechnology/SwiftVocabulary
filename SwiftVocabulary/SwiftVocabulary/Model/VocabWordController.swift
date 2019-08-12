@@ -10,7 +10,8 @@ import Foundation
 
 class VocabController {
     
-    var vocabWords: [VocabWord] = [VocabWord(word: "Struct", definition: "")]
+    var vocabWords: [VocabWord] = [VocabWord(word: "Apple", definition: "A fruit consumed by humans"),
+                                   VocabWord(word: "Name", definition: "A word used to identify objects.")]
     
     var vocabWord: VocabWord?
     
