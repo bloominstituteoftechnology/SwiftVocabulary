@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD5E57852301FF6100347248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E57842301FF6100347248 /* AppDelegate.swift */; };
-		DD5E57872301FF6100347248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E57862301FF6100347248 /* ViewController.swift */; };
+		DD5E57872301FF6100347248 /* VocabularyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E57862301FF6100347248 /* VocabularyTableViewController.swift */; };
 		DD5E578A2301FF6100347248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5E57882301FF6100347248 /* Main.storyboard */; };
 		DD5E578C2301FF6200347248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5E578B2301FF6200347248 /* Assets.xcassets */; };
 		DD5E578F2301FF6200347248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5E578D2301FF6200347248 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		DD5E57812301FF6100347248 /* SwiftVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5E57842301FF6100347248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD5E57862301FF6100347248 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD5E57862301FF6100347248 /* VocabularyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyTableViewController.swift; sourceTree = "<group>"; };
 		DD5E57892301FF6100347248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD5E578B2301FF6200347248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD5E578E2301FF6200347248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,46 @@
 		DD5E57832301FF6100347248 /* SwiftVocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				DD5E57842301FF6100347248 /* AppDelegate.swift */,
-				DD5E57862301FF6100347248 /* ViewController.swift */,
-				DD5E57882301FF6100347248 /* Main.storyboard */,
+				DD5E57992302000F00347248 /* Models */,
+				DD5E57972301FFF100347248 /* ViewControllers */,
+				DD5E57982302000500347248 /* StoryBoards */,
 				DD5E578B2301FF6200347248 /* Assets.xcassets */,
-				DD5E578D2301FF6200347248 /* LaunchScreen.storyboard */,
-				DD5E57902301FF6200347248 /* Info.plist */,
+				DD5E57962301FFD000347248 /* Resource Files */,
 			);
 			path = SwiftVocabulary;
+			sourceTree = "<group>";
+		};
+		DD5E57962301FFD000347248 /* Resource Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD5E57902301FF6200347248 /* Info.plist */,
+				DD5E57842301FF6100347248 /* AppDelegate.swift */,
+			);
+			path = "Resource Files";
+			sourceTree = "<group>";
+		};
+		DD5E57972301FFF100347248 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD5E57862301FF6100347248 /* VocabularyTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DD5E57982302000500347248 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				DD5E578D2301FF6200347248 /* LaunchScreen.storyboard */,
+				DD5E57882301FF6100347248 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		DD5E57992302000F00347248 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5E57872301FF6100347248 /* ViewController.swift in Sources */,
+				DD5E57872301FF6100347248 /* VocabularyTableViewController.swift in Sources */,
 				DD5E57852301FF6100347248 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P7A77YCZV;
-				INFOPLIST_FILE = SwiftVocabulary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftVocabulary/Resource Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P7A77YCZV;
-				INFOPLIST_FILE = SwiftVocabulary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftVocabulary/Resource Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
