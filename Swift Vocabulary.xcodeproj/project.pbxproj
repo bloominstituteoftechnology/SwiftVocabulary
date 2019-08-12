@@ -13,6 +13,7 @@
 		777F09C72301E36C00E60D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777F09C52301E36C00E60D30 /* LaunchScreen.storyboard */; };
 		777F09D22301E3E700E60D30 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F09D12301E3E700E60D30 /* WordsTableViewController.swift */; };
 		777F09D42301E40800E60D30 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F09D32301E40800E60D30 /* DefinitionViewController.swift */; };
+		777F09D723020AC200E60D30 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F09D623020AC200E60D30 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		777F09C82301E36C00E60D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		777F09D12301E3E700E60D30 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		777F09D32301E40800E60D30 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		777F09D623020AC200E60D30 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		777F09BB2301E36C00E60D30 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				777F09D523020AA800E60D30 /* Models */,
 				777F09D02301E3A000E60D30 /* View Controllers */,
 				777F09CF2301E39000E60D30 /* Storyboards */,
 				777F09CE2301E38300E60D30 /* Resources */,
@@ -89,6 +92,14 @@
 				777F09D32301E40800E60D30 /* DefinitionViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		777F09D523020AA800E60D30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				777F09D623020AC200E60D30 /* VocabularyWord.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				777F09D42301E40800E60D30 /* DefinitionViewController.swift in Sources */,
 				777F09BD2301E36C00E60D30 /* AppDelegate.swift in Sources */,
 				777F09D22301E3E700E60D30 /* WordsTableViewController.swift in Sources */,
+				777F09D723020AC200E60D30 /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
