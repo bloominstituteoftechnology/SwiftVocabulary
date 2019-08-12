@@ -13,6 +13,7 @@
 		86ED14EE2301C7C80007368D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ED14EC2301C7C80007368D /* LaunchScreen.storyboard */; };
 		86ED14F62301C96B0007368D /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED14F52301C96B0007368D /* WordsTableViewController.swift */; };
 		86ED14F82301C9800007368D /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED14F72301C9800007368D /* DefinitionViewController.swift */; };
+		86ED14FA2301D43F0007368D /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED14F92301D43F0007368D /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		86ED14EF2301C7C80007368D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86ED14F52301C96B0007368D /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		86ED14F72301C9800007368D /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		86ED14F92301D43F0007368D /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				86ED14E32301C7C60007368D /* AppDelegate.swift */,
 				86ED14F52301C96B0007368D /* WordsTableViewController.swift */,
 				86ED14F72301C9800007368D /* DefinitionViewController.swift */,
+				86ED14F92301D43F0007368D /* VocabularyWord.swift */,
 				86ED14E72301C7C60007368D /* Main.storyboard */,
 				86ED14EA2301C7C80007368D /* Assets.xcassets */,
 				86ED14EC2301C7C80007368D /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				86ED14F82301C9800007368D /* DefinitionViewController.swift in Sources */,
 				86ED14E42301C7C60007368D /* AppDelegate.swift in Sources */,
 				86ED14F62301C96B0007368D /* WordsTableViewController.swift in Sources */,
+				86ED14FA2301D43F0007368D /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

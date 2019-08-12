@@ -13,21 +13,21 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var labelField: UILabel!
     @IBOutlet weak var textViewField: UITextView!
     
+    var vocabWord: VocabularyWord?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        print("Inside updateViews")
+        if let vocabWord = vocabWord {
+            print("Inside if let")
+            labelField.text = vocabWord.word
+            textViewField.text = vocabWord.definition
+        }
     }
-    */
-
 }
