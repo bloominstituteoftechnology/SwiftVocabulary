@@ -13,6 +13,7 @@
 		DD5E578C2301FF6200347248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5E578B2301FF6200347248 /* Assets.xcassets */; };
 		DD5E578F2301FF6200347248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5E578D2301FF6200347248 /* LaunchScreen.storyboard */; };
 		DD5E579D2302017B00347248 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E579C2302017B00347248 /* Word.swift */; };
+		DD5E579F23020A0E00347248 /* VocabularyDefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E579E23020A0E00347248 /* VocabularyDefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DD5E578E2301FF6200347248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD5E57902301FF6200347248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD5E579C2302017B00347248 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		DD5E579E23020A0E00347248 /* VocabularyDefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5E57862301FF6100347248 /* VocabularyTableViewController.swift */,
+				DD5E579E23020A0E00347248 /* VocabularyDefinitionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				DD5E57872301FF6100347248 /* VocabularyTableViewController.swift in Sources */,
 				DD5E57852301FF6100347248 /* AppDelegate.swift in Sources */,
 				DD5E579D2302017B00347248 /* Word.swift in Sources */,
+				DD5E579F23020A0E00347248 /* VocabularyDefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
