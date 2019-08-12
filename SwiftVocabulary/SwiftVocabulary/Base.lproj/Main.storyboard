@@ -36,7 +36,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="6bc-yB-oWH" kind="show" identifier="ShowDefinition" id="tnB-rF-WPh"/>
+                                    <segue destination="6bc-yB-oWH" kind="show" identifier="ShowDefinitionSegue" id="tnB-rF-WPh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
