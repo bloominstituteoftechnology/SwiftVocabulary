@@ -12,17 +12,14 @@ class VocabularyDefinitionViewController: UIViewController {
     
     //MARK: - properties
     @IBOutlet weak var definitionTextView: UITextView!
+    var word: Word?
     
-    var word: Word? {
-        didSet{
-            updateViews()
-        }
-    }
-
     //MARK - Helper Methods
-    func updateViews() {
-        guard let word = word else {return}
-        definitionTextView.text = word.definition
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        definitionTextView.text = word?.definition
+        
     }
 
 }

@@ -12,19 +12,25 @@ class VocabularyTableViewController: UIViewController {
 
     //MARK: - properties
     var wordController = WordController()
+    @IBOutlet weak var tableView: UITableView!
     
     //MARK: - Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-//       UITableViewDelegate = self
-//        UITableViewDataSource = self
-//     self.navigationItem.rightBarButtonItem = self.editButtonItem()
+      
+   //self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    @IBAction func addWord(_ sender: UIBarButtonItem) {
+        displayAlert()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowVocabularyDefinition" {
-          //  guard let definitionDetailVC = segue.destination as? VocabularyDefinitionViewController else {return}
-            
+        guard let definitionDetailVC = segue.destination as? VocabularyDefinitionViewController else {return}
+           guard let selectedWord = tableView.indexPathForSelectedRow else {return}
+            let word = wordController.words[selectedWord.row]
+            definitionDetailVC.word = word
         }
     }
     
@@ -51,4 +57,24 @@ extension VocabularyTableViewController: UITableViewDataSource {
         }
     }
     
+    func displayAlert()  {
+        let addWordPrompt = UIAlertController(title: "Add Word", message: nil, preferredStyle: .alert)
+        addWordPrompt.addTextField()
+        addWordPrompt.addTextField()
+        addWordPrompt.textFields![0].placeholder = "Enter word"
+        addWordPrompt.textFields![1].placeholder = "Enter definition"
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let saveWord = UIAlertAction(title: "Save", style: .default) { [unowned addWordPrompt] _ in
+            guard let word = addWordPrompt.textFields![0].text, let definition = addWordPrompt.textFields![1].text else {return}
+         self.wordController.createWord(word: word, definition: definition)
+         self.viewWillAppear(true)
+      }
+        addWordPrompt.addAction(saveWord)
+        addWordPrompt.addAction(cancel)
+        present(addWordPrompt,animated: true,completion: nil)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 }
