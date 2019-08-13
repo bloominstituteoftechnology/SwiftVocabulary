@@ -49,6 +49,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="eWR-TN-zSM">
                             <connections>
                                 <action selector="addNewWord:" destination="4Cf-ZQ-Nga" id="HKU-lO-IwR"/>
+                                <segue destination="4hx-Ik-85q" kind="presentation" id="3xv-WF-2HD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -56,6 +57,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XvA-bh-0TC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="371.01449275362324" y="138.61607142857142"/>
+        </scene>
+        <!--Add New Words-->
+        <scene sceneID="VgC-ZZ-iu8">
+            <objects>
+                <viewController title="Add New Words" id="4hx-Ik-85q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lf0-FE-RZO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type the new word here." textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="oGZ-JE-qYf">
+                                <rect key="frame" x="20" y="20" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9sH-lj-jsl">
+                                <rect key="frame" x="20" y="91" width="374" height="134"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type the Definition Below:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCb-c3-97m">
+                                <rect key="frame" x="20" y="65" width="374" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="0.0" green="0.40702488450000002" blue="0.84384914339999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-70" translatesAutoresizingMaskIntoConstraints="NO" id="EeY-Zg-4W7">
+                                <rect key="frame" x="20" y="255" width="374" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3L-YT-PCB">
+                                        <rect key="frame" x="0.0" y="0.0" width="222" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="hEy-Dg-47c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" cyan="0.0" magenta="1" yellow="1" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8h-T7-A1w">
+                                        <rect key="frame" x="152" y="0.0" width="222" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="wUN-Ap-qwE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <state key="normal" title="SAVE">
+                                            <color key="titleColor" red="0.21150052280000001" green="0.57678076010000001" blue="0.1205541482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="1" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d6F-ke-Asf" firstAttribute="trailing" secondItem="zCb-c3-97m" secondAttribute="trailing" constant="20" id="2N6-32-fr6"/>
+                            <constraint firstItem="d6F-ke-Asf" firstAttribute="trailing" secondItem="oGZ-JE-qYf" secondAttribute="trailing" constant="20" id="5pD-Cd-S5y"/>
+                            <constraint firstItem="EeY-Zg-4W7" firstAttribute="trailing" secondItem="9sH-lj-jsl" secondAttribute="trailing" id="720-rB-jeB"/>
+                            <constraint firstItem="oGZ-JE-qYf" firstAttribute="leading" secondItem="d6F-ke-Asf" secondAttribute="leading" constant="20" id="7ZA-K6-jeS"/>
+                            <constraint firstItem="9sH-lj-jsl" firstAttribute="leading" secondItem="zCb-c3-97m" secondAttribute="leading" id="FS7-E0-Ieb"/>
+                            <constraint firstItem="zCb-c3-97m" firstAttribute="leading" secondItem="d6F-ke-Asf" secondAttribute="leading" constant="20" id="KXx-xQ-h0q"/>
+                            <constraint firstItem="EeY-Zg-4W7" firstAttribute="top" secondItem="9sH-lj-jsl" secondAttribute="bottom" constant="30" id="Nke-vc-fzM"/>
+                            <constraint firstItem="9sH-lj-jsl" firstAttribute="top" secondItem="zCb-c3-97m" secondAttribute="bottom" constant="8" id="Owk-Le-sHt"/>
+                            <constraint firstItem="oGZ-JE-qYf" firstAttribute="top" secondItem="d6F-ke-Asf" secondAttribute="top" constant="20" id="YXL-m8-t9t"/>
+                            <constraint firstItem="9sH-lj-jsl" firstAttribute="trailing" secondItem="oGZ-JE-qYf" secondAttribute="trailing" id="aKP-4o-Kpp"/>
+                            <constraint firstItem="d6F-ke-Asf" firstAttribute="bottom" secondItem="9sH-lj-jsl" secondAttribute="bottom" constant="500" id="oMe-Cn-x7R"/>
+                            <constraint firstItem="zCb-c3-97m" firstAttribute="top" secondItem="oGZ-JE-qYf" secondAttribute="bottom" constant="15" id="pB9-oF-fEs"/>
+                            <constraint firstItem="EeY-Zg-4W7" firstAttribute="leading" secondItem="9sH-lj-jsl" secondAttribute="leading" id="wLq-9J-onv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d6F-ke-Asf"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ObL-XS-Ibe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248" y="-339"/>
         </scene>
         <!--Definition View Controller-->
         <scene sceneID="PUP-Gn-rTi">
@@ -97,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQr-iA-Rlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118.840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1249" y="326"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="efw-GO-u6M">

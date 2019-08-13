@@ -11,6 +11,9 @@ import UIKit
 class DefinitionViewController: UIViewController {
 
 	var vocabWord: VocabularyWord?
+
+	
+
 	
 	@IBOutlet weak var Label: UILabel!
 	@IBOutlet weak var TextField: UITextView!
