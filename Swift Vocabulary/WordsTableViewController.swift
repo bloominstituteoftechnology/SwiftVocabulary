@@ -58,7 +58,6 @@ class WordsTableViewController: UITableViewController {
             let selectedVocabWord = vocabWords[indexPath.row]
             
             vocabDetailVC.vocabWord = selectedVocabWord
-            
         }
     }
     

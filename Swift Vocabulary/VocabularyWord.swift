@@ -9,8 +9,8 @@
 import Foundation
 
 struct VocabularyWord {
-    var word: String = "Peace"
-    var definition: String = "To avoid war"
+    var word: String
+    var definition: String
     
 //    init(word: String, definition: String) {
 //        self.word = word

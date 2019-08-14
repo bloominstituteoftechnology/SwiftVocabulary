@@ -14,6 +14,11 @@
 		86ED14F62301C96B0007368D /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED14F52301C96B0007368D /* WordsTableViewController.swift */; };
 		86ED14F82301C9800007368D /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED14F72301C9800007368D /* DefinitionViewController.swift */; };
 		86ED14FA2301D43F0007368D /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED14F92301D43F0007368D /* VocabularyWord.swift */; };
+		86ED153E2304A6390007368D /* POIsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED153D2304A6390007368D /* POIsTableViewController.swift */; };
+		86ED15402304A6920007368D /* AddPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED153F2304A6920007368D /* AddPOIViewController.swift */; };
+		86ED15422304A6A60007368D /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED15412304A6A60007368D /* POIDetailViewController.swift */; };
+		86ED15442304A6BF0007368D /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED15432304A6BF0007368D /* POITableViewCell.swift */; };
+		86ED15462304A6CC0007368D /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED15452304A6CC0007368D /* POI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		86ED14F52301C96B0007368D /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		86ED14F72301C9800007368D /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		86ED14F92301D43F0007368D /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		86ED153D2304A6390007368D /* POIsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIsTableViewController.swift; sourceTree = "<group>"; };
+		86ED153F2304A6920007368D /* AddPOIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPOIViewController.swift; sourceTree = "<group>"; };
+		86ED15412304A6A60007368D /* POIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
+		86ED15432304A6BF0007368D /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
+		86ED15452304A6CC0007368D /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 			children = (
 				86ED14E32301C7C60007368D /* AppDelegate.swift */,
 				86ED14F52301C96B0007368D /* WordsTableViewController.swift */,
+				86ED153D2304A6390007368D /* POIsTableViewController.swift */,
+				86ED153F2304A6920007368D /* AddPOIViewController.swift */,
+				86ED15412304A6A60007368D /* POIDetailViewController.swift */,
+				86ED15432304A6BF0007368D /* POITableViewCell.swift */,
+				86ED15452304A6CC0007368D /* POI.swift */,
 				86ED14F72301C9800007368D /* DefinitionViewController.swift */,
 				86ED14F92301D43F0007368D /* VocabularyWord.swift */,
 				86ED14E72301C7C60007368D /* Main.storyboard */,
@@ -141,9 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86ED153E2304A6390007368D /* POIsTableViewController.swift in Sources */,
+				86ED15462304A6CC0007368D /* POI.swift in Sources */,
+				86ED15402304A6920007368D /* AddPOIViewController.swift in Sources */,
 				86ED14F82301C9800007368D /* DefinitionViewController.swift in Sources */,
 				86ED14E42301C7C60007368D /* AppDelegate.swift in Sources */,
+				86ED15442304A6BF0007368D /* POITableViewCell.swift in Sources */,
 				86ED14F62301C96B0007368D /* WordsTableViewController.swift in Sources */,
+				86ED15422304A6A60007368D /* POIDetailViewController.swift in Sources */,
 				86ED14FA2301D43F0007368D /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
