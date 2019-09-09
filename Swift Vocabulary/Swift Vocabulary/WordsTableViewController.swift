@@ -57,5 +57,41 @@ class WordsTableViewController: UITableViewController {
         
     }
     
+    @IBAction func addVocabularyButtonTapped(_ sender: UIButton) {
+        var wordTextField: UITextField?
+        var definitionTextField: UITextField?
+        
+        let alertController = UIAlertController(title: "Add New Vocabulary", message: "", preferredStyle: .alert)
+        
+        alertController.addTextField { (wordInput) -> Void in
+            wordTextField = wordInput
+            wordTextField!.placeholder = "Enter Word"
+        }
+        
+        alertController.addTextField { (definitionInput) -> Void in
+            definitionTextField = definitionInput
+            definitionTextField!.placeholder = "Enter Definition"
+        }
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default) { (action) -> Void in
+            if let word = wordTextField?.text, let definition = definitionTextField?.text {
+                if word != "" && definition != "" {
+                    self.vocabWords.append(VocabularyWord(word: word, definition: definition))
+                    DispatchQueue.main.async { self.tableView.reloadData() }
+                }
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (action : UIAlertAction!) -> Void in
+        }
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+        
+    }
+    
 
 }
