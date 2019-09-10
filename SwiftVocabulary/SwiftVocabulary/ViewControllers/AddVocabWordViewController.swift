@@ -2,8 +2,8 @@
 //  AddVocabWordViewController.swift
 //  SwiftVocabulary
 //
-//  Created by Alex Rhodes on 8/11/19.
-//  Copyright © 2019 Alex Rhodes. All rights reserved.
+//  Created by Davit Hovsepyan on 9/9/19.
+//  Copyright © 2019 Davit Hovsepyan. All rights reserved.
 //
 
 import UIKit
