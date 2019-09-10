@@ -14,7 +14,6 @@
 		4B6A86B52326DD1D00D7D2FC /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A86B42326DD1D00D7D2FC /* WordsTableViewController.swift */; };
 		4B6A86B72326DD4000D7D2FC /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A86B62326DD4000D7D2FC /* DefinitionViewController.swift */; };
 		4B6A86B92326F99200D7D2FC /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A86B82326F99200D7D2FC /* VocabularyWord.swift */; };
-		4B6A86BB232703BC00D7D2FC /* testTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A86BA232703BC00D7D2FC /* testTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		4B6A86B42326DD1D00D7D2FC /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		4B6A86B62326DD4000D7D2FC /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		4B6A86B82326F99200D7D2FC /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
-		4B6A86BA232703BC00D7D2FC /* testTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 				4B6A86A62326DA5400D7D2FC /* Main.storyboard */,
 				4B6A86A92326DA5500D7D2FC /* Assets.xcassets */,
 				4B6A86AB2326DA5500D7D2FC /* LaunchScreen.storyboard */,
-				4B6A86BA232703BC00D7D2FC /* testTableViewController.swift */,
 				4B6A86AE2326DA5500D7D2FC /* Info.plist */,
 			);
 			path = "Swift Vocabulary";
@@ -147,7 +144,6 @@
 				4B6A86B72326DD4000D7D2FC /* DefinitionViewController.swift in Sources */,
 				4B6A86A32326DA5400D7D2FC /* AppDelegate.swift in Sources */,
 				4B6A86B52326DD1D00D7D2FC /* WordsTableViewController.swift in Sources */,
-				4B6A86BB232703BC00D7D2FC /* testTableViewController.swift in Sources */,
 				4B6A86B92326F99200D7D2FC /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

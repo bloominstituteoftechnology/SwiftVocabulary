@@ -12,3 +12,4 @@ struct VocabularyWord {
     let word: String
     let definition: String
 }
+ // final

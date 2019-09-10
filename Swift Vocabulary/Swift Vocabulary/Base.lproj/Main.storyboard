@@ -36,7 +36,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="qO3-mU-Auc" kind="show" identifier="ShowDefinitionSegue" id="PZx-lo-dEv"/>
+                                    <segue destination="qO3-mU-Auc" kind="show" identifier="ShowDefinitionSegue" id="e0S-Kz-Fdj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -59,33 +59,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jiq-5i-Abh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jiq-5i-Abh" userLabel="Word">
                                 <rect key="frame" x="20" y="164" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6YJ-Ll-a04">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YJ-Ll-a04" userLabel="TextView">
                                 <rect key="frame" x="11" y="193" width="390" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="x6m-mg-Hl4"/>
+                                    <constraint firstAttribute="height" constant="128" id="D7y-l8-Lab"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6YJ-Ll-a04" firstAttribute="top" secondItem="Jiq-5i-Abh" secondAttribute="bottom" constant="8" symbolic="YES" id="EQW-B2-NeX"/>
+                            <constraint firstItem="6YJ-Ll-a04" firstAttribute="top" secondItem="Jiq-5i-Abh" secondAttribute="bottom" constant="8" symbolic="YES" id="36r-tK-fbB"/>
+                            <constraint firstItem="Jiq-5i-Abh" firstAttribute="leading" secondItem="IE5-9C-Gks" secondAttribute="leadingMargin" id="9OJ-3z-xyA"/>
                             <constraint firstItem="Yc2-Je-eZG" firstAttribute="trailing" secondItem="6YJ-Ll-a04" secondAttribute="trailing" constant="13" id="EnQ-av-kY8"/>
                             <constraint firstItem="Yc2-Je-eZG" firstAttribute="bottom" secondItem="6YJ-Ll-a04" secondAttribute="bottom" constant="541" id="hTM-wA-L5p"/>
-                            <constraint firstItem="Jiq-5i-Abh" firstAttribute="leading" secondItem="IE5-9C-Gks" secondAttribute="leadingMargin" id="mw8-8l-Ec0"/>
                             <constraint firstItem="6YJ-Ll-a04" firstAttribute="leading" secondItem="Yc2-Je-eZG" secondAttribute="leading" constant="11" id="rSd-a0-wOE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yc2-Je-eZG"/>
                     </view>
+                    <connections>
+                        <outlet property="TextView" destination="6YJ-Ll-a04" id="TzN-oj-Od6"/>
+                        <outlet property="Word" destination="Jiq-5i-Abh" id="kon-Sp-vPc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIw-Pc-RFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
