@@ -50,7 +50,23 @@ class WordsTableTableViewController: UITableViewController {
     @IBAction func addNewVocabWord(_ sender: Any) {
         let alert = UIAlertController(title: "Add New Word", message: "Enter a new vocabulary word", preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in }))
+        alert.addTextField { (textField) in
+            textField.placeholder = "New Word Entry"
+        }
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "New Word Definition"
+        }
+        
+        alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in
+            guard let word = alert.textFields?[0].text, !word.isEmpty else { return }
+            guard let definition = alert.textFields?[1].text, !definition.isEmpty else { return }
+            
+            let newEntry = VocabularyWord(word: word, definition: definition)
+            self.vocabWords.append(newEntry)
+            self.tableView.reloadData()
+        }))
+        
         present(alert, animated: true, completion: nil)
     }
     
