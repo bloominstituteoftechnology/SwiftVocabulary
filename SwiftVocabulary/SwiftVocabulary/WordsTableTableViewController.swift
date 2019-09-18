@@ -48,8 +48,10 @@ class WordsTableTableViewController: UITableViewController {
     
     
     @IBAction func addNewVocabWord(_ sender: Any) {
-        print("Awesome, add a word.")
+        let alert = UIAlertController(title: "Add New Word", message: "Enter a new vocabulary word", preferredStyle: .alert)
         
+        alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in }))
+        present(alert, animated: true, completion: nil)
     }
     
 
