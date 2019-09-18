@@ -65,8 +65,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Yw-PQ-Ew5">
-                                <rect key="frame" x="31" y="160" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Yw-PQ-Ew5">
+                                <rect key="frame" x="25" y="160" width="356" height="652"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -77,8 +77,10 @@
                         <constraints>
                             <constraint firstItem="Mcv-Kv-fdf" firstAttribute="leading" secondItem="PB1-i4-1ah" secondAttribute="leading" constant="25" id="1Aa-DK-3EB"/>
                             <constraint firstItem="Mcv-Kv-fdf" firstAttribute="top" secondItem="PB1-i4-1ah" secondAttribute="top" constant="25" id="38V-fr-vAX"/>
-                            <constraint firstItem="8Yw-PQ-Ew5" firstAttribute="top" secondItem="Mcv-Kv-fdf" secondAttribute="bottom" constant="35" id="M9E-PD-A6K"/>
-                            <constraint firstItem="8Yw-PQ-Ew5" firstAttribute="leading" secondItem="PB1-i4-1ah" secondAttribute="leading" constant="25" id="pRk-Ko-NNd"/>
+                            <constraint firstItem="PB1-i4-1ah" firstAttribute="bottom" secondItem="8Yw-PQ-Ew5" secondAttribute="bottom" constant="50" id="B8i-fD-oLp"/>
+                            <constraint firstItem="PB1-i4-1ah" firstAttribute="trailing" secondItem="8Yw-PQ-Ew5" secondAttribute="trailing" constant="33" id="Eew-2B-8nj"/>
+                            <constraint firstItem="8Yw-PQ-Ew5" firstAttribute="top" secondItem="Mcv-Kv-fdf" secondAttribute="bottom" constant="26" id="TR8-Pv-JhJ"/>
+                            <constraint firstItem="8Yw-PQ-Ew5" firstAttribute="leading" secondItem="PB1-i4-1ah" secondAttribute="leading" constant="25" id="zPr-2x-ebK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PB1-i4-1ah"/>
                     </view>
@@ -89,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEw-9m-FmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1843" y="-36"/>
+            <point key="canvasLocation" x="1842.0289855072465" y="-36.160714285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0b0-oG-9ta">
