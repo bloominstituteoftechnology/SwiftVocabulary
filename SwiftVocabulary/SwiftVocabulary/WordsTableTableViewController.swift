@@ -46,5 +46,11 @@ class WordsTableTableViewController: UITableViewController {
         }
     }
     
+    
+    @IBAction func addNewVocabWord(_ sender: Any) {
+        print("Awesome, add a word.")
+        
+    }
+    
 
 }
