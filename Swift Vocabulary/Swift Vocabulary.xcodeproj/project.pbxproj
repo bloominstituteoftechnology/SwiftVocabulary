@@ -56,15 +56,47 @@
 		120E853D2331EF76000E404E /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				120E853E2331EF76000E404E /* AppDelegate.swift */,
-				120E85422331EF76000E404E /* Main.storyboard */,
+				120E85582332C0EE000E404E /* Model */,
+				120E85562332C017000E404E /* View Controllers */,
+				120E85572332C0DB000E404E /* StoryBoards */,
+				120E85552332BFF3000E404E /* Resources */,
+			);
+			path = "Swift Vocabulary";
+			sourceTree = "<group>";
+		};
+		120E85552332BFF3000E404E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				120E85452331EF78000E404E /* Assets.xcassets */,
-				120E85472331EF78000E404E /* LaunchScreen.storyboard */,
+				120E853E2331EF76000E404E /* AppDelegate.swift */,
 				120E854A2331EF78000E404E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		120E85562332C017000E404E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				120E85502331F04A000E404E /* WordsTableTableViewController.swift */,
 				120E85522331F079000E404E /* DefinitionViewController.swift */,
 			);
-			path = "Swift Vocabulary";
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		120E85572332C0DB000E404E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				120E85422331EF76000E404E /* Main.storyboard */,
+				120E85472331EF78000E404E /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		120E85582332C0EE000E404E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
