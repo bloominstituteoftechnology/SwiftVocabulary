@@ -10,9 +10,13 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
 
+    let vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable (var)", definition: "It can be modified!"), VocabularyWord(word: "Constant (let)", definition: "It can not be modified!"), VocabularyWord(word: "Console", definition: "Can print something with your program.")]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Removes empty cells from table view
+        tableView.tableFooterView = UIView()
         
     }
 
@@ -20,15 +24,17 @@ class WordsTableViewController: UITableViewController {
 
    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return vocabWords.count
     }
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
-       
+        let word = vocabWords[indexPath.row]
+        
+        cell.textLabel?.text = word.word
 
         return cell
     }

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Words Table View Controller-->
+        <!--Swift Vocabulary-->
         <scene sceneID="9G8-GZ-rEo">
             <objects>
                 <tableViewController id="FvH-TA-1P7" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                             <outlet property="delegate" destination="FvH-TA-1P7" id="YvW-FX-GSh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Tr3-XG-9Ne"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="Tr3-XG-9Ne"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3G-IP-SOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +62,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5DR-FR-0oE">
                                 <rect key="frame" x="20" y="108" width="374" height="175"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWJ-fL-knC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWJ-fL-knC">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <color key="textColor" red="0.29011410469999999" green="0.400649488" blue="0.67846244570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
