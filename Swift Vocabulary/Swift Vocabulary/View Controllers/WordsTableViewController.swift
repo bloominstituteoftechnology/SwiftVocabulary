@@ -10,7 +10,7 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
 
-    let vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable (var)", definition: "It can be modified!"), VocabularyWord(word: "Constant (let)", definition: "It can not be modified!"), VocabularyWord(word: "Console", definition: "Can print something with your program.")]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable (var)", definition: "It can be modified!"), VocabularyWord(word: "Constant (let)", definition: "It can not be modified!"), VocabularyWord(word: "Console", definition: "Can print something with your program.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,35 @@ class WordsTableViewController: UITableViewController {
         //Removes empty cells from table view
         tableView.tableFooterView = UIView()
         
+    }
+    
+    private func addNewWord() {
+        let alert = UIAlertController(title: "Add new word", message: "Please enter a new word and definition to be added to the list.", preferredStyle: .alert)
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Word"
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Definition"
+        }
+        
+        let addWordAction = UIAlertAction(title: "Add", style: .default) { (_) in
+            
+            guard let word = alert.textFields?[0].text, !word.isEmpty, let definition = alert.textFields?[1].text, !definition.isEmpty else { return }
+            
+            let newWord = VocabularyWord(word: word, definition: definition)
+            
+            self.vocabWords.append(newWord)
+            
+            self.tableView.reloadData()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(addWordAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
     }
 
     // MARK: - Table view data source
@@ -51,5 +80,9 @@ class WordsTableViewController: UITableViewController {
         }
     }
    
-
+    @IBAction func addVocabularyBarButtonPressed(_ sender: UIBarButtonItem) {
+        
+        addNewWord()
+    }
+    
 }
