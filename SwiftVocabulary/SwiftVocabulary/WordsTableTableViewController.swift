@@ -27,7 +27,7 @@ class WordsTableTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
-        let currentWord = self.vocabWords[indexPath.row]
+        let currentWord = vocabWords[indexPath.row]
        cell.textLabel?.text = currentWord.word
 
         return cell
@@ -36,7 +36,7 @@ class WordsTableTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
+        // as? DefinitionViewController
         // Pass the selected object to the new view controller.
     }
     
