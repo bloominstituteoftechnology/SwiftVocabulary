@@ -61,14 +61,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cwz-OU-myM">
-                                <rect key="frame" x="20" y="145" width="240" height="128"/>
+                                <rect key="frame" x="20" y="145" width="318" height="252"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pK-dA-IFD">
-                                <rect key="frame" x="44" y="105" width="63" height="21"/>
+                                <rect key="frame" x="20" y="105" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -76,14 +77,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DfU-gh-KmG" firstAttribute="trailing" secondItem="cwz-OU-myM" secondAttribute="trailing" constant="154" id="3h8-Mc-y1R"/>
+                            <constraint firstItem="DfU-gh-KmG" firstAttribute="trailing" secondItem="cwz-OU-myM" secondAttribute="trailing" constant="76" id="3h8-Mc-y1R"/>
                             <constraint firstItem="cwz-OU-myM" firstAttribute="top" secondItem="6pK-dA-IFD" secondAttribute="bottom" constant="19" id="3wq-sP-A0v"/>
                             <constraint firstItem="cwz-OU-myM" firstAttribute="top" secondItem="6pK-dA-IFD" secondAttribute="bottom" constant="19" id="Aaf-g2-Y5K"/>
                             <constraint firstItem="cwz-OU-myM" firstAttribute="leading" secondItem="DfU-gh-KmG" secondAttribute="leading" constant="20" id="Ye6-rO-1Pu"/>
                             <constraint firstItem="6pK-dA-IFD" firstAttribute="top" secondItem="DfU-gh-KmG" secondAttribute="top" constant="17" id="ZLw-FG-Lxc"/>
-                            <constraint firstItem="DfU-gh-KmG" firstAttribute="trailing" secondItem="6pK-dA-IFD" secondAttribute="trailing" constant="307" id="b61-89-sUP"/>
-                            <constraint firstItem="6pK-dA-IFD" firstAttribute="leading" secondItem="DfU-gh-KmG" secondAttribute="leading" constant="44" id="bdN-1d-bPM"/>
-                            <constraint firstItem="DfU-gh-KmG" firstAttribute="bottom" secondItem="cwz-OU-myM" secondAttribute="bottom" constant="589" id="wbR-yC-zzr"/>
+                            <constraint firstItem="DfU-gh-KmG" firstAttribute="trailing" secondItem="6pK-dA-IFD" secondAttribute="trailing" constant="277" id="b61-89-sUP"/>
+                            <constraint firstItem="6pK-dA-IFD" firstAttribute="leading" secondItem="DfU-gh-KmG" secondAttribute="leading" constant="20" id="bdN-1d-bPM"/>
+                            <constraint firstItem="DfU-gh-KmG" firstAttribute="bottom" secondItem="cwz-OU-myM" secondAttribute="bottom" constant="465" id="wbR-yC-zzr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DfU-gh-KmG"/>
                     </view>
