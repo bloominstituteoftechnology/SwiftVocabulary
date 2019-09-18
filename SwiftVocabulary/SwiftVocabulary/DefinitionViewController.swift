@@ -13,8 +13,6 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var wordToDefine: UILabel!
     @IBOutlet weak var wordDefinition: UITextView!
     
-    // testing
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
