@@ -52,13 +52,45 @@
 		52AB008C23330F300052481B /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				52AB008D23330F300052481B /* AppDelegate.swift */,
-				52AB009123330F300052481B /* Main.storyboard */,
-				52AB009423330F310052481B /* Assets.xcassets */,
-				52AB009623330F310052481B /* LaunchScreen.storyboard */,
-				52AB009923330F310052481B /* Info.plist */,
+				52AB00A1233311FE0052481B /* Model */,
+				52AB00A0233311F20052481B /* View Controllers */,
+				52AB00A22333121D0052481B /* Storyboards */,
+				52AB009F233311980052481B /* Resources */,
 			);
 			path = "Swift Vocabulary";
+			sourceTree = "<group>";
+		};
+		52AB009F233311980052481B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52AB008D23330F300052481B /* AppDelegate.swift */,
+				52AB009423330F310052481B /* Assets.xcassets */,
+				52AB009923330F310052481B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52AB00A0233311F20052481B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		52AB00A1233311FE0052481B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52AB00A22333121D0052481B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				52AB009123330F300052481B /* Main.storyboard */,
+				52AB009623330F310052481B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
