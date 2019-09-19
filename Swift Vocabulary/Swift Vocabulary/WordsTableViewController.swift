@@ -101,9 +101,33 @@ class WordsTableViewController: UITableViewController {
         }
     }        // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-   
-    
-    
+  
+     @IBAction func addNewWord(_ sender: Any) {
+     let alert = UIAlertController(title: "Add Word", message: "Add a word and its definition to the dictionary", preferredStyle: .alert)
+     
+     alert.addTextField { (textField) in
+     textField.placeholder = "Word"
+     }
+     
+     alert.addTextField { (textField) in
+     textField.placeholder = "Definition"
+     }
+     
+     
+     alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in
+     guard let newWord = alert.textFields?[0].text, !newWord.isEmpty else { return }
+     
+     guard let newDefinition = alert.textFields?[1].text else { return }
+     let newWordAndDefinition = VocabularyWord(word: newWord, definition: newDefinition)
+        self.vocabWords.append(newWordAndDefinition)
+        self.tableView.reloadData()
+     
+     
+     }))
+     
+     present(alert, animated: true, completion: nil)
+     
+     }
 }
 
 

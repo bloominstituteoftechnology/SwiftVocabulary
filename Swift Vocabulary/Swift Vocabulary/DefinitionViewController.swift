@@ -9,9 +9,9 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
-    @IBOutlet var TermLabel: UILabel!
+    @IBOutlet var termLabel: UILabel!
     
-    @IBOutlet var DefinitionTextView: UITextView!
+    @IBOutlet var definitionTextView: UITextView!
     var word: VocabularyWord?
     
     override func viewDidLoad() {
@@ -23,8 +23,8 @@ class DefinitionViewController: UIViewController {
     }
     func setUpViews() {
         guard let word = word else { return }
-        TermLabel.text = word.word
-        DefinitionTextView.text = word.definition
+        termLabel.text = word.word
+        definitionTextView.text = word.definition
       
         
     }
