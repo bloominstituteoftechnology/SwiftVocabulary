@@ -96,7 +96,7 @@ class WordsTableViewController: UITableViewController {
             let indexPath = tableView.indexPathForSelectedRow else {return}
             let definition = vocabWords[indexPath.row]
             
-            definitionVC.vocabWord = definition
+            definitionVC.vocabWord = definition 
             
 //            In the prepare(for:sender:)(uncomment the method so it is live code):
 //            Check to make sure the segue's identifier is "ShowDefinitionSegue".
@@ -111,4 +111,24 @@ class WordsTableViewController: UITableViewController {
     }
     
 
+    @IBAction func addNewVocabWord(_ sender: Any) {
+        let alert = UIAlertController(title: "Add new Swift Vocabulary Word", message: "add new word and definition", preferredStyle: .alert)
+        
+        alert.addTextField { (textfield) in
+            textfield.placeholder = "Vocabulary Word"
+        }
+        alert.addTextField { (textfield) in
+            textfield.placeholder = "Word Definition"
+        }
+        
+        alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in
+            guard let word = alert.textFields?[0].text, !word.isEmpty else {return}
+            guard let definition = alert.textFields?[1].text, !definition.isEmpty else {return}
+            let newWord = VocabularyWord(word: word, definition: definition)
+            
+            self.vocabWords.append(newWord)
+            self.tableView.reloadData()
+        }))
+        present(alert, animated: true, completion: nil)
+    }
 }
