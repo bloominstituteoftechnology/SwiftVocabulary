@@ -59,15 +59,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf6-8j-YLm">
-                                <rect key="frame" x="167" y="129" width="81" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf6-8j-YLm">
+                                <rect key="frame" x="8" y="96" width="398" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tmI-9D-Bn1">
-                                <rect key="frame" x="29" y="178" width="365" height="239"/>
+                                <rect key="frame" x="8" y="145" width="398" height="272"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tmI-9D-Bn1" secondAttribute="height" multiplier="199:136" id="kvA-ut-hc7"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -75,13 +78,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tmI-9D-Bn1" firstAttribute="trailing" secondItem="r6x-sC-jhv" secondAttribute="trailingMargin" id="4Ro-RK-KOS"/>
-                            <constraint firstItem="pf6-8j-YLm" firstAttribute="centerX" secondItem="r6x-sC-jhv" secondAttribute="centerX" id="IC2-4R-0XS"/>
-                            <constraint firstItem="tmI-9D-Bn1" firstAttribute="leading" secondItem="emG-et-tEF" secondAttribute="leading" constant="29" id="MA7-O1-CyL"/>
-                            <constraint firstItem="emG-et-tEF" firstAttribute="bottom" secondItem="tmI-9D-Bn1" secondAttribute="bottom" constant="445" id="QhJ-gq-tkL"/>
-                            <constraint firstItem="tmI-9D-Bn1" firstAttribute="top" secondItem="pf6-8j-YLm" secondAttribute="bottom" constant="8" symbolic="YES" id="aIk-AL-uSJ"/>
-                            <constraint firstItem="pf6-8j-YLm" firstAttribute="top" secondItem="emG-et-tEF" secondAttribute="top" constant="41" id="mzT-E3-azq"/>
-                            <constraint firstItem="pf6-8j-YLm" firstAttribute="leading" secondItem="emG-et-tEF" secondAttribute="leading" constant="167" id="wco-uQ-IJH"/>
+                            <constraint firstItem="pf6-8j-YLm" firstAttribute="top" secondItem="emG-et-tEF" secondAttribute="top" constant="8" id="6ID-GK-nXD"/>
+                            <constraint firstItem="tmI-9D-Bn1" firstAttribute="leading" secondItem="emG-et-tEF" secondAttribute="leading" constant="8" id="RD5-yj-Q6K"/>
+                            <constraint firstItem="tmI-9D-Bn1" firstAttribute="centerX" secondItem="r6x-sC-jhv" secondAttribute="centerX" id="RgI-y0-JOF"/>
+                            <constraint firstItem="pf6-8j-YLm" firstAttribute="leading" secondItem="emG-et-tEF" secondAttribute="leading" constant="8" id="Tru-0o-o1t"/>
+                            <constraint firstItem="emG-et-tEF" firstAttribute="trailing" secondItem="pf6-8j-YLm" secondAttribute="trailing" constant="8" id="Ysv-Cw-6kh"/>
+                            <constraint firstItem="tmI-9D-Bn1" firstAttribute="top" secondItem="pf6-8j-YLm" secondAttribute="bottom" constant="8" id="haW-Su-Wfj"/>
+                            <constraint firstItem="emG-et-tEF" firstAttribute="trailing" secondItem="tmI-9D-Bn1" secondAttribute="trailing" constant="8" id="uVd-WU-3lb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="emG-et-tEF"/>
                     </view>

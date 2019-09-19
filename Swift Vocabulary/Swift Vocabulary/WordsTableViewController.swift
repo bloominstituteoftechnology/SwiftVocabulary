@@ -9,10 +9,24 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
+    
+    // Variables
+    var vocabWords: [VocabularyWord] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let word1 = VocabularyWord(word: "Variable", definition: "A named value used to store information.  Variables can be changed after being created.")
+        
+        let word2 = VocabularyWord(word: "Constant", definition: "A named value used to store information. Constants cannot be changed after being created.")
+        
+        let word3 = VocabularyWord(word: "Kids", definition: "Small humanoid creatures with nearly unlimited energy sources that like to be super active and loud during class.")
+        
+        let word4 = VocabularyWord(word: "Team Lead", definition: "The amazing person at Lambda who helps clarify concepts and ensures you understand the lesson.")
+        
+        vocabWords.append(word1)
+        vocabWords.append(word2)
+        vocabWords.append(word3)
+        vocabWords.append(word4)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,9 +36,7 @@ class WordsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
-    }
+   
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vocabWords.count
@@ -34,7 +46,7 @@ class WordsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
         let word = vocabWords[indexPath.row]
-        cell.textLabel?.text = word?.word
+        cell.textLabel?.text = word.word
         // Configure the cell...
 
         return cell
@@ -84,7 +96,7 @@ class WordsTableViewController: UITableViewController {
         if segue.identifier == "ShowDefinitionSegue" {
             guard let detailVC = segue.destination as? DefinitionViewController, let indexPath = tableView.indexPathForSelectedRow else { return }
             let word = vocabWords[indexPath.row]
-            detailVC.title = word?.word
+            detailVC.word = word
             
         }
     }        // Get the new view controller using segue.destination.
@@ -92,8 +104,7 @@ class WordsTableViewController: UITableViewController {
    
     
     
-    
 }
 
-// Variables
-var vocabWords: [VocabularyWord?] = [nil]
+
+

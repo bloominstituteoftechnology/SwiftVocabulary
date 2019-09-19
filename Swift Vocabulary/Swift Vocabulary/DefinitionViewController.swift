@@ -12,13 +12,22 @@ class DefinitionViewController: UIViewController {
     @IBOutlet var TermLabel: UILabel!
     
     @IBOutlet var DefinitionTextView: UITextView!
+    var word: VocabularyWord?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpViews()
+        
 
         // Do any additional setup after loading the view.
     }
-    
+    func setUpViews() {
+        guard let word = word else { return }
+        TermLabel.text = word.word
+        DefinitionTextView.text = word.definition
+      
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -29,5 +38,10 @@ class DefinitionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+   
+   
+    
 }
+
+
