@@ -28,25 +28,27 @@ class WordsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return vocabWords.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
-        // Configure the cell...
+        let vocab = self.vocabWords[indexPath.row]
+        
+        cell.textLabel?.text = vocab.self.word
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -83,14 +85,30 @@ class WordsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "ShowDefinitionSegue" {
+            guard let definitionVC = segue.destination as? DefinitionViewController,
+            let indexPath = tableView.indexPathForSelectedRow else {return}
+            let definition = vocabWords[indexPath.row]
+            
+            definitionVC.vocabWord = definition
+            
+//            In the prepare(for:sender:)(uncomment the method so it is live code):
+//            Check to make sure the segue's identifier is "ShowDefinitionSegue".
+//            Get the destination DefinitionViewController by conditionally casting segue.destination to DefinitionViewController.
+//            Get the index path for the selected row using tableView.indexPathForSelectedRow.
+//            Use that index path to get the appropriate VocabularyWord instance from vocabController's vocabWords array.
+//            Assign the vocabulary word to the DefinitionViewController's vocabWord property.
+            
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

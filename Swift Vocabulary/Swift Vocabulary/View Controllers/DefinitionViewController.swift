@@ -9,12 +9,21 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
+    var vocabWord: VocabularyWord?
+    
     @IBOutlet weak var definitionViewTextLabel: UILabel!
     @IBOutlet weak var definitionViewTextView: UITextView!
     
+    func updateViews(){
+        if let vocabWords = vocabWord{
+            self.definitionViewTextLabel.text = vocabWords.word
+            self.definitionViewTextView.text = vocabWords.definition
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateViews()
         // Do any additional setup after loading the view.
     }
     
