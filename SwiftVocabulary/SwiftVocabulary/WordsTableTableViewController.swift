@@ -46,7 +46,7 @@ class WordsTableTableViewController: UITableViewController {
         }
     }
     
-    
+    // Function allows user to add a new word to the vocabulary dictionary
     @IBAction func addNewVocabWord(_ sender: Any) {
         let alert = UIAlertController(title: "Add New Word", message: "Enter a new vocabulary word", preferredStyle: .alert)
         
