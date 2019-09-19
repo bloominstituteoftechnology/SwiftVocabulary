@@ -10,7 +10,8 @@ import UIKit
 
 class WordsTableTableViewController: UITableViewController {
 
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "FirstWord", definition: "Definition of the first word"), VocabularyWord(word: "SecondWord", definition: "This right here is the definition of the second word listed.")]
+    // Initialize array with three "starter" words
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "String", definition: "A string is a series of characters, such as \"hello, world\" or \"albatross\". Swift strings are represented by the String type. The contents of a String can be accessed in various ways, including as a collection of Character values."), VocabularyWord(word: "Variable", definition: "A named value used to store information. Variable can be changed after being created."), VocabularyWord(word: "Constant", definition: "A named value used to store information. Constant cannot be changed after being created.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,6 @@ class WordsTableTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return vocabWords.count
     }
 
@@ -58,13 +58,15 @@ class WordsTableTableViewController: UITableViewController {
             textField.placeholder = "New Word Definition"
         }
         
+        // This captures the user entry and assigns it to constants
         alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in
             guard let word = alert.textFields?[0].text, !word.isEmpty else { return }
             guard let definition = alert.textFields?[1].text, !definition.isEmpty else { return }
-            
             let newEntry = VocabularyWord(word: word, definition: definition)
+            
+           // This takes the user entry and appends it to the existing array
             self.vocabWords.append(newEntry)
-            self.tableView.reloadData()
+            self.tableView.reloadData()  // reloads the data to show onscreen
         }))
         
         present(alert, animated: true, completion: nil)

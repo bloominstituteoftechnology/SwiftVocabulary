@@ -13,6 +13,7 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var wordToDefine: UILabel!
     @IBOutlet weak var wordDefinition: UITextView!
     
+    // The vocabWord variable is the reciever for data passed from tableview
     var vocabWord: VocabularyWord?
     
     override func viewDidLoad() {
@@ -21,6 +22,8 @@ class DefinitionViewController: UIViewController {
         updateViews()
     }
     
+    // Takes the vocab word passed from the table view and sets the word and
+    // definition components to the Label and TextView, respectively.
     func updateViews() {
         guard let vocabWord = vocabWord else {
             return
@@ -28,15 +31,5 @@ class DefinitionViewController: UIViewController {
         wordToDefine.text = vocabWord.word
         wordDefinition.text = vocabWord.definition
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
