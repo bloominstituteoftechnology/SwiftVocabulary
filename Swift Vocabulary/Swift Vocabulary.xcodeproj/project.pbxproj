@@ -13,6 +13,7 @@
 		52AB009823330F310052481B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AB009623330F310052481B /* LaunchScreen.storyboard */; };
 		52AB00A4233312B80052481B /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB00A3233312B80052481B /* WordsTableViewController.swift */; };
 		52AB00A6233312F80052481B /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB00A5233312F80052481B /* DefinitionViewController.swift */; };
+		52AB00A82333215D0052481B /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB00A72333215D0052481B /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		52AB009923330F310052481B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52AB00A3233312B80052481B /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		52AB00A5233312F80052481B /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		52AB00A72333215D0052481B /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				52AB009123330F300052481B /* Main.storyboard */,
+				52AB00A72333215D0052481B /* VocabularyWord.swift */,
 				52AB009623330F310052481B /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -173,6 +176,7 @@
 				52AB008E23330F300052481B /* AppDelegate.swift in Sources */,
 				52AB00A6233312F80052481B /* DefinitionViewController.swift in Sources */,
 				52AB00A4233312B80052481B /* WordsTableViewController.swift in Sources */,
+				52AB00A82333215D0052481B /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
