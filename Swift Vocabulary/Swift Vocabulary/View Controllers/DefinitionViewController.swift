@@ -18,6 +18,13 @@ class DefinitionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func updateViews() {
+        guard let vocabWord = vocabWord else { return }
+        
+        if vocabWord != nil {  // stuck here, Implement DefinitionViewController, step 3 to unwrap
+            vocabWord.definition = ""
+        }
+    }
 
     /*
     // MARK: - Navigation
