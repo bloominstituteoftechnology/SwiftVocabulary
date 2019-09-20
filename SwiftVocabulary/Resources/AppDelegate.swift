@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  SwiftVocabulary-CP-iOS6
+//  SwiftVocabulary
 //
-//  Created by Chris Price on 4/29/19.
-//  Copyright © 2019 Chris Price. All rights reserved.
+//  Created by Karim Boudlal and Chris Price on 9/18/19.
+//  Copyright © 2019 Lambda School. All rights reserved.
 //
 
 import UIKit
