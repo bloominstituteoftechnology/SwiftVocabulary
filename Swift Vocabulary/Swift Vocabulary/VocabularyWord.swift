@@ -40,9 +40,9 @@ struct VocabularyWord: Codable {
         }
     }
     
-//    static func loadSampleVocabularyWords () -> [VocabularyWord] {
-//        let vocabWords: [VocabularyWord] = [VocabularyWord(word: "Abstraction", definition: "An abstraction groups things together, so you can think of the group as a single, easier-to-remember thing instead of trying to reason about each of the elements separately. Abstraction allows programmers to make decisions and think through code logic without getting overwhelmed by details and complexity."), VocabularyWord(word: "Accessibility", definition: "Accessibility features on iOS include VoiceOver, Zoom, Invert Colors, and more. These features improve the experience for users with particular preferences or needs, possibly stemming from visual, audible, or motor impairments."), VocabularyWord(word: "Accessory View", definition: "Table view cells have an accessory view that can be used to display additional information.")]
-//
-//        return vocabWords
-//    }
+    static func loadSampleVocabularyWords () -> [VocabularyWord] {
+        let vocabWords: [VocabularyWord] = [VocabularyWord(word: "Abstraction", definition: "An abstraction groups things together, so you can think of the group as a single, easier-to-remember thing instead of trying to reason about each of the elements separately. Abstraction allows programmers to make decisions and think through code logic without getting overwhelmed by details and complexity."), VocabularyWord(word: "Accessibility", definition: "Accessibility features on iOS include VoiceOver, Zoom, Invert Colors, and more. These features improve the experience for users with particular preferences or needs, possibly stemming from visual, audible, or motor impairments."), VocabularyWord(word: "Accessory View", definition: "Table view cells have an accessory view that can be used to display additional information.")]
+
+        return vocabWords
+    }
 }
