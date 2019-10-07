@@ -42,7 +42,18 @@
                             <outlet property="delegate" destination="ne9-Ia-3FM" id="7iW-af-CAq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="u1P-di-5He"/>
+                    <navigationItem key="navigationItem" id="u1P-di-5He">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="CDc-T9-eQV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mQC-Rp-x5V">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addVocabButton:" destination="ne9-Ia-3FM" eventType="touchUpInside" id="VaF-8b-pln"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uF-GA-Hk0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
