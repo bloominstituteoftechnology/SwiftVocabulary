@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Words Table View Controller-->
+        <!--Swift Vocabulary-->
         <scene sceneID="DoR-vf-lyr">
             <objects>
-                <tableViewController id="5lW-bB-fBY" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Swift Vocabulary" id="5lW-bB-fBY" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1WR-Ep-ytq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,23 @@
                             <outlet property="delegate" destination="5lW-bB-fBY" id="RYW-uA-mGV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Eah-4U-8sj"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="Eah-4U-8sj">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" style="plain" id="hF8-Ku-HMf" userLabel="Add Word Bar Button Item">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="tailTruncation" id="qOg-tC-ADU" userLabel="Add Word Button">
+                                <rect key="frame" x="281" y="6" width="113" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Add Word">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <state key="normal" title="Add Word" image="plus" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="medium"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <segue destination="GqT-zd-95C" kind="showDetail" identifier="AddWordSegue" id="7RD-dG-MZh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4s-m5-Cle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,22 +82,22 @@
             </objects>
             <point key="canvasLocation" x="144.92753623188406" y="128.57142857142856"/>
         </scene>
-        <!--Definition View Controller-->
+        <!--Definition-->
         <scene sceneID="Dvy-g1-xEW">
             <objects>
-                <viewController id="kQS-qY-Wig" customClass="DefinitionViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Definition" id="kQS-qY-Wig" customClass="DefinitionViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OsF-Hy-JfO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsb-Tq-9RO">
-                                <rect key="frame" x="49" y="130" width="57" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="49" y="130" width="89.5" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-KD-Xop">
-                                <rect key="frame" x="20" y="182" width="374" height="661"/>
+                                <rect key="frame" x="20" y="198.5" width="374" height="644.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -100,7 +116,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rnc-GN-5SP"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XW8-LM-RV0"/>
+                    <navigationItem key="navigationItem" title="Definition" id="XW8-LM-RV0"/>
                     <connections>
                         <outlet property="definitionText" destination="hiF-KD-Xop" id="d3v-0q-TCk"/>
                         <outlet property="wordLabel" destination="xsb-Tq-9RO" id="WSa-z8-U3m"/>
@@ -110,5 +126,23 @@
             </objects>
             <point key="canvasLocation" x="1660.8695652173915" y="128.57142857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ONg-Kc-GMa">
+            <objects>
+                <viewController id="GqT-zd-95C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UXW-CE-pOb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7uu-1U-4dw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1Q-PB-ZGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661" y="-519"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="58"/>
+    </resources>
 </document>
