@@ -12,6 +12,7 @@ struct VocabularyWord: Codable {
     let word: String
     let definition: String
     
+    
     static var ArchiveURL: URL {
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let archiveURL = documentsDirectory.appendingPathComponent("vocabulary_words").appendingPathExtension("plist")
