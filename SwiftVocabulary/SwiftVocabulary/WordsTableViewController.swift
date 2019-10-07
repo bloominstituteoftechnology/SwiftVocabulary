@@ -8,23 +8,32 @@
 
 import UIKit
 
-var vocabWords: [VocabularyWord] = [VocabularyWord(word: "bear", definition: "bjørn"),
-                                    VocabularyWord(word: "bird", definition: "fugl"),
-                                    VocabularyWord(word: "dog", definition: "hund"),
-                                    VocabularyWord(word: "donkey", definition: "esel"),
-                                    VocabularyWord(word: "eagle", definition: "ørn"),
-                                    VocabularyWord(word: "goat", definition: "geit"),
-                                    VocabularyWord(word: "horse", definition: "hest"),
-                                    VocabularyWord(word: "lion", definition: "løve"),
-                                    VocabularyWord(word: "rabbit", definition: "kanin"),
-                                    VocabularyWord(word: "snake", definition: "slange")]
+extension UIColor {
+    static var random: UIColor {
+        return UIColor(red: .random(in: 0...1),
+                       green: .random(in: 0...1),
+                       blue: .random(in: 0...1),
+                       alpha: 1.0)
+    }
+}
+
+var vocabWords: [VocabularyWord] = [VocabularyWord(word: "🐻 bear 🐻", definition: "bjørn"),
+                                    VocabularyWord(word: "🐦 bird 🐦", definition: "fugl"),
+                                    VocabularyWord(word: "🐶 dog 🐶", definition: "hund"),
+                                    VocabularyWord(word: "🐴 donkey 🐴", definition: "esel"),
+                                    VocabularyWord(word: "🦅 eagle 🦅", definition: "ørn"),
+                                    VocabularyWord(word: "🐐 goat 🐐", definition: "geit"),
+                                    VocabularyWord(word: "🐎 horse 🐎", definition: "hest"),
+                                    VocabularyWord(word: "🦁 lion 🦁", definition: "løve"),
+                                    VocabularyWord(word: "🐰 rabbit 🐰", definition: "kanin"),
+                                    VocabularyWord(word: "🐍 snake 🐍", definition: "slange")]
 
 class WordsTableViewController: UITableViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
 
@@ -42,6 +51,8 @@ class WordsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
         let aWord = vocabWords[indexPath.row].word
         cell.textLabel?.text = aWord
+        
+        cell.backgroundColor = UIColor.random
         return cell
     }
     

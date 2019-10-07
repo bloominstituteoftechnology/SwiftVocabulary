@@ -16,13 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" id="JpG-jM-CJi">
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" id="JpG-jM-CJi">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JpG-jM-CJi" id="UTa-Yd-WPm">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.68715354719999999" green="0.85098039219999999" blue="0.89815337090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="oDk-x1-aFA" kind="show" identifier="ShowDefinitionSegue" id="jTf-ob-Dm0"/>
                                 </connections>
@@ -47,49 +48,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70B-Hl-fgN">
+                                <rect key="frame" x="171" y="220" width="98" height="42"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇺🇸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoY-J0-3Tr">
+                                <rect key="frame" x="245" y="140" width="65" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="dyr" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8En-5s-XeX">
-                                <rect key="frame" x="110" y="532" width="214" height="59"/>
+                                <rect key="frame" x="118" y="547" width="214" height="59"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES"/>
                                 </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="FJT-iH-MCa"/>
-                                </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇺🇸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoY-J0-3Tr">
-                                <rect key="frame" x="92" y="176" width="65" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇳🇴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKq-Va-TvK">
-                                <rect key="frame" x="74" y="452" width="65" height="72"/>
+                                <rect key="frame" x="82" y="467" width="65" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70B-Hl-fgN">
-                                <rect key="frame" x="117" y="256" width="59.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="x33-ua-cSQ" firstAttribute="bottom" secondItem="8En-5s-XeX" secondAttribute="bottom" constant="271" id="36b-vJ-Qi5"/>
-                            <constraint firstItem="TKq-Va-TvK" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="74" id="520-nB-poK"/>
-                            <constraint firstItem="8En-5s-XeX" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="110" id="O8g-1O-3to"/>
-                            <constraint firstItem="IoY-J0-3Tr" firstAttribute="top" secondItem="x33-ua-cSQ" secondAttribute="top" constant="88" id="VY7-OD-Kcw"/>
-                            <constraint firstItem="8En-5s-XeX" firstAttribute="top" secondItem="TKq-Va-TvK" secondAttribute="bottom" constant="8" id="XJB-3I-47E"/>
-                            <constraint firstItem="70B-Hl-fgN" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="117" id="XUU-FO-rSy"/>
-                            <constraint firstItem="IoY-J0-3Tr" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="92" id="m64-7f-JCP"/>
-                            <constraint firstItem="x33-ua-cSQ" firstAttribute="trailing" secondItem="8En-5s-XeX" secondAttribute="trailing" constant="90" id="rEi-OS-G9N"/>
-                            <constraint firstItem="70B-Hl-fgN" firstAttribute="top" secondItem="IoY-J0-3Tr" secondAttribute="bottom" constant="8" id="sJZ-dN-PGx"/>
+                            <constraint firstItem="8En-5s-XeX" firstAttribute="top" secondItem="TKq-Va-TvK" secondAttribute="bottom" constant="8" id="4OE-rW-G4l"/>
+                            <constraint firstItem="70B-Hl-fgN" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="171" id="8TN-ct-lHE"/>
+                            <constraint firstItem="70B-Hl-fgN" firstAttribute="top" secondItem="IoY-J0-3Tr" secondAttribute="bottom" constant="8" id="Nah-WW-yeZ"/>
+                            <constraint firstItem="IoY-J0-3Tr" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="245" id="QC9-nd-J3O"/>
+                            <constraint firstItem="x33-ua-cSQ" firstAttribute="trailing" secondItem="8En-5s-XeX" secondAttribute="trailing" constant="82" id="RTY-9X-e8h"/>
+                            <constraint firstItem="TKq-Va-TvK" firstAttribute="top" secondItem="x33-ua-cSQ" secondAttribute="top" constant="379" id="TvB-gZ-xkj"/>
+                            <constraint firstItem="8En-5s-XeX" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="118" id="aeT-vo-w5V"/>
+                            <constraint firstItem="x33-ua-cSQ" firstAttribute="bottom" secondItem="8En-5s-XeX" secondAttribute="bottom" constant="256" id="nJF-gb-cdo"/>
+                            <constraint firstItem="TKq-Va-TvK" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="82" id="pzF-fy-Z1L"/>
+                            <constraint firstItem="IoY-J0-3Tr" firstAttribute="top" secondItem="x33-ua-cSQ" secondAttribute="top" constant="52" id="xh6-SP-gQO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x33-ua-cSQ"/>
                     </view>
