@@ -15,7 +15,13 @@ class WordsTableViewController: UITableViewController {
         static let showDefinitionSegue = "ShowDefinitionSegue"
     }
     
-    var vocabWords: [VocabularyWord] = [] 
+    var vocabWords: [VocabularyWord] = [] {
+        didSet {
+            vocabWords = vocabWords.sorted(by: { ($0.word < $1.word)
+            })
+            VocabularyWord.saveToFile(vocabularyWords: vocabWords)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
