@@ -15,11 +15,7 @@ class WordsTableViewController: UITableViewController {
         static let showDefinitionSegue = "ShowDefinitionSegue"
     }
     
-    var vocabWords: [VocabularyWord] = [] {
-        didSet {
-            
-        }
-    }
+    var vocabWords: [VocabularyWord] = [] 
 
     override func viewDidLoad() {
         super.viewDidLoad()
