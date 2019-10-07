@@ -8,18 +8,25 @@
 
 import UIKit
 
-var vocabWords: [VocabularyWord] = [VocabularyWord(word: "barnemat", definition: "baby food"),
-                                    VocabularyWord(word: "nedtrykthet", definition: "depression")]
+var vocabWords: [VocabularyWord] = [VocabularyWord(word: "bear", definition: "bjørn"),
+                                    VocabularyWord(word: "bird", definition: "fugl"),
+                                    VocabularyWord(word: "dog", definition: "hund"),
+                                    VocabularyWord(word: "donkey", definition: "esel"),
+                                    VocabularyWord(word: "eagle", definition: "ørn"),
+                                    VocabularyWord(word: "goat", definition: "geit"),
+                                    VocabularyWord(word: "horse", definition: "hest"),
+                                    VocabularyWord(word: "lion", definition: "løve"),
+                                    VocabularyWord(word: "rabbit", definition: "kanin"),
+                                    VocabularyWord(word: "snake", definition: "slange")]
 
 class WordsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        
     }
 
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

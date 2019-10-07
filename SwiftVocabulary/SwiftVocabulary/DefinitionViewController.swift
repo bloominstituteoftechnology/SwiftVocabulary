@@ -18,6 +18,11 @@ class DefinitionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
+        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "BG.jpeg")
+        backgroundImage.contentMode = UIView.ContentMode.center
+        self.view.insertSubview(backgroundImage, at: 0)
     }
     
     func updateViews() {

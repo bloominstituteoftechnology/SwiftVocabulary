@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Words Table View Controller-->
+        <!--Animals in Norwegian-->
         <scene sceneID="35X-Sc-1al">
             <objects>
                 <tableViewController id="OQl-3r-lPI" customClass="WordsTableViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <outlet property="delegate" destination="OQl-3r-lPI" id="uB5-rb-hxf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="osv-yd-17v"/>
+                    <navigationItem key="navigationItem" title="Animals in Norwegian" id="osv-yd-17v"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7c-i4-ik9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,34 +47,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8En-5s-XeX">
-                                <rect key="frame" x="79" y="240" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="dyr" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8En-5s-XeX">
+                                <rect key="frame" x="110" y="532" width="214" height="59"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="UxN-Zk-PuW"/>
+                                    <constraint firstAttribute="height" constant="59" id="FJT-iH-MCa"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇺🇸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoY-J0-3Tr">
+                                <rect key="frame" x="92" y="176" width="65" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇳🇴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKq-Va-TvK">
+                                <rect key="frame" x="74" y="452" width="65" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70B-Hl-fgN">
-                                <rect key="frame" x="79" y="171" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="117" y="256" width="59.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="70B-Hl-fgN" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="79" id="4yR-8I-tsQ"/>
-                            <constraint firstItem="8En-5s-XeX" firstAttribute="top" secondItem="70B-Hl-fgN" secondAttribute="bottom" constant="48" id="8UK-p2-z4H"/>
-                            <constraint firstItem="70B-Hl-fgN" firstAttribute="leading" secondItem="8En-5s-XeX" secondAttribute="leading" id="BLg-fS-mYv"/>
-                            <constraint firstItem="x33-ua-cSQ" firstAttribute="trailing" secondItem="8En-5s-XeX" secondAttribute="trailing" constant="95" id="QOe-a8-DY2"/>
-                            <constraint firstItem="x33-ua-cSQ" firstAttribute="bottom" secondItem="8En-5s-XeX" secondAttribute="bottom" constant="494" id="u4i-dF-rR2"/>
+                            <constraint firstItem="x33-ua-cSQ" firstAttribute="bottom" secondItem="8En-5s-XeX" secondAttribute="bottom" constant="271" id="36b-vJ-Qi5"/>
+                            <constraint firstItem="TKq-Va-TvK" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="74" id="520-nB-poK"/>
+                            <constraint firstItem="8En-5s-XeX" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="110" id="O8g-1O-3to"/>
+                            <constraint firstItem="IoY-J0-3Tr" firstAttribute="top" secondItem="x33-ua-cSQ" secondAttribute="top" constant="88" id="VY7-OD-Kcw"/>
+                            <constraint firstItem="8En-5s-XeX" firstAttribute="top" secondItem="TKq-Va-TvK" secondAttribute="bottom" constant="8" id="XJB-3I-47E"/>
+                            <constraint firstItem="70B-Hl-fgN" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="117" id="XUU-FO-rSy"/>
+                            <constraint firstItem="IoY-J0-3Tr" firstAttribute="leading" secondItem="x33-ua-cSQ" secondAttribute="leading" constant="92" id="m64-7f-JCP"/>
+                            <constraint firstItem="x33-ua-cSQ" firstAttribute="trailing" secondItem="8En-5s-XeX" secondAttribute="trailing" constant="90" id="rEi-OS-G9N"/>
+                            <constraint firstItem="70B-Hl-fgN" firstAttribute="top" secondItem="IoY-J0-3Tr" secondAttribute="bottom" constant="8" id="sJZ-dN-PGx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x33-ua-cSQ"/>
                     </view>
@@ -86,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUt-HF-3A7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1636" y="59"/>
+            <point key="canvasLocation" x="1634.7826086956522" y="58.928571428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VQn-QH-leL">
