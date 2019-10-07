@@ -14,9 +14,11 @@ class AddWordViewController: UIViewController {
     var definition: String = ""
     
     var wordsTableVC: WordsTableViewController?
+    let emptyVocabAlert = UIAlertController(title: "Empty fields!", message: "Either or both of \"Word\" and/or \"Definition\" are empty. Both fields must contain some text!", preferredStyle: .alert)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        emptyVocabAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
     }
     
     @IBAction func wordTextChanged(_ sender: UITextField) {
@@ -29,7 +31,7 @@ class AddWordViewController: UIViewController {
     
     @IBAction func addButtonPressed(_ sender: UIButton) {
         if word.isEmpty || definition.isEmpty {
-            
+            self.present(emptyVocabAlert, animated: true, completion: nil)
         } else {
             guard let wordsTableVC = wordsTableVC else { return }
             wordsTableVC.addWord(VocabularyWord(word: word, definition: definition))
@@ -40,4 +42,5 @@ class AddWordViewController: UIViewController {
     @IBAction func cancelButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+
 }
