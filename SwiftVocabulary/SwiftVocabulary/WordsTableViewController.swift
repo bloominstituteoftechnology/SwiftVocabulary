@@ -8,6 +8,9 @@
 
 import UIKit
 
+var vocabWords: [VocabularyWord] = [VocabularyWord(word: "barnemat", definition: "baby food"),
+                                    VocabularyWord(word: "nedtrykthet", definition: "depression")]
+
 class WordsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
@@ -29,7 +32,7 @@ class WordsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return vocabWords.count
     }
 
     /*
