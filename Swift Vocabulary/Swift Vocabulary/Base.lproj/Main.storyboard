@@ -43,19 +43,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Swift Vocabulary" id="Eah-4U-8sj">
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" style="plain" id="hF8-Ku-HMf" userLabel="Add Word Bar Button Item">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="tailTruncation" id="qOg-tC-ADU" userLabel="Add Word Button">
-                                <rect key="frame" x="281" y="6" width="113" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Add Word">
-                                    <accessibilityTraits key="traits" button="YES"/>
-                                </accessibility>
-                                <state key="normal" title="Add Word" image="plus" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="medium"/>
-                                </state>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hF8-Ku-HMf" userLabel="Add Word Bar Button Item">
                             <connections>
-                                <segue destination="GqT-zd-95C" kind="showDetail" identifier="AddWordSegue" id="7RD-dG-MZh"/>
+                                <action selector="addWordPressed:" destination="5lW-bB-fBY" id="b5l-oi-9X0"/>
+                                <segue destination="GqT-zd-95C" kind="showDetail" identifier="AddWordSegue" id="6So-eB-uCe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -107,12 +98,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="rnc-GN-5SP" firstAttribute="bottom" secondItem="hiF-KD-Xop" secondAttribute="bottom" constant="19" id="5J0-Oo-mS9"/>
-                            <constraint firstItem="xsb-Tq-9RO" firstAttribute="leading" secondItem="rnc-GN-5SP" secondAttribute="leading" constant="49" id="7m4-Ei-e9v"/>
-                            <constraint firstItem="hiF-KD-Xop" firstAttribute="leading" secondItem="OsF-Hy-JfO" secondAttribute="leadingMargin" id="Lvj-O4-uhZ"/>
-                            <constraint firstItem="xsb-Tq-9RO" firstAttribute="top" secondItem="rnc-GN-5SP" secondAttribute="top" constant="42" id="VG6-0m-EMd"/>
-                            <constraint firstItem="hiF-KD-Xop" firstAttribute="top" secondItem="xsb-Tq-9RO" secondAttribute="bottom" constant="23" id="bDX-uJ-6fr"/>
-                            <constraint firstItem="hiF-KD-Xop" firstAttribute="trailing" secondItem="OsF-Hy-JfO" secondAttribute="trailingMargin" id="iAt-Cf-c0U"/>
+                            <constraint firstItem="xsb-Tq-9RO" firstAttribute="top" secondItem="rnc-GN-5SP" secondAttribute="top" constant="42" id="Bmp-j4-cyg"/>
+                            <constraint firstItem="hiF-KD-Xop" firstAttribute="top" secondItem="xsb-Tq-9RO" secondAttribute="bottom" constant="23" id="JHm-Oc-ea1"/>
+                            <constraint firstItem="hiF-KD-Xop" firstAttribute="leading" secondItem="OsF-Hy-JfO" secondAttribute="leadingMargin" id="L8H-TW-y0u"/>
+                            <constraint firstItem="xsb-Tq-9RO" firstAttribute="leading" secondItem="rnc-GN-5SP" secondAttribute="leading" constant="49" id="MkG-zs-ErY"/>
+                            <constraint firstItem="rnc-GN-5SP" firstAttribute="bottom" secondItem="hiF-KD-Xop" secondAttribute="bottom" constant="19" id="ggG-tg-GBv"/>
+                            <constraint firstItem="hiF-KD-Xop" firstAttribute="trailing" secondItem="OsF-Hy-JfO" secondAttribute="trailingMargin" id="kbY-ip-ayI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rnc-GN-5SP"/>
                     </view>
@@ -126,23 +117,91 @@
             </objects>
             <point key="canvasLocation" x="1660.8695652173915" y="128.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Word-->
         <scene sceneID="ONg-Kc-GMa">
             <objects>
-                <viewController id="GqT-zd-95C" sceneMemberID="viewController">
+                <viewController title="Add Word" id="GqT-zd-95C" customClass="DefinitionViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UXW-CE-pOb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. Variable" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="puu-84-8F3" userLabel="Word Field">
+                                <rect key="frame" x="107" y="125" width="259" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="wordTextChanged:" destination="dSb-uE-HFu" eventType="editingDidEnd" id="SPG-Jh-Jhk"/>
+                                    <action selector="wordTextChanged:" destination="dSb-uE-HFu" eventType="editingChanged" id="cNY-TW-shT"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-tz-hPo">
+                                <rect key="frame" x="48" y="132" width="41" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a word..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDy-bf-veh">
+                                <rect key="frame" x="48" y="53" width="214" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goj-GF-RGg">
+                                <rect key="frame" x="48" y="193" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="e.g. A chunk of data with a specific type..." textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dwq-Ws-lZ4">
+                                <rect key="frame" x="48" y="222" width="318" height="356"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" returnKeyType="go"/>
+                                <connections>
+                                    <action selector="definitionTextChanged:" destination="dSb-uE-HFu" eventType="editingDidEnd" id="wck-Le-Nld"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDd-Le-xUb">
+                                <rect key="frame" x="48" y="597" width="88" height="20"/>
+                                <state key="normal" title="Add word" image="pencil" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz2-0R-hXd">
+                                <rect key="frame" x="318" y="592" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="dSb-uE-HFu" eventType="touchUpInside" id="f8m-BI-8PB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="goj-GF-RGg" firstAttribute="top" secondItem="puu-84-8F3" secondAttribute="bottom" constant="34" id="FsG-Vb-TBh"/>
+                            <constraint firstItem="4Pp-tz-hPo" firstAttribute="top" secondItem="CDy-bf-veh" secondAttribute="bottom" constant="33" id="Hzd-yF-OGk"/>
+                            <constraint firstItem="7uu-1U-4dw" firstAttribute="bottom" secondItem="sz2-0R-hXd" secondAttribute="bottom" constant="186" id="JqI-4B-H4d"/>
+                            <constraint firstItem="Dwq-Ws-lZ4" firstAttribute="leading" secondItem="vDd-Le-xUb" secondAttribute="leading" id="SFr-PB-fcv"/>
+                            <constraint firstItem="4Pp-tz-hPo" firstAttribute="centerY" secondItem="puu-84-8F3" secondAttribute="centerY" id="SkH-rU-3LC"/>
+                            <constraint firstItem="Dwq-Ws-lZ4" firstAttribute="centerX" secondItem="UXW-CE-pOb" secondAttribute="centerX" id="WcL-Ka-VuN"/>
+                            <constraint firstItem="puu-84-8F3" firstAttribute="leading" secondItem="4Pp-tz-hPo" secondAttribute="trailing" constant="18" id="WmX-ar-OK6"/>
+                            <constraint firstItem="Dwq-Ws-lZ4" firstAttribute="trailing" secondItem="sz2-0R-hXd" secondAttribute="trailing" id="YDi-I9-ekZ"/>
+                            <constraint firstItem="vDd-Le-xUb" firstAttribute="top" secondItem="Dwq-Ws-lZ4" secondAttribute="bottom" constant="19" id="c01-oD-3uy"/>
+                            <constraint firstItem="puu-84-8F3" firstAttribute="trailing" secondItem="Dwq-Ws-lZ4" secondAttribute="trailing" id="ckr-nz-1Fw"/>
+                            <constraint firstItem="CDy-bf-veh" firstAttribute="leading" secondItem="4Pp-tz-hPo" secondAttribute="leading" id="dMO-3J-eQP"/>
+                            <constraint firstItem="CDy-bf-veh" firstAttribute="leading" secondItem="7uu-1U-4dw" secondAttribute="leading" constant="48" id="fXO-Ev-Aqw"/>
+                            <constraint firstItem="vDd-Le-xUb" firstAttribute="baseline" secondItem="sz2-0R-hXd" secondAttribute="baseline" id="fhx-y5-tLS"/>
+                            <constraint firstItem="CDy-bf-veh" firstAttribute="top" secondItem="7uu-1U-4dw" secondAttribute="top" constant="53" id="sdk-0S-sEM"/>
+                            <constraint firstItem="goj-GF-RGg" firstAttribute="leading" secondItem="Dwq-Ws-lZ4" secondAttribute="leading" id="wR9-iX-BXO"/>
+                            <constraint firstItem="Dwq-Ws-lZ4" firstAttribute="top" secondItem="goj-GF-RGg" secondAttribute="bottom" constant="8" id="xB8-He-5aE"/>
+                            <constraint firstItem="4Pp-tz-hPo" firstAttribute="leading" secondItem="goj-GF-RGg" secondAttribute="leading" id="xbv-1e-lcX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7uu-1U-4dw"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1Q-PB-ZGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="dSb-uE-HFu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1661" y="-519"/>
+            <point key="canvasLocation" x="1660.8695652173915" y="-519.64285714285711"/>
         </scene>
     </scenes>
     <resources>
-        <image name="plus" catalog="system" width="64" height="58"/>
+        <image name="pencil" catalog="system" width="64" height="58"/>
     </resources>
 </document>
