@@ -11,7 +11,7 @@ import UIKit
 class AddWordViewController: UIViewController {
     
     var word: String = ""
-    var definition: String = ""
+    @IBOutlet var definitionTextView: UITextView!
     
     var wordsTableVC: WordsTableViewController?
 
@@ -23,12 +23,8 @@ class AddWordViewController: UIViewController {
         word = sender.text ?? ""
     }
     
-    @IBAction func definitionTextChanged(_ sender: UITextField) {
-        definition = sender.text ?? ""
-    }
-    
     @IBAction func addButtonPressed(_ sender: UIButton) {
-        if word.isEmpty || definition.isEmpty {
+        if word.isEmpty || definitionTextView.text.isEmpty {
             displayEmptyVocabAlert()
         } else {
             addWordToTable()
@@ -49,7 +45,7 @@ class AddWordViewController: UIViewController {
     
     fileprivate func addWordToTable() {
         guard let wordsTableVC = wordsTableVC else { return }
-        wordsTableVC.addWord(VocabularyWord(word: word, definition: definition))
+        wordsTableVC.addWord(VocabularyWord(word: word, definition: definitionTextView.text))
     }
     
     fileprivate func closeView() {
