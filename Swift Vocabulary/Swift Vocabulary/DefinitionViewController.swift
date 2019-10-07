@@ -9,14 +9,18 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var wordDefinition: UITextView!
+    
     /*
     // MARK: - Navigation
 
@@ -26,5 +30,7 @@ class DefinitionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+   
 
 }
