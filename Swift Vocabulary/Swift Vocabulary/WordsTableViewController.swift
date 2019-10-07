@@ -53,7 +53,16 @@ class WordsTableViewController: UITableViewController {
                 else { return }
             
             definitionVC.vocabWord = vocabWords[indexPath.row]
+        } else if segue.identifier == "AddWordSegue" {
+            guard let addWordVC = segue.destination as? AddWordViewController else { return }
+            
+            addWordVC.wordsTableVC = self
         }
+    }
+    
+    public func addWord(_ word: VocabularyWord) {
+        vocabWords.append(word)
+        tableView.reloadData()
     }
 
 }

@@ -120,7 +120,7 @@
         <!--Add Word-->
         <scene sceneID="ONg-Kc-GMa">
             <objects>
-                <viewController title="Add Word" id="GqT-zd-95C" customClass="DefinitionViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Add Word" id="GqT-zd-95C" customClass="AddWordViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UXW-CE-pOb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,8 +130,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                 <connections>
-                                    <action selector="wordTextChanged:" destination="dSb-uE-HFu" eventType="editingDidEnd" id="SPG-Jh-Jhk"/>
-                                    <action selector="wordTextChanged:" destination="dSb-uE-HFu" eventType="editingChanged" id="cNY-TW-shT"/>
+                                    <action selector="wordTextChanged:" destination="GqT-zd-95C" eventType="editingChanged" id="1VL-jP-mnt"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-tz-hPo">
@@ -157,18 +156,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" returnKeyType="go"/>
                                 <connections>
-                                    <action selector="definitionTextChanged:" destination="dSb-uE-HFu" eventType="editingDidEnd" id="wck-Le-Nld"/>
+                                    <action selector="definitionTextChanged:" destination="GqT-zd-95C" eventType="editingChanged" id="eOs-fO-wLa"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDd-Le-xUb">
                                 <rect key="frame" x="48" y="597" width="88" height="20"/>
                                 <state key="normal" title="Add word" image="pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="GqT-zd-95C" eventType="touchUpInside" id="PtH-Uo-qFh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz2-0R-hXd">
                                 <rect key="frame" x="318" y="592" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="cancelButtonPressed:" destination="dSb-uE-HFu" eventType="touchUpInside" id="f8m-BI-8PB"/>
+                                    <action selector="cancelButtonPressed:" destination="GqT-zd-95C" eventType="touchUpInside" id="ZmO-85-qem"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -196,7 +198,6 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1Q-PB-ZGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="dSb-uE-HFu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1660.8695652173915" y="-519.64285714285711"/>
         </scene>

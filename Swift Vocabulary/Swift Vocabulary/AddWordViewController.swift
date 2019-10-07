@@ -12,6 +12,8 @@ class AddWordViewController: UIViewController {
     
     var word: String = ""
     var definition: String = ""
+    
+    var wordsTableVC: WordsTableViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,18 @@ class AddWordViewController: UIViewController {
     @IBAction func definitionTextChanged(_ sender: UITextField) {
         definition = sender.text ?? ""
     }
+    
+    @IBAction func addButtonPressed(_ sender: UIButton) {
+        if word.isEmpty || definition.isEmpty {
+            
+        } else {
+            guard let wordsTableVC = wordsTableVC else { return }
+            wordsTableVC.addWord(VocabularyWord(word: word, definition: definition))
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func cancelButtonPressed(_ sender: Any) {
-        dismiss(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
 }
