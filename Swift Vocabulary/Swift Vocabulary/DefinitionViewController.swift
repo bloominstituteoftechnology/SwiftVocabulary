@@ -25,9 +25,11 @@ class DefinitionViewController: UIViewController {
     }
     
     func updateViews() {
-  
-        guard let vocabWord = vocabWord else { return }
         
+        guard let totalWord = vocabWord else { return }
+    
+        word.text = totalWord.word
+        definition.text = totalWord.definition
         
         
     }

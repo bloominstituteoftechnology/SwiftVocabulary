@@ -50,11 +50,3 @@ class WordsTableViewController: UITableViewController {
         }
 
 }
-//
-//// In the prepare(for:sender:)(uncomment the method so it is live code):
-//Check to make sure the segue's identifier is "ShowDefinitionSegue".
-//Get the destination DefinitionViewController by conditionally casting segue.destination to DefinitionViewController.
-//Get the index path for the selected row using tableView.indexPathForSelectedRow.
-//Use that index path to get the appropriate VocabularyWord instance from vocabController's vocabWords array.
-//Assign the vocabulary word to the DefinitionViewController's vocabWord property.
-//Implement DefinitionViewController

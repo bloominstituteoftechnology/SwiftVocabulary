@@ -36,7 +36,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="c5V-7f-Bcs" kind="show" identifier="DefinitionViewController" id="ani-d3-vLg"/>
+                                    <segue destination="c5V-7f-Bcs" kind="show" identifier="ShowDefinitionSegue" id="ani-d3-vLg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
