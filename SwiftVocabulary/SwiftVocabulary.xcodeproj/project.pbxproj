@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F5AC243234BE842001D52BF /* BG.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1F5AC242234BE842001D52BF /* BG.jpeg */; };
+		1F5AC245234BF457001D52BF /* BEAR.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F5AC244234BF457001D52BF /* BEAR.wav */; };
 		1FEE74E0234BC7BE002A56B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE74DF234BC7BE002A56B3 /* AppDelegate.swift */; };
 		1FEE74E2234BC7BE002A56B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE74E1234BC7BE002A56B3 /* SceneDelegate.swift */; };
 		1FEE74E7234BC7BE002A56B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE74E5234BC7BE002A56B3 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		1F5AC242234BE842001D52BF /* BG.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG.jpeg; sourceTree = "<group>"; };
+		1F5AC244234BF457001D52BF /* BEAR.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BEAR.wav; sourceTree = "<group>"; };
 		1FEE74DC234BC7BE002A56B3 /* SwiftVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FEE74DF234BC7BE002A56B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FEE74E1234BC7BE002A56B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				1FEE74F3234BC862002A56B3 /* WordsTableViewController.swift */,
 				1FEE74E5234BC7BE002A56B3 /* Main.storyboard */,
 				1FEE74F7234BCCD8002A56B3 /* VocabularyWord.swift */,
+				1F5AC244234BF457001D52BF /* BEAR.wav */,
 				1F5AC242234BE842001D52BF /* BG.jpeg */,
 				1FEE74E8234BC7BF002A56B3 /* Assets.xcassets */,
 				1FEE74EA234BC7BF002A56B3 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5AC243234BE842001D52BF /* BG.jpeg in Resources */,
+				1F5AC245234BF457001D52BF /* BEAR.wav in Resources */,
 				1FEE74EC234BC7BF002A56B3 /* LaunchScreen.storyboard in Resources */,
 				1FEE74E9234BC7BF002A56B3 /* Assets.xcassets in Resources */,
 				1FEE74E7234BC7BE002A56B3 /* Main.storyboard in Resources */,

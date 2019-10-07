@@ -7,12 +7,32 @@
 //
 
 import UIKit
+import AVFoundation
 
 class DefinitionViewController: UIViewController {
     
     var vocabWord: VocabularyWord?
     
     @IBOutlet weak var definitionTextField: UITextView!
+    
+    @IBAction func soundy(_ sender: UIButton) {
+        var YSBW: AVAudioPlayer?
+        
+        if let vocabWordChoose = vocabWord {
+            if vocabWordChoose.word == "🐻 bear 🐻" {
+                
+                let path = Bundle.main.path(forResource: "BEAR.wav", ofType:nil)!
+                let url = URL(fileURLWithPath: path)
+                
+                do {
+                    YSBW = try AVAudioPlayer(contentsOf: url)
+                    YSBW?.play()
+                } catch {
+                    // couldn't load file :(
+                }
+            }
+        }
+    }
     @IBOutlet weak var wordLabel: UILabel!
     
     override func viewDidLoad() {
