@@ -10,16 +10,19 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
-    var vocabWords: [VocabularyWord] = []
+    var vocabWords: [VocabularyWord] = [
+        VocabularyWord(word: "Variable", definition: "A chunk of data with a specific type that can be changed within the program."),
+        VocabularyWord(word: "Constant", definition: "A chunk of data with a specific type that cannot be changed once it is initialized."),
+        VocabularyWord(word: "Property", definition: "A variable or constant that is part of a struct or class."),
+        VocabularyWord(word: "Function", definition: "A set of instructions that are run together. It includes a name, input parameters (0 or more), and a return type (optional)."),
+        VocabularyWord(word: "Method", definition: "A function that is part of a struct or class and has direct access to the properties and other methods of that struct/class."),
+        VocabularyWord(word: "Array", definition: "An ordered list of items of a specific type."),
+        VocabularyWord(word: "Dictionary", definition: "An unordered list of items with a key (of any type) and a value (of any type). Any key may only have one value, but many keys may point to identical values.")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
