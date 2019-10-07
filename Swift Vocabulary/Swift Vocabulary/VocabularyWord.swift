@@ -18,13 +18,13 @@ struct VocabularyWord: Codable {
         return archiveURL
     }
     
-//    static func saveToFile(vocabularyWords: [VocabularyWord]) {
-//        
-//        let propertyListEncoder = PropertyListEncoder()
-//        let encodedVocabularyWords = try? propertyListEncoder.encode(vocabularyWords)
-//        
-//        try? encodedVocabularyWords?.write(to: VocabularyWord.ArchiveURL, options: .noFileProtection)
-//    }
+    static func saveToFile(vocabularyWords: [VocabularyWord]) {
+
+        let propertyListEncoder = PropertyListEncoder()
+        let encodedVocabularyWords = try? propertyListEncoder.encode(vocabularyWords)
+
+        try? encodedVocabularyWords?.write(to: VocabularyWord.ArchiveURL, options: .noFileProtection)
+    }
     
 //    static func loadFromFile() -> [VocabularyWord] {
 //
