@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DefinitionViewController.swift
 //  Swift Vocabulary
 //
 //  Created by Jon Bash on 2019-10-07.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DefinitionViewController: UIViewController {
 
+    @IBOutlet var wordLabel: UILabel!
+    @IBOutlet var definitionText: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-
