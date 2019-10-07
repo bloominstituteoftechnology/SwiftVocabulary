@@ -15,10 +15,22 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var definition: UITextView!
     
     
+    var vocabWord: VocabularyWord?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateViews()
 
     }
     
-
+    func updateViews() {
+  
+        guard let vocabWord = vocabWord else { return }
+        
+        
+        
+    }
+    
+    
 }
