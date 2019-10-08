@@ -16,11 +16,7 @@ class WordsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -42,43 +38,9 @@ class WordsTableViewController: UITableViewController {
         
         cell.textLabel?.text = vocabWords[indexPath.row].word
 
+
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
  
     // MARK: - Navigation
@@ -86,27 +48,22 @@ class WordsTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
         
-
-
-
-        
-        // Check to make sure the segue's identifier is "ShowDefinitionSegue".
-        if segue.identifier == "ShowDefinitionSegue" {
+           if segue.identifier == "ShowDefinitionSegue" {
             
-        // Get the index path for the selected row using tableView.indexPathForSelectedRow.
-       // Get the destination DefinitionViewController by conditionally casting segue.destination to             DefinitionViewController.
-            
-            guard let indexPath = tableView.indexPathForSelectedRow,
-            let wordDefinitionVC = segue.destination as? DefinitionViewController else { return }
-           
-        // Use that index path to get the appropriate VocabularyWord instance from vocabController's vocabWords array.
-        // Assign the vocabulary word to the DefinitionViewController's vocabWord property. (defined in DefinitionViewController.swift)
-            let wordItem = vocabWords[indexPath.row]
-            wordDefinitionVC.vocabWord = wordItem
+           guard let indexPath = tableView.indexPathForSelectedRow,
+           let wordDefinitionVC = segue.destination as? DefinitionViewController else { return }
+
+            wordDefinitionVC.vocabWord = vocabWords[indexPath.row]
         }
     }
 
 }
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        // Check to make sure the segue's identifier is "ShowDefinitionSegue".
+        // Get the index path for the selected row using tableView.indexPathForSelectedRow.
+        // Get the destination DefinitionViewController by conditionally casting segue.destination to DefinitionViewController.
+        // Use that index path to get the appropriate VocabularyWord instance from vocabController's vocabWords array.
+        // Assign the vocabulary word to the DefinitionViewController's vocabWord property. (defined in DefinitionViewController.swift)
+

@@ -10,7 +10,6 @@
         <!--Words Table View Controller-->
         <scene sceneID="KjC-uO-I8G">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qEJ-Ig-1ro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="xW5-bf-jbh" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SWx-LK-r1c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -45,14 +44,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="p7f-BP-ibJ"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qEJ-Ig-1ro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="53"/>
+            <point key="canvasLocation" x="-171" y="48"/>
         </scene>
         <!--Definition View Controller-->
         <scene sceneID="GXc-Mp-7cL">
             <objects>
-                <viewController id="K9b-3e-guN" customClass="DefinitionViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xZl-jH-Z4o" customClass="ShowDefinitionViewController">
+                <viewController id="K9b-3e-guN" customClass="DefinitionViewController" customModule="Swift_Vocabulary" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xZl-jH-Z4o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -95,8 +95,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="qg4-zd-fh8"/>
                     <connections>
-                        <outlet property="wordDefinition" destination="Axk-0C-UEp" id="KoM-Xo-em7"/>
-                        <outlet property="wordLabel" destination="PjW-LE-Cmk" id="LXP-Dj-cFT"/>
+                        <outlet property="wordDefinition" destination="Axk-0C-UEp" id="Acj-S2-PPb"/>
+                        <outlet property="wordLabel" destination="PjW-LE-Cmk" id="in3-F2-tXf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9Z-iG-xs9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
