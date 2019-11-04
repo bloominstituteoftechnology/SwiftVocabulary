@@ -9,6 +9,10 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
+    
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "variable", definition: "property that can be changed"),
+                                        VocabularyWord(word: "constant", definition: "a property that cannot be changed"),
+                                        VocabularyWord(word: "optional", definition: "a property that might include a value or it mighy not")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +26,9 @@ class WordsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return vocabWords.count
     }
 
     
@@ -37,6 +36,9 @@ class WordsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
         // Configure the cell...
+        
+        let vocabulary  = vocabWords[indexPath.row]
+        cell.textLabel?.text = vocabulary.word
 
         return cell
     }
@@ -77,14 +79,17 @@ class WordsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ShowDefinitionSegue" {
+            guard let indexPath = tableView.indexPathForSelectedRow,
+                let detailVC = segue.destination as? DefinitionViewController else { return }
+            let vocabWord = vocabWords[indexPath.row]
+            detailVC.vocabWord = vocabWord
+        }
     }
-    */
 
 }
