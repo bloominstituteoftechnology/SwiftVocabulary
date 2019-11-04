@@ -31,7 +31,18 @@ class WordsTableViewController: UITableViewController {
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     // MARK: - Helper Methods
     @objc func addButtonTapped() {
-        
+        let ac = UIAlertController(title: "Add a new word?", message: "", preferredStyle: .alert)
+        ac.addTextField()
+        ac.addTextField()
+        ac.addAction(UIAlertAction(title: "Save", style: .default) { [weak self] _ in
+            guard let self = self else { return }
+            guard let word = ac.textFields?.first?.text, let definition = ac.textFields?.last?.text else { return }
+            let newWord = VocabularyWord(word: word, definition: definition)
+            self.vocabWords.append(newWord)
+            self.tableView.reloadData()
+        })
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(ac, animated: true)
     }
     
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
