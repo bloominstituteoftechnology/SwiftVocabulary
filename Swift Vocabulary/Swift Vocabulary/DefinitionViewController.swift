@@ -19,6 +19,7 @@ class DefinitionViewController: UIViewController {
         updateViews()
         // Do any additional setup after loading the view.
     }
+    
     @IBOutlet weak var labelOutlet: UILabel!
     
    

@@ -15,6 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wQ0-i3-hcN">
+                            <rect key="frame" x="0.0" y="99.5" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Add Word"/>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="GQM-Om-UAo" eventType="touchUpInside" id="0dc-Az-O3b"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" textLabel="QeJ-Ex-W3D" style="IBUITableViewCellStyleDefault" id="Ul3-88-Fyj">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -78,8 +86,10 @@
                         <constraints>
                             <constraint firstItem="tDm-Vd-Ff8" firstAttribute="centerX" secondItem="Omv-f7-D4J" secondAttribute="centerX" id="05h-rP-LXW"/>
                             <constraint firstItem="WZn-7m-Gxn" firstAttribute="bottom" secondItem="BTO-Ip-vrT" secondAttribute="bottom" constant="375" id="2xD-8r-njY"/>
+                            <constraint firstItem="WZn-7m-Gxn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tDm-Vd-Ff8" secondAttribute="trailing" id="M0Y-fP-Ysq"/>
                             <constraint firstItem="WZn-7m-Gxn" firstAttribute="trailing" secondItem="BTO-Ip-vrT" secondAttribute="trailing" constant="8" id="Zfr-q4-zsW"/>
                             <constraint firstItem="BTO-Ip-vrT" firstAttribute="leading" secondItem="WZn-7m-Gxn" secondAttribute="leading" constant="8" id="aDh-c2-vFG"/>
+                            <constraint firstItem="tDm-Vd-Ff8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WZn-7m-Gxn" secondAttribute="leading" id="c6t-bk-15q"/>
                             <constraint firstItem="tDm-Vd-Ff8" firstAttribute="top" secondItem="WZn-7m-Gxn" secondAttribute="top" constant="83" id="gkL-Pu-9z6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WZn-7m-Gxn"/>
