@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C66-vr-LV6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Words Table View Controller-->
+        <scene sceneID="U3h-GT-AQn">
+            <objects>
+                <tableViewController id="oKo-fW-37r" customClass="WordsTableViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ov2-R6-Und">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="&quot;Wordcell&quot;" textLabel="md2-Dj-MAv" style="IBUITableViewCellStyleDefault" id="Nbj-K1-95S">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nbj-K1-95S" id="C78-dG-unx">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="md2-Dj-MAv">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="GH5-Xt-TeR" kind="show" identifier="ShowDefinitionSegue" id="bC0-PS-pW1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oKo-fW-37r" id="2Pi-I8-h5U"/>
+                            <outlet property="delegate" destination="oKo-fW-37r" id="3Ge-gR-b3K"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="xZy-AH-fHB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YW-K6-jVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902.89855072463774" y="138.61607142857142"/>
+        </scene>
+        <!--Definition View Controller-->
+        <scene sceneID="NMj-G2-ay9">
+            <objects>
+                <viewController id="GH5-Xt-TeR" customClass="DefinitionViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VYn-4K-AaI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnA-yL-JiG">
+                                <rect key="frame" x="186" y="221" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q2G-7A-rBj">
+                                <rect key="frame" x="87" y="294" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rnA-yL-JiG" firstAttribute="centerX" secondItem="Q2G-7A-rBj" secondAttribute="centerX" id="4Fl-pS-naU"/>
+                            <constraint firstItem="rnA-yL-JiG" firstAttribute="top" secondItem="k5L-1j-4Ii" secondAttribute="top" constant="133" id="6Gu-Hp-ahg"/>
+                            <constraint firstItem="k5L-1j-4Ii" firstAttribute="bottom" secondItem="Q2G-7A-rBj" secondAttribute="bottom" constant="440" id="Ngq-P4-tes"/>
+                            <constraint firstItem="Q2G-7A-rBj" firstAttribute="leading" secondItem="k5L-1j-4Ii" secondAttribute="leading" constant="87" id="Whg-og-y4b"/>
+                            <constraint firstItem="rnA-yL-JiG" firstAttribute="centerX" secondItem="VYn-4K-AaI" secondAttribute="centerX" id="csp-lz-095"/>
+                            <constraint firstItem="Q2G-7A-rBj" firstAttribute="top" secondItem="rnA-yL-JiG" secondAttribute="bottom" constant="52" id="dEY-h4-Zjd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k5L-1j-4Ii"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewLabel" destination="rnA-yL-JiG" id="FGT-so-BMS"/>
+                        <outlet property="viewText" destination="Q2G-7A-rBj" id="ApF-Xz-Gih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8R-HQ-kqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F7U-ov-lDq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C66-vr-LV6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IVf-n6-pq0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oKo-fW-37r" kind="relationship" relationship="rootViewController" id="RoU-bT-tHt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHb-Ph-Qo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2463768115942031" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
