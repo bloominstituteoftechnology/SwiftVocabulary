@@ -14,25 +14,33 @@ class VocabTableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
-    
-
+    var vocabWord: [Vocab] =
+        [Vocab(word: "Variable", definition: "You use variables and constants in Swift to store information. It's that simple! Variables are the “things” in your code, like numbers, text, buttons and images. "),
+        Vocab(word: "Constant", definition: "Constants refer to fixed values that a program may not alter during its execution."),
+        Vocab(word: "Function", definition: "Functions are self-contained chunks of code that perform a specific task.")
+    ]
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+//    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//        return vocabWord.count
+//
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return vocabWord.count
+        
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
         // Configure the cell...
+        
+        let vocab = vocabWord[indexPath.row]
+        cell.textLabel?.text = vocab.word
 
         return cell
     }
