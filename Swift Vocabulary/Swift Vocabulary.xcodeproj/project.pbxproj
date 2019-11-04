@@ -14,6 +14,7 @@
 		1A903C812370C6FF003B9B8A /* WordsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A903C802370C6FF003B9B8A /* WordsTableTableViewController.swift */; };
 		1A903C832370C748003B9B8A /* Definition View ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A903C822370C748003B9B8A /* Definition View ControllerViewController.swift */; };
 		1A903C852370C765003B9B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A903C842370C765003B9B8A /* Main.storyboard */; };
+		A81044C12370D8F30021083A /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81044C02370D8F30021083A /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1A903C802370C6FF003B9B8A /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
 		1A903C822370C748003B9B8A /* Definition View ControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Definition View ControllerViewController.swift"; sourceTree = "<group>"; };
 		1A903C842370C765003B9B8A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A81044C02370D8F30021083A /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1A903C802370C6FF003B9B8A /* WordsTableTableViewController.swift */,
 				1A903C822370C748003B9B8A /* Definition View ControllerViewController.swift */,
 				1A903C842370C765003B9B8A /* Main.storyboard */,
+				A81044C02370D8F30021083A /* VocabularyWord.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				1A903C832370C748003B9B8A /* Definition View ControllerViewController.swift in Sources */,
 				1A903C6C2370C409003B9B8A /* AppDelegate.swift in Sources */,
+				A81044C12370D8F30021083A /* VocabularyWord.swift in Sources */,
 				1A903C6E2370C409003B9B8A /* SceneDelegate.swift in Sources */,
 				1A903C812370C6FF003B9B8A /* WordsTableTableViewController.swift in Sources */,
 			);
