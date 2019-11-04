@@ -12,6 +12,9 @@
 		D5C031DB2370C46900873D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C031D92370C46900873D44 /* Main.storyboard */; };
 		D5C031DD2370C46B00873D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C031DC2370C46B00873D44 /* Assets.xcassets */; };
 		D5C031E02370C46B00873D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C031DE2370C46B00873D44 /* LaunchScreen.storyboard */; };
+		D5C031E92370CE0B00873D44 /* vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C031E82370CE0B00873D44 /* vocab.swift */; };
+		D5C031EB2370CF3C00873D44 /* VocabTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C031EA2370CF3C00873D44 /* VocabTableViewController.swift */; };
+		D5C031ED2370CFD800873D44 /* vocabDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C031EC2370CFD800873D44 /* vocabDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		D5C031DC2370C46B00873D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C031DF2370C46B00873D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C031E12370C46B00873D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C031E82370CE0B00873D44 /* vocab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocab.swift; sourceTree = "<group>"; };
+		D5C031EA2370CF3C00873D44 /* VocabTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTableViewController.swift; sourceTree = "<group>"; };
+		D5C031EC2370CFD800873D44 /* vocabDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocabDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				D5C031D92370C46900873D44 /* Main.storyboard */,
+				D5C031E82370CE0B00873D44 /* vocab.swift */,
+				D5C031EA2370CF3C00873D44 /* VocabTableViewController.swift */,
+				D5C031EC2370CFD800873D44 /* vocabDetailViewController.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -143,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C031E92370CE0B00873D44 /* vocab.swift in Sources */,
 				D5C031D42370C46900873D44 /* AppDelegate.swift in Sources */,
 				D5C031D62370C46900873D44 /* SceneDelegate.swift in Sources */,
+				D5C031EB2370CF3C00873D44 /* VocabTableViewController.swift in Sources */,
+				D5C031ED2370CFD800873D44 /* vocabDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
