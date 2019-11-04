@@ -23,6 +23,13 @@ class DefinitionViewController: UIViewController {
     // MARK: - View Controller Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(word)
+        updateViews()
+    }
+    
+    fileprivate func updateViews() {
+        guard let word = word else { return }
+        title = word.word
+        wordLabel.text = word.word
+        definitionTextView.text = word.definition
     }
 }
