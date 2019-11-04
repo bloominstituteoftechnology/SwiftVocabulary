@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Words Table View Controller-->
+        <!--Swift Vocabulary-->
         <scene sceneID="scx-5x-O9v">
             <objects>
                 <tableViewController id="q8a-dg-pjx" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                             <outlet property="delegate" destination="q8a-dg-pjx" id="oCs-GM-GOh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4r3-Bu-2BS"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="4r3-Bu-2BS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gju-do-zPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,13 +57,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="453-PD-chE">
-                                <rect key="frame" x="52" y="145" width="41" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="52" y="197" width="74.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Definition of word." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q1i-g4-2PY">
-                                <rect key="frame" x="52" y="198" width="240" height="128"/>
+                                <rect key="frame" x="52" y="265" width="240" height="61"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -72,12 +72,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="453-PD-chE" firstAttribute="leading" secondItem="ITF-Fw-vhy" secondAttribute="leading" constant="52" id="EGB-jO-2Ft"/>
-                            <constraint firstItem="453-PD-chE" firstAttribute="leading" secondItem="Q1i-g4-2PY" secondAttribute="leading" id="ReV-XH-DVz"/>
-                            <constraint firstItem="ITF-Fw-vhy" firstAttribute="bottom" secondItem="Q1i-g4-2PY" secondAttribute="bottom" constant="536" id="TLg-e1-lbH"/>
-                            <constraint firstItem="453-PD-chE" firstAttribute="top" secondItem="ITF-Fw-vhy" secondAttribute="top" constant="57" id="pnS-1f-Vjl"/>
-                            <constraint firstItem="Q1i-g4-2PY" firstAttribute="top" secondItem="453-PD-chE" secondAttribute="bottom" constant="32" id="sSV-DQ-VD9"/>
-                            <constraint firstItem="ITF-Fw-vhy" firstAttribute="trailing" secondItem="Q1i-g4-2PY" secondAttribute="trailing" constant="122" id="sll-ZG-Pci"/>
+                            <constraint firstItem="Q1i-g4-2PY" firstAttribute="top" secondItem="453-PD-chE" secondAttribute="bottom" constant="32" id="1Rw-PR-skS"/>
+                            <constraint firstItem="453-PD-chE" firstAttribute="top" secondItem="ITF-Fw-vhy" secondAttribute="top" constant="57" id="BKP-qg-dFQ"/>
+                            <constraint firstItem="ITF-Fw-vhy" firstAttribute="bottom" secondItem="Q1i-g4-2PY" secondAttribute="bottom" constant="536" id="LJE-cp-kOo"/>
+                            <constraint firstItem="453-PD-chE" firstAttribute="leading" secondItem="ITF-Fw-vhy" secondAttribute="leading" constant="52" id="SmQ-sJ-zMF"/>
+                            <constraint firstItem="ITF-Fw-vhy" firstAttribute="trailing" secondItem="Q1i-g4-2PY" secondAttribute="trailing" constant="122" id="hme-S3-tZ9"/>
+                            <constraint firstItem="Q1i-g4-2PY" firstAttribute="leading" secondItem="453-PD-chE" secondAttribute="leading" id="u7K-QD-tqI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ITF-Fw-vhy"/>
                     </view>
@@ -96,8 +96,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TrY-MK-JRk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xcs-5y-M5M">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xcs-5y-M5M">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
