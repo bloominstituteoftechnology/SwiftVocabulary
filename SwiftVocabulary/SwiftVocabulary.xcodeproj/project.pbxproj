@@ -15,6 +15,7 @@
 		63CB60DF2370C3EB00BB7A2C /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB60DE2370C3EB00BB7A2C /* WordsTableViewController.swift */; };
 		63CB60E12370C3F900BB7A2C /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB60E02370C3F900BB7A2C /* DefinitionViewController.swift */; };
 		63CB60E32370C5A500BB7A2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB60E22370C5A500BB7A2C /* Constants.swift */; };
+		63CB60E52370C6C200BB7A2C /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB60E42370C6C200BB7A2C /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		63CB60DE2370C3EB00BB7A2C /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		63CB60E02370C3F900BB7A2C /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		63CB60E22370C5A500BB7A2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		63CB60E42370C6C200BB7A2C /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				63CB60E22370C5A500BB7A2C /* Constants.swift */,
+				63CB60E42370C6C200BB7A2C /* VocabularyWord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				63CB60E32370C5A500BB7A2C /* Constants.swift in Sources */,
 				63CB60C42370C18D00BB7A2C /* AppDelegate.swift in Sources */,
 				63CB60E12370C3F900BB7A2C /* DefinitionViewController.swift in Sources */,
+				63CB60E52370C6C200BB7A2C /* VocabularyWord.swift in Sources */,
 				63CB60C62370C18D00BB7A2C /* SceneDelegate.swift in Sources */,
 				63CB60DF2370C3EB00BB7A2C /* WordsTableViewController.swift in Sources */,
 			);

@@ -11,8 +11,18 @@ import UIKit
 class DefinitionViewController: UIViewController {
     
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    // MARK: - Properties
+    var word: VocabularyWord?
+    
+    // --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     // MARK: - Outlets
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var definitionTextView: UITextView!
     
+    // --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    // MARK: - View Controller Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(word)
+    }
 }
