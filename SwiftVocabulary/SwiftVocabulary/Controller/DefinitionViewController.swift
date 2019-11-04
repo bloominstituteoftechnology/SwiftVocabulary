@@ -10,4 +10,9 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+    // --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    // MARK: - Outlets
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var definitionTextView: UITextView!
+    
 }
