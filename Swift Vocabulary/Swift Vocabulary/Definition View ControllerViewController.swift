@@ -13,6 +13,7 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var labelText: UILabel!
     @IBOutlet weak var textView: UITextView!
     
+    var vocabWord: VocabularyWord?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +29,16 @@ class DefinitionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        
+    }
+    
+    func updateViews()
+    {
+        if let display = 
+        {
+            labelText.text = vocabWord?.word
+            textView.text = vocabWord?.definition
+        }
     }
 }
