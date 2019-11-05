@@ -32,13 +32,4 @@ class DefinitionViewController: UIViewController {
         
         
     }
-    
-    func updateViews()
-    {
-        if let display = 
-        {
-            labelText.text = vocabWord?.word
-            textView.text = vocabWord?.definition
-        }
-    }
 }
