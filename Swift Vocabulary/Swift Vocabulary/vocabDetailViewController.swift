@@ -9,14 +9,27 @@
 import UIKit
 
 class vocabDetailViewController: UIViewController {
+    
+    @IBOutlet weak var detailViewTitleOutlet: UILabel!
+    
+    textLabel.text = 
     @IBOutlet weak var detailViewOutlet: UITextView!
+    // Make another outlet so you can see the word that the definition goes to.
+    var cellWord: Vocab?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        updateViews()
         // Do any additional setup after loading the view.
+        
     }
     
+    func updateViews() {
+        guard let word = cellWord else { return }
+        detailViewOutlet.text = word.definition
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -29,3 +42,6 @@ class vocabDetailViewController: UIViewController {
     */
 
 }
+//func updateViews() {
+//guard let word = cellWord else { return }
+//detailViewOutlet.text = word.definition

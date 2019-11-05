@@ -65,6 +65,7 @@
 				D5C031E82370CE0B00873D44 /* vocab.swift */,
 				D5C031EA2370CF3C00873D44 /* VocabTableViewController.swift */,
 				D5C031EC2370CFD800873D44 /* vocabDetailViewController.swift */,
+				D5C031E12370C46B00873D44 /* Info.plist */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -74,7 +75,6 @@
 			children = (
 				D5C031DE2370C46B00873D44 /* LaunchScreen.storyboard */,
 				D5C031DC2370C46B00873D44 /* Assets.xcassets */,
-				D5C031E12370C46B00873D44 /* Info.plist */,
 				D5C031D52370C46900873D44 /* SceneDelegate.swift */,
 				D5C031D32370C46900873D44 /* AppDelegate.swift */,
 			);
