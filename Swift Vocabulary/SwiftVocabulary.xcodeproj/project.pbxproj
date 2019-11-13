@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		056281BA2374CB3000F1C9FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281B92374CB3000F1C9FF /* AppDelegate.swift */; };
 		056281BC2374CB3000F1C9FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281BB2374CB3000F1C9FF /* SceneDelegate.swift */; };
-		056281BE2374CB3000F1C9FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281BD2374CB3000F1C9FF /* ViewController.swift */; };
 		056281C12374CB3000F1C9FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056281BF2374CB3000F1C9FF /* Main.storyboard */; };
 		056281C32374CB3300F1C9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056281C22374CB3300F1C9FF /* Assets.xcassets */; };
 		056281C62374CB3300F1C9FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056281C42374CB3300F1C9FF /* LaunchScreen.storyboard */; };
+		056281CF2374CFF400F1C9FF /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281CE2374CFF400F1C9FF /* WordsTableViewController.swift */; };
+		056281D12374D01D00F1C9FF /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281D02374D01D00F1C9FF /* DefinitionViewController.swift */; };
+		056281D32374DA7500F1C9FF /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281D22374DA7500F1C9FF /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		056281B62374CB3000F1C9FF /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		056281B92374CB3000F1C9FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		056281BB2374CB3000F1C9FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		056281BD2374CB3000F1C9FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		056281C02374CB3000F1C9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		056281C22374CB3300F1C9FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		056281C52374CB3300F1C9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		056281C72374CB3300F1C9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056281CE2374CFF400F1C9FF /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		056281D02374D01D00F1C9FF /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		056281D22374DA7500F1C9FF /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		056281B82374CB3000F1C9FF /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				056281B92374CB3000F1C9FF /* AppDelegate.swift */,
-				056281BB2374CB3000F1C9FF /* SceneDelegate.swift */,
-				056281BD2374CB3000F1C9FF /* ViewController.swift */,
 				056281BF2374CB3000F1C9FF /* Main.storyboard */,
-				056281C22374CB3300F1C9FF /* Assets.xcassets */,
-				056281C42374CB3300F1C9FF /* LaunchScreen.storyboard */,
+				056281CE2374CFF400F1C9FF /* WordsTableViewController.swift */,
+				056281D02374D01D00F1C9FF /* DefinitionViewController.swift */,
 				056281C72374CB3300F1C9FF /* Info.plist */,
+				056281CD2374CB4F00F1C9FF /* Resources */,
+				056281D22374DA7500F1C9FF /* VocabularyWord.swift */,
 			);
 			path = "Swift Vocabulary";
+			sourceTree = "<group>";
+		};
+		056281CD2374CB4F00F1C9FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				056281BB2374CB3000F1C9FF /* SceneDelegate.swift */,
+				056281C22374CB3300F1C9FF /* Assets.xcassets */,
+				056281C42374CB3300F1C9FF /* LaunchScreen.storyboard */,
+				056281B92374CB3000F1C9FF /* AppDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 056281B12374CB3000F1C9FF /* Build configuration list for PBXProject "Swift Vocabulary" */;
+			buildConfigurationList = 056281B12374CB3000F1C9FF /* Build configuration list for PBXProject "SwiftVocabulary" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056281BE2374CB3000F1C9FF /* ViewController.swift in Sources */,
 				056281BA2374CB3000F1C9FF /* AppDelegate.swift in Sources */,
+				056281D12374D01D00F1C9FF /* DefinitionViewController.swift in Sources */,
+				056281D32374DA7500F1C9FF /* VocabularyWord.swift in Sources */,
 				056281BC2374CB3000F1C9FF /* SceneDelegate.swift in Sources */,
+				056281CF2374CFF400F1C9FF /* WordsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +335,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		056281B12374CB3000F1C9FF /* Build configuration list for PBXProject "Swift Vocabulary" */ = {
+		056281B12374CB3000F1C9FF /* Build configuration list for PBXProject "SwiftVocabulary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				056281C82374CB3300F1C9FF /* Debug */,
