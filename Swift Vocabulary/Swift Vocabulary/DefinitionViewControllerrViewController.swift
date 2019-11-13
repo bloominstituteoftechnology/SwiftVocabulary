@@ -31,13 +31,13 @@ class DefinitionViewControllerrViewController: UIViewController {
     
     @IBAction func addWord(_ sender: Any) {
  // How the hell do you make this work???
-       
-        let alert = UIAlertController(title: "Add word", message: "Add a word to the vocabulary view.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .destructive, handler: { _ in
-        NSLog("The \"OK\" alert occured.")
-        }))
-        self.present(alert, animated: true, completion: nil)
-        
+//
+//        let alert = UIAlertController(title: "Add word", message: "Add a word to the vocabulary view.", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .destructive, handler: { _ in
+//        NSLog("The \"OK\" alert occured.")
+//        }))
+//        self.present(alert, animated: true, completion: nil)
+//
     }
     
 }
