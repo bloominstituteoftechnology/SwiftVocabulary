@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		635BB2F4237BD3790081353D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635BB2F3237BD3790081353D /* AppDelegate.swift */; };
 		635BB2F6237BD3790081353D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635BB2F5237BD3790081353D /* SceneDelegate.swift */; };
-		635BB2F8237BD3790081353D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635BB2F7237BD3790081353D /* ViewController.swift */; };
 		635BB2FB237BD3790081353D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635BB2F9237BD3790081353D /* Main.storyboard */; };
 		635BB2FD237BD37A0081353D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635BB2FC237BD37A0081353D /* Assets.xcassets */; };
 		635BB300237BD37A0081353D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635BB2FE237BD37A0081353D /* LaunchScreen.storyboard */; };
+		635BB308237BD4B10081353D /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635BB307237BD4B10081353D /* WordsTableViewController.swift */; };
+		635BB30A237BD4DA0081353D /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635BB309237BD4DA0081353D /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		635BB2F0237BD3790081353D /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		635BB2F3237BD3790081353D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		635BB2F5237BD3790081353D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		635BB2F7237BD3790081353D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		635BB2FA237BD3790081353D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		635BB2FC237BD37A0081353D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		635BB2FF237BD37A0081353D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		635BB301237BD37A0081353D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635BB307237BD4B10081353D /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		635BB309237BD4DA0081353D /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				635BB2F3237BD3790081353D /* AppDelegate.swift */,
 				635BB2F5237BD3790081353D /* SceneDelegate.swift */,
-				635BB2F7237BD3790081353D /* ViewController.swift */,
+				635BB307237BD4B10081353D /* WordsTableViewController.swift */,
+				635BB309237BD4DA0081353D /* DefinitionViewController.swift */,
 				635BB2F9237BD3790081353D /* Main.storyboard */,
 				635BB2FC237BD37A0081353D /* Assets.xcassets */,
 				635BB2FE237BD37A0081353D /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635BB2F8237BD3790081353D /* ViewController.swift in Sources */,
 				635BB2F4237BD3790081353D /* AppDelegate.swift in Sources */,
 				635BB2F6237BD3790081353D /* SceneDelegate.swift in Sources */,
+				635BB308237BD4B10081353D /* WordsTableViewController.swift in Sources */,
+				635BB30A237BD4DA0081353D /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
