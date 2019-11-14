@@ -10,9 +10,9 @@ import UIKit
 
 
 class WordsTableViewController: UITableViewController {
-    var words: [VocabularyWord] = [VocabularyWord(word: "Constant", definition: "Constants associate a name with a value of a particular type. The value of a constant can’t be changed once it’s set, whereas a variable can be set to a different value in the future."),
-                                   VocabularyWord(word: "Array", definition: "An array stores values of the same type in an ordered list."),
-                                   VocabularyWord(word: "Functions", definition: "Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed.")]
+    
+    var words: [VocabularyWord] = [vocabConstant, vocabArray, vocabFunction]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +36,16 @@ class WordsTableViewController: UITableViewController {
         return cell
     }
     
+    // MARK: - Personal Stretch Goal: Swipe to delete
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            words.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+    }
+    
     
     // MARK: - Navigation
     
@@ -51,4 +61,42 @@ class WordsTableViewController: UITableViewController {
 
         }
     }
+    // MARK: Stretch Goal: AddItems
+    
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        
+        let alert = UIAlertController(title: "Add new word", message: "", preferredStyle: .alert)
+        
+        alert.addTextField()
+        alert.addTextField()
+        alert.textFields![0].placeholder = "Word"
+        alert.textFields![1].placeholder = "Definition"
+        
+        alert.addTextField()
+        alert.addTextField()
+        alert.textFields![0].placeholder = "Word"
+        alert.textFields![1].placeholder = "Definition"
+        
+        alert.addAction(UIAlertAction(title: "Add", style: .default, handler: {action in
+            guard let newWord = alert.textFields?[0].text,
+                let newDefinition = alert.textFields?[1].text else { return }
+            
+            if newWord.count < 1 || newDefinition.count < 1 {
+                let noValueAlert = UIAlertController(title: "Error", message: "You have left a field empty! ", preferredStyle: .alert)
+                noValueAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(noValueAlert, animated: true)
+            } else {
+                self.newWordAdded(newWord: newWord, newDefinition: newDefinition)
+            }
+        }))
+        present(alert, animated: true)
+    }
+    func newWordAdded(newWord: String, newDefinition: String) {
+
+        let newVocabWord = VocabularyWord(word: newWord, definition: newDefinition)
+        words.append(newVocabWord)
+
+        self.tableView.reloadData()
+    }
+    
 }

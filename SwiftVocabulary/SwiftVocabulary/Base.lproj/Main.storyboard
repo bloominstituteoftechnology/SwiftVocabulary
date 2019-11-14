@@ -42,7 +42,13 @@
                             <outlet property="delegate" destination="VZS-Uk-aaW" id="b0T-JE-u3f"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="RR4-D4-loQ"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="RR4-D4-loQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dka-ZZ-Nw4">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="VZS-Uk-aaW" id="CWF-Vh-fBw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FrZ-Sy-wRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
