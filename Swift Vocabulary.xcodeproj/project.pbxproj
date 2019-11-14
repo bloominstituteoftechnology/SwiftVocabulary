@@ -15,6 +15,7 @@
 		635BB308237BD4B10081353D /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635BB307237BD4B10081353D /* WordsTableViewController.swift */; };
 		635BB30A237BD4DA0081353D /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635BB309237BD4DA0081353D /* DefinitionViewController.swift */; };
 		6384EBAA237BDC9C00718FCE /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6384EBA9237BDC9C00718FCE /* VocabularyWord.swift */; };
+		6398B6B0237D1D6F00EF2881 /* VocabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6398B6AF237D1D6F00EF2881 /* VocabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		635BB307237BD4B10081353D /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		635BB309237BD4DA0081353D /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		6384EBA9237BDC9C00718FCE /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		6398B6AF237D1D6F00EF2881 /* VocabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				635BB2FC237BD37A0081353D /* Assets.xcassets */,
 				635BB2FE237BD37A0081353D /* LaunchScreen.storyboard */,
 				635BB301237BD37A0081353D /* Info.plist */,
+				6398B6AF237D1D6F00EF2881 /* VocabController.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				6384EBAA237BDC9C00718FCE /* VocabularyWord.swift in Sources */,
 				635BB308237BD4B10081353D /* WordsTableViewController.swift in Sources */,
 				635BB30A237BD4DA0081353D /* DefinitionViewController.swift in Sources */,
+				6398B6B0237D1D6F00EF2881 /* VocabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

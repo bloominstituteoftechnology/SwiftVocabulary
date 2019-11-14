@@ -43,7 +43,13 @@
                             <outlet property="delegate" destination="C4M-Jv-tbD" id="cKX-Sq-GRp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="Xg3-nW-FSf"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="Xg3-nW-FSf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7sR-X6-8we">
+                            <connections>
+                                <action selector="addNewWordButton:" destination="C4M-Jv-tbD" id="Zvn-qS-tKS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3N-cD-rjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
