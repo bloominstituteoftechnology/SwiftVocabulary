@@ -55,14 +55,40 @@
                     <view key="view" contentMode="scaleToFill" id="fHb-jK-QqP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="esr-42-tus">
+                                <rect key="frame" x="57" y="189" width="299" height="162"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Definition:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tx-Ui-rSP">
+                                <rect key="frame" x="167" y="160" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="esr-42-tus" firstAttribute="top" secondItem="1Tx-Ui-rSP" secondAttribute="bottom" constant="67" id="1d2-a1-UiV"/>
+                            <constraint firstItem="esr-42-tus" firstAttribute="leading" secondItem="gQA-MY-zFB" secondAttribute="leading" constant="87" id="CZZ-cJ-cCy"/>
+                            <constraint firstItem="1Tx-Ui-rSP" firstAttribute="centerX" secondItem="fHb-jK-QqP" secondAttribute="centerX" id="Q3v-GL-kPu"/>
+                            <constraint firstItem="1Tx-Ui-rSP" firstAttribute="centerX" secondItem="esr-42-tus" secondAttribute="centerX" id="ZVA-i5-I3r"/>
+                            <constraint firstItem="1Tx-Ui-rSP" firstAttribute="top" secondItem="gQA-MY-zFB" secondAttribute="top" constant="13" id="eI0-gj-8oZ"/>
+                            <constraint firstItem="gQA-MY-zFB" firstAttribute="bottom" secondItem="esr-42-tus" secondAttribute="bottom" constant="545" id="laV-8Y-CJi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gQA-MY-zFB"/>
                     </view>
                     <navigationItem key="navigationItem" id="6kY-PO-hOL"/>
+                    <connections>
+                        <outlet property="DefinitionTextView" destination="esr-42-tus" id="O02-gI-Iac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TO-K1-bD1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165" y="41"/>
+            <point key="canvasLocation" x="132" y="41"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dlc-sv-V44">

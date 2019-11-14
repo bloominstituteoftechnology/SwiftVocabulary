@@ -32,7 +32,7 @@ class WordsTableTableViewController: UITableViewController {
     
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+     
         return vocabWords.count
     }
 
@@ -43,7 +43,6 @@ class WordsTableTableViewController: UITableViewController {
         let wordString = vocabWords[indexPath.row]
         
         cell.textLabel?.text = wordString.word
-        
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

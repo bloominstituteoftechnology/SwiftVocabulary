@@ -12,7 +12,6 @@ class DefinitionViewController: UIViewController {
 
   var cellDefinition: VocabularyWord?
     
-    @IBOutlet weak var DefinitionTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,7 @@ class DefinitionViewController: UIViewController {
     func updateViews() {
         if let cellDefinition = cellDefinition {
             title = cellDefinition.word
-            DefinitionTextView.text = cellDefinition.definition
+            
             
         }
     }
