@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Words Table Table View Controller-->
+        <!--Words Table View Controller-->
         <scene sceneID="EXA-iy-vLi">
             <objects>
-                <tableViewController id="VZS-Uk-aaW" customClass="WordsTableTableViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="VZS-Uk-aaW" customClass="WordsTableViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RJz-qe-1da">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,6 +84,10 @@
                         <viewLayoutGuide key="safeArea" id="Qok-RO-Kuf"/>
                     </view>
                     <navigationItem key="navigationItem" id="WN7-Fg-RFY"/>
+                    <connections>
+                        <outlet property="definitionOutlet" destination="9iy-g9-chh" id="9Dk-Jm-ihG"/>
+                        <outlet property="labelOutlet" destination="9EA-IM-5z0" id="V9O-PA-Xq6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FC9-hq-wSb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,9 +13,9 @@
 		428EF7F6237CF32B00971BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428EF7F4237CF32B00971BCB /* Main.storyboard */; };
 		428EF7F8237CF32D00971BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428EF7F7237CF32D00971BCB /* Assets.xcassets */; };
 		428EF7FB237CF32D00971BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428EF7F9237CF32D00971BCB /* LaunchScreen.storyboard */; };
-		428EF803237CF36500971BCB /* WordsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428EF802237CF36500971BCB /* WordsTableTableViewController.swift */; };
 		428EF805237CF37E00971BCB /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428EF804237CF37E00971BCB /* DefinitionViewController.swift */; };
 		428EF807237CF51100971BCB /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428EF806237CF51100971BCB /* VocabularyWord.swift */; };
+		42A82320237CF80100374465 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8231F237CF80100374465 /* WordsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		428EF7F7237CF32D00971BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		428EF7FA237CF32D00971BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		428EF7FC237CF32D00971BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		428EF802237CF36500971BCB /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
 		428EF804237CF37E00971BCB /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		428EF806237CF51100971BCB /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		42A8231F237CF80100374465 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,9 @@
 				428EF7F7237CF32D00971BCB /* Assets.xcassets */,
 				428EF7F9237CF32D00971BCB /* LaunchScreen.storyboard */,
 				428EF7FC237CF32D00971BCB /* Info.plist */,
-				428EF802237CF36500971BCB /* WordsTableTableViewController.swift */,
 				428EF804237CF37E00971BCB /* DefinitionViewController.swift */,
 				428EF806237CF51100971BCB /* VocabularyWord.swift */,
+				42A8231F237CF80100374465 /* WordsTableViewController.swift */,
 			);
 			path = SwiftVocabulary;
 			sourceTree = "<group>";
@@ -147,12 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428EF803237CF36500971BCB /* WordsTableTableViewController.swift in Sources */,
 				428EF7F3237CF32B00971BCB /* ViewController.swift in Sources */,
 				428EF7EF237CF32B00971BCB /* AppDelegate.swift in Sources */,
 				428EF807237CF51100971BCB /* VocabularyWord.swift in Sources */,
 				428EF7F1237CF32B00971BCB /* SceneDelegate.swift in Sources */,
 				428EF805237CF37E00971BCB /* DefinitionViewController.swift in Sources */,
+				42A82320237CF80100374465 /* WordsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
