@@ -39,6 +39,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6567B8A237CDB8C00420D67 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B68A6839237CD62800D4F324 /* WordsTableTableViewController.swift */,
+				B68A683B237CD65100D4F324 /* DefinitionViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B6567B8C237CDBB900420D67 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B68A682B237CD3C600D4F324 /* Main.storyboard */,
+				B68A6830237CD3C700D4F324 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6567B8D237CDBCA00420D67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B68A6825237CD3C600D4F324 /* AppDelegate.swift */,
+				B68A6827237CD3C600D4F324 /* SceneDelegate.swift */,
+				B68A682E237CD3C700D4F324 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B68A6819237CD3C600D4F324 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +86,10 @@
 		B68A6824237CD3C600D4F324 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				B68A6825237CD3C600D4F324 /* AppDelegate.swift */,
-				B68A6827237CD3C600D4F324 /* SceneDelegate.swift */,
-				B68A682B237CD3C600D4F324 /* Main.storyboard */,
-				B68A682E237CD3C700D4F324 /* Assets.xcassets */,
-				B68A6830237CD3C700D4F324 /* LaunchScreen.storyboard */,
+				B6567B8D237CDBCA00420D67 /* Resources */,
+				B6567B8C237CDBB900420D67 /* Storyboards */,
+				B6567B8A237CDB8C00420D67 /* View Controllers */,
 				B68A6833237CD3C700D4F324 /* Info.plist */,
-				B68A6839237CD62800D4F324 /* WordsTableTableViewController.swift */,
-				B68A683B237CD65100D4F324 /* DefinitionViewController.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
