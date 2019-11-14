@@ -63,5 +63,33 @@ var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition:
        
     }
  
-
+    
+    @IBAction func addTapped(_ sender: Any) {
+        
+    let alert = UIAlertController(title: "Add Word & Definition", message: "", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.text = ""
+        }
+        
+        alert.addTextField { (textField) in
+                   textField.text = ""
+               }
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            if let textField = alert?.textFields?[0],
+                let definition = alert?.textFields?[1]{
+                if let textValue = textField.text,
+                    !textValue.isEmpty,
+                    let def = definition.text{
+                    let newWord = VocabularyWord(word: textValue, definition: def)
+                    self.vocabWords.append(newWord)
+                    self.tableView.reloadData()
+                }
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
 }
