@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Words Table View Controller-->
+        <!--Swift Vocabulary-->
         <scene sceneID="R1b-TX-Gc9">
             <objects>
                 <tableViewController id="iWc-is-mja" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                             <outlet property="delegate" destination="iWc-is-mja" id="Pdb-cC-hFe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qRH-OG-Cmy"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="qRH-OG-Cmy"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Pl-Yx-cy3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +91,7 @@
                     <navigationItem key="navigationItem" id="GPU-Fb-2oW"/>
                     <connections>
                         <outlet property="definitionTextView" destination="BhR-MI-tFF" id="sua-Dw-SWQ"/>
-                        <outlet property="wordLebel" destination="Kfb-Ii-onk" id="99r-HK-uGj"/>
+                        <outlet property="wordLabel" destination="Kfb-Ii-onk" id="RLj-SP-fkx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nhv-0H-FdD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
