@@ -14,6 +14,7 @@
 		8F29D480237CEE4600A49DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F29D47E237CEE4600A49DA5 /* LaunchScreen.storyboard */; };
 		8F29D488237CEE7900A49DA5 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F29D487237CEE7900A49DA5 /* WordsTableViewController.swift */; };
 		8F29D48A237CEEB800A49DA5 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F29D489237CEEB800A49DA5 /* DefinitionViewController.swift */; };
+		8F29D48C237CF18000A49DA5 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F29D48B237CF18000A49DA5 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8F29D481237CEE4600A49DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F29D487237CEE7900A49DA5 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		8F29D489237CEEB800A49DA5 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		8F29D48B237CF18000A49DA5 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				8F29D473237CEE4400A49DA5 /* AppDelegate.swift */,
 				8F29D475237CEE4400A49DA5 /* SceneDelegate.swift */,
+				8F29D48B237CF18000A49DA5 /* VocabularyWord.swift */,
 				8F29D487237CEE7900A49DA5 /* WordsTableViewController.swift */,
 				8F29D489237CEEB800A49DA5 /* DefinitionViewController.swift */,
 				8F29D479237CEE4400A49DA5 /* Main.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				8F29D474237CEE4400A49DA5 /* AppDelegate.swift in Sources */,
 				8F29D48A237CEEB800A49DA5 /* DefinitionViewController.swift in Sources */,
+				8F29D48C237CF18000A49DA5 /* VocabularyWord.swift in Sources */,
 				8F29D476237CEE4400A49DA5 /* SceneDelegate.swift in Sources */,
 				8F29D488237CEE7900A49DA5 /* WordsTableViewController.swift in Sources */,
 			);
