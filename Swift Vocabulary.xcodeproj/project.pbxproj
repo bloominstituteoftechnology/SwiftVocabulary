@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6567B8F237CE56C00420D67 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6567B8E237CE56C00420D67 /* VocabularyWord.swift */; };
 		B68A6826237CD3C600D4F324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68A6825237CD3C600D4F324 /* AppDelegate.swift */; };
 		B68A6828237CD3C600D4F324 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68A6827237CD3C600D4F324 /* SceneDelegate.swift */; };
 		B68A682D237CD3C600D4F324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68A682B237CD3C600D4F324 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6567B8E237CE56C00420D67 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 		B68A6822237CD3C600D4F324 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68A6825237CD3C600D4F324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B68A6827237CD3C600D4F324 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				B68A682B237CD3C600D4F324 /* Main.storyboard */,
 				B68A6830237CD3C700D4F324 /* LaunchScreen.storyboard */,
+				B6567B8E237CE56C00420D67 /* VocabularyWord.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6567B8F237CE56C00420D67 /* VocabularyWord.swift in Sources */,
 				B68A683A237CD62800D4F324 /* WordsTableTableViewController.swift in Sources */,
 				B68A6826237CD3C600D4F324 /* AppDelegate.swift in Sources */,
 				B68A6828237CD3C600D4F324 /* SceneDelegate.swift in Sources */,
