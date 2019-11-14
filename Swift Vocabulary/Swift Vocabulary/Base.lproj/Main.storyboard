@@ -45,7 +45,13 @@
                             <outlet property="delegate" destination="iWc-is-mja" id="Pdb-cC-hFe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="qRH-OG-Cmy"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="qRH-OG-Cmy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ard-2C-3xm">
+                            <connections>
+                                <action selector="addNewEntry:" destination="iWc-is-mja" id="3rc-Wj-368"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Pl-Yx-cy3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

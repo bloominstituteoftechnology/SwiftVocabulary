@@ -15,6 +15,7 @@ class WordsTableViewController: UITableViewController {
         super.viewDidLoad()
 
         loadVocabularyWords()
+        
     }
 
     // MARK: - Table view data source
@@ -41,7 +42,32 @@ class WordsTableViewController: UITableViewController {
             vocabWords.append(contentsOf: [variable, constant, function])
         }
     
-
+    @IBAction func addNewEntry(_ sender: UIBarButtonItem) {
+        let ac = UIAlertController(title: "Add a new Vocabulary Word", message: nil, preferredStyle: .alert)
+        ac.addTextField(configurationHandler: { (wordTextField) in
+            wordTextField.placeholder = "Enter new vocabulary word"
+        })
+        ac.addTextField(configurationHandler: { (definitionTextField) in
+            definitionTextField.placeholder = "Enter definition"
+        })
+    
+        
+        let addEntryAction = UIAlertAction(title: "Add New Entry", style: .default) { [unowned ac] _ in
+            let word = ac.textFields![0] as UITextField
+            let definition = ac.textFields![1] as UITextField
+            
+            guard let wordText = word.text,
+                let definitionText = definition.text else { return }
+            
+            let entry = VocabularyWord(word: wordText, definition: definitionText)
+            self.vocabWords.append(entry)
+            self.tableView.reloadData()
+        }
+        
+        ac.addAction(addEntryAction)
+        present(ac, animated: true)
+    }
+    
     
     // MARK: - Navigation
 
