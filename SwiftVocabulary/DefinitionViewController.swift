@@ -18,7 +18,10 @@ class DefinitionViewController: UIViewController {
         didSet {
             
             
+            
+            
             updateViews()
+            
             
         }
     }
