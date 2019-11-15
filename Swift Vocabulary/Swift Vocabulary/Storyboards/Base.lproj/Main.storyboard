@@ -15,6 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eN7-zq-3Nn">
+                            <rect key="frame" x="0.0" y="99.5" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Add New Word"/>
+                            <connections>
+                                <action selector="addNewWordButton:" destination="YcQ-6f-OPf" eventType="touchUpInside" id="7gq-ym-ALd"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" textLabel="StN-5T-O9P" style="IBUITableViewCellStyleDefault" id="D4S-dI-B1v">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -37,10 +45,6 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="YcQ-6f-OPf" id="1L2-FK-rje"/>
-                            <outlet property="delegate" destination="YcQ-6f-OPf" id="b3l-Dm-Zut"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Swift Vocabulary and More!" id="1b0-8D-80A"/>
                 </tableViewController>

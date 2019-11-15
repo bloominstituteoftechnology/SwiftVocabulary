@@ -52,41 +52,38 @@ class WordsTableViewController: UITableViewController {
             let vocabularyWordInstance = vocabWords[indexPathForSelectedRow]
             destinationDefinitionViewController.vocabWord = vocabularyWordInstance
         }
-         // Pass the selected object to the new view controller.
-        
      }
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    /* Stretch Goal*/
+    @IBAction func addNewWordButton(_ sender: UIButton) {
+        /* Optional variables to represent the two textfields inside the Alert */
+        var newWord: UITextField?
+        var newDefinition:  UITextField?
+        /* Alert Controller with style declared */
+        let alertController = UIAlertController(
+            title: "Add Vocabulary Word",
+            message: "Please enter a vocabulary word and definition.",
+            preferredStyle: .alert)
+        /* Adding and populating text fields with default message and save inputed values */
+        alertController.addTextField {
+            (word) -> Void in
+            newWord = word
+            word.placeholder = "Vocabulary word here"
+        }
+        alertController.addTextField {
+            (definition) -> Void in
+            newDefinition = definition
+            definition.placeholder = "Definition here."
+        }
+        /* Update and reload the Tabel View when the submit button is tapped */
+        let loginAction = UIAlertAction(title: "Submit", style: .default){
+        (action) -> Void in
+            if let word = newWord?.text, let def = newDefinition?.text {
+                self.vocabWords.append(VocabularyWord(word: word, definition: def))
+                self.tableView.reloadData()
+            }
+        }
+        /* Alert action*/
+        alertController.addAction(loginAction)
+        present(alertController, animated: true, completion: nil)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 }
