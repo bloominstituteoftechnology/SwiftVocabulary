@@ -28,11 +28,6 @@ class WordsTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vocabWords?.count ?? 0
     }
@@ -40,6 +35,8 @@ class WordsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell") {
             if let word = self.vocabWords?[indexPath.row] {
+                cell.backgroundColor = .systemTeal
+                cell.textLabel?.textColor = .systemBackground
                 cell.textLabel?.text = word.word
             }
             return cell
@@ -48,8 +45,7 @@ class WordsTableViewController: UITableViewController {
     }
     
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDefinitionSegue" {
             if let destination = segue.destination as? DefinitionViewController {
