@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		B9355E552399C59300FB4890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E542399C59300FB4890 /* AppDelegate.swift */; };
 		B9355E572399C59300FB4890 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E562399C59300FB4890 /* SceneDelegate.swift */; };
-		B9355E592399C59300FB4890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E582399C59300FB4890 /* ViewController.swift */; };
 		B9355E5C2399C59300FB4890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9355E5A2399C59300FB4890 /* Main.storyboard */; };
 		B9355E5E2399C59600FB4890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9355E5D2399C59600FB4890 /* Assets.xcassets */; };
 		B9355E612399C59600FB4890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9355E5F2399C59600FB4890 /* LaunchScreen.storyboard */; };
 		B9355E6C2399C59600FB4890 /* Swift_VocabularyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E6B2399C59600FB4890 /* Swift_VocabularyTests.swift */; };
 		B9355E772399C59600FB4890 /* Swift_VocabularyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E762399C59600FB4890 /* Swift_VocabularyUITests.swift */; };
+		B9355E852399C62400FB4890 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B9355E842399C62400FB4890 /* README.md */; };
+		B9355E8A2399C6CE00FB4890 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E892399C6CE00FB4890 /* WordsTableViewController.swift */; };
+		B9355E8C2399C6E800FB4890 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E8B2399C6E800FB4890 /* DefinitionViewController.swift */; };
+		B9C47A4F2399CAE600040200 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C47A4E2399CAE600040200 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		B9355E512399C59300FB4890 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9355E542399C59300FB4890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9355E562399C59300FB4890 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B9355E582399C59300FB4890 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9355E5B2399C59300FB4890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9355E5D2399C59600FB4890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9355E602399C59600FB4890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		B9355E722399C59600FB4890 /* Swift VocabularyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift VocabularyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9355E762399C59600FB4890 /* Swift_VocabularyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_VocabularyUITests.swift; sourceTree = "<group>"; };
 		B9355E782399C59600FB4890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9355E842399C62400FB4890 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B9355E892399C6CE00FB4890 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		B9355E8B2399C6E800FB4890 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		B9C47A4E2399CAE600040200 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,11 @@
 		B9355E532399C59300FB4890 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				B9355E542399C59300FB4890 /* AppDelegate.swift */,
-				B9355E562399C59300FB4890 /* SceneDelegate.swift */,
-				B9355E582399C59300FB4890 /* ViewController.swift */,
-				B9355E5A2399C59300FB4890 /* Main.storyboard */,
-				B9355E5D2399C59600FB4890 /* Assets.xcassets */,
-				B9355E5F2399C59600FB4890 /* LaunchScreen.storyboard */,
-				B9355E622399C59600FB4890 /* Info.plist */,
+				B9355E842399C62400FB4890 /* README.md */,
+				B9C47A4D2399CAC800040200 /* Model */,
+				B9355E872399C64A00FB4890 /* View */,
+				B9355E882399C65100FB4890 /* Controller */,
+				B9355E862399C63500FB4890 /* Utility */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -126,6 +130,43 @@
 				B9355E782399C59600FB4890 /* Info.plist */,
 			);
 			path = "Swift VocabularyUITests";
+			sourceTree = "<group>";
+		};
+		B9355E862399C63500FB4890 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B9355E542399C59300FB4890 /* AppDelegate.swift */,
+				B9355E562399C59300FB4890 /* SceneDelegate.swift */,
+				B9355E5D2399C59600FB4890 /* Assets.xcassets */,
+				B9355E622399C59600FB4890 /* Info.plist */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B9355E872399C64A00FB4890 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9355E5A2399C59300FB4890 /* Main.storyboard */,
+				B9355E5F2399C59600FB4890 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9355E882399C65100FB4890 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9355E892399C6CE00FB4890 /* WordsTableViewController.swift */,
+				B9355E8B2399C6E800FB4890 /* DefinitionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B9C47A4D2399CAC800040200 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9C47A4E2399CAE600040200 /* VocabularyWord.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +275,7 @@
 			files = (
 				B9355E612399C59600FB4890 /* LaunchScreen.storyboard in Resources */,
 				B9355E5E2399C59600FB4890 /* Assets.xcassets in Resources */,
+				B9355E852399C62400FB4890 /* README.md in Resources */,
 				B9355E5C2399C59300FB4890 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9355E592399C59300FB4890 /* ViewController.swift in Sources */,
+				B9C47A4F2399CAE600040200 /* VocabularyWord.swift in Sources */,
 				B9355E552399C59300FB4890 /* AppDelegate.swift in Sources */,
+				B9355E8C2399C6E800FB4890 /* DefinitionViewController.swift in Sources */,
 				B9355E572399C59300FB4890 /* SceneDelegate.swift in Sources */,
+				B9355E8A2399C6CE00FB4890 /* WordsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34P4RF23ET;
-				INFOPLIST_FILE = "Swift Vocabulary/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift Vocabulary/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34P4RF23ET;
-				INFOPLIST_FILE = "Swift Vocabulary/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift Vocabulary/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
