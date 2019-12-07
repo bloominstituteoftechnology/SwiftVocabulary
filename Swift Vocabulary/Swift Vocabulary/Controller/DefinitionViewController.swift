@@ -24,6 +24,7 @@ class DefinitionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.definitionField.layer.cornerRadius = 8
         updateViews()
         // Do any additional setup after loading the view.
     }

@@ -40,5 +40,5 @@ class Alert {
  the completion block defined as a parameter in withInput() is explained as follows:
  
     @escaping: allows the block to execute even after the function has returned
-    unnamed parameter (_ result:VocabularyWord) - called here like complete(vocabWord): This allows the vocabulary word to be accessible to the View Controller once Done is pressed
+    (_ result:VocabularyWord) - called here like complete(vocabWord): This allows the vocabulary word to be accessible to the View Controller once Done is pressed
  */
