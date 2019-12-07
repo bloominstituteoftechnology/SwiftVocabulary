@@ -64,12 +64,12 @@ class WordsTableViewController: UITableViewController {
     //MARK: Helper Methods
     
     func addWord() {
-        Alert.withInput(title: "Enter New Word", message: "Enter a Word and Definition", vc: self) { (word) in
+        Alert.instance.showWithInput(title: "Enter New Word", message: "Enter a Word and Definition", vc: self) { (word) in
             if word.word != "Enter Word" && word.definition != "Enter Definition" && word.word != "" && word.definition != "" { //if a word and definition were entered:
                 self.vocabWords?.append(word)
                 self.tableView.reloadData()
             } else {
-                Alert.showBasic(title: "Word Not Entered", message: "Please Try Again", vc: self)
+                Alert.instance.show(title: "Word Not Entered", message: "Please Try Again", vc: self)
             }
         }
     }
