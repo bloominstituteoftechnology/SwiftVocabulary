@@ -18,6 +18,7 @@ class WordsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.vocabWords = [
             VocabularyWord(word: "var",
                            definition: "In Swift, a variable is a mutable property."),
