@@ -35,9 +35,12 @@ class WordsTableViewController: UITableViewController {
         if segue.identifier == "ShowDefinitionSegue" {
             if let destination = segue.destination as? DefinitionViewController {
                 let selectedRow = tableView.indexPathForSelectedRow
-                if let word = vocabWords[selectedRow] {
-                    destination.vocabWord = word
+                if let row = selectedRow?.row {
+                    if let word = vocabWords?[row] {
+                        destination.vocabWord = word
+                    }
                 }
+                
             }
         }
         // Get the new view controller using segue.destination.
