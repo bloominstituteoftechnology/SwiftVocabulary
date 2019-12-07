@@ -42,7 +42,14 @@
                             <outlet property="delegate" destination="GAf-y4-mBR" id="4ko-YD-9PX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="TYS-Tr-mdI"/>
+                    <navigationItem key="navigationItem" id="TYS-Tr-mdI">
+                        <barButtonItem key="rightBarButtonItem" title="Add" image="plus" catalog="system" id="6cD-LV-3bH">
+                            <connections>
+                                <action selector="addWordBtn:" destination="GAf-y4-mBR" id="qm2-SU-8Qw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTj-Rx-8eL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,4 +116,7 @@
             <point key="canvasLocation" x="-751" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
 </document>

@@ -9,12 +9,27 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
+    //MARK: @IBActions
+    @IBAction func addWordBtn(_ sender: UIBarButtonItem) {
+        addWord()
+    }
+    
     var vocabWords: [VocabularyWord]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.vocabWords = [
+            VocabularyWord(word: "var",
+                           definition: "In Swift, a variable is a mutable property."),
+            VocabularyWord(word: "let",
+                           definition: "In Swift, a let is an immutable property, also known as a constant.")
+        ]
+        self.tableView.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -22,11 +37,14 @@ class WordsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell") {
+            if let word = self.vocabWords?[indexPath.row] {
+                cell.textLabel?.text = word.word
+            }
+            return cell
+        }
         return UITableViewCell()
     }
-    
-    
-
     
     // MARK: - Navigation
 
@@ -40,11 +58,21 @@ class WordsTableViewController: UITableViewController {
                         destination.vocabWord = word
                     }
                 }
-                
             }
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    }
+    
+    //MARK: Helper Methods
+    
+    func addWord() {
+        Alert.withInput(title: "Enter New Word", message: "Enter a Word and Definition", vc: self) { (word) in
+            if word.word != "Enter Word" && word.definition != "Enter Definition" && word.word != "" && word.definition != "" { //if a word and definition were entered:
+                self.vocabWords?.append(word)
+                self.tableView.reloadData()
+            } else {
+                Alert.showBasic(title: "Word Not Entered", message: "Please Try Again", vc: self)
+            }
+        }
     }
     
 

@@ -18,6 +18,7 @@
 		B9355E8A2399C6CE00FB4890 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E892399C6CE00FB4890 /* WordsTableViewController.swift */; };
 		B9355E8C2399C6E800FB4890 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E8B2399C6E800FB4890 /* DefinitionViewController.swift */; };
 		B9C47A4F2399CAE600040200 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C47A4E2399CAE600040200 /* VocabularyWord.swift */; };
+		B9D260CE239B5FC600CF8A00 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D260CD239B5FC600CF8A00 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B9355E892399C6CE00FB4890 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		B9355E8B2399C6E800FB4890 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		B9C47A4E2399CAE600040200 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		B9D260CD239B5FC600CF8A00 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				B9C47A4E2399CAE600040200 /* VocabularyWord.swift */,
+				B9D260CD239B5FC600CF8A00 /* Alert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D260CE239B5FC600CF8A00 /* Alert.swift in Sources */,
 				B9C47A4F2399CAE600040200 /* VocabularyWord.swift in Sources */,
 				B9355E552399C59300FB4890 /* AppDelegate.swift in Sources */,
 				B9355E8C2399C6E800FB4890 /* DefinitionViewController.swift in Sources */,
