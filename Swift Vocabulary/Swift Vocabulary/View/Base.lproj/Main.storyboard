@@ -33,7 +33,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="LnR-UK-ySQ" kind="show" identifier="ShowDefinitionSegue" id="41S-no-U71"/>
+                                    <segue destination="LnR-UK-ySQ" kind="presentation" identifier="ShowDefinitionSegue" id="41S-no-U71"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -58,23 +58,33 @@
         <!--Definition View Controller-->
         <scene sceneID="jwz-CI-au3">
             <objects>
-                <viewController id="LnR-UK-ySQ" customClass="DefinitionViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="LnR-UK-ySQ" customClass="DefinitionViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="htP-im-lFn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wAc-q1-k5Y">
+                                <rect key="frame" x="0.0" y="5" width="414" height="20.5"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PfK-wD-DnN"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAy-mg-oho">
-                                <rect key="frame" x="0.0" y="112" width="414" height="74.5"/>
+                                <rect key="frame" x="0.0" y="30" width="414" height="80"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="IGa-MO-EQX"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzN-b0-aAf">
-                                <rect key="frame" x="169.5" y="128" width="75" height="32.5"/>
+                                <rect key="frame" x="169.5" y="54" width="75" height="32.5"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="28"/>
                                 <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="etK-jM-tzu">
-                                <rect key="frame" x="52" y="234.5" width="310.5" height="224"/>
+                                <rect key="frame" x="52" y="158" width="310.5" height="210.5"/>
                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -85,15 +95,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="etK-jM-tzu" firstAttribute="centerX" secondItem="CBr-N8-ZLh" secondAttribute="centerX" id="4Oo-0o-IvQ"/>
-                            <constraint firstItem="NzN-b0-aAf" firstAttribute="top" secondItem="CBr-N8-ZLh" secondAttribute="top" constant="40" id="5fu-f9-Kkc"/>
                             <constraint firstItem="eAy-mg-oho" firstAttribute="leading" secondItem="CBr-N8-ZLh" secondAttribute="leading" id="HFq-by-K6A"/>
                             <constraint firstItem="etK-jM-tzu" firstAttribute="width" secondItem="htP-im-lFn" secondAttribute="width" multiplier="0.75" id="Nee-k9-C4E"/>
-                            <constraint firstItem="eAy-mg-oho" firstAttribute="top" secondItem="CBr-N8-ZLh" secondAttribute="top" constant="24" id="OiX-oA-gWd"/>
                             <constraint firstItem="etK-jM-tzu" firstAttribute="height" secondItem="htP-im-lFn" secondAttribute="height" multiplier="0.25" id="Tkk-cV-586"/>
-                            <constraint firstItem="etK-jM-tzu" firstAttribute="top" secondItem="NzN-b0-aAf" secondAttribute="bottom" constant="74" id="Tqy-jF-mml"/>
                             <constraint firstItem="NzN-b0-aAf" firstAttribute="centerX" secondItem="htP-im-lFn" secondAttribute="centerX" id="b4S-z8-jiZ"/>
                             <constraint firstItem="etK-jM-tzu" firstAttribute="top" secondItem="eAy-mg-oho" secondAttribute="bottom" constant="48" id="e0n-7C-ueC"/>
+                            <constraint firstItem="wAc-q1-k5Y" firstAttribute="trailing" secondItem="eAy-mg-oho" secondAttribute="trailing" id="iYo-yT-cWY"/>
                             <constraint firstItem="eAy-mg-oho" firstAttribute="trailing" secondItem="CBr-N8-ZLh" secondAttribute="trailing" id="l1X-FC-3y9"/>
+                            <constraint firstItem="wAc-q1-k5Y" firstAttribute="leading" secondItem="eAy-mg-oho" secondAttribute="leading" id="u92-Da-2Dh"/>
+                            <constraint firstItem="eAy-mg-oho" firstAttribute="top" secondItem="wAc-q1-k5Y" secondAttribute="bottom" id="uuN-tb-6lD"/>
+                            <constraint firstItem="wAc-q1-k5Y" firstAttribute="top" secondItem="CBr-N8-ZLh" secondAttribute="top" id="vxp-i6-aAr"/>
+                            <constraint firstItem="NzN-b0-aAf" firstAttribute="centerY" secondItem="eAy-mg-oho" secondAttribute="centerY" id="yaI-z6-RLk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CBr-N8-ZLh"/>
                     </view>
@@ -125,6 +137,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.down" catalog="system" width="64" height="36"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
 </document>
