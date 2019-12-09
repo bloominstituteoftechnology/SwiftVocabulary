@@ -13,6 +13,7 @@
 		1B4FC274239EEB62006D263E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4FC272239EEB62006D263E /* LaunchScreen.storyboard */; };
 		1B4FC27C239EEBCA006D263E /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4FC27B239EEBCA006D263E /* WordsTableViewController.swift */; };
 		1B4FC27E239EEC12006D263E /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4FC27D239EEC12006D263E /* DefinitionViewController.swift */; };
+		1B4FC280239EEFF8006D263E /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4FC27F239EEFF8006D263E /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1B4FC275239EEB62006D263E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4FC27B239EEBCA006D263E /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		1B4FC27D239EEC12006D263E /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		1B4FC27F239EEFF8006D263E /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				1B4FC27B239EEBCA006D263E /* WordsTableViewController.swift */,
 				1B4FC27D239EEC12006D263E /* DefinitionViewController.swift */,
+				1B4FC27F239EEFF8006D263E /* VocabularyWord.swift */,
 				1B4FC26D239EEB5A006D263E /* Main.storyboard */,
 				1B4FC269239EEB5A006D263E /* AppDelegate.swift */,
 				1B4FC270239EEB62006D263E /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				1B4FC26A239EEB5A006D263E /* AppDelegate.swift in Sources */,
 				1B4FC27E239EEC12006D263E /* DefinitionViewController.swift in Sources */,
 				1B4FC27C239EEBCA006D263E /* WordsTableViewController.swift in Sources */,
+				1B4FC280239EEFF8006D263E /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
