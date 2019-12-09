@@ -18,7 +18,6 @@ class WordsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.vocabWords = [
             VocabularyWord(word: "var",
                            definition: "In Swift, a variable is a mutable property."),
@@ -27,37 +26,32 @@ class WordsTableViewController: UITableViewController {
             VocabularyWord(word: "optional",
                            definition: "Think of a box. You don't know what's in it until you unwrap it. An optional is a property with a value that may be nil (nothing).")
         ]
+        
         self.tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return vocabWords?.count ?? 0
+        return vocabWords?.count ?? 0 //return vocabwords.count. if vocabWords is nil, return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell") {
-            if let word = self.vocabWords?[indexPath.row] {
-                cell.backgroundColor = .systemTeal
-                cell.textLabel?.textColor = .systemBackground
-                cell.textLabel?.text = word.word
-            }
-            return cell
-        }
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell") else { return UITableViewCell() }
+        guard let word = self.vocabWords?[indexPath.row] else { return UITableViewCell() }
+        cell.backgroundColor = .systemTeal
+        cell.textLabel?.textColor = .systemBackground
+        cell.textLabel?.text = word.word
+        return cell
     }
     
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDefinitionSegue" {
-            if let destination = segue.destination as? DefinitionViewController {
-                let selectedRow = tableView.indexPathForSelectedRow
-                if let row = selectedRow?.row {
-                    if let word = vocabWords?[row] {
-                        destination.vocabWord = word
-                    }
-                }
-            }
+            guard let destination = segue.destination as? DefinitionViewController else { genericError(); return } //could write on 2 lines without the semicolon
+            guard let row = tableView.indexPathForSelectedRow?.row else { genericError(); return }
+            //test genericError(): vocabWords = nil
+            guard let word = vocabWords?[row] else { genericError(); return }
+            destination.vocabWord = word
         }
     }
     
@@ -74,5 +68,7 @@ class WordsTableViewController: UITableViewController {
         }
     }
     
-
+    func genericError() {
+        Alert.instance.show(title: "Unknown Error", message: "Something Went Wrong.\nPlease Try Again.", vc: self)
+    }
 }
