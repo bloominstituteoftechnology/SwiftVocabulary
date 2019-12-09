@@ -13,9 +13,11 @@ class WordsTableViewController: UITableViewController {
     @IBAction func addWordBtn(_ sender: UIBarButtonItem) {
         addWord()
     }
-    
+    //MARK: Class Properties
     var vocabWords: [VocabularyWord]?
     
+    
+    //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.vocabWords = [
@@ -30,6 +32,7 @@ class WordsTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
+    //MARK: TableView Delegate and DataSource Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vocabWords?.count ?? 0 //return vocabwords.count. if vocabWords is nil, return 0
     }
@@ -49,7 +52,7 @@ class WordsTableViewController: UITableViewController {
         if segue.identifier == "ShowDefinitionSegue" {
             guard let destination = segue.destination as? DefinitionViewController else { genericError(); return } //could write on 2 lines without the semicolon
             guard let row = tableView.indexPathForSelectedRow?.row else { genericError(); return }
-            //test genericError(): vocabWords = nil
+            //to test genericError(), use vocabWords = nil
             guard let word = vocabWords?[row] else { genericError(); return }
             destination.vocabWord = word
         }
@@ -64,6 +67,7 @@ class WordsTableViewController: UITableViewController {
                 self.tableView.reloadData()
             } else {
                 Alert.instance.show(title: "Word Not Entered", message: "Please Try Again", vc: self)
+                
             }
         }
     }
