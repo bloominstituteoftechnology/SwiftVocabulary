@@ -18,7 +18,14 @@ class DefinitionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateViews()
+    }
+    
+    func updateViews() {
+        if let vocabWord = vocabWord {
+            wordLabel.text = vocabWord.word
+            definitionTextView.text = vocabWord.definition
+        }
     }
     
 
