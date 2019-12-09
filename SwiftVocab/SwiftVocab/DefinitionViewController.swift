@@ -9,7 +9,9 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
-
+    @IBOutlet weak var DefinitionLabel: UILabel!
+    
+    @IBOutlet weak var DefinitionTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
