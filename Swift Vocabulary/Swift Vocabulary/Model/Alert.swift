@@ -9,10 +9,12 @@
 import UIKit
 class Alert {
     static let instance = Alert() //provides a built in instance so Alert doesn't have to be instantiated where its called
-    //static makes the property a member of the Type (Alert) rather than a member of the instance
+    //static makes the property a member of the Type/Class (Alert) rather than a member of the instance
+    
+    
+    //Previous commits were using class func. I wanted to make these changes because I copied this code from another project of mine. After looking at it carefully, I realized I didn't fully understand what was going on, as I had copied the code from a StackOverflow answer previously. So I educated myself, and made changes to the code based on my understanding before educating myself. In other words, I understand the code I've been using in previous commits now, but wanted to use something I understood before I was using code that I didn't understand
     
     //create and show an Alert (the keyword class before func could be used here in lieu of using the instance above. class and static basically achieve the same thing).
-    //Previous commits were using class func. I wanted to make these changes because I copied this code from another project of mine. After looking at it carefully, I realized I didn't fully understand what was going on, as I had copied the code from a StackOverflow answer previously. So I educated myself, and made changes to the code based on my current understanding.
     func show(title: String, message: String, vc: UIViewController) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
