@@ -10,18 +10,18 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
-    var vocabWords: [
-        VocabularyWord] = [VocabularyWord(word: "Variable", definition: "Any named piece of data in your code that may change when your program runs."),
-                           VocabularyWord(word: "Constant", definition: "A value that’s initialized once and cannot change, indicated in Swift by the let keyword."),
-                           VocabularyWord(word: "Downcast", definition: "To attempt to cast an object to one of its subclass types."),
-                           VocabularyWord(word: "Data model", definition: "The representation or structure of data within an app."),
-                           VocabularyWord(word: "Enumeration", definition: "A data type that defines a group of related values and enables you to work with those values in a type-safe way within your code.")]
-    
     // MARK: - Table view data source
+    
+    var vocabController = VocabularyWordController()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return vocabWords.count
+        return vocabController.vocabWords.count
     }
     
     
@@ -30,29 +30,29 @@ class WordsTableViewController: UITableViewController {
         
         // Configure the cell...
         
-        let text = vocabWords[indexPath.row]
+        let text = vocabController.vocabWords[indexPath.row]
         
         cell.textLabel?.text = text.word
         
         return cell
     }
     
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ShowDefinitionSegue" {
             if let definitionVC = segue.destination as? DefinitionViewController,
                 let indexPath = tableView.indexPathForSelectedRow {
                 
-                let word = vocabWords[indexPath.row]
+                let word = vocabController.vocabWords[indexPath.row]
                 definitionVC.vocabWord = word
             }
+        } else if segue.identifier == "NewWordSegue" {
+            if let newWordVC = segue.destination as? NewWordViewController {
+                newWordVC.vocabController = vocabController
+            }
         }
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     
-    
+    }
 }

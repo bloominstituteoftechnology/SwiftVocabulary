@@ -42,7 +42,14 @@
                             <outlet property="delegate" destination="nhA-NG-xqL" id="Tyf-V7-1Wi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9iA-Hp-Sba"/>
+                    <navigationItem key="navigationItem" id="9iA-Hp-Sba">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="0uT-9w-U6x">
+                            <connections>
+                                <action selector="addNewWordTapped:" destination="nhA-NG-xqL" id="8oF-KK-U6V"/>
+                                <segue destination="7T7-N0-Any" kind="show" identifier="NewWordSegue" id="b3P-LB-MN5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Av-US-fpm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,7 +72,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B6M-4A-OG7">
                                 <rect key="frame" x="20" y="204" width="374" height="141"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -109,6 +116,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jfq-gV-RKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53.623188405797109" y="126.5625"/>
+        </scene>
+        <!--New Word View Controller-->
+        <scene sceneID="Kkv-vx-dDJ">
+            <objects>
+                <viewController id="7T7-N0-Any" customClass="NewWordViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WE1-oS-ZDN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-JQ-Oe8">
+                                <rect key="frame" x="20" y="233.5" width="374" height="92"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type the word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbh-qg-CTL">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type the defintion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAv-03-oO5">
+                                        <rect key="frame" x="0.0" y="58" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05S-Np-AWk">
+                                <rect key="frame" x="97.5" y="143" width="219" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJ3-x1-RxW">
+                                <rect key="frame" x="129" y="381.5" width="156" height="55"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Q6T-hx-LB8"/>
+                                    <constraint firstAttribute="width" constant="156" id="Rob-yg-L7s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Add Word"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addToWords:" destination="7T7-N0-Any" eventType="touchUpInside" id="87w-BA-ebL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5RH-JQ-Oe8" firstAttribute="top" secondItem="05S-Np-AWk" secondAttribute="bottom" constant="49.5" id="0uH-G0-cND"/>
+                            <constraint firstItem="MJ3-x1-RxW" firstAttribute="top" secondItem="5RH-JQ-Oe8" secondAttribute="bottom" constant="56" id="2L9-NM-X6Q"/>
+                            <constraint firstItem="05S-Np-AWk" firstAttribute="top" secondItem="bZ1-M8-lF5" secondAttribute="top" constant="55" id="LIT-Oi-Ela"/>
+                            <constraint firstItem="MJ3-x1-RxW" firstAttribute="centerX" secondItem="WE1-oS-ZDN" secondAttribute="centerX" id="LTo-IG-ICt"/>
+                            <constraint firstItem="05S-Np-AWk" firstAttribute="centerX" secondItem="WE1-oS-ZDN" secondAttribute="centerX" id="WNv-jz-9u5"/>
+                            <constraint firstItem="5RH-JQ-Oe8" firstAttribute="leading" secondItem="bZ1-M8-lF5" secondAttribute="leading" constant="20" id="mBI-bF-oRn"/>
+                            <constraint firstItem="bZ1-M8-lF5" firstAttribute="trailing" secondItem="5RH-JQ-Oe8" secondAttribute="trailing" constant="20" id="sBp-Ng-Zc2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bZ1-M8-lF5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1DD-gz-zXz"/>
+                    <connections>
+                        <outlet property="newDefinitionTextField" destination="XAv-03-oO5" id="r3K-dK-MHV"/>
+                        <outlet property="newWordTextField" destination="kbh-qg-CTL" id="Wsa-Ex-nbR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QK6-Uc-qhQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889.8550724637682" y="-565.17857142857144"/>
         </scene>
     </scenes>
 </document>
