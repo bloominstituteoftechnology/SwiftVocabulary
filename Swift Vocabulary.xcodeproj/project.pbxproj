@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		056281BA2374CB3000F1C9FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281B92374CB3000F1C9FF /* AppDelegate.swift */; };
-		056281BC2374CB3000F1C9FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281BB2374CB3000F1C9FF /* SceneDelegate.swift */; };
-		056281C12374CB3000F1C9FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056281BF2374CB3000F1C9FF /* Main.storyboard */; };
-		056281C32374CB3300F1C9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056281C22374CB3300F1C9FF /* Assets.xcassets */; };
-		056281C62374CB3300F1C9FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056281C42374CB3300F1C9FF /* LaunchScreen.storyboard */; };
-		056281CF2374CFF400F1C9FF /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281CE2374CFF400F1C9FF /* WordsTableViewController.swift */; };
-		056281D12374D01D00F1C9FF /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281D02374D01D00F1C9FF /* DefinitionViewController.swift */; };
-		056281D32374DA7500F1C9FF /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056281D22374DA7500F1C9FF /* VocabularyWord.swift */; };
+		056646D8239EF5F300B55227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056646D7239EF5F300B55227 /* AppDelegate.swift */; };
+		056646DA239EF5F300B55227 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056646D9239EF5F300B55227 /* SceneDelegate.swift */; };
+		056646DF239EF5F300B55227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056646DD239EF5F300B55227 /* Main.storyboard */; };
+		056646E1239EF5F700B55227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056646E0239EF5F700B55227 /* Assets.xcassets */; };
+		056646E4239EF5F700B55227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056646E2239EF5F700B55227 /* LaunchScreen.storyboard */; };
+		056646ED239EF64D00B55227 /* WorldsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056646EC239EF64D00B55227 /* WorldsTableTableViewController.swift */; };
+		056646EF239EF66B00B55227 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056646EE239EF66B00B55227 /* DefinitionViewController.swift */; };
+		056646F1239EFA6700B55227 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056646F0239EFA6700B55227 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		056281B62374CB3000F1C9FF /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		056281B92374CB3000F1C9FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		056281BB2374CB3000F1C9FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		056281C02374CB3000F1C9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		056281C22374CB3300F1C9FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		056281C52374CB3300F1C9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		056281C72374CB3300F1C9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		056281CE2374CFF400F1C9FF /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
-		056281D02374D01D00F1C9FF /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
-		056281D22374DA7500F1C9FF /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		056646D4239EF5F300B55227 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		056646D7239EF5F300B55227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		056646D9239EF5F300B55227 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		056646DE239EF5F300B55227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		056646E0239EF5F700B55227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		056646E3239EF5F700B55227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		056646E5239EF5F700B55227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056646EC239EF64D00B55227 /* WorldsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsTableTableViewController.swift; sourceTree = "<group>"; };
+		056646EE239EF66B00B55227 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		056646F0239EFA6700B55227 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		056281B32374CB3000F1C9FF /* Frameworks */ = {
+		056646D1239EF5F300B55227 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,42 +41,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		056281AD2374CB3000F1C9FF = {
+		056646CB239EF5F300B55227 = {
 			isa = PBXGroup;
 			children = (
-				056281B82374CB3000F1C9FF /* Swift Vocabulary */,
-				056281B72374CB3000F1C9FF /* Products */,
+				056646D6239EF5F300B55227 /* Swift Vocabulary */,
+				056646D5239EF5F300B55227 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		056281B72374CB3000F1C9FF /* Products */ = {
+		056646D5239EF5F300B55227 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				056281B62374CB3000F1C9FF /* Swift Vocabulary.app */,
+				056646D4239EF5F300B55227 /* Swift Vocabulary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		056281B82374CB3000F1C9FF /* Swift Vocabulary */ = {
+		056646D6239EF5F300B55227 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				056281BF2374CB3000F1C9FF /* Main.storyboard */,
-				056281CE2374CFF400F1C9FF /* WordsTableViewController.swift */,
-				056281D02374D01D00F1C9FF /* DefinitionViewController.swift */,
-				056281C72374CB3300F1C9FF /* Info.plist */,
-				056281CD2374CB4F00F1C9FF /* Resources */,
-				056281D22374DA7500F1C9FF /* VocabularyWord.swift */,
+				056646EC239EF64D00B55227 /* WorldsTableTableViewController.swift */,
+				056646EE239EF66B00B55227 /* DefinitionViewController.swift */,
+				056646DD239EF5F300B55227 /* Main.storyboard */,
+				056646F0239EFA6700B55227 /* VocabularyWord.swift */,
+				056646E5239EF5F700B55227 /* Info.plist */,
+				056646EB239EF61100B55227 /* Resources */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
 		};
-		056281CD2374CB4F00F1C9FF /* Resources */ = {
+		056646EB239EF61100B55227 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				056281BB2374CB3000F1C9FF /* SceneDelegate.swift */,
-				056281C22374CB3300F1C9FF /* Assets.xcassets */,
-				056281C42374CB3300F1C9FF /* LaunchScreen.storyboard */,
-				056281B92374CB3000F1C9FF /* AppDelegate.swift */,
+				056646D7239EF5F300B55227 /* AppDelegate.swift */,
+				056646D9239EF5F300B55227 /* SceneDelegate.swift */,
+				056646E0239EF5F700B55227 /* Assets.xcassets */,
+				056646E2239EF5F700B55227 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -84,13 +84,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		056281B52374CB3000F1C9FF /* Swift Vocabulary */ = {
+		056646D3239EF5F300B55227 /* Swift Vocabulary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 056281CA2374CB3300F1C9FF /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */;
+			buildConfigurationList = 056646E8239EF5F700B55227 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */;
 			buildPhases = (
-				056281B22374CB3000F1C9FF /* Sources */,
-				056281B32374CB3000F1C9FF /* Frameworks */,
-				056281B42374CB3000F1C9FF /* Resources */,
+				056646D0239EF5F300B55227 /* Sources */,
+				056646D1239EF5F300B55227 /* Frameworks */,
+				056646D2239EF5F300B55227 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -98,25 +98,25 @@
 			);
 			name = "Swift Vocabulary";
 			productName = "Swift Vocabulary";
-			productReference = 056281B62374CB3000F1C9FF /* Swift Vocabulary.app */;
+			productReference = 056646D4239EF5F300B55227 /* Swift Vocabulary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		056281AE2374CB3000F1C9FF /* Project object */ = {
+		056646CC239EF5F300B55227 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Rohan Taylor";
 				TargetAttributes = {
-					056281B52374CB3000F1C9FF = {
-						CreatedOnToolsVersion = 11.1;
+					056646D3239EF5F300B55227 = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 056281B12374CB3000F1C9FF /* Build configuration list for PBXProject "SwiftVocabulary" */;
+			buildConfigurationList = 056646CF239EF5F300B55227 /* Build configuration list for PBXProject "Swift Vocabulary" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,57 +124,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 056281AD2374CB3000F1C9FF;
-			productRefGroup = 056281B72374CB3000F1C9FF /* Products */;
+			mainGroup = 056646CB239EF5F300B55227;
+			productRefGroup = 056646D5239EF5F300B55227 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				056281B52374CB3000F1C9FF /* Swift Vocabulary */,
+				056646D3239EF5F300B55227 /* Swift Vocabulary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		056281B42374CB3000F1C9FF /* Resources */ = {
+		056646D2239EF5F300B55227 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056281C62374CB3300F1C9FF /* LaunchScreen.storyboard in Resources */,
-				056281C32374CB3300F1C9FF /* Assets.xcassets in Resources */,
-				056281C12374CB3000F1C9FF /* Main.storyboard in Resources */,
+				056646E4239EF5F700B55227 /* LaunchScreen.storyboard in Resources */,
+				056646E1239EF5F700B55227 /* Assets.xcassets in Resources */,
+				056646DF239EF5F300B55227 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		056281B22374CB3000F1C9FF /* Sources */ = {
+		056646D0239EF5F300B55227 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056281BA2374CB3000F1C9FF /* AppDelegate.swift in Sources */,
-				056281D12374D01D00F1C9FF /* DefinitionViewController.swift in Sources */,
-				056281D32374DA7500F1C9FF /* VocabularyWord.swift in Sources */,
-				056281BC2374CB3000F1C9FF /* SceneDelegate.swift in Sources */,
-				056281CF2374CFF400F1C9FF /* WordsTableViewController.swift in Sources */,
+				056646ED239EF64D00B55227 /* WorldsTableTableViewController.swift in Sources */,
+				056646D8239EF5F300B55227 /* AppDelegate.swift in Sources */,
+				056646F1239EFA6700B55227 /* VocabularyWord.swift in Sources */,
+				056646DA239EF5F300B55227 /* SceneDelegate.swift in Sources */,
+				056646EF239EF66B00B55227 /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		056281BF2374CB3000F1C9FF /* Main.storyboard */ = {
+		056646DD239EF5F300B55227 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				056281C02374CB3000F1C9FF /* Base */,
+				056646DE239EF5F300B55227 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		056281C42374CB3300F1C9FF /* LaunchScreen.storyboard */ = {
+		056646E2239EF5F700B55227 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				056281C52374CB3300F1C9FF /* Base */,
+				056646E3239EF5F700B55227 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		056281C82374CB3300F1C9FF /* Debug */ = {
+		056646E6239EF5F700B55227 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -242,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		056281C92374CB3300F1C9FF /* Release */ = {
+		056646E7239EF5F700B55227 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -296,7 +296,7 @@
 			};
 			name = Release;
 		};
-		056281CB2374CB3300F1C9FF /* Debug */ = {
+		056646E9239EF5F700B55227 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -314,7 +314,7 @@
 			};
 			name = Debug;
 		};
-		056281CC2374CB3300F1C9FF /* Release */ = {
+		056646EA239EF5F700B55227 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -335,25 +335,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		056281B12374CB3000F1C9FF /* Build configuration list for PBXProject "SwiftVocabulary" */ = {
+		056646CF239EF5F300B55227 /* Build configuration list for PBXProject "Swift Vocabulary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				056281C82374CB3300F1C9FF /* Debug */,
-				056281C92374CB3300F1C9FF /* Release */,
+				056646E6239EF5F700B55227 /* Debug */,
+				056646E7239EF5F700B55227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		056281CA2374CB3300F1C9FF /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */ = {
+		056646E8239EF5F700B55227 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				056281CB2374CB3300F1C9FF /* Debug */,
-				056281CC2374CB3300F1C9FF /* Release */,
+				056646E9239EF5F700B55227 /* Debug */,
+				056646EA239EF5F700B55227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 056281AE2374CB3000F1C9FF /* Project object */;
+	rootObject = 056646CC239EF5F300B55227 /* Project object */;
 }
