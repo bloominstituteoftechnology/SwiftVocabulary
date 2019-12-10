@@ -10,15 +10,14 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
-    var words: [VocabularyWord] = [VocabularyWord(name: "Malik", definition: "King"),
-                                   VocabularyWord(name: "Melodia", definition: "Queen")]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(name: "Malik", definition: "King")]
 
    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return words.count
+        return vocabWords.count
     }
 
     
@@ -28,7 +27,7 @@ class WordsTableViewController: UITableViewController {
         // Configure the cell...
          print(indexPath.row)
         
-        let word = words[indexPath.row]
+        let word = vocabWords[indexPath.row]
         
         cell.textLabel?.text = word.name
 
@@ -41,12 +40,12 @@ class WordsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
-        if segue.identifier == "ShowDefinition" {
+        if segue.identifier == "ShowDefinitionSegue" {
         
         if let indexPath = tableView.indexPathForSelectedRow,
                         let definitionVC = segue.destination as? DefinitionViewController {
-                        let word = words[indexPath.row]
-                        definitionVC.cellWord = word
+                        let word = vocabWords[indexPath.row]
+                        definitionVC.vocabWord = word
          }
       }
    }
