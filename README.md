@@ -52,7 +52,7 @@ The screen recording below shows you what the final product should do:
     * Check to make sure the segue's identifier is `"ShowDefinitionSegue"`.
     * Get the destination `DefinitionViewController` by conditionally casting `segue.destination` to `DefinitionViewController`.
     * Get the index path for the selected row using `tableView.indexPathForSelectedRow`.
-    * Use that index path to get the appropriate `VocabularyWord` instance from `vocabController`'s `vocabWords` array.
+    * Use that index path to get the appropriate `VocabularyWord` instance from the table view controller's `vocabWords` array.
     * Assign the vocabulary word to the `DefinitionViewController`'s `vocabWord` property.
 
 ### Implement `DefinitionViewController`
