@@ -67,7 +67,6 @@ class WordsTableViewController: UITableViewController {
                 self.tableView.reloadData()
             } else {
                 Alert.instance.show(title: "Word Not Entered", message: "Please Try Again", vc: self)
-                
             }
         }
     }
