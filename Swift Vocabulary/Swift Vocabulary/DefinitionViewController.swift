@@ -12,8 +12,6 @@ class DefinitionViewController: UIViewController {
 
     
     @IBOutlet weak var label: UILabel!
-    
-    
     @IBOutlet weak var textView: UITextView!
     
 
