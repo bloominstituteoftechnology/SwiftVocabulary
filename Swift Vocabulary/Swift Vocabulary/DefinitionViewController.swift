@@ -16,7 +16,7 @@ class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
-    var jon = "Jon"
+
     
     
     override func viewDidLoad() {
