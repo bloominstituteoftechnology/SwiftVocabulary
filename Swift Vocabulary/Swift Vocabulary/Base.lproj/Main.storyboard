@@ -34,7 +34,7 @@
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="ShowDefinitionController"/>
                                 <connections>
-                                    <segue destination="x7o-N2-Yr3" kind="show" id="xsw-UH-kDO"/>
+                                    <segue destination="x7o-N2-Yr3" kind="show" identifier="ShowDefinitionSegue" id="xsw-UH-kDO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
