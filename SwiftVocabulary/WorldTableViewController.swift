@@ -10,7 +10,7 @@ import UIKit
 
 class WorldTableViewController: UITableViewController {
 
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "not consistent or                                 having a fixed pattern; liable to change."),
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "not consistent or having a fixed pattern; liable to change."),
                                       VocabularyWord(word: "Constant", definition: "a situation or state of affairs that does not change."),
                                       VocabularyWord(word: "Function", definition: "work or operate in a proper or particular way.")]
     
