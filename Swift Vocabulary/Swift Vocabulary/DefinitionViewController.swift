@@ -14,9 +14,10 @@ class DefinitionViewController: UIViewController {
     
     func updateViews() {
         if let unwrappedVocabWord = vocabWord {
-            title = unwrappedVocabWord.word
-            title = unwrappedVocabWord.definition
             
+            wordTextField?.text = unwrappedVocabWord.word
+            wordDefinitionTextField?.text = unwrappedVocabWord.definition
+
         }
     }
     
@@ -27,6 +28,7 @@ class DefinitionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         updateViews()
 
