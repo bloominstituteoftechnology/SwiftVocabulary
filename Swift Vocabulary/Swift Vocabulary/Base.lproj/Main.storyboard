@@ -84,6 +84,10 @@
                         <viewLayoutGuide key="safeArea" id="DPu-mu-OOj"/>
                     </view>
                     <navigationItem key="navigationItem" id="1mi-Gi-C5O"/>
+                    <connections>
+                        <outlet property="wordDefinitionTextField" destination="QP2-xk-wau" id="i81-hS-jCN"/>
+                        <outlet property="wordTextField" destination="X4a-25-2nU" id="o9t-6J-cpq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0s-aX-oIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

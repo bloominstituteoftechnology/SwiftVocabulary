@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15797F6223D6A95F00E86B35 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15797F6123D6A95F00E86B35 /* VocabularyWord.swift */; };
 		15E0AB1923D69C9800EDA1DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E0AB1823D69C9800EDA1DE /* AppDelegate.swift */; };
 		15E0AB1B23D69C9800EDA1DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E0AB1A23D69C9800EDA1DE /* SceneDelegate.swift */; };
 		15E0AB2023D69C9800EDA1DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E0AB1E23D69C9800EDA1DE /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15797F6123D6A95F00E86B35 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 		15E0AB1523D69C9800EDA1DE /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E0AB1823D69C9800EDA1DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E0AB1A23D69C9800EDA1DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				15E0AB1E23D69C9800EDA1DE /* Main.storyboard */,
+				15797F6123D6A95F00E86B35 /* VocabularyWord.swift */,
 				15E0AB2D23D69CFF00EDA1DE /* WordsTableTableViewController.swift */,
 				15E0AB2F23D69D2A00EDA1DE /* DefinitionViewController.swift */,
 				15E0AB2C23D69CAD00EDA1DE /* Resources */,
@@ -151,6 +154,7 @@
 			files = (
 				15E0AB2E23D69CFF00EDA1DE /* WordsTableTableViewController.swift in Sources */,
 				15E0AB1923D69C9800EDA1DE /* AppDelegate.swift in Sources */,
+				15797F6223D6A95F00E86B35 /* VocabularyWord.swift in Sources */,
 				15E0AB1B23D69C9800EDA1DE /* SceneDelegate.swift in Sources */,
 				15E0AB3023D69D2A00EDA1DE /* DefinitionViewController.swift in Sources */,
 			);

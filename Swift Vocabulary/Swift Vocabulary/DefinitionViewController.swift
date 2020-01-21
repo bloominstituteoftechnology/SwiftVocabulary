@@ -11,8 +11,10 @@ import UIKit
 class DefinitionViewController: UIViewController {
     
     //Mark: Properties
+    @IBOutlet weak var wordTextField: UILabel!
     
-
+    @IBOutlet weak var wordDefinitionTextField: UITextView!
+    
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 
