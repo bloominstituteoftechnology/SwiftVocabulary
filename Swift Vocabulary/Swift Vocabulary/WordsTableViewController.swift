@@ -10,7 +10,10 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
-    var vocabWords: [VocabularyWord] = [VocabularyWord(name: "Malik", definition: "King")]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(name: "Malik", definition: "King"),
+                                        VocabularyWord(name: "Beacon", definition: "A person or thing that illuminates or inspires."),
+                                         VocabularyWord(name: "Prolific", definition: "Profusely productive or fruitful.")]
+                                        
 
    
     // MARK: - Table view data source
