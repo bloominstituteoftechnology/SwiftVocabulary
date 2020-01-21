@@ -10,6 +10,16 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+    var vocabWord: VocabularyWord?
+    
+    func updateViews() {
+        if let unwrappedVocabWord = cellVocabWord {
+            label = unwrappedVocabWord.word
+            
+            
+        }
+    }
+    
     //Mark: Properties
     @IBOutlet weak var wordTextField: UILabel!
     
@@ -32,4 +42,3 @@ class DefinitionViewController: UIViewController {
     }
     */
 
-}
