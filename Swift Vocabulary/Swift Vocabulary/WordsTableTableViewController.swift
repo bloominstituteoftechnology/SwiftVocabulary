@@ -10,9 +10,9 @@ import UIKit
 
 class WordsTableTableViewController: UITableViewController {
     
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A named value used to store information. Variables can be changed after being create."),
-                                        VocabularyWord(word: "Constant", definition: ""),
-                                        VocabularyWord(word: "Function", definition: "")]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A named value used to store information. Variables can be changed after being created."),
+                                        VocabularyWord(word: "Constant", definition: "A named value used to store information. Constants cannot be changed after being created."),
+                                        VocabularyWord(word: "Function", definition: "A self-contained chunk of code that performs a specific task.")]
 
     
 
@@ -54,11 +54,9 @@ class WordsTableTableViewController: UITableViewController {
                 let wordDetailVC = segue.destination as? DefinitionViewController {
                 
                  let vocabWord = vocabWords[indexPath.row]
-                wordDetailVC. = vocabWord
+                wordDetailVC.vocabWord = vocabWord
             }
     }
-    
 
 }
-// Get the new view controller using segue.destination.
-// Pass the selected object to the new view controller.
+}

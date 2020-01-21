@@ -13,9 +13,9 @@ class DefinitionViewController: UIViewController {
     var vocabWord: VocabularyWord?
     
     func updateViews() {
-        if let unwrappedVocabWord = cellVocabWord {
-            label = unwrappedVocabWord.word
-            
+        if let unwrappedVocabWord = vocabWord {
+            title = unwrappedVocabWord.word
+            title = unwrappedVocabWord.definition
             
         }
     }
@@ -25,10 +25,11 @@ class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var wordDefinitionTextField: UITextView!
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        updateViews()
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -42,3 +43,4 @@ class DefinitionViewController: UIViewController {
     }
     */
 
+}
