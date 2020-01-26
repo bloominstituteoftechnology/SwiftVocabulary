@@ -16,7 +16,9 @@ class DefinitionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet var definitionTextView: UITextView!
+    
+    @IBOutlet var wordLabel: UILabel!
     /*
     // MARK: - Navigation
 
