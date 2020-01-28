@@ -8,21 +8,10 @@
 
 import Foundation
 
-
 class VocabularyController {
-    
-    
 var vocabWords: [VocabularyWord] = []
-    
-    
     func createVocabWord() {
-        
         vocabWords.append(VocabularyWord(word: "Variable", definition: "An object that associates a name with a value. The value can be changed in the future."))
     }
-        
-
-        
-    
-    
 }
 
