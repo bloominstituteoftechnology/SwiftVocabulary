@@ -14,6 +14,7 @@
 		BB701E0223E2511400E8EFEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB701E0023E2511400E8EFEA /* LaunchScreen.storyboard */; };
 		BB701E0E23E251DD00E8EFEA /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB701E0D23E251DD00E8EFEA /* WordsTableViewController.swift */; };
 		BB701E1023E251FC00E8EFEA /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB701E0F23E251FC00E8EFEA /* DefinitionViewController.swift */; };
+		BB701E1223E255C500E8EFEA /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB701E1123E255C500E8EFEA /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BB701E0323E2511400E8EFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB701E0D23E251DD00E8EFEA /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		BB701E0F23E251FC00E8EFEA /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		BB701E1123E255C500E8EFEA /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		BB701E0923E2515600E8EFEA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BB701E1123E255C500E8EFEA /* VocabularyWord.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				BB701DF623E2511300E8EFEA /* AppDelegate.swift in Sources */,
 				BB701E1023E251FC00E8EFEA /* DefinitionViewController.swift in Sources */,
+				BB701E1223E255C500E8EFEA /* VocabularyWord.swift in Sources */,
 				BB701DF823E2511300E8EFEA /* SceneDelegate.swift in Sources */,
 				BB701E0E23E251DD00E8EFEA /* WordsTableViewController.swift in Sources */,
 			);
