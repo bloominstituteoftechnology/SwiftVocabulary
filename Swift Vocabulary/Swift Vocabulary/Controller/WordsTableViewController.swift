@@ -61,8 +61,13 @@ class WordsTableViewController: UITableViewController {
     @objc func promptForWord() {
         let ac = UIAlertController(title: "Enter new word", message: nil, preferredStyle: .alert)
         
-        ac.addTextField()
-        ac.addTextField()
+        //ac.addTextField().placeholder = "word"
+        ac.addTextField { (textField) in
+        textField.placeholder = "Word"
+        }
+        ac.addTextField { (textField) in
+        textField.placeholder = "Definition"
+        }
         
         let submitAction = UIAlertAction(title: "Submit", style: .default) {
             [weak self, weak ac] action in guard let word = ac?.textFields?[0].text, let definition = ac?.textFields?[1].text
