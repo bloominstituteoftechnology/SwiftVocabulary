@@ -10,9 +10,14 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
+    //definitions from dictionary.com
     var vocabWords: [VocabularyWord] = [
-        VocabularyWord(word: "First word", definition: "First definition"),
-        VocabularyWord(word: "Second word", definition: "Second definition")]
+        VocabularyWord(word: "Aarvark", definition: "noun: a large, nocturnal, burrowing mammal."),
+        VocabularyWord(word: "Aardwolf", definition: "noun: a striped, hyenalike mammal."),
+        VocabularyWord(word: "Aaronic", definition: "adjective: of or relating to Aaron."),
+        VocabularyWord(word: "Abacist", definition: "noun: a person skilled in using an abacus."),
+        VocabularyWord(word: "Aback", definition: "adverb: toward the back."),
+        VocabularyWord(word: "Abalone", definition: "noun: a large mollusk of the genus Haliotis, having a bowllike shell bearing a row of respiratory holes, the flesh of which is used for food and the shell for ornament and as a source of mother-of-pearl.")]
     
 
     // MARK: - Table view data source
