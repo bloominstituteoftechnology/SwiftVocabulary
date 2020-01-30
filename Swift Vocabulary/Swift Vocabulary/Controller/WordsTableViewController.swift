@@ -62,18 +62,19 @@ class WordsTableViewController: UITableViewController {
         let ac = UIAlertController(title: "Enter new word", message: nil, preferredStyle: .alert)
         
         ac.addTextField()
+        ac.addTextField()
         
         let submitAction = UIAlertAction(title: "Submit", style: .default) {
-            [weak self, weak ac] action in guard let answer = ac?.textFields?[0].text
+            [weak self, weak ac] action in guard let word = ac?.textFields?[0].text, let definition = ac?.textFields?[1].text
                 else {return}
-            self?.submit(answer)
+            self?.submit(word, definition)
         }
         ac.addAction(submitAction)
         present(ac, animated: true)
     }
     
-    func submit(_ answer: String) {
-        vocabWords.insert(VocabularyWord(word: answer, definition: ""), at: 0)
+    func submit(_ answer: String, _ definition: String) {
+        vocabWords.insert(VocabularyWord(word: answer, definition: definition), at: 0)
         let indexPath = IndexPath(row: 0, section: 0 )
         tableView.insertRows(at: [indexPath], with: .automatic)
     }
