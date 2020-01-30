@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B4ACDDE23E279B00034B463 /* SceneDelegate copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4ACDDD23E279B00034B463 /* SceneDelegate copy.swift */; };
 		7BCB0576237CE8F100A83B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCB0575237CE8F100A83B55 /* AppDelegate.swift */; };
-		7BCB0578237CE8F100A83B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCB0577237CE8F100A83B55 /* SceneDelegate.swift */; };
 		7BCB057D237CE8F100A83B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCB057B237CE8F100A83B55 /* Main.storyboard */; };
 		7BCB057F237CE8F500A83B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BCB057E237CE8F500A83B55 /* Assets.xcassets */; };
 		7BCB0582237CE8F500A83B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCB0580237CE8F500A83B55 /* LaunchScreen.storyboard */; };
@@ -19,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B4ACDDD23E279B00034B463 /* SceneDelegate copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate copy.swift"; sourceTree = "<group>"; };
 		7BCB0572237CE8F100A83B55 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCB0575237CE8F100A83B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BCB0577237CE8F100A83B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7BCB057C237CE8F100A83B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BCB057E237CE8F500A83B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BCB0581237CE8F500A83B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,11 +43,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B4ACDDF23E279C40034B463 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BCB0583237CE8F500A83B55 /* Info.plist */,
+				7BCB0575237CE8F100A83B55 /* AppDelegate.swift */,
+				7B4ACDDD23E279B00034B463 /* SceneDelegate copy.swift */,
+				7BCB057E237CE8F500A83B55 /* Assets.xcassets */,
+				7BCB0580237CE8F500A83B55 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7B4ACDE023E279E10034B463 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BCB0589237CE98F00A83B55 /* WordsTableViewController.swift */,
+				7BCB058B237CE9AC00A83B55 /* DefinitionViewController.swift */,
+				7BCB058F237D1CA300A83B55 /* VocabController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7B4ACDE123E27A000034B463 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7BCB058D237CFD4F00A83B55 /* VocabularyWord.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		7BCB0569237CE8F100A83B55 = {
 			isa = PBXGroup;
 			children = (
-				7BCB0574237CE8F100A83B55 /* Swift Vocabulary */,
 				7BCB0573237CE8F100A83B55 /* Products */,
+				7BCB0574237CE8F100A83B55 /* Swift Vocabulary */,
+				7BCB057B237CE8F100A83B55 /* Main.storyboard */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,16 +93,9 @@
 		7BCB0574237CE8F100A83B55 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				7BCB0575237CE8F100A83B55 /* AppDelegate.swift */,
-				7BCB0577237CE8F100A83B55 /* SceneDelegate.swift */,
-				7BCB057B237CE8F100A83B55 /* Main.storyboard */,
-				7BCB057E237CE8F500A83B55 /* Assets.xcassets */,
-				7BCB0580237CE8F500A83B55 /* LaunchScreen.storyboard */,
-				7BCB0583237CE8F500A83B55 /* Info.plist */,
-				7BCB058B237CE9AC00A83B55 /* DefinitionViewController.swift */,
-				7BCB0589237CE98F00A83B55 /* WordsTableViewController.swift */,
-				7BCB058D237CFD4F00A83B55 /* VocabularyWord.swift */,
-				7BCB058F237D1CA300A83B55 /* VocabController.swift */,
+				7B4ACDDF23E279C40034B463 /* Resources */,
+				7B4ACDE123E27A000034B463 /* Objects */,
+				7B4ACDE023E279E10034B463 /* Controllers */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -148,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BCB0576237CE8F100A83B55 /* AppDelegate.swift in Sources */,
-				7BCB0578237CE8F100A83B55 /* SceneDelegate.swift in Sources */,
+				7B4ACDDE23E279B00034B463 /* SceneDelegate copy.swift in Sources */,
 				7BCB058E237CFD4F00A83B55 /* VocabularyWord.swift in Sources */,
 				7BCB058A237CE98F00A83B55 /* WordsTableViewController.swift in Sources */,
 				7BCB058C237CE9AC00A83B55 /* DefinitionViewController.swift in Sources */,
@@ -297,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Swift Vocabulary/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift Vocabulary/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Swift Vocabulary/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift Vocabulary/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
