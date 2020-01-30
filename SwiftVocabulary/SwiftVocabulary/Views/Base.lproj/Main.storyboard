@@ -71,8 +71,8 @@
                                 <rect key="frame" x="20" y="108" width="345" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -80,7 +80,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Upl-ml-uPS"/>
                     <connections>
+                        <outlet property="definition" destination="g4K-RN-H79" id="32x-dE-zrm"/>
                         <outlet property="view" destination="9gD-xP-l4g" id="cXb-P3-vlZ"/>
+                        <outlet property="word" destination="9gD-xP-l4g" id="EpK-aD-GMZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMW-wt-sw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
