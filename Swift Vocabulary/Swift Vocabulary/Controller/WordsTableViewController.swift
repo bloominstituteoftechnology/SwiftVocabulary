@@ -73,7 +73,9 @@ class WordsTableViewController: UITableViewController {
     }
     
     func submit(_ answer: String) {
-        
+        vocabWords.insert(VocabularyWord(word: answer, definition: ""), at: 0)
+        let indexPath = IndexPath(row: 0, section: 0 )
+        tableView.insertRows(at: [indexPath], with: .automatic)
     }
 
 }
