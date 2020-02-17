@@ -21,10 +21,22 @@ class WordsTableViewController: UITableViewController {
     
     @IBAction func addWordButtonPress(_ sender: Any) {
         vocabWords[0] = VocabularyWord(word: "Button", definition: "was pressed")
-        let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-        NSLog("The \"OK\" alert occured.")
+        // ---
+        let alert = UIAlertController(title: "Add Name and Definition", message: nil, preferredStyle: .alert)
+        // ---
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "What does this even do"), style: .cancel, handler: { _ in
+        NSLog("User exitted alert.")
         }))
+        // ---
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in NSLog("User pressed OK")}))
+        // ---
+        alert.addTextField(configurationHandler: nil)
+        alert.addTextField(configurationHandler: nil)
+        // ---
+        alert.textFields?[0].placeholder = "Word Name"
+        alert.textFields?[1].placeholder = "Word Description"
+        print(alert.textFields)
+        // ---
         self.present(alert, animated: true, completion: nil)
         
     }
