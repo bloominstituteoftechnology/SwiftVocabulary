@@ -13,16 +13,32 @@ class WordsTableViewController: UITableViewController {
     var vocabWords = [VocabularyWord]()
     let webScraper =  WebScraper()
     
+    let activityIndicatorView = UIActivityIndicatorView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        populateVocabWords()
+        self.view.addSubview(activityIndicatorView)
+        activityIndicatorView
+            .centerHorizontally()
+            .centerVertically()
+            .constrain(width: 200, height: 200)
+        activityIndicatorView.startAnimating()
+        activityIndicatorView.style = .large
+        
+        fetchVocabWords()
+        
     }
     
-    func populateVocabWords() {
-        vocabWords += [
-            VocabularyWord(word: "Variable", definition: "A name used to store information. Variables can change after being created"),
-            VocabularyWord(word: "Constant", definition: "A name used to store information. Unlike variables, constants can not be changed after being created"),
-        ]
+    
+    func fetchVocabWords() {
+        webScraper.fetchVocabWords { [weak self] vocabWords in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                self.vocabWords = vocabWords
+                self.tableView.reloadData()
+                self.activityIndicatorView.stopAnimating()
+            }
+        }
     }
 
     // MARK: - Table view data source

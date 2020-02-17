@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04549CC223FB244E00E22122 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04549CC123FB244D00E22122 /* UIView+Layout.swift */; };
+		04549CC623FB494E00E22122 /* String+Slices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04549CC523FB494E00E22122 /* String+Slices.swift */; };
 		04AD19FB23F99A9A00F21BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD19FA23F99A9A00F21BCD /* AppDelegate.swift */; };
 		04AD19FD23F99A9A00F21BCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD19FC23F99A9A00F21BCD /* SceneDelegate.swift */; };
 		04AD1A0223F99A9A00F21BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AD1A0023F99A9A00F21BCD /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04549CC123FB244D00E22122 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		04549CC523FB494E00E22122 /* String+Slices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Slices.swift"; sourceTree = "<group>"; };
 		04AD19F723F99A9A00F21BCD /* SwiftVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AD19FA23F99A9A00F21BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AD19FC23F99A9A00F21BCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04549CC723FB495900E22122 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04549CC523FB494E00E22122 /* String+Slices.swift */,
+				04549CC123FB244D00E22122 /* UIView+Layout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		04AD19EE23F99A9A00F21BCD = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +78,7 @@
 				04AD1A1623F99D8800F21BCD /* Model */,
 				04AD1A1323F99B1D00F21BCD /* View */,
 				04AD1A1223F99B1000F21BCD /* Controller */,
+				04549CC723FB495900E22122 /* Extensions */,
 				04AD19FA23F99A9A00F21BCD /* AppDelegate.swift */,
 				04AD19FC23F99A9A00F21BCD /* SceneDelegate.swift */,
 				04AD1A0323F99A9D00F21BCD /* Assets.xcassets */,
@@ -174,8 +188,10 @@
 				04AD19FB23F99A9A00F21BCD /* AppDelegate.swift in Sources */,
 				04AD1A1123F99B0800F21BCD /* DefinitionViewController.swift in Sources */,
 				04AD1A1523F99D8000F21BCD /* VocabularyWord.swift in Sources */,
+				04549CC623FB494E00E22122 /* String+Slices.swift in Sources */,
 				04AD19FD23F99A9A00F21BCD /* SceneDelegate.swift in Sources */,
 				04AD1A0F23F99ADB00F21BCD /* WordsTableViewController.swift in Sources */,
+				04549CC223FB244E00E22122 /* UIView+Layout.swift in Sources */,
 				04AD1A1823F9A57B00F21BCD /* WebScraper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

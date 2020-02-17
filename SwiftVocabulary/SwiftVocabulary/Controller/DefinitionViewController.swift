@@ -23,7 +23,7 @@ class DefinitionViewController: UIViewController {
     func updateViews() {
         guard let vocabWord = vocabWord else { return }
         wordLabel.text = vocabWord.word
-        definitionTextView.text = vocabWord.definition
+        definitionTextView.attributedText = vocabWord.definition
     }
     
 

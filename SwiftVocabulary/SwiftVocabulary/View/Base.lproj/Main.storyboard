@@ -62,12 +62,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mSh-KZ-rYd">
-                                <rect key="frame" x="20" y="190" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mSh-KZ-rYd">
+                                <rect key="frame" x="20" y="190" width="374" height="672"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -77,8 +77,8 @@
                             <constraint firstItem="mSh-KZ-rYd" firstAttribute="top" secondItem="i3J-9y-Amr" secondAttribute="bottom" constant="24" id="62O-v3-Q34"/>
                             <constraint firstItem="i3J-9y-Amr" firstAttribute="leading" secondItem="mSh-KZ-rYd" secondAttribute="leading" id="8tI-qp-FtP"/>
                             <constraint firstItem="i3J-9y-Amr" firstAttribute="top" secondItem="1Bs-MK-7Rp" secondAttribute="top" constant="37" id="Q8j-aD-aOG"/>
-                            <constraint firstItem="1Bs-MK-7Rp" firstAttribute="trailing" secondItem="mSh-KZ-rYd" secondAttribute="trailing" constant="154" id="edE-eC-ACF"/>
-                            <constraint firstItem="1Bs-MK-7Rp" firstAttribute="bottom" secondItem="mSh-KZ-rYd" secondAttribute="bottom" constant="544" id="zJ3-m1-fXy"/>
+                            <constraint firstItem="1Bs-MK-7Rp" firstAttribute="trailing" secondItem="mSh-KZ-rYd" secondAttribute="trailing" constant="20" id="edE-eC-ACF"/>
+                            <constraint firstItem="1Bs-MK-7Rp" firstAttribute="bottom" secondItem="mSh-KZ-rYd" secondAttribute="bottom" id="zJ3-m1-fXy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Bs-MK-7Rp"/>
                     </view>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6G-ve-aAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="113"/>
+            <point key="canvasLocation" x="1800.0000000000002" y="112.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IXj-eV-BG1">

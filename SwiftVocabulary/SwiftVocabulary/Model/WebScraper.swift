@@ -6,7 +6,7 @@
 //  Copyright © 2020 Swift Student. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Combine
 
 private let glossaryURL = URL(string: "https://www.hackingwithswift.com/glossary")!
@@ -24,6 +24,7 @@ class WebScraper {
         }, receiveValue: { [weak self] in
             guard let self = self else { return }
             if let html = String(data: $0, encoding: .utf8) {
+                print(html)
                 let vocabWords = self.parse(html: html)
                 completion(vocabWords)
             } else {
@@ -34,31 +35,36 @@ class WebScraper {
     }
     
     private func parse(html: String) -> [VocabularyWord] {
-        let words = html.slices(from: "<li><strong>", to: "</strong>")
+        let words = html.slices(from: "<li><strong>", to: ":</strong>")
         let definitions = html.slices(from: "</strong>", to: "</li>")
         
         var vocabWords = [VocabularyWord]()
         for i in 0..<words.count {
-            vocabWords.append(VocabularyWord(word: String(words[i]), definition: String(definitions[i])))
+            let definition = formatCodeBlocks(inString: String(definitions[i]))
+            vocabWords.append(VocabularyWord(word: String(words[i]), definition: definition))
         }
         
         return vocabWords
     }
+    
+    private func formatCodeBlocks(inString string: String) -> NSAttributedString {
+        let attributedString = NSMutableAttributedString(string: string, attributes: [
+            .font: UIFont.systemFont(ofSize: 17)
+        ])
+        
+        let codeSlices = string.slices(from: "<code>", to: "</code>")
+        codeSlices.forEach {
+            let range = NSRange($0.startIndex..<$0.endIndex, in: attributedString.string)
+            attributedString.addAttribute(.foregroundColor, value: UIColor.systemRed, range: range)
+        }
+        
+        // Find tags, order them from last to first, and delete them from attributed text
+        var rangesToRemove = string.ranges(of: "<code>")
+        rangesToRemove += string.ranges(of: "</code>")
+        rangesToRemove.sort {$0.upperBound > $1.upperBound}
+        rangesToRemove.forEach { attributedString.deleteCharacters(in: NSRange($0, in: string)) }
+        
+        return attributedString
+    }
 }
 
-extension String {
-    func ranges(of string: String, options: CompareOptions = .literal) -> [Range<Index>] {
-        var result: [Range<Index>] = []
-        var start = startIndex
-        while let range = range(of: string, options: options, range: start..<endIndex) {
-            result.append(range)
-            start = range.lowerBound < range.upperBound ? range.upperBound : index(range.lowerBound, offsetBy: 1, limitedBy: endIndex) ?? endIndex
-        }
-        return result
-    }
-    func slices(from: String, to: String) -> [Substring] {
-        let pattern = "(?<=" + from + ").*?(?=" + to + ")"
-        return ranges(of: pattern, options: .regularExpression)
-            .map{ self[$0] }
-    }
-}
