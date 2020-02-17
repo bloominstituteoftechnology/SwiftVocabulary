@@ -96,9 +96,7 @@ class WordsTableViewController: UITableViewController {
             let sentWord = vocabWords[indexPath.row]
             
             DefinitionVC.vocabWord = sentWord
-            
-            
-            
+  
         }
         
         // WHAT

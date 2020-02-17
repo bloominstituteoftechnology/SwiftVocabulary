@@ -16,9 +16,16 @@ class DefinitionViewController: UIViewController {
     
     var vocabWord: VocabularyWord?
     
+    func updateView() {
+        guard let word = vocabWord else { return }
+        
+        defTitle.text = word.word
+        defDescription.text = word.definition
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.updateView()
         // Do any additional setup after loading the view.
     }
     
