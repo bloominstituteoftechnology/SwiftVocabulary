@@ -10,14 +10,24 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
+    @IBOutlet weak var vocabWordLabel: UILabel!
+    @IBOutlet weak var vocabDefinitionTextView: UITextView!
+    
+    var vocabWord: VocabularyWord?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
+    func updateViews() {
+        
+        if let unwrappedVocabWord = vocabWord {
+            vocabWordLabel.text = unwrappedVocabWord.word
+            vocabDefinitionTextView.text = unwrappedVocabWord.definition
+        }
+    }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -25,6 +35,4 @@ class DefinitionViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
-
 }
