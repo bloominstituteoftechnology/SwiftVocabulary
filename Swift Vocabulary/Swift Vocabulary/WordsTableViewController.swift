@@ -21,6 +21,10 @@ class WordsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        vocabWords.append(vocab1)
+        vocabWords.append(vocab2)
+        vocabWords.append(vocab3)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -34,6 +38,7 @@ class WordsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
         return vocabWords.count
     }
 
@@ -91,10 +96,10 @@ class WordsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        if segue.identifier == "ShowDefinitionSegue" {
             if let destinationSegue = segue.destination as? DefinitionViewController,
-            let indexPath = tableView.indexPathForSelectedRow {
-            let vocabWord = vocabWords[indexPath.row]
+                let indexPath = tableView.indexPathForSelectedRow {
+                let vocabWord = vocabWords[indexPath.row]
                         
-            destinationSegue.vocabWord = vocabWord
+                destinationSegue.vocabWord = vocabWord
                         
                     }
                 }
