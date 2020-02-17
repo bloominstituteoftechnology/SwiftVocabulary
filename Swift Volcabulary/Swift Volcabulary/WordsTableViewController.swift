@@ -11,19 +11,18 @@ import UIKit
 class WordsTableViewController: UITableViewController {
 
     
-    var vocabWords: [VocabularyWord]
+    var vocabWords: [VocabularyWord] =
+        [VocabularyWord(word: "Variable", definition: "A named value used to store information. Variables can be changed after being created."),
+         VocabularyWord(word: "Constant", definition: "A named value used to store information. Constants cannot be changed after being created."),
+         VocabularyWord(word: "Function", definition: "A self-contained chunk o fcode that performs a specific task.")]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//    }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
