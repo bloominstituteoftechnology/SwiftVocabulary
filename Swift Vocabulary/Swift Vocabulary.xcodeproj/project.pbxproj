@@ -14,6 +14,7 @@
 		92700D7823FB3E3B008C032F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92700D7623FB3E3B008C032F /* LaunchScreen.storyboard */; };
 		92700D8023FB4232008C032F /* WordsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92700D7F23FB4232008C032F /* WordsTableTableViewController.swift */; };
 		92700D8223FB4279008C032F /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92700D8123FB4279008C032F /* DefinitionViewController.swift */; };
+		92700D8423FB4C82008C032F /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92700D8323FB4C82008C032F /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		92700D7923FB3E3B008C032F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92700D7F23FB4232008C032F /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
 		92700D8123FB4279008C032F /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		92700D8323FB4C82008C032F /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				92700D7623FB3E3B008C032F /* LaunchScreen.storyboard */,
 				92700D8123FB4279008C032F /* DefinitionViewController.swift */,
 				92700D7923FB3E3B008C032F /* Info.plist */,
+				92700D8323FB4C82008C032F /* VocabularyWord.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				92700D8023FB4232008C032F /* WordsTableTableViewController.swift in Sources */,
 				92700D8223FB4279008C032F /* DefinitionViewController.swift in Sources */,
+				92700D8423FB4C82008C032F /* VocabularyWord.swift in Sources */,
 				92700D6C23FB3E39008C032F /* AppDelegate.swift in Sources */,
 				92700D6E23FB3E39008C032F /* SceneDelegate.swift in Sources */,
 			);
