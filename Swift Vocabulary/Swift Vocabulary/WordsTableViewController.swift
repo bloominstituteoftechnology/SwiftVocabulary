@@ -10,6 +10,15 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
 
+    let vocab1 = VocabularyWord(word: "Variable", definition: "In computer programming, a variable or scalar is a storage address (identified by a memory address) paired with an associated symbolic name, which contains some known or unknown quantity of information referred to as a value. The variable name is the usual way to reference the stored value, in addition to referring to the variable itself, depending on the context. This separation of name and content allows the name to be used independently of the exact information it represents. The identifier in computer source code can be bound to a value during run time, and the value of the variable may thus change during the course of program execution")
+    
+    let vocab2 = VocabularyWord(word: "Function", definition: "In programming, a named section of a program that performs a specific task. In this sense, a function is a type of procedure or routine. Some programming languages make a distinction between a function, which returns a value, and a procedure, which performs some operation but does not return a value")
+    
+    let vocab3 = VocabularyWord(word: "Constant", definition: "In computer programming, a constant is a value that cannot be altered by the program during normal execution, i.e., the value is constant.[a] When associated with an identifier, a constant is said to be named, although the terms constant and named constant are often used interchangeably. This is contrasted with a variable, which is an identifier with a value that can be changed during normal execution, i.e., the value is variable. Constants are useful for both programmers and compilers: For programmers they are a form of self-documenting code and allow reasoning about correctness, while for compilers they allow compile-time and run-time checks that verify that constancy assumptions are not violated, and allow or simplify some compiler optimizations")
+    
+    var vocabWords: [VocabularyWord] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,25 +31,23 @@ class WordsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return vocabWords.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
-        // Configure the cell...
+            let currentWord = vocabWords[indexPath.row]
+               
+            cell.textLabel?.text = currentWord.word
 
-        return cell
+            return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -77,14 +84,22 @@ class WordsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+       if segue.identifier == "ShowDefinitionSegue" {
+            if let destinationSegue = segue.destination as? DefinitionViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            let vocabWord = vocabWords[indexPath.row]
+                        
+            destinationSegue.vocabWord = vocabWord
+                        
+                    }
+                }
+            }
 
-}
+        }
+
+    

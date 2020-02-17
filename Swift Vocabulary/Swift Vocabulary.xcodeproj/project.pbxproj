@@ -14,6 +14,7 @@
 		25BA081923FB1FC100B7BC44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BA081723FB1FC100B7BC44 /* LaunchScreen.storyboard */; };
 		25BA082123FB293100B7BC44 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BA082023FB293100B7BC44 /* WordsTableViewController.swift */; };
 		25BA082923FB315000B7BC44 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BA082823FB315000B7BC44 /* DefinitionViewController.swift */; };
+		25BA082B23FB32D900B7BC44 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BA082A23FB32D900B7BC44 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		25BA081A23FB1FC100B7BC44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25BA082023FB293100B7BC44 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		25BA082823FB315000B7BC44 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		25BA082A23FB32D900B7BC44 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				25BA082723FB312A00B7BC44 /* View Controllers */,
-				25BA082223FB294D00B7BC44 /* Resources */,
 				25BA081223FB1FC000B7BC44 /* Main.storyboard */,
 				25BA082023FB293100B7BC44 /* WordsTableViewController.swift */,
+				25BA082A23FB32D900B7BC44 /* VocabularyWord.swift */,
 				25BA081A23FB1FC100B7BC44 /* Info.plist */,
+				25BA082223FB294D00B7BC44 /* Resources */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				25BA080D23FB1FC000B7BC44 /* AppDelegate.swift in Sources */,
 				25BA082923FB315000B7BC44 /* DefinitionViewController.swift in Sources */,
+				25BA082B23FB32D900B7BC44 /* VocabularyWord.swift in Sources */,
 				25BA080F23FB1FC000B7BC44 /* SceneDelegate.swift in Sources */,
 				25BA082123FB293100B7BC44 /* WordsTableViewController.swift in Sources */,
 			);
