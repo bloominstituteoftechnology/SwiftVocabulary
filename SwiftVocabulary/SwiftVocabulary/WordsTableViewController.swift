@@ -10,7 +10,13 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
 
-    var vocabWords: [VocabularyWord] = []
+    
+    var vocabWords: [VocabularyWord] = [
+        VocabularyWord(word: "Hello", definition: "It is a greeting"),
+        VocabularyWord(word: "Goodbye", definition: "It is a farewell"),
+        VocabularyWord(word: "Hector", definition: "It is my name"),
+        VocabularyWord(word: "Ledesma", definition: "It is my lastname")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
