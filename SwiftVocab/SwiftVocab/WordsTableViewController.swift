@@ -94,7 +94,7 @@ class WordsTableViewController: UITableViewController {
                 return
             }
             let vocab = vocabWord[indexPath.row]
-            vocabWordVC.vocab = vocab.word
+            vocabWordVC.vocabWord = vocab
         }
     }
     
