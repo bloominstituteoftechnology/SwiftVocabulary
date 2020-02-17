@@ -10,7 +10,8 @@ import UIKit
 
 class WordsTableTableViewController: UITableViewController {
 
-    var vocabWords: [VocabularyWord]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Block", definition: "Can mean any chunk of code that starts with { and ends with } (\"a code block\"), but \"block\" is also the Objective-C name for closures."),
+                                        VocabularyWord(word: "Boolean", definition: "A data type that stores either true or false.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
