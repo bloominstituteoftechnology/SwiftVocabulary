@@ -13,10 +13,12 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var labelView: UILabel!
     @IBOutlet weak var textView: UITextView!
     
+    var vocabWord: VocabularyWord?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        labelView.text = vocabWord?.word
+        textView.text = vocabWord?.definition
         // Do any additional setup after loading the view.
     }
     
