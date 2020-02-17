@@ -14,6 +14,8 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var defDescription: UITextView!
     
     
+    var vocabWord: VocabularyWord?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

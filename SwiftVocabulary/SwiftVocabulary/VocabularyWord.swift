@@ -6,7 +6,8 @@
 //  Copyright © 2020 Hector Ledesma. All rights reserved.
 //
 
-import Foundation
+import Foundation // Research this
+import UIKit
 
 struct VocabularyWord {
     var word: String
