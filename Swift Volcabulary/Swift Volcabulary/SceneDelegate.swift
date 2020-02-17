@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Swift Vocabulary
+//  Swift Volcabulary
 //
-//  Created by Nichole Davidson on 1/20/20.
+//  Created by Nichole Davidson on 2/17/20.
 //  Copyright © 2020 Nichole Davidson. All rights reserved.
 //
 

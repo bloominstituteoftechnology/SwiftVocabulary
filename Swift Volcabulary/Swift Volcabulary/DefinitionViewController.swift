@@ -1,37 +1,19 @@
 //
 //  DefinitionViewController.swift
-//  Swift Vocabulary
+//  Swift Volcabulary
 //
-//  Created by Nichole Davidson on 1/20/20.
+//  Created by Nichole Davidson on 2/17/20.
 //  Copyright © 2020 Nichole Davidson. All rights reserved.
 //
 
 import UIKit
 
 class DefinitionViewController: UIViewController {
-    
-    var vocabWord: VocabularyWord?
-    
-    func updateViews() {
-        if let unwrappedVocabWord = vocabWord {
-            
-            wordTextField?.text = unwrappedVocabWord.word
-            wordDefinitionTextField?.text = unwrappedVocabWord.definition
 
-        }
-    }
-    
-    //Mark: Properties
-    @IBOutlet weak var wordTextField: UILabel!
-    
-    @IBOutlet weak var wordDefinitionTextField: UITextView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        updateViews()
 
+        // Do any additional setup after loading the view.
     }
     
 
