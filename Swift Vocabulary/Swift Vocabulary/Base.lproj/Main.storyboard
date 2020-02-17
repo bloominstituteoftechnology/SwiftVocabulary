@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Words Table View Controller-->
+        <!--Swift Vocabulary-->
         <scene sceneID="Bcq-UH-CJu">
             <objects>
                 <tableViewController id="g6p-oz-rfS" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                             <outlet property="delegate" destination="g6p-oz-rfS" id="fuz-He-LSm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5YL-Ca-Ers"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="5YL-Ca-Ers"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="056-tz-ZBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,13 +57,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODj-N2-ccR">
-                                <rect key="frame" x="20" y="150" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="150" width="374" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jYr-sA-Pc4">
-                                <rect key="frame" x="20" y="181" width="374" height="200"/>
+                                <rect key="frame" x="20" y="203" width="374" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="fai-Xp-1nq"/>

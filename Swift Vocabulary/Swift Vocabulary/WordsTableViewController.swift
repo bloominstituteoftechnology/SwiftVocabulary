@@ -10,7 +10,7 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
 
-    var vocabWords: [VocabularyWord] = []
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A named variable used to store information. Variables can be changed after being created."), VocabularyWord(word: "Constant", definition: "A named variable used to store information. Variables can not be changed after being created."), VocabularyWord(word: "Function", definition: "Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
