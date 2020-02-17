@@ -93,15 +93,20 @@ class WordsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // WHERE
         if segue.identifier == "ShowDefinitionSegue" {
+            print("We hit the segue")
             
             guard let DefinitionVC = segue.destination as? DefinitionViewController,
-                let indexPath = tableView.indexPathForSelectedRow else {
-                fatalError()
+                let indexSent = tableView.indexPathForSelectedRow else {
+                return
             }
             
-            let sentWord = vocabWords[indexPath.row]
+            print("We got past the bouncers")
+            
+            let sentWord = vocabWords[indexSent.row]
             
             DefinitionVC.vocabWord = sentWord
+            
+            print("Got to bottom of prepare for segue")
   
         }
         

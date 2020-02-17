@@ -84,10 +84,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="nVD-4y-fXu"/>
                     <connections>
-                        <outlet property="defDescription" destination="aQj-bY-jZe" id="mf2-Vz-aBh"/>
-                        <outlet property="defTitle" destination="ISX-ES-7ug" id="kLS-sp-yh3"/>
-                        <outlet property="definition" destination="aQj-bY-jZe" id="eAc-JJ-fVj"/>
-                        <outlet property="title" destination="ISX-ES-7ug" id="e4F-2u-kCb"/>
+                        <outlet property="defDefinition" destination="aQj-bY-jZe" id="h6a-ZR-lyw"/>
+                        <outlet property="defTitle" destination="ISX-ES-7ug" id="Xyy-uO-mCb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REx-hP-FNC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

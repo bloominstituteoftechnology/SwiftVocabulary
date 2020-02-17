@@ -11,21 +11,24 @@ import UIKit
 class DefinitionViewController: UIViewController {
 
     @IBOutlet weak var defTitle: UILabel!
-    @IBOutlet weak var defDescription: UITextView!
     
+    @IBOutlet weak var defDefinition: UITextView!
     
+
     var vocabWord: VocabularyWord?
     
     func updateView() {
         guard let word = vocabWord else { return }
         
         defTitle.text = word.word
-        defDescription.text = word.definition
+        defDefinition.text = word.definition
     }
     
     override func viewDidLoad() {
+        print("We get to view controller")
         super.viewDidLoad()
         self.updateView()
+        //defTitle.text = "Test"
         // Do any additional setup after loading the view.
     }
     
