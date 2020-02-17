@@ -10,8 +10,9 @@ import UIKit
 
 class WorldsTableViewController: UITableViewController {
     
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "Not consistent or having a fixed pattern; liable to change.")
-        word: "Constant",]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "Not consistent or having a fixed pattern; liable to change."),
+                                        VocabularyWord(word: "Constant", definition: "occurring continuously over a period of time."),
+                                        VocabularyWord(word: "Function", definition: "A relationship or expression involving one or more variables.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
