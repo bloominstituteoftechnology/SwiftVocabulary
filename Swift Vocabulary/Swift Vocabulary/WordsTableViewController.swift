@@ -71,7 +71,7 @@ class WordsTableViewController: UITableViewController {
     
     
     @IBAction func createNewWordButtonTapped(_ sender: Any) {
-        let alert = UIAlertController(title: "Add a new word", message: "This is an alert.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add Word", message: "Add a new word and its definition", preferredStyle: .alert)
         alert.addTextField { (UITextField) in
             UITextField.placeholder = "Word:"
         }
@@ -86,25 +86,16 @@ class WordsTableViewController: UITableViewController {
                 return
             }
             
-            
             guard let newWordUnwrapped = newWord.text, let newDefinitionUnwrapped = newDefinition.text else {
                 return
             }
-//            if let newWordUnwrapped = newWord, let newDefUnwrapped = newDefinition {
-//                print("\(newWordUnwrapped.text) \(newDefUnwrapped.text)")
-//            }
             
-            print("\(newWordUnwrapped), \(newDefinitionUnwrapped)")
-
-            if newWordUnwrapped != nil, newDefinitionUnwrapped != nil {
-                self.vocabWords.append(VocabularyWord(word: newWordUnwrapped, definition: newDefinitionUnwrapped))
-                print(self.vocabWords)
-            }
+            self.vocabWords.append(VocabularyWord(word: newWordUnwrapped, definition: newDefinitionUnwrapped))
+            print(self.vocabWords)
+            self.tableView.reloadData()
+            
         }))
         
         self.present(alert, animated: true, completion: nil)
-        tableView.reloadData()
     }
-    
-    
 }
