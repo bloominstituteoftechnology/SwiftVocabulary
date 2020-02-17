@@ -14,6 +14,7 @@
 		E9AEF60223FB2FC60071D68B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AEF60023FB2FC60071D68B /* LaunchScreen.storyboard */; };
 		E9AEF60A23FB2FFE0071D68B /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AEF60923FB2FFE0071D68B /* WordsTableViewController.swift */; };
 		E9AEF60C23FB30150071D68B /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AEF60B23FB30150071D68B /* DefinitionViewController.swift */; };
+		E9AEF61023FB31D00071D68B /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AEF60F23FB31D00071D68B /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E9AEF60323FB2FC60071D68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9AEF60923FB2FFE0071D68B /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		E9AEF60B23FB30150071D68B /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		E9AEF60F23FB31D00071D68B /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				E9AEF5F523FB2FC60071D68B /* AppDelegate.swift */,
 				E9AEF5F723FB2FC60071D68B /* SceneDelegate.swift */,
+				E9AEF60F23FB31D00071D68B /* VocabularyWord.swift */,
 				E9AEF5FB23FB2FC60071D68B /* Main.storyboard */,
 				E9AEF60923FB2FFE0071D68B /* WordsTableViewController.swift */,
 				E9AEF60B23FB30150071D68B /* DefinitionViewController.swift */,
@@ -143,6 +146,7 @@
 			files = (
 				E9AEF5F623FB2FC60071D68B /* AppDelegate.swift in Sources */,
 				E9AEF5F823FB2FC60071D68B /* SceneDelegate.swift in Sources */,
+				E9AEF61023FB31D00071D68B /* VocabularyWord.swift in Sources */,
 				E9AEF60A23FB2FFE0071D68B /* WordsTableViewController.swift in Sources */,
 				E9AEF60C23FB30150071D68B /* DefinitionViewController.swift in Sources */,
 			);
