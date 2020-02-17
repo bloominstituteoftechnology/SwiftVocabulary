@@ -45,7 +45,7 @@ The screen recording below shows you what the final product should do:
 ### Implement `WordsTableViewController`
 
 1. Open `WordsTableViewController.swift`.
-2. Add a variable property called `vocabWords` of type `[VocabularyWord]` (array of `VocabularyWord` objects)
+2. Add a variable property called `vocabWords` of type `[u]` (array of `VocabularyWord` objects)
 3. Implement `tableView(_ tableView:, numberOfRowsInSection section:)`. Make it return the number of vocab words in `vocabWords` property.
 4. Implement `tableView(_ tableView:, cellForRowAt indexPath:)`. Dequeue the cell, get the right `VocabularyWord` for the index path, then set the cell's `textLabel`'s text to the vocab word's `word` property.
 5. In the `prepare(for:sender:)`(uncomment the method so it is live code):
