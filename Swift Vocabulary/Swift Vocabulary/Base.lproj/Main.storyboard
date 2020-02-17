@@ -42,7 +42,16 @@
                             <outlet property="delegate" destination="g6p-oz-rfS" id="fuz-He-LSm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="5YL-Ca-Ers"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="5YL-Ca-Ers">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="DUe-CP-LC1">
+                            <connections>
+                                <action selector="createNewWordButtonTapped:" destination="g6p-oz-rfS" id="Bev-Jr-aod"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="createNewWordButton" destination="DUe-CP-LC1" id="47R-Q1-l2c"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="056-tz-ZBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

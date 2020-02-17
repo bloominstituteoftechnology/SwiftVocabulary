@@ -10,6 +10,10 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
 
+    
+    @IBOutlet weak var createNewWordButton: UIBarButtonItem!
+    
+    
     var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A named variable used to store information. Variables can be changed after being created."), VocabularyWord(word: "Constant", definition: "A named variable used to store information. Variables can not be changed after being created."), VocabularyWord(word: "Function", definition: "Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed.")]
     
     override func viewDidLoad() {
@@ -64,4 +68,43 @@ class WordsTableViewController: UITableViewController {
             definitionVC?.vocabWord = word
         }
     }
+    
+    
+    @IBAction func createNewWordButtonTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Add a new word", message: "This is an alert.", preferredStyle: .alert)
+        alert.addTextField { (UITextField) in
+            UITextField.placeholder = "Word:"
+        }
+        alert.addTextField { (UITextField) in
+            UITextField.placeholder = "Definition:"
+        }
+        
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            
+            
+            guard let newWord = alert.textFields?[0], let newDefinition = alert.textFields?[1] else {
+                return
+            }
+            
+            
+            guard let newWordUnwrapped = newWord.text, let newDefinitionUnwrapped = newDefinition.text else {
+                return
+            }
+//            if let newWordUnwrapped = newWord, let newDefUnwrapped = newDefinition {
+//                print("\(newWordUnwrapped.text) \(newDefUnwrapped.text)")
+//            }
+            
+            print("\(newWordUnwrapped), \(newDefinitionUnwrapped)")
+
+            if newWordUnwrapped != nil, newDefinitionUnwrapped != nil {
+                self.vocabWords.append(VocabularyWord(word: newWordUnwrapped, definition: newDefinitionUnwrapped))
+                print(self.vocabWords)
+            }
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+        tableView.reloadData()
+    }
+    
+    
 }
