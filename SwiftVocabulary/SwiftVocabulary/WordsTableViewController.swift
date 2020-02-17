@@ -18,6 +18,16 @@ class WordsTableViewController: UITableViewController {
         VocabularyWord(word: "Ledesma", definition: "It is my lastname")
     ]
     
+    
+    @IBAction func addWordButtonPress(_ sender: Any) {
+        vocabWords[0] = VocabularyWord(word: "Button", definition: "was pressed")
+        self.reloadInputViews()
+        
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -42,7 +42,17 @@
                             <outlet property="delegate" destination="F3h-gF-BsB" id="iTQ-mx-Wri"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="8ze-Kf-f0z"/>
+                    <navigationItem key="navigationItem" id="8ze-Kf-f0z">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yB8-u6-DeN">
+                            <rect key="frame" x="173" y="7" width="68" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Add Word"/>
+                            <connections>
+                                <action selector="addWordButtonPress:" destination="F3h-gF-BsB" eventType="touchUpInside" id="ruE-Ru-8fL"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcH-eG-b7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
