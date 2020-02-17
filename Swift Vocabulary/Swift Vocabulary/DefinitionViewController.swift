@@ -10,6 +10,9 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
+    @IBOutlet var Label: UITextView!
+    @IBOutlet var Body: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
