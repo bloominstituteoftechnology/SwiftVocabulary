@@ -17,11 +17,15 @@ class DefinitionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelView.text = vocabWord?.word
-        textView.text = vocabWord?.definition
-        // Do any additional setup after loading the view.
+        
+        updateViews()
     }
     
+    func updateViews() {
+        guard let vocabWord = vocabWord else { return }
+        labelView.text = vocabWord.word
+        textView.text = vocabWord.definition
+    }
 
     /*
     // MARK: - Navigation
