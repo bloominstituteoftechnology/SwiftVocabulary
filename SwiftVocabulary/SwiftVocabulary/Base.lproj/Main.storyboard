@@ -32,6 +32,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="HkN-Vd-f98" kind="show" identifier="ShowDefinitionSegue" id="UNS-is-wfL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,13 +55,44 @@
                     <view key="view" contentMode="scaleToFill" id="sAm-Ik-zAg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISX-ES-7ug">
+                                <rect key="frame" x="41" y="123" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aQj-bY-jZe">
+                                <rect key="frame" x="41" y="180" width="331" height="169"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ISX-ES-7ug" firstAttribute="leading" secondItem="yoX-uG-SMR" secondAttribute="leading" constant="41" id="8gb-3Y-GmK"/>
+                            <constraint firstItem="yoX-uG-SMR" firstAttribute="bottom" secondItem="aQj-bY-jZe" secondAttribute="bottom" constant="513" id="GX4-5T-Nux"/>
+                            <constraint firstItem="ISX-ES-7ug" firstAttribute="leading" secondItem="aQj-bY-jZe" secondAttribute="leading" id="TCh-TW-CcU"/>
+                            <constraint firstItem="aQj-bY-jZe" firstAttribute="centerX" secondItem="sAm-Ik-zAg" secondAttribute="centerX" id="ipd-Qm-ML2"/>
+                            <constraint firstItem="ISX-ES-7ug" firstAttribute="top" secondItem="yoX-uG-SMR" secondAttribute="top" constant="35" id="kd2-Vd-Ybz"/>
+                            <constraint firstItem="aQj-bY-jZe" firstAttribute="top" secondItem="ISX-ES-7ug" secondAttribute="bottom" constant="36" id="t3C-ML-4Zz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yoX-uG-SMR"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nVD-4y-fXu"/>
+                    <connections>
+                        <outlet property="defDescription" destination="aQj-bY-jZe" id="mf2-Vz-aBh"/>
+                        <outlet property="defTitle" destination="ISX-ES-7ug" id="kLS-sp-yh3"/>
+                        <outlet property="definition" destination="aQj-bY-jZe" id="eAc-JJ-fVj"/>
+                        <outlet property="title" destination="ISX-ES-7ug" id="e4F-2u-kCb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REx-hP-FNC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="45"/>
+            <point key="canvasLocation" x="2073.913043478261" y="44.866071428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TGO-0x-ath">
