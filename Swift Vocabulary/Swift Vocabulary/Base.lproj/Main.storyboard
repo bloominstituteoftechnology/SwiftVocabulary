@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IDo-JM-lgI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swift Vocabulary-->
+        <scene sceneID="DoR-vf-lyr">
+            <objects>
+                <tableViewController title="Swift Vocabulary" id="5lW-bB-fBY" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1WR-Ep-ytq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" textLabel="EBb-gy-wSh" style="IBUITableViewCellStyleDefault" id="1fO-Cj-Am6">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1fO-Cj-Am6" id="hMo-hf-te3">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EBb-gy-wSh">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="kQS-qY-Wig" kind="show" identifier="ShowDefinitionSegue" id="Usw-n1-slp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5lW-bB-fBY" id="ZZI-yV-bmV"/>
+                            <outlet property="delegate" destination="5lW-bB-fBY" id="RYW-uA-mGV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="Eah-4U-8sj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hF8-Ku-HMf" userLabel="Add Word Bar Button Item">
+                            <connections>
+                                <action selector="addWordPressed:" destination="5lW-bB-fBY" id="b5l-oi-9X0"/>
+                                <segue destination="GqT-zd-95C" kind="showDetail" identifier="AddWordSegue" id="6So-eB-uCe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4s-m5-Cle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="129"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HgO-FE-tLt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IDo-JM-lgI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6DT-dX-Ll9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5lW-bB-fBY" kind="relationship" relationship="rootViewController" id="n38-EH-RE2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaW-eJ-6mx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="128.57142857142856"/>
+        </scene>
+        <!--Definition-->
+        <scene sceneID="Dvy-g1-xEW">
+            <objects>
+                <viewController title="Definition" id="kQS-qY-Wig" customClass="DefinitionViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OsF-Hy-JfO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-KD-Xop">
+                                <rect key="frame" x="20" y="163" width="374" height="679"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsb-Tq-9RO">
+                                <rect key="frame" x="36" y="112" width="362" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="hHh-PG-XeD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xsb-Tq-9RO" firstAttribute="top" secondItem="rnc-GN-5SP" secondAttribute="top" constant="24" id="2Nh-B0-7ws"/>
+                            <constraint firstItem="rnc-GN-5SP" firstAttribute="trailing" secondItem="hiF-KD-Xop" secondAttribute="trailing" constant="20" id="2uO-Zw-5Ma"/>
+                            <constraint firstItem="rnc-GN-5SP" firstAttribute="bottom" secondItem="hiF-KD-Xop" secondAttribute="bottom" constant="20" id="U68-oi-x2y"/>
+                            <constraint firstItem="hiF-KD-Xop" firstAttribute="top" secondItem="xsb-Tq-9RO" secondAttribute="bottom" constant="8" id="UfT-Pp-UwE"/>
+                            <constraint firstItem="xsb-Tq-9RO" firstAttribute="leading" secondItem="rnc-GN-5SP" secondAttribute="leading" constant="36" id="XWo-xQ-eCR"/>
+                            <constraint firstItem="rnc-GN-5SP" firstAttribute="trailing" secondItem="xsb-Tq-9RO" secondAttribute="trailing" constant="16" id="jil-VH-mX0"/>
+                            <constraint firstItem="hiF-KD-Xop" firstAttribute="leading" secondItem="rnc-GN-5SP" secondAttribute="leading" constant="20" id="o6c-JA-nPf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rnc-GN-5SP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Definition" id="XW8-LM-RV0"/>
+                    <connections>
+                        <outlet property="definitionText" destination="hiF-KD-Xop" id="d3v-0q-TCk"/>
+                        <outlet property="wordLabel" destination="xsb-Tq-9RO" id="WSa-z8-U3m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHK-by-mwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657.9710144927537" y="126.5625"/>
+        </scene>
+        <!--Add Word-->
+        <scene sceneID="ONg-Kc-GMa">
+            <objects>
+                <viewController title="Add Word" id="GqT-zd-95C" customClass="AddWordViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UXW-CE-pOb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. Variable" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="puu-84-8F3" userLabel="Word Field">
+                                <rect key="frame" x="97.5" y="107" width="280.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="wordTextChanged:" destination="GqT-zd-95C" eventType="editingChanged" id="1VL-jP-mnt"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a word..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDy-bf-veh">
+                                <rect key="frame" x="48" y="53" width="214" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goj-GF-RGg">
+                                <rect key="frame" x="36" y="149" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz2-0R-hXd">
+                                <rect key="frame" x="20" y="20" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="GqT-zd-95C" eventType="touchUpInside" id="ZmO-85-qem"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDd-Le-xUb">
+                                <rect key="frame" x="306" y="20" width="88" height="20"/>
+                                <state key="normal" title="Add word" image="pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="GqT-zd-95C" eventType="touchUpInside" id="PtH-Uo-qFh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="Definition Field" translatesAutoresizingMaskIntoConstraints="NO" id="2OJ-IK-VHx">
+                                <rect key="frame" x="36" y="178" width="342" height="614"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.062516505281690157" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-tz-hPo">
+                                <rect key="frame" x="36" y="115" width="45.5" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7uu-1U-4dw" firstAttribute="trailing" secondItem="2OJ-IK-VHx" secondAttribute="trailing" constant="36" id="3rD-rB-Tvv"/>
+                            <constraint firstItem="7uu-1U-4dw" firstAttribute="bottom" secondItem="2OJ-IK-VHx" secondAttribute="bottom" constant="16" id="GBe-A2-fiu"/>
+                            <constraint firstItem="puu-84-8F3" firstAttribute="top" secondItem="CDy-bf-veh" secondAttribute="bottom" constant="8" id="GDv-fq-gWQ"/>
+                            <constraint firstItem="4Pp-tz-hPo" firstAttribute="leading" secondItem="7uu-1U-4dw" secondAttribute="leading" constant="36" id="HXh-US-MYR"/>
+                            <constraint firstItem="7uu-1U-4dw" firstAttribute="trailing" secondItem="puu-84-8F3" secondAttribute="trailing" constant="36" id="JyV-Oo-9xF"/>
+                            <constraint firstItem="goj-GF-RGg" firstAttribute="top" secondItem="puu-84-8F3" secondAttribute="bottom" constant="8" id="Xdc-aw-LYh"/>
+                            <constraint firstItem="vDd-Le-xUb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sz2-0R-hXd" secondAttribute="trailing" constant="8" symbolic="YES" id="ZGi-HU-er1"/>
+                            <constraint firstItem="vDd-Le-xUb" firstAttribute="top" secondItem="7uu-1U-4dw" secondAttribute="top" constant="20" id="dJf-8P-CZi"/>
+                            <constraint firstItem="sz2-0R-hXd" firstAttribute="leading" secondItem="7uu-1U-4dw" secondAttribute="leading" constant="20" id="eNV-ks-VD5"/>
+                            <constraint firstItem="goj-GF-RGg" firstAttribute="leading" secondItem="7uu-1U-4dw" secondAttribute="leading" constant="36" id="f9b-ds-jZ0"/>
+                            <constraint firstItem="7uu-1U-4dw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CDy-bf-veh" secondAttribute="trailing" symbolic="YES" id="hT2-P6-HG6"/>
+                            <constraint firstItem="CDy-bf-veh" firstAttribute="leading" secondItem="7uu-1U-4dw" secondAttribute="leading" constant="48" id="jRW-xw-fAY"/>
+                            <constraint firstItem="CDy-bf-veh" firstAttribute="top" secondItem="sz2-0R-hXd" secondAttribute="bottom" constant="3" id="jea-f5-VDJ"/>
+                            <constraint firstItem="2OJ-IK-VHx" firstAttribute="top" secondItem="goj-GF-RGg" secondAttribute="bottom" constant="8" id="koc-oB-LKu"/>
+                            <constraint firstItem="7uu-1U-4dw" firstAttribute="trailing" secondItem="vDd-Le-xUb" secondAttribute="trailing" constant="20" id="mb1-WW-5J0"/>
+                            <constraint firstItem="puu-84-8F3" firstAttribute="leading" secondItem="4Pp-tz-hPo" secondAttribute="trailing" constant="16" id="oVq-ev-nRS"/>
+                            <constraint firstItem="sz2-0R-hXd" firstAttribute="top" secondItem="7uu-1U-4dw" secondAttribute="top" constant="20" id="poh-Bp-yKt"/>
+                            <constraint firstItem="7uu-1U-4dw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="goj-GF-RGg" secondAttribute="trailing" symbolic="YES" id="rZK-4f-tV8"/>
+                            <constraint firstItem="2OJ-IK-VHx" firstAttribute="leading" secondItem="7uu-1U-4dw" secondAttribute="leading" constant="36" id="udY-Jy-zgV"/>
+                            <constraint firstItem="4Pp-tz-hPo" firstAttribute="top" secondItem="CDy-bf-veh" secondAttribute="bottom" constant="16" id="xy7-Lk-pmB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7uu-1U-4dw"/>
+                    </view>
+                    <connections>
+                        <outlet property="definitionTextView" destination="2OJ-IK-VHx" id="ecw-TI-h0g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1Q-PB-ZGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660.8695652173915" y="-519.64285714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="64" height="58"/>
+    </resources>
+</document>
