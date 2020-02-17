@@ -57,29 +57,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="3gd-4v-wbX">
-                                <rect key="frame" x="0.0" y="88" width="414" height="60"/>
+                                <rect key="frame" x="10" y="88" width="394" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fCl-hT-Otl">
-                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCl-hT-Otl">
+                                <rect key="frame" x="10" y="148" width="394" height="714"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="rjj-RB-8SY" firstAttribute="trailing" secondItem="3gd-4v-wbX" secondAttribute="trailing" id="56a-Zi-onn"/>
-                            <constraint firstItem="3gd-4v-wbX" firstAttribute="top" secondItem="rjj-RB-8SY" secondAttribute="top" id="6fU-BC-icB"/>
-                            <constraint firstItem="fCl-hT-Otl" firstAttribute="top" secondItem="3gd-4v-wbX" secondAttribute="bottom" id="AZb-Mw-CZb"/>
-                            <constraint firstItem="fCl-hT-Otl" firstAttribute="leading" secondItem="rjj-RB-8SY" secondAttribute="leading" id="CoK-3P-jZW"/>
-                            <constraint firstItem="3gd-4v-wbX" firstAttribute="leading" secondItem="rjj-RB-8SY" secondAttribute="leading" id="Dhz-Ub-pq3"/>
-                            <constraint firstItem="rjj-RB-8SY" firstAttribute="trailing" secondItem="fCl-hT-Otl" secondAttribute="trailing" id="Umm-NZ-bNi"/>
-                            <constraint firstItem="rjj-RB-8SY" firstAttribute="bottom" secondItem="fCl-hT-Otl" secondAttribute="bottom" id="dPz-bv-vDX"/>
+                            <constraint firstItem="3gd-4v-wbX" firstAttribute="leading" secondItem="rjj-RB-8SY" secondAttribute="leading" constant="10" id="A5y-DF-hnM"/>
+                            <constraint firstItem="fCl-hT-Otl" firstAttribute="trailing" secondItem="rjj-RB-8SY" secondAttribute="trailing" constant="-10" id="Icg-47-6J3"/>
+                            <constraint firstItem="fCl-hT-Otl" firstAttribute="bottom" secondItem="rjj-RB-8SY" secondAttribute="bottom" id="L0a-xq-iiD"/>
+                            <constraint firstItem="fCl-hT-Otl" firstAttribute="top" secondItem="3gd-4v-wbX" secondAttribute="bottom" id="km1-aa-Gcl"/>
+                            <constraint firstItem="rjj-RB-8SY" firstAttribute="trailing" secondItem="3gd-4v-wbX" secondAttribute="trailing" constant="10" id="pb8-qp-B8q"/>
+                            <constraint firstItem="fCl-hT-Otl" firstAttribute="leading" secondItem="rjj-RB-8SY" secondAttribute="leading" constant="10" id="qk9-Y3-Gax"/>
+                            <constraint firstItem="3gd-4v-wbX" firstAttribute="top" secondItem="rjj-RB-8SY" secondAttribute="top" id="vuR-4F-mXF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rjj-RB-8SY"/>
                     </view>
