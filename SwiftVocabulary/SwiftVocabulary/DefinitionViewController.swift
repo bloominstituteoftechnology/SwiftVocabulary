@@ -11,8 +11,7 @@ import UIKit
 class DefinitionViewController: UIViewController {
 
     @IBOutlet weak var wordLabel: UILabel!
-    @IBOutlet weak var textView: UITextView!
-    
+    @IBOutlet weak var textView: UITextView!    
     
     override func viewDidLoad() {
         super.viewDidLoad()
