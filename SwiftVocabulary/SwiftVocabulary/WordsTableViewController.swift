@@ -29,7 +29,27 @@ class WordsTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addVocabularyWord))
+    }
+    
+    @objc func addVocabularyWord() {
+        let alert = UIAlertController(title: "New word", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { _ in
+            guard let newWord = alert.textFields?[0].text, let newDefinition = alert.textFields?[1].text else { return }
+            let vocabWord = VocabularyWord(word: newWord, definition: newDefinition)
+            self.vocabWords.append(vocabWord)
+            let row = self.vocabWords.index(before: self.vocabWords.endIndex)
+            let path = IndexPath(row: row, section: 0)
+            self.tableView.insertRows(at: [path], with: .automatic)
+        }))
+        alert.addTextField() { textField in
+            textField.placeholder = "Word"
+        }
+        alert.addTextField() { textField in
+            textField.placeholder = "Definition"
+        }
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: - Table view data source
