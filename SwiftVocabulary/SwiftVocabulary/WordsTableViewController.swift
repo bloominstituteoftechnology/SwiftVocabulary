@@ -28,14 +28,27 @@ class WordsTableViewController: UITableViewController {
         NSLog("User exitted alert.")
         }))
         // ---
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in NSLog("User pressed OK")}))
+        alert.addTextField(configurationHandler: {
+            textField in textField.placeholder = "Word Name"
+        })
+        alert.addTextField(configurationHandler: {
+            textField in textField.placeholder = "Word Definition"
+    })
         // ---
-        alert.addTextField(configurationHandler: nil)
-        alert.addTextField(configurationHandler: nil)
-        // ---
-        alert.textFields?[0].placeholder = "Word Name"
-        alert.textFields?[1].placeholder = "Word Description"
+        
+       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
+        action in
+        guard let wordName = alert.textFields?[0].text,
+            let wordDefinition = alert.textFields?[1].text else { return }
+        
+        self.vocabWords.append(VocabularyWord(word: wordName, definition: wordDefinition))
+        
         print(alert.textFields)
+        print(" Lets see if it got added: ")
+        print(self.vocabWords)
+       }))
+
+        
         // ---
         self.present(alert, animated: true, completion: nil)
         
