@@ -52,6 +52,7 @@ class WebScraper {
             .font: UIFont.systemFont(ofSize: 17)
         ])
         
+        // Highlight code blocks
         let codeSlices = string.slices(from: "<code>", to: "</code>")
         codeSlices.forEach {
             let range = NSRange($0.startIndex..<$0.endIndex, in: attributedString.string)
