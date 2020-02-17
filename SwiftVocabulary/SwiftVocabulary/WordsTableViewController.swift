@@ -46,6 +46,7 @@ class WordsTableViewController: UITableViewController {
         print(alert.textFields)
         print(" Lets see if it got added: ")
         print(self.vocabWords)
+        self.tableView.reloadData()
        }))
 
         
