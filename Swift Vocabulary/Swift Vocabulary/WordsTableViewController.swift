@@ -67,27 +67,33 @@ class WordsTableViewController: UITableViewController {
     
     // MARK: - Actions
     @IBAction func addWord(_ sender: Any) {
-        var wordTextField: UITextField?
-        var definitionTextField: UITextField?
-        
         let alertController = UIAlertController(
             title: "Add Word",
-            message: "Please enter the name and definition",
+            message: "Please enter the word and its definition",
             preferredStyle: .alert
         )
         
-        let confirm = UIAlertAction(title: "Confirm", style: .default) { action in
-            
+        var wordTextField: UITextField?
+        alertController.addTextField { textField in
+            textField.placeholder = "Word"
+            wordTextField = textField
         }
         
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
-        
-        alertController.addTextField { wordField in
-            
+        var definitionTextField: UITextField?
+        alertController.addTextField { textField in
+            textField.placeholder = "Definition"
+            definitionTextField = textField
         }
         
-        alertController.addTextField { definitionField in
-            
-        }
+        alertController.addAction(UIAlertAction(title: "Confirm", style: .default) { _ in
+            guard let word = wordTextField?.text else { return }
+            guard let definition = definitionTextField?.text else { return }
+            self.vocabWords.append(VocabularyWord(word: word, definition: definition))
+            self.tableView.reloadData()
+        })
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        self.present(alertController, animated: true)
     }
 }
