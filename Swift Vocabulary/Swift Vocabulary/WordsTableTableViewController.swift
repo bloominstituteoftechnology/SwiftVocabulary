@@ -10,6 +10,8 @@ import UIKit
 
 class WordsTableTableViewController: UITableViewController {
 
+    var vocabWords: [VocabularyWord]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,25 +24,18 @@ class WordsTableTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return vocabWords.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
         // Configure the cell...
-
+        cell.textLabel = vocabWords[indexPath.row].word
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
