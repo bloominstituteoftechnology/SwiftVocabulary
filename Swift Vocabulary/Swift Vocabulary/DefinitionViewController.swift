@@ -22,7 +22,6 @@ class DefinitionViewController: UIViewController {
         
         updateViews()
     }
-    
 
     func updateViews() {
         if let unwrappedVocabWord = vocabWord{
