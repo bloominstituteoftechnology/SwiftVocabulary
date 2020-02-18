@@ -9,7 +9,7 @@
 import UIKit
 
 class DefinitonViewController: UIViewController {
-
+    
     var vocabWord: VocabularyWord?
     func updatesViews() {
         if let unwrappedWord = vocabWord {
@@ -26,10 +26,10 @@ class DefinitonViewController: UIViewController {
         
     }
     
-
+    
     @IBOutlet weak var variable: UILabel!
-  
+    
     @IBOutlet weak var variableDefiniton: UITextView!
-  
-
+    
+    
 }

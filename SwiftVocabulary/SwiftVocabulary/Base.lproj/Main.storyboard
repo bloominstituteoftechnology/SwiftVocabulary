@@ -10,8 +10,8 @@
         <!--Swift Vocabulary-->
         <scene sceneID="hOE-zZ-Aij">
             <objects>
-                <tableViewController id="1Ug-Gy-cAY" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rik-hV-kcE" customClass="WordsTableViewController">
+                <tableViewController id="1Ug-Gy-cAY" customClass="WordsTableTableViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rik-hV-kcE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1026.0869565217392" y="-28.125"/>
         </scene>
-        <!--Definition View Controller-->
+        <!--Definiton View Controller-->
         <scene sceneID="ki6-IB-b94">
             <objects>
-                <viewController id="CtY-yW-4Hq" customClass="DefinitionViewController" sceneMemberID="viewController">
+                <viewController id="CtY-yW-4Hq" customClass="DefinitonViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="86i-ve-2qW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
