@@ -11,5 +11,5 @@ import Foundation
 
 struct VocabularyWord {
     let variable: String
-    let definiton: String
+    let definition: String
 }
