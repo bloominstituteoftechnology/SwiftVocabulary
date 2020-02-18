@@ -10,9 +10,10 @@ import UIKit
 
 class WordsTableTableViewController: UITableViewController {
 
+    
+    
     var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Dictionary", definition: "A hash-based mapping from Key to Value instances. Also a collection of key-value pairs with no defined ordering."),
         VocabularyWord(word: "Variable", definition: "A named value used to store information")]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class WordsTableTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -90,7 +91,6 @@ class WordsTableTableViewController: UITableViewController {
             let definitionViewController = segue.destination as? DefinitionViewController
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             let word = vocabWords[indexPath.row]
-
             definitionViewController?.vocabWord = word
         }
     }
