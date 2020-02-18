@@ -28,6 +28,8 @@ class DefinitonViewController: UIViewController {
     
 
     @IBOutlet weak var variable: UILabel!
+  
     @IBOutlet weak var variableDefiniton: UITextView!
+  
 
 }

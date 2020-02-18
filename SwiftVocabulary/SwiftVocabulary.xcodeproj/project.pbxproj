@@ -14,7 +14,7 @@
 		FE40E01123FB6F15000CA142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE40E00F23FB6F15000CA142 /* LaunchScreen.storyboard */; };
 		FE40E01923FB71F7000CA142 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE40E01823FB71F7000CA142 /* VocabularyWord.swift */; };
 		FE40E01B23FB72D2000CA142 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE40E01A23FB72D2000CA142 /* DefinitionViewController.swift */; };
-		FE40E01D23FB72EA000CA142 /* WordsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE40E01C23FB72EA000CA142 /* WordsTableTableViewController.swift */; };
+		FE42C32A23FB7AB7008B34E2 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42C32923FB7AB7008B34E2 /* WordsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		FE40E01223FB6F15000CA142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE40E01823FB71F7000CA142 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 		FE40E01A23FB72D2000CA142 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
-		FE40E01C23FB72EA000CA142 /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
+		FE42C32923FB7AB7008B34E2 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +63,9 @@
 				FE40E00423FB6F15000CA142 /* AppDelegate.swift */,
 				FE40E00623FB6F15000CA142 /* SceneDelegate.swift */,
 				FE40E00A23FB6F15000CA142 /* Main.storyboard */,
+				FE42C32923FB7AB7008B34E2 /* WordsTableViewController.swift */,
 				FE40E01823FB71F7000CA142 /* VocabularyWord.swift */,
 				FE40E01A23FB72D2000CA142 /* DefinitionViewController.swift */,
-				FE40E01C23FB72EA000CA142 /* WordsTableTableViewController.swift */,
 				FE40E00D23FB6F15000CA142 /* Assets.xcassets */,
 				FE40E00F23FB6F15000CA142 /* LaunchScreen.storyboard */,
 				FE40E01223FB6F15000CA142 /* Info.plist */,
@@ -147,7 +147,7 @@
 				FE40E01923FB71F7000CA142 /* VocabularyWord.swift in Sources */,
 				FE40E01B23FB72D2000CA142 /* DefinitionViewController.swift in Sources */,
 				FE40E00523FB6F15000CA142 /* AppDelegate.swift in Sources */,
-				FE40E01D23FB72EA000CA142 /* WordsTableTableViewController.swift in Sources */,
+				FE42C32A23FB7AB7008B34E2 /* WordsTableViewController.swift in Sources */,
 				FE40E00723FB6F15000CA142 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
