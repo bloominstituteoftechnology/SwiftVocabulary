@@ -11,8 +11,7 @@
 		3ACD23AF23FB34F7002524D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD23AE23FB34F7002524D1 /* SceneDelegate.swift */; };
 		3ACD23B423FB34F7002524D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACD23B223FB34F7002524D1 /* Main.storyboard */; };
 		3ACD23B623FB34F8002524D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACD23B523FB34F8002524D1 /* Assets.xcassets */; };
-		3ACD23B923FB34F8002524D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACD23B723FB34F8002524D1 /* LaunchScreen.storyboard */; };
-		3ACD23C323FB3A72002524D1 /* WorldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD23C223FB3A72002524D1 /* WorldsTableViewController.swift */; };
+		3ACD23C323FB3A72002524D1 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD23C223FB3A72002524D1 /* WordsTableViewController.swift */; };
 		3ACD23C523FB3A90002524D1 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD23C423FB3A90002524D1 /* DefinitionViewController.swift */; };
 		3ACD23C723FB3EC8002524D1 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD23C623FB3EC8002524D1 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
@@ -23,9 +22,8 @@
 		3ACD23AE23FB34F7002524D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3ACD23B323FB34F7002524D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3ACD23B523FB34F8002524D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3ACD23B823FB34F8002524D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ACD23BA23FB34F8002524D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3ACD23C223FB3A72002524D1 /* WorldsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsTableViewController.swift; sourceTree = "<group>"; };
+		3ACD23C223FB3A72002524D1 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		3ACD23C423FB3A90002524D1 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		3ACD23C623FB3EC8002524D1 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,10 +62,9 @@
 				3ACD23AE23FB34F7002524D1 /* SceneDelegate.swift */,
 				3ACD23B223FB34F7002524D1 /* Main.storyboard */,
 				3ACD23C623FB3EC8002524D1 /* VocabularyWord.swift */,
-				3ACD23C223FB3A72002524D1 /* WorldsTableViewController.swift */,
+				3ACD23C223FB3A72002524D1 /* WordsTableViewController.swift */,
 				3ACD23C423FB3A90002524D1 /* DefinitionViewController.swift */,
 				3ACD23B523FB34F8002524D1 /* Assets.xcassets */,
-				3ACD23B723FB34F8002524D1 /* LaunchScreen.storyboard */,
 				3ACD23BA23FB34F8002524D1 /* Info.plist */,
 			);
 			path = "Swift Vocabulary";
@@ -131,7 +128,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ACD23B923FB34F8002524D1 /* LaunchScreen.storyboard in Resources */,
 				3ACD23B623FB34F8002524D1 /* Assets.xcassets in Resources */,
 				3ACD23B423FB34F7002524D1 /* Main.storyboard in Resources */,
 			);
@@ -145,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ACD23C723FB3EC8002524D1 /* VocabularyWord.swift in Sources */,
-				3ACD23C323FB3A72002524D1 /* WorldsTableViewController.swift in Sources */,
+				3ACD23C323FB3A72002524D1 /* WordsTableViewController.swift in Sources */,
 				3ACD23AD23FB34F7002524D1 /* AppDelegate.swift in Sources */,
 				3ACD23AF23FB34F7002524D1 /* SceneDelegate.swift in Sources */,
 				3ACD23C523FB3A90002524D1 /* DefinitionViewController.swift in Sources */,
@@ -161,14 +157,6 @@
 				3ACD23B323FB34F7002524D1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3ACD23B723FB34F8002524D1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3ACD23B823FB34F8002524D1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

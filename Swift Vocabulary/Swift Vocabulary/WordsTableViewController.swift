@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WorldsTableViewController: UITableViewController {
+class WordsTableViewController: UITableViewController {
     
     var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "Not consistent or having a fixed pattern; liable to change."),
                                         VocabularyWord(word: "Constant", definition: "occurring continuously over a period of time."),
@@ -49,16 +49,14 @@ class WorldsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "ShowDefinitionSegue" {
-            
-            // What are we passing? ("Is this a softball, baseball, etc.")
-            
+                        
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             
             let vocabWord = vocabWords[indexPath.row]
             
-            let definitionTableVC = segue.destination as? DefinitionViewController
+            guard let definitionTableVC = segue.destination as? DefinitionViewController else { return }
             
-            definitionTableVC?.vocabWord = vocabWord
+            definitionTableVC.vocabWord = vocabWord
         }
     }
 }
