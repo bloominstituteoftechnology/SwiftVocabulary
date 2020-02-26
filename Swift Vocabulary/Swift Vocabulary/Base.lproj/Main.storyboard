@@ -43,7 +43,9 @@
                             <outlet property="delegate" destination="T7V-jL-BfF" id="E9Q-bW-k2l"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="6Wb-E1-tYw"/>
+                    <navigationItem key="navigationItem" id="6Wb-E1-tYw">
+                        <barButtonItem key="rightBarButtonItem" title="Add New" image="plus" catalog="system" id="NJx-Et-gHz" userLabel="Add"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SiY-X9-NxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,4 +118,7 @@
             <point key="canvasLocation" x="-1113.0434782608697" y="-348.21428571428572"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
