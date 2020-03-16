@@ -10,10 +10,11 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
+    var word: VocabularyWord?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
 

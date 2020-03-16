@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="160.86956521739131" y="138.61607142857142"/>
         </scene>
-        <!--Words Table View Controller-->
+        <!--Swift Vocabulary-->
         <scene sceneID="aLZ-dH-s1h">
             <objects>
                 <tableViewController id="Opy-e3-J3v" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,11 +60,11 @@
                             <outlet property="delegate" destination="Opy-e3-J3v" id="5Vc-kx-8rb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="IAZ-hy-F9f"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="IAZ-hy-F9f"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUh-TV-NYe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829" y="139"/>
+            <point key="canvasLocation" x="859" y="139"/>
         </scene>
         <!--Definition View Controller-->
         <scene sceneID="nM2-sv-fQI">

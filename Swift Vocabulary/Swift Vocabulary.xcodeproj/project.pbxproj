@@ -12,7 +12,7 @@
 		DD25137D242000A400F711B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD25137B242000A400F711B1 /* Main.storyboard */; };
 		DD25137F242000A500F711B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD25137E242000A500F711B1 /* Assets.xcassets */; };
 		DD251382242000A500F711B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD251380242000A500F711B1 /* LaunchScreen.storyboard */; };
-		DD25138C2420018700F711B1 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25138B2420018700F711B1 /* Words.swift */; };
+		DD25138C2420018700F711B1 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25138B2420018700F711B1 /* VocabularyWord.swift */; };
 		DD25138E24200B6D00F711B1 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25138D24200B6D00F711B1 /* WordsTableViewController.swift */; };
 		DD25139024200BA400F711B1 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25138F24200BA400F711B1 /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +25,7 @@
 		DD25137E242000A500F711B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD251381242000A500F711B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD251383242000A500F711B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD25138B2420018700F711B1 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		DD25138B2420018700F711B1 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 		DD25138D24200B6D00F711B1 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		DD25138F24200BA400F711B1 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +60,7 @@
 		DD251374242000A400F711B1 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				DD25138B2420018700F711B1 /* Words.swift */,
+				DD25138B2420018700F711B1 /* VocabularyWord.swift */,
 				DD251375242000A400F711B1 /* AppDelegate.swift */,
 				DD251377242000A400F711B1 /* SceneDelegate.swift */,
 				DD25138D24200B6D00F711B1 /* WordsTableViewController.swift */,
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD25138C2420018700F711B1 /* Words.swift in Sources */,
+				DD25138C2420018700F711B1 /* VocabularyWord.swift in Sources */,
 				DD251376242000A400F711B1 /* AppDelegate.swift in Sources */,
 				DD251378242000A400F711B1 /* SceneDelegate.swift in Sources */,
 				DD25138E24200B6D00F711B1 /* WordsTableViewController.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Word {
+struct VocabularyWord {
     var word: String
     var definition: String
 }
