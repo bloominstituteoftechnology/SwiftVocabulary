@@ -9,10 +9,10 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
-
-    var vocabWords : [VocabularyWord] = [VocabularyWord(name: "variable", definition: ""),
-                                         VocabularyWord(name: "constant", definition: ""),
-                                         VocabularyWord(name: "function", definition: "")]
+    
+    var vocabWords : [VocabularyWord] = [VocabularyWord(name: "Variable", definition: "A named value used to store information. Variables can be changed after being created."),
+                                         VocabularyWord(name: "Constant", definition: "It is a value that never changes."),
+                                         VocabularyWord(name: "Function", definition: "A named section of a program that performs a specific task.")]
     
 
     // MARK: - Table view data source
