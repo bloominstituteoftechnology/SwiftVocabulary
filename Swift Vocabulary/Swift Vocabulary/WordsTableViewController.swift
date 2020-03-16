@@ -11,9 +11,9 @@ import UIKit
 class WordsTableViewController: UITableViewController {
 
     var vocabWords: [VocabularyWord] = [
-        VocabularyWord(word: "Test", definition: "Just a Test"),
-        VocabularyWord(word: "Test", definition: "Just a Test"),
-        VocabularyWord(word: "Test", definition: "Just a Test")
+        VocabularyWord(word: "Variable", definition: "not consistent or having a fixed pattern; liable to change."),
+        VocabularyWord(word: "Constant", definition: "a situation or state of affairs that does not change."),
+        VocabularyWord(word: "Function", definition: "a relationship or expression involving one or more variables.")
     ]
     
     override func viewDidLoad() {

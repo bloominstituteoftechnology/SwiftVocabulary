@@ -15,6 +15,7 @@
 		DD25138C2420018700F711B1 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25138B2420018700F711B1 /* VocabularyWord.swift */; };
 		DD25138E24200B6D00F711B1 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25138D24200B6D00F711B1 /* WordsTableViewController.swift */; };
 		DD25139024200BA400F711B1 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25138F24200BA400F711B1 /* DefinitionViewController.swift */; };
+		DD251392242020F400F711B1 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD251391242020F400F711B1 /* AddWordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DD25138B2420018700F711B1 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 		DD25138D24200B6D00F711B1 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		DD25138F24200BA400F711B1 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		DD251391242020F400F711B1 /* AddWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				DD251377242000A400F711B1 /* SceneDelegate.swift */,
 				DD25138D24200B6D00F711B1 /* WordsTableViewController.swift */,
 				DD25138F24200BA400F711B1 /* DefinitionViewController.swift */,
+				DD251391242020F400F711B1 /* AddWordViewController.swift */,
 				DD25137B242000A400F711B1 /* Main.storyboard */,
 				DD25137E242000A500F711B1 /* Assets.xcassets */,
 				DD251380242000A500F711B1 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				DD25138C2420018700F711B1 /* VocabularyWord.swift in Sources */,
 				DD251376242000A400F711B1 /* AppDelegate.swift in Sources */,
+				DD251392242020F400F711B1 /* AddWordViewController.swift in Sources */,
 				DD251378242000A400F711B1 /* SceneDelegate.swift in Sources */,
 				DD25138E24200B6D00F711B1 /* WordsTableViewController.swift in Sources */,
 				DD25139024200BA400F711B1 /* DefinitionViewController.swift in Sources */,
