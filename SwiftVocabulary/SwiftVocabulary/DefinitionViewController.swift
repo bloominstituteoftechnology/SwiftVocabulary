@@ -10,6 +10,9 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
+    // MARK: - Properties
+    var vocabWord: VocabularyWord?
+    
     // MARK: - Outlets
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var definitionTextView: UITextView!
