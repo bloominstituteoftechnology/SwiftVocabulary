@@ -23,7 +23,7 @@ class AddWordViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        print(segue.identifier ?? <#default value#>)
+        //print(segue.identifier ?? <#default value#>)
         /*
         switch(segue.identifier) {
             print(segue.identifier)
