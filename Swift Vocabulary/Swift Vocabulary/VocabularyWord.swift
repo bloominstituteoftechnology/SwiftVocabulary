@@ -6,4 +6,9 @@
 //  Copyright © 2020 Nihal Erdal. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct VocabularyWord {
+    let name : String
+    let definition : String
+}

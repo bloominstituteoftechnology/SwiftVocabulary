@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		9528D2092420237F00CC0EB8 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
-		95499699242016D900E4920B /* SwiftVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95499699242016D900E4920B /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9549969C242016D900E4920B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9549969E242016DA00E4920B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		954996A3242016DA00E4920B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		95499690242016D900E4920B = {
 			isa = PBXGroup;
 			children = (
-				9549969B242016D900E4920B /* SwiftVocabulary */,
+				9549969B242016D900E4920B /* Swift Vocabulary */,
 				9549969A242016D900E4920B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		9549969A242016D900E4920B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95499699242016D900E4920B /* SwiftVocabulary.app */,
+				95499699242016D900E4920B /* Swift Vocabulary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9549969B242016D900E4920B /* SwiftVocabulary */ = {
+		9549969B242016D900E4920B /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
 				9549969C242016D900E4920B /* AppDelegate.swift */,
@@ -70,15 +70,15 @@
 				954996A7242016DA00E4920B /* LaunchScreen.storyboard */,
 				954996AA242016DA00E4920B /* Info.plist */,
 			);
-			path = SwiftVocabulary;
+			path = "Swift Vocabulary";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95499698242016D900E4920B /* SwiftVocabulary */ = {
+		95499698242016D900E4920B /* Swift Vocabulary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 954996AD242016DA00E4920B /* Build configuration list for PBXNativeTarget "SwiftVocabulary" */;
+			buildConfigurationList = 954996AD242016DA00E4920B /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */;
 			buildPhases = (
 				95499695242016D900E4920B /* Sources */,
 				95499696242016D900E4920B /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftVocabulary;
+			name = "Swift Vocabulary";
 			productName = "Swift Vocabulary";
-			productReference = 95499699242016D900E4920B /* SwiftVocabulary.app */;
+			productReference = 95499699242016D900E4920B /* Swift Vocabulary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95499694242016D900E4920B /* Build configuration list for PBXProject "SwiftVocabulary" */;
+			buildConfigurationList = 95499694242016D900E4920B /* Build configuration list for PBXProject "Swift Vocabulary" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95499698242016D900E4920B /* SwiftVocabulary */,
+				95499698242016D900E4920B /* Swift Vocabulary */,
 			);
 		};
 /* End PBXProject section */
@@ -327,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95499694242016D900E4920B /* Build configuration list for PBXProject "SwiftVocabulary" */ = {
+		95499694242016D900E4920B /* Build configuration list for PBXProject "Swift Vocabulary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				954996AB242016DA00E4920B /* Debug */,
@@ -336,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		954996AD242016DA00E4920B /* Build configuration list for PBXNativeTarget "SwiftVocabulary" */ = {
+		954996AD242016DA00E4920B /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				954996AE242016DA00E4920B /* Debug */,
