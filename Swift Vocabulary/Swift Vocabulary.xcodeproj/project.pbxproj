@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99137F1B24200ED70095BBA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99137F1A24200ED70095BBA4 /* AppDelegate.swift */; };
-		99137F1D24200ED70095BBA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99137F1C24200ED70095BBA4 /* SceneDelegate.swift */; };
-		99137F2224200ED70095BBA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99137F2024200ED70095BBA4 /* Main.storyboard */; };
-		99137F2424200ED80095BBA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99137F2324200ED80095BBA4 /* Assets.xcassets */; };
-		99137F2724200ED80095BBA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99137F2524200ED80095BBA4 /* LaunchScreen.storyboard */; };
-		99137F2F24200FDE0095BBA4 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99137F2E24200FDE0095BBA4 /* DefinitionViewController.swift */; };
-		99137F3124200FF90095BBA4 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99137F3024200FF90095BBA4 /* WordsTableViewController.swift */; };
-		99137F33242025DD0095BBA4 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99137F32242025DD0095BBA4 /* VocabularyWord.swift */; };
+		994FF878242047E90088356B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FF877242047E90088356B /* AppDelegate.swift */; };
+		994FF87A242047E90088356B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FF879242047E90088356B /* SceneDelegate.swift */; };
+		994FF87F242047E90088356B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994FF87D242047E90088356B /* Main.storyboard */; };
+		994FF881242047E90088356B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994FF880242047E90088356B /* Assets.xcassets */; };
+		994FF884242047E90088356B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994FF882242047E90088356B /* LaunchScreen.storyboard */; };
+		994FF88C242048470088356B /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FF88B242048470088356B /* WordsTableViewController.swift */; };
+		994FF88E242048670088356B /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FF88D242048670088356B /* DefinitionViewController.swift */; };
+		994FF89024204D8A0088356B /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FF88F24204D8A0088356B /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		99137F1724200ED70095BBA4 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99137F1A24200ED70095BBA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99137F1C24200ED70095BBA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99137F2124200ED70095BBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99137F2324200ED80095BBA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		99137F2624200ED80095BBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		99137F2824200ED80095BBA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99137F2E24200FDE0095BBA4 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
-		99137F3024200FF90095BBA4 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
-		99137F32242025DD0095BBA4 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		994FF874242047E90088356B /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		994FF877242047E90088356B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		994FF879242047E90088356B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		994FF87E242047E90088356B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		994FF880242047E90088356B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		994FF883242047E90088356B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		994FF885242047E90088356B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994FF88B242048470088356B /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		994FF88D242048670088356B /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		994FF88F24204D8A0088356B /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		99137F1424200ED70095BBA4 /* Frameworks */ = {
+		994FF871242047E90088356B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,34 +41,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		99137F0E24200ED70095BBA4 = {
+		994FF86B242047E90088356B = {
 			isa = PBXGroup;
 			children = (
-				99137F1924200ED70095BBA4 /* Swift Vocabulary */,
-				99137F1824200ED70095BBA4 /* Products */,
+				994FF88B242048470088356B /* WordsTableViewController.swift */,
+				994FF88D242048670088356B /* DefinitionViewController.swift */,
+				994FF88F24204D8A0088356B /* VocabularyWord.swift */,
+				994FF876242047E90088356B /* Swift Vocabulary */,
+				994FF875242047E90088356B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		99137F1824200ED70095BBA4 /* Products */ = {
+		994FF875242047E90088356B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99137F1724200ED70095BBA4 /* Swift Vocabulary.app */,
+				994FF874242047E90088356B /* Swift Vocabulary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		99137F1924200ED70095BBA4 /* Swift Vocabulary */ = {
+		994FF876242047E90088356B /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				99137F1A24200ED70095BBA4 /* AppDelegate.swift */,
-				99137F1C24200ED70095BBA4 /* SceneDelegate.swift */,
-				99137F2024200ED70095BBA4 /* Main.storyboard */,
-				99137F2324200ED80095BBA4 /* Assets.xcassets */,
-				99137F2E24200FDE0095BBA4 /* DefinitionViewController.swift */,
-				99137F32242025DD0095BBA4 /* VocabularyWord.swift */,
-				99137F3024200FF90095BBA4 /* WordsTableViewController.swift */,
-				99137F2524200ED80095BBA4 /* LaunchScreen.storyboard */,
-				99137F2824200ED80095BBA4 /* Info.plist */,
+				994FF877242047E90088356B /* AppDelegate.swift */,
+				994FF879242047E90088356B /* SceneDelegate.swift */,
+				994FF87D242047E90088356B /* Main.storyboard */,
+				994FF880242047E90088356B /* Assets.xcassets */,
+				994FF882242047E90088356B /* LaunchScreen.storyboard */,
+				994FF885242047E90088356B /* Info.plist */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -76,13 +76,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		99137F1624200ED70095BBA4 /* Swift Vocabulary */ = {
+		994FF873242047E90088356B /* Swift Vocabulary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99137F2B24200ED80095BBA4 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */;
+			buildConfigurationList = 994FF888242047E90088356B /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */;
 			buildPhases = (
-				99137F1324200ED70095BBA4 /* Sources */,
-				99137F1424200ED70095BBA4 /* Frameworks */,
-				99137F1524200ED70095BBA4 /* Resources */,
+				994FF870242047E90088356B /* Sources */,
+				994FF871242047E90088356B /* Frameworks */,
+				994FF872242047E90088356B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -90,25 +90,25 @@
 			);
 			name = "Swift Vocabulary";
 			productName = "Swift Vocabulary";
-			productReference = 99137F1724200ED70095BBA4 /* Swift Vocabulary.app */;
+			productReference = 994FF874242047E90088356B /* Swift Vocabulary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		99137F0F24200ED70095BBA4 /* Project object */ = {
+		994FF86C242047E90088356B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Dahna Buenrostro";
 				TargetAttributes = {
-					99137F1624200ED70095BBA4 = {
+					994FF873242047E90088356B = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 99137F1224200ED70095BBA4 /* Build configuration list for PBXProject "Swift Vocabulary" */;
+			buildConfigurationList = 994FF86F242047E90088356B /* Build configuration list for PBXProject "Swift Vocabulary" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,57 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 99137F0E24200ED70095BBA4;
-			productRefGroup = 99137F1824200ED70095BBA4 /* Products */;
+			mainGroup = 994FF86B242047E90088356B;
+			productRefGroup = 994FF875242047E90088356B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99137F1624200ED70095BBA4 /* Swift Vocabulary */,
+				994FF873242047E90088356B /* Swift Vocabulary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		99137F1524200ED70095BBA4 /* Resources */ = {
+		994FF872242047E90088356B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99137F2724200ED80095BBA4 /* LaunchScreen.storyboard in Resources */,
-				99137F2424200ED80095BBA4 /* Assets.xcassets in Resources */,
-				99137F2224200ED70095BBA4 /* Main.storyboard in Resources */,
+				994FF884242047E90088356B /* LaunchScreen.storyboard in Resources */,
+				994FF881242047E90088356B /* Assets.xcassets in Resources */,
+				994FF87F242047E90088356B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		99137F1324200ED70095BBA4 /* Sources */ = {
+		994FF870242047E90088356B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99137F2F24200FDE0095BBA4 /* DefinitionViewController.swift in Sources */,
-				99137F1B24200ED70095BBA4 /* AppDelegate.swift in Sources */,
-				99137F33242025DD0095BBA4 /* VocabularyWord.swift in Sources */,
-				99137F3124200FF90095BBA4 /* WordsTableViewController.swift in Sources */,
-				99137F1D24200ED70095BBA4 /* SceneDelegate.swift in Sources */,
+				994FF878242047E90088356B /* AppDelegate.swift in Sources */,
+				994FF87A242047E90088356B /* SceneDelegate.swift in Sources */,
+				994FF89024204D8A0088356B /* VocabularyWord.swift in Sources */,
+				994FF88C242048470088356B /* WordsTableViewController.swift in Sources */,
+				994FF88E242048670088356B /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		99137F2024200ED70095BBA4 /* Main.storyboard */ = {
+		994FF87D242047E90088356B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				99137F2124200ED70095BBA4 /* Base */,
+				994FF87E242047E90088356B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		99137F2524200ED80095BBA4 /* LaunchScreen.storyboard */ = {
+		994FF882242047E90088356B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				99137F2624200ED80095BBA4 /* Base */,
+				994FF883242047E90088356B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		99137F2924200ED80095BBA4 /* Debug */ = {
+		994FF886242047E90088356B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +234,7 @@
 			};
 			name = Debug;
 		};
-		99137F2A24200ED80095BBA4 /* Release */ = {
+		994FF887242047E90088356B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,7 +288,7 @@
 			};
 			name = Release;
 		};
-		99137F2C24200ED80095BBA4 /* Debug */ = {
+		994FF889242047E90088356B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -305,7 +305,7 @@
 			};
 			name = Debug;
 		};
-		99137F2D24200ED80095BBA4 /* Release */ = {
+		994FF88A242047E90088356B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -325,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		99137F1224200ED70095BBA4 /* Build configuration list for PBXProject "Swift Vocabulary" */ = {
+		994FF86F242047E90088356B /* Build configuration list for PBXProject "Swift Vocabulary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99137F2924200ED80095BBA4 /* Debug */,
-				99137F2A24200ED80095BBA4 /* Release */,
+				994FF886242047E90088356B /* Debug */,
+				994FF887242047E90088356B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99137F2B24200ED80095BBA4 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */ = {
+		994FF888242047E90088356B /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99137F2C24200ED80095BBA4 /* Debug */,
-				99137F2D24200ED80095BBA4 /* Release */,
+				994FF889242047E90088356B /* Debug */,
+				994FF88A242047E90088356B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 99137F0F24200ED70095BBA4 /* Project object */;
+	rootObject = 994FF86C242047E90088356B /* Project object */;
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Dahna Buenrostro. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct VocabularyWord {
     var word: String
