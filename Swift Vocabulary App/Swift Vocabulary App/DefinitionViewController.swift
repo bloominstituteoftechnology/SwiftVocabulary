@@ -13,9 +13,7 @@ class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var WordDefinition: UITextView!
     
-    
     var vocabWord: VocabularyWord?
-    
     
     func updateViews() {
         if vocabWord != nil {
@@ -26,6 +24,7 @@ class DefinitionViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        updateViews()
         super.viewDidLoad()
         
 

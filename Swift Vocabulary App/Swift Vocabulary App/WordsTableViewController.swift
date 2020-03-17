@@ -42,9 +42,9 @@ class WordsTableViewController: UITableViewController {
 
         // Configure the cell...
         
-        let definition = vocabWords[indexPath.row]
+        let vocab = vocabWords[indexPath.row]
         
-        cell.textLabel?.text = definition.word
+        cell.textLabel?.text = vocab.word
 
         return cell
     }
@@ -64,7 +64,8 @@ class WordsTableViewController: UITableViewController {
             if let detailVC = segue.destination as? DefinitionViewController,
                 let indexPath = tableView.indexPathForSelectedRow {
                 
-                let definition = vocabWords[indexPath.row]
+                let vocab = vocabWords[indexPath.row]
+                detailVC.vocabWord = vocab
 
             }
         }
