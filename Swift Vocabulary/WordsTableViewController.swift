@@ -10,7 +10,7 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
 
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A named value                                             used to store information. Variables can be changed                                            after being created."),
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A named value used to store information. Variables can be changed after being created."),
                                         VocabularyWord(word: "Constant", definition: "Fixed values that a program may not alter during its execution"),
                                         VocabularyWord(word: "Function", definition: "Self-contained chunks of code that perform a specific task")]
     
