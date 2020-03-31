@@ -11,6 +11,7 @@ The screen recording below shows you what the final product should do:
 1. Create a new Xcode single view app project
 2. Name the project "Swift Vocabulary"
 3. Make sure you select Swift as the development language
+4. Make sure to select the "Storyboard" setting in the User Interface dropdown
 
 ### Create View Controllers
 
