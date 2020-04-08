@@ -49,5 +49,14 @@ class WordsTableViewController: UITableViewController {
             }
         }
     }
+    
+    @IBAction func addWord(_ unwindSegue: UIStoryboardSegue) {
+        guard let sourceVC = unwindSegue.source as? AddItemViewController,
+            let newVocabWord = sourceVC.newDef else {
+            return
+        }
+        vocabWords.append(newVocabWord)
+        tableView.reloadData()
+    }
 
 }
