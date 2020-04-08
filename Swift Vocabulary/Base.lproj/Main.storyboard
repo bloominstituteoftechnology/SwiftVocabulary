@@ -46,7 +46,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nh2-BU-KMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981.15942028985512" y="53.571428571428569"/>
+            <point key="canvasLocation" x="880" y="54"/>
         </scene>
         <!--Definition View Controller-->
         <scene sceneID="WDE-6T-LNz">
@@ -88,13 +88,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="bZo-r7-nhp"/>
                     <connections>
+                        <outlet property="DefinitionLabel" destination="W4V-h1-dGz" id="MNO-aT-r8m"/>
+                        <outlet property="DefinitionTextView" destination="KbC-Ve-d7L" id="TWG-yw-sFe"/>
                         <outlet property="Label" destination="W4V-h1-dGz" id="wJ2-Yc-m6m"/>
                         <outlet property="Text" destination="KbC-Ve-d7L" id="ARk-o5-36X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4L-ot-d7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1715.9420289855075" y="53.571428571428569"/>
+            <point key="canvasLocation" x="1655" y="54"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6dL-1Y-CKb">
