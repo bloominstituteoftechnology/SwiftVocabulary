@@ -14,7 +14,7 @@
 		0B3A06F4243E433600219718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A06F2243E433600219718 /* LaunchScreen.storyboard */; };
 		0B3A06FC243E43D500219718 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A06FB243E43D500219718 /* WordsTableViewController.swift */; };
 		0B3A06FF243E441400219718 /* DefinitonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A06FE243E441400219718 /* DefinitonViewController.swift */; };
-		0B972186243E497A00923457 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972185243E497A00923457 /* File.swift */; };
+		0B972188243E49D800923457 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972187243E49D800923457 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		0B3A06F5243E433600219718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B3A06FB243E43D500219718 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		0B3A06FE243E441400219718 /* DefinitonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitonViewController.swift; sourceTree = "<group>"; };
-		0B972185243E497A00923457 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		0B972187243E49D800923457 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 		0B3A06FD243E43E200219718 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0B972185243E497A00923457 /* File.swift */,
+				0B972187243E49D800923457 /* VocabularyWord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,9 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B972186243E497A00923457 /* File.swift in Sources */,
 				0B3A06E8243E433400219718 /* AppDelegate.swift in Sources */,
 				0B3A06EA243E433400219718 /* SceneDelegate.swift in Sources */,
+				0B972188243E49D800923457 /* VocabularyWord.swift in Sources */,
 				0B3A06FC243E43D500219718 /* WordsTableViewController.swift in Sources */,
 				0B3A06FF243E441400219718 /* DefinitonViewController.swift in Sources */,
 			);
