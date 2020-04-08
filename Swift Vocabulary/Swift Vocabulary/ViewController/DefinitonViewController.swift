@@ -23,6 +23,7 @@ class DefinitonViewController: UIViewController {
     
     func updateViews(){
         if let vocabWord = vocabWord{
+            
             definitionLabel.text = vocabWord.word
             definitionTextField.text = vocabWord.definition
         }
