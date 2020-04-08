@@ -1,5 +1,5 @@
 //
-//  WordsTableTableViewController.swift
+//  WordsTableViewController.swift
 //  Swift Vocabulary
 //
 //  Created by Bronson Mullens on 4/8/20.
