@@ -1,23 +1,25 @@
 //
-//  WordsTableTableViewController.swift
+//  WordsTableViewController.swift
 //  Swift Vocabulary
 //
-//  Created by Josh Kocsis on 4/6/20.
-//  Copyright © 2020 Josh Kocsis. All rights reserved.
+//  Created by Josh Kocsis on 4/7/20.
+//  Copyright © 2020 Lambda, Inc. All rights reserved.
 //
 
 import UIKit
 
-class WordsTableTableViewController: UITableViewController {
-
-    var vocabWords: [VocabularyWord] = [VocabularyWord(
+class WordsTableViewController: UITableViewController {
+    
+    var vocabWords: [VocabularyWord] = [
+    VocabularyWord(
     word: "Variable",
     definition: "Variables are a named Value used to store information. Variables can be changed after being created."),
     VocabularyWord(word: "Constant",
     definition: "Constants refer to fixed values that a program may not alter during its execution. Constants can be of any of the basic data types like an integer constant, a floating constant, a character constant, or a string literal."),
     VocabularyWord(word: "Function",
-    definition: "Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed.")]
-    
+    definition: "Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed.")
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,8 +30,6 @@ class WordsTableTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    // MARK: - Table view data source
-
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -39,10 +39,11 @@ class WordsTableTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
+
         let vocab = vocabWords[indexPath.row]
         
          cell.textLabel?.text = vocab.word
-
+        
         // Configure the cell...
 
         return cell
@@ -91,17 +92,18 @@ class WordsTableTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ShowDefinitionSegue"{
-            
-            guard let definitionVC = segue.destination as? DefinitionViewController else {
-                return
+                
+                guard let definitionVC = segue.destination as? DefinitionViewController else {
+                    return
+                }
+                guard let indexPath = tableView.indexPathForSelectedRow else {
+                    return
+                }
+                let vocab = vocabWords[indexPath.row]
+                definitionVC.vocabWord = vocab
             }
-            guard let indexPath = tableView.indexPathForSelectedRow else {
-                return
-            }
-            let vocab = vocabWords[indexPath.row]
-            definitionVC.vocabWord = vocab
         }
         
-    }
-
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
 }
