@@ -88,10 +88,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="bZo-r7-nhp"/>
                     <connections>
-                        <outlet property="DefinitionLabel" destination="W4V-h1-dGz" id="MNO-aT-r8m"/>
-                        <outlet property="DefinitionTextView" destination="KbC-Ve-d7L" id="TWG-yw-sFe"/>
-                        <outlet property="Label" destination="W4V-h1-dGz" id="wJ2-Yc-m6m"/>
-                        <outlet property="Text" destination="KbC-Ve-d7L" id="ARk-o5-36X"/>
+                        <outlet property="definitionLabel" destination="W4V-h1-dGz" id="KDn-Cz-7kf"/>
+                        <outlet property="definitionTextView" destination="KbC-Ve-d7L" id="Y7p-0a-MSe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4L-ot-d7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

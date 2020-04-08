@@ -22,8 +22,8 @@ class DefinitionViewController: UIViewController {
 
     func updateViews() {
         if let unwrappedVocabWord = vocabWord {
-            definitionLabel.text = unwrappedVocabWord.word
-            definitionTextView.text = unwrappedVocabWord.definition
+            definitionLabel?.text = unwrappedVocabWord.word
+            definitionTextView?.text = unwrappedVocabWord.definition
         }
     }
 }
