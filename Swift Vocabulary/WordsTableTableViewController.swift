@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WordsTableTableViewController: UITableViewController {
+class WordsTableViewController: UITableViewController {
     
     var vocabWords: [VocabularyWord] = [
         VocabularyWord(word: "Integer", definition: "A whole number."),
@@ -22,15 +22,14 @@ class WordsTableTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vocabWords.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
         let currentWord = vocabWords[indexPath.row]
         cell.textLabel?.text = currentWord.word
         return cell
     }
-    
-    
+ 
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
