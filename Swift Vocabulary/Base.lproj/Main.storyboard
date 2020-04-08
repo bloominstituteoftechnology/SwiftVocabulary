@@ -10,7 +10,7 @@
         <!--Swift Vocabulary-->
         <scene sceneID="8kA-Bj-XjJ">
             <objects>
-                <tableViewController id="VRI-zY-jle" customClass="WordsTableViewController" sceneMemberID="viewController">
+                <tableViewController id="VRI-zY-jle" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ab9-lL-UzK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
