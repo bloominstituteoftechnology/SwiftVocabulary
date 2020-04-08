@@ -60,6 +60,7 @@
 		0B3A06E6243E433400219718 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				0B3A06F5243E433600219718 /* Info.plist */,
 				0B3A0702243E470100219718 /* Resources */,
 				0B3A0701243E46CA00219718 /* ViewController */,
 				0B3A0700243E46BD00219718 /* Views */,
@@ -87,8 +88,8 @@
 		0B3A0701243E46CA00219718 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0B3A06FE243E441400219718 /* DefinitonViewController.swift */,
 				0B3A06FB243E43D500219718 /* WordsTableViewController.swift */,
+				0B3A06FE243E441400219718 /* DefinitonViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -98,7 +99,6 @@
 			children = (
 				0B3A06E7243E433400219718 /* AppDelegate.swift */,
 				0B3A06F2243E433600219718 /* LaunchScreen.storyboard */,
-				0B3A06F5243E433600219718 /* Info.plist */,
 				0B3A06F0243E433600219718 /* Assets.xcassets */,
 				0B3A06E9243E433400219718 /* SceneDelegate.swift */,
 			);
