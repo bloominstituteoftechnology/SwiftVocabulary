@@ -13,6 +13,8 @@
 		AD3E382B243E3C0B0081AA4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3E3829243E3C0B0081AA4D /* Main.storyboard */; };
 		AD3E382D243E3C0C0081AA4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3E382C243E3C0C0081AA4D /* Assets.xcassets */; };
 		AD3E3830243E3C0C0081AA4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3E382E243E3C0C0081AA4D /* LaunchScreen.storyboard */; };
+		AD3E3838243E3D620081AA4D /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E3837243E3D620081AA4D /* WordsTableViewController.swift */; };
+		AD3E383A243E3D990081AA4D /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E3839243E3D990081AA4D /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AD3E382C243E3C0C0081AA4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD3E382F243E3C0C0081AA4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3E3831243E3C0C0081AA4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD3E3837243E3D620081AA4D /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		AD3E3839243E3D990081AA4D /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				AD3E382C243E3C0C0081AA4D /* Assets.xcassets */,
 				AD3E382E243E3C0C0081AA4D /* LaunchScreen.storyboard */,
 				AD3E3831243E3C0C0081AA4D /* Info.plist */,
+				AD3E3837243E3D620081AA4D /* WordsTableViewController.swift */,
+				AD3E3839243E3D990081AA4D /* DefinitionViewController.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				AD3E3828243E3C0B0081AA4D /* ViewController.swift in Sources */,
 				AD3E3824243E3C0B0081AA4D /* AppDelegate.swift in Sources */,
 				AD3E3826243E3C0B0081AA4D /* SceneDelegate.swift in Sources */,
+				AD3E3838243E3D620081AA4D /* WordsTableViewController.swift in Sources */,
+				AD3E383A243E3D990081AA4D /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
