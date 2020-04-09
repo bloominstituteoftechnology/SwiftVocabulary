@@ -42,7 +42,22 @@
                             <outlet property="delegate" destination="VRI-zY-jle" id="Oce-bo-7Tb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="mXs-1T-4G5"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="mXs-1T-4G5">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="gRI-Hi-ZAa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4kB-QZ-dBs">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addVocabButtonPressedWith_sender:" destination="VRI-zY-jle" eventType="touchUpInside" id="FWZ-JU-CzT"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addVocab" destination="gRI-Hi-ZAa" id="fTk-7s-Z5s"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nh2-BU-KMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +76,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="Sco-e4-qUB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

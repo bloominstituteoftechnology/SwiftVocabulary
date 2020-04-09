@@ -60,17 +60,41 @@
 		E30FBA8B243DBD8C0041BE4D /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				E356ADA9243EC37700AC3A39 /* View Controllers */,
+				E356ADA8243EC36300AC3A39 /* Model */,
+				E356ADA7243EC34E00AC3A39 /* Resources */,
 				E30FBA8C243DBD8C0041BE4D /* AppDelegate.swift */,
 				E30FBA8E243DBD8C0041BE4D /* SceneDelegate.swift */,
 				E30FBA92243DBD8C0041BE4D /* Main.storyboard */,
 				E30FBA95243DBD8E0041BE4D /* Assets.xcassets */,
 				E30FBA97243DBD8E0041BE4D /* LaunchScreen.storyboard */,
 				E30FBA9A243DBD8E0041BE4D /* Info.plist */,
-				E30FBAA0243DBEC50041BE4D /* WordsTableViewController.swift */,
-				E30FBAA2243DBEF40041BE4D /* DefinitionViewController.swift */,
-				E30FBAA4243DC8B50041BE4D /* VocabularyWord.swift */,
 			);
 			path = "Swift Vocabulary";
+			sourceTree = "<group>";
+		};
+		E356ADA7243EC34E00AC3A39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E356ADA8243EC36300AC3A39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E30FBAA4243DC8B50041BE4D /* VocabularyWord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E356ADA9243EC37700AC3A39 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E30FBAA0243DBEC50041BE4D /* WordsTableViewController.swift */,
+				E30FBAA2243DBEF40041BE4D /* DefinitionViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

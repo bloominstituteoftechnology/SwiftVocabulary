@@ -17,7 +17,40 @@ class WordsTableViewController: UITableViewController {
         VocabularyWord(word: "Double", definition: "A number with a decimal value.")
     ]
     
+    func addVocabWord(newWord: String, newDefinition: String) {
+        let newWord = VocabularyWord(word: newWord, definition: newDefinition)
+        vocabWords.append(newWord)
+    }
+    
     // MARK: - Table view data source
+    
+    @IBOutlet weak var addVocab: UIBarButtonItem!
+    
+    @IBAction func addVocabButtonPressed(_sender: Any) {
+        let alertController = UIAlertController(title: "Add Vocabulary", message: "Add new vocabulary here", preferredStyle: .alert)
+        
+        alertController.addTextField {
+            (textField) in textField.placeholder = "Enter word"
+        }
+        
+        alertController.addTextField {
+            (textField) in textField.placeholder = "Enter definition"
+        }
+        
+        let confirmAddVocab = UIAlertAction(title: "Add", style: .default, handler: { (action) in
+            if let unwrappedWord = alertController.textFields?[0].text, let unwrappedDefinition = alertController.textFields?[1].text {
+                self.addVocabWord(newWord: unwrappedWord, newDefinition: unwrappedDefinition)
+                self.tableView.reloadData()
+            }
+        })
+        
+        let cancelAddVocab = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(confirmAddVocab)
+        alertController.addAction(cancelAddVocab)
+        
+        present(alertController, animated: true)
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vocabWords.count
