@@ -27,7 +27,7 @@ class WordsTableViewController: UITableViewController {
     @IBOutlet weak var addVocab: UIBarButtonItem!
     
     @IBAction func addVocabButtonPressed(_sender: Any) {
-        let alertController = UIAlertController(title: "Add Vocabulary", message: "Add new vocabulary here", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Add Vocabulary", message: "Enter a word and definition", preferredStyle: .alert)
         
         alertController.addTextField {
             (textField) in textField.placeholder = "Enter word"
