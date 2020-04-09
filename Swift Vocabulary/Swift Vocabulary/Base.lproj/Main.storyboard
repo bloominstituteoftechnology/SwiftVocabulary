@@ -56,27 +56,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2g3-WC-q2m">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2g3-WC-q2m">
                                 <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNS-EM-dXF">
-                                <rect key="frame" x="166" y="212" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNS-EM-dXF">
+                                <rect key="frame" x="166" y="240" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zNS-EM-dXF" firstAttribute="top" secondItem="yRq-Uk-TaA" secondAttribute="top" constant="196" id="ESI-bl-wv4"/>
+                            <constraint firstItem="yRq-Uk-TaA" firstAttribute="bottom" secondItem="2g3-WC-q2m" secondAttribute="bottom" constant="270" id="HtO-Vw-og0"/>
+                            <constraint firstItem="2g3-WC-q2m" firstAttribute="top" secondItem="zNS-EM-dXF" secondAttribute="bottom" constant="8" id="J9A-IQ-tax"/>
+                            <constraint firstItem="zNS-EM-dXF" firstAttribute="centerX" secondItem="EWz-se-dff" secondAttribute="centerX" id="Niz-kb-Wif"/>
+                            <constraint firstItem="2g3-WC-q2m" firstAttribute="centerY" secondItem="EWz-se-dff" secondAttribute="centerY" id="Pr6-I1-Pdf"/>
+                            <constraint firstItem="zNS-EM-dXF" firstAttribute="leading" secondItem="yRq-Uk-TaA" secondAttribute="leading" constant="166" id="Skr-LK-ULV"/>
+                            <constraint firstItem="zNS-EM-dXF" firstAttribute="centerX" secondItem="2g3-WC-q2m" secondAttribute="centerX" id="VrH-gr-a25"/>
+                            <constraint firstItem="2g3-WC-q2m" firstAttribute="leading" secondItem="yRq-Uk-TaA" secondAttribute="leading" constant="67" id="rRu-JP-F9b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yRq-Uk-TaA"/>
                     </view>
                     <navigationItem key="navigationItem" id="nky-EP-s6W"/>
+                    <connections>
+                        <outlet property="label" destination="zNS-EM-dXF" id="UWh-Hm-wWk"/>
+                        <outlet property="textView" destination="2g3-WC-q2m" id="LvC-VF-wdS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qZ-gh-vf0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

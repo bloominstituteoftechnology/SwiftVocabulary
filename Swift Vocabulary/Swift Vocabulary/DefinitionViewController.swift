@@ -16,7 +16,10 @@ class DefinitionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var textView: UITextView!
+    
     /*
     // MARK: - Navigation
 
