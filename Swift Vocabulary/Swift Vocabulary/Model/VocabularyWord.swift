@@ -6,4 +6,9 @@
 //  Copyright © 2020 Sammy Alvarado. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct VocabularyWord {
+    var word: String
+    var definitions: String
+}
