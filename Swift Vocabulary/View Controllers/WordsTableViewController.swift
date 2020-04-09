@@ -9,6 +9,15 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
+   
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+    }
 
     var vocabWords: [VocabularyWord] = [
     VocabularyWord(word: "Constant", definition: "A fixed value that a program my not alter during its excution. Constants can be of any basic data types."),
@@ -48,14 +57,26 @@ class WordsTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDefinitionSegue" {
-                if let indexPath = tableView.indexPathForSelectedRow, let definitionVC = segue.destination as? DefinitionViewController {
-                    let definition = vocabWords[indexPath.row]
-                    definitionVC.vocabWord = definition
+            if let indexPath = tableView.indexPathForSelectedRow, let definitionVC = segue.destination as? DefinitionViewController {
+                let definition = vocabWords[indexPath.row]
+                definitionVC.vocabWord = definition
+               
+                // Get the new view controller using segue.destination.
+                // Pass the selected object to the new view controller.
             }
+            
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
    
 
 }
+extension WordsTableViewController: AddWordDelegate {
+    func wordWasAdded(_ newWord: VocabularyWord) {
+        vocabWords.append(newWord)
+        tableView.reloadData()
+    }
+    
+}
+    
+    
+

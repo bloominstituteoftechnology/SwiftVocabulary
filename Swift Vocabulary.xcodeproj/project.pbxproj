@@ -15,6 +15,7 @@
 		E4359535243D82A6000E4F91 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4359534243D82A6000E4F91 /* WordsTableViewController.swift */; };
 		E4359537243D82CB000E4F91 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4359536243D82CB000E4F91 /* DefinitionViewController.swift */; };
 		E435953B243D84AE000E4F91 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435953A243D84AE000E4F91 /* VocabularyWord.swift */; };
+		E435953D243EAE11000E4F91 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435953C243EAE11000E4F91 /* AddWordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E4359534243D82A6000E4F91 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		E4359536243D82CB000E4F91 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		E435953A243D84AE000E4F91 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		E435953C243EAE11000E4F91 /* AddWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,16 +62,11 @@
 		E435951B243D8180000E4F91 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				E4359539243D8487000E4F91 /* View Controllers */,
 				E4359538243D847C000E4F91 /* Model */,
-				E4359525243D8181000E4F91 /* Assets.xcassets */,
-				E4359522243D8181000E4F91 /* Main.storyboard */,
-				E435951C243D8180000E4F91 /* AppDelegate.swift */,
-				E435951E243D8180000E4F91 /* SceneDelegate.swift */,
-				E4359527243D8181000E4F91 /* LaunchScreen.storyboard */,
-				E4359531243D81CB000E4F91 /* Resources */,
 				E4359530243D81BB000E4F91 /* Views */,
+				E4359539243D8487000E4F91 /* View Controllers */,
 				E435952A243D8181000E4F91 /* Info.plist */,
+				E4359531243D81CB000E4F91 /* Resources */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -77,6 +74,7 @@
 		E4359530243D81BB000E4F91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E4359522243D8181000E4F91 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -84,6 +82,10 @@
 		E4359531243D81CB000E4F91 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E4359525243D8181000E4F91 /* Assets.xcassets */,
+				E435951C243D8180000E4F91 /* AppDelegate.swift */,
+				E435951E243D8180000E4F91 /* SceneDelegate.swift */,
+				E4359527243D8181000E4F91 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -101,6 +103,7 @@
 			children = (
 				E4359534243D82A6000E4F91 /* WordsTableViewController.swift */,
 				E4359536243D82CB000E4F91 /* DefinitionViewController.swift */,
+				E435953C243EAE11000E4F91 /* AddWordViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				E435951D243D8180000E4F91 /* AppDelegate.swift in Sources */,
 				E4359537243D82CB000E4F91 /* DefinitionViewController.swift in Sources */,
+				E435953D243EAE11000E4F91 /* AddWordViewController.swift in Sources */,
 				E435953B243D84AE000E4F91 /* VocabularyWord.swift in Sources */,
 				E435951F243D8180000E4F91 /* SceneDelegate.swift in Sources */,
 				E4359535243D82A6000E4F91 /* WordsTableViewController.swift in Sources */,
