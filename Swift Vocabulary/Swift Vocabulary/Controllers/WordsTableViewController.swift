@@ -10,6 +10,19 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
+//    override func viewDidLoad() {
+//           super.viewDidLoad()
+//           let alertController = UIAlertController(title: "Add Vocabulary", message: "Like to add a new word? click on the button below", preferredStyle: .alert)
+//        
+//        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (alertAction) in
+//            print("cancel")
+//        }))
+//
+//           
+//       }
+    
+    
+    
     var vocabWords: [VocabularyWord] = [
     VocabularyWord(word: "Array", definitions: "A data type that stores multiple values of the same type in an ordered list."),
     VocabularyWord(word: "Canvas", definitions: "The background of a storyboard where you add and arrange user interface (UI) elements."),
