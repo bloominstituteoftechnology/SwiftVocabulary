@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class WordsTableViewController: UITableViewController {
     var vocabWords: [VocabularyWord] = [VocabularyWord(word: "String", definition: "Test")]
@@ -106,9 +107,26 @@ class WordsTableViewController: UITableViewController {
             
             definitionViewController.mVocabWord = vocabWords[indexPath.row]
             
+        case "AddButtonSegue":
+            os_log("Adding a new VocabularyWord object", log: OSLog.default, type: .debug)
+            
         default: fatalError("Unexpected segue identifier: \(segue.identifier ?? "No segue available")")
         }
     }
     
+    @IBAction func unwindToWordsTable(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? AddDefinitionViewController,
+            let vocabWord = sourceViewController.mVocabWord {
+            
+            if vocabWord.word != "" {
+            
+                tableView.beginUpdates()
+                let newIndexPath = IndexPath(row: vocabWords.count, section: 0)
+                vocabWords.append(vocabWord)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+                tableView.endUpdates()
+            }
+        }
+    }
 
 }

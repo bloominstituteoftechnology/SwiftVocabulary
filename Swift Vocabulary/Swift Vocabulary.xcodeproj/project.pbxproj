@@ -17,6 +17,7 @@
 		BE2BF1F12444EB880082D183 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2BF1F02444EB880082D183 /* WordsTableViewController.swift */; };
 		BE2BF1F32444EB980082D183 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2BF1F22444EB980082D183 /* DefinitionViewController.swift */; };
 		BE2BF1F52444F0540082D183 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2BF1F42444F0540082D183 /* VocabularyWord.swift */; };
+		BE2BF1F7244501970082D183 /* AddDefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2BF1F6244501970082D183 /* AddDefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		BE2BF1F02444EB880082D183 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		BE2BF1F22444EB980082D183 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		BE2BF1F42444F0540082D183 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		BE2BF1F6244501970082D183 /* AddDefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				BE2BF1F02444EB880082D183 /* WordsTableViewController.swift */,
 				BE2BF1F22444EB980082D183 /* DefinitionViewController.swift */,
 				BE2BF1F42444F0540082D183 /* VocabularyWord.swift */,
+				BE2BF1F6244501970082D183 /* AddDefinitionViewController.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE2BF1C12444EB380082D183 /* AppDelegate.swift in Sources */,
+				BE2BF1F7244501970082D183 /* AddDefinitionViewController.swift in Sources */,
 				BE2BF1C32444EB380082D183 /* SceneDelegate.swift in Sources */,
 				BE2BF1F52444F0540082D183 /* VocabularyWord.swift in Sources */,
 				BE2BF1F12444EB880082D183 /* WordsTableViewController.swift in Sources */,
