@@ -9,6 +9,7 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
+    var word: VocabularyWord? 
     @IBOutlet var WordOutlet: UILabel!
     
     @IBOutlet var DefinitionOutlet: UITextView!

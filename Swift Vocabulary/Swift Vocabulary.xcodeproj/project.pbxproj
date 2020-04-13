@@ -72,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				E83B463B2444FFE800F712E2 /* Main.storyboard */,
-				E88B3B5B2445139000C3AFD8 /* VocabularyWord.swift */,
 				E83B46402444FFED00F712E2 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -91,6 +90,7 @@
 		E83B464D2445081800F712E2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E88B3B5B2445139000C3AFD8 /* VocabularyWord.swift */,
 				E83B464B2445013C00F712E2 /* DefinitionViewController.swift */,
 				E83B464E2445087200F712E2 /* WordsTableViewController.swift */,
 			);
