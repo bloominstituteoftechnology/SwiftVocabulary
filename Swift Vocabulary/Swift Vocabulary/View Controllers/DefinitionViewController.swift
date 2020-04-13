@@ -9,22 +9,24 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
-    var word: VocabularyWord?
-    func updateViews() {
-        if let unwrappedWord == word {
-            
-        }
-    }
-    @IBOutlet var WordOutlet: UILabel!
+  
+    @IBOutlet var wordOutlet: UILabel!
     
-    @IBOutlet var DefinitionOutlet: UITextView!
+    @IBOutlet var definitionOutlet: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
 
         // Do any additional setup after loading the view.
     }
-    
+    var word: VocabularyWord?
+      func updateViews() {
+          if let unwrappedWord = word {
+              wordOutlet.text = unwrappedWord.word
+              definitionOutlet.text = unwrappedWord.definition
+          }
+      }
 
     /*
     // MARK: - Navigation

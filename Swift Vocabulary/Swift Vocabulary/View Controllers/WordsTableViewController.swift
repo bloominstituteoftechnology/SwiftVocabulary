@@ -10,7 +10,11 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
 
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Array", definition: "An ordered, random-access collection.")]
+    var vocabWords: [VocabularyWord] =
+        [VocabularyWord(word: "Array",  definition: "An ordered,                                           random-access collection."),
+         VocabularyWord(word: "Dictionary", definition: "A collection whose                               elements are key-value pairs."),
+         VocabularyWord(word: "String", definition: "A Unicode string value                                that is a collection of                                         characters.")
+    ]
 
     // MARK: - Table view data source
 
