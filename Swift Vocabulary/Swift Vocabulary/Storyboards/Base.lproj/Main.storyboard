@@ -83,10 +83,14 @@
                         <viewLayoutGuide key="safeArea" id="hpw-NA-005"/>
                     </view>
                     <navigationItem key="navigationItem" id="dPQ-ON-k1y"/>
+                    <connections>
+                        <outlet property="DefinitionOutlet" destination="PJV-FY-tDF" id="n75-bT-8QU"/>
+                        <outlet property="WordOutlet" destination="S0R-L1-tnS" id="WXe-x7-mNK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOI-9L-T0Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1581" y="90"/>
+            <point key="canvasLocation" x="1579.7101449275362" y="89.732142857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iUu-lJ-g0o">
