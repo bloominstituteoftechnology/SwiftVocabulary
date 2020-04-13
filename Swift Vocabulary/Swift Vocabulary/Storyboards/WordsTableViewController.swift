@@ -10,6 +10,11 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
+    @IBAction func addWordButton(_ sender: Any) {
+        addWord()
+    }
+    
+    
     
     var vocabWords: [Vocabulary] = [
         
@@ -23,15 +28,8 @@ class WordsTableViewController: UITableViewController {
                    definition: "An optional is something can that hold a value but can also be 'nil'")
     ]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Table view data source
     
-
-
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return vocabWords.count
@@ -62,10 +60,20 @@ class WordsTableViewController: UITableViewController {
             let definition = vocabWords[indexPath.row]
             
             detailVC.words = definition
-                
-
+            
+            }
+        }
+    }
+    
+    func addWord() {
+             Alert.instance.showWithInput(title: "Enter New Word", message: "Enter a Word and Definition", vc: self) { (word) in
+                 if word.word != "Word:" && word.definition != "Definition:" && word.word != "" && word.definition != "" { //if a word and definition were entered:
+                     self.vocabWords.append(word)
+                     self.tableView.reloadData()
+                 } else {
+                     Alert.instance.show(title: "Word Not Entered", message: "Please Try Again", vc: self)
             }
         }
     }
 }
- 
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E49D70C2445146800C332F8 /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E49D70B2445146700C332F8 /* AddModel.swift */; };
 		8ED097F82444F6560016B4FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED097F72444F6560016B4FC /* AppDelegate.swift */; };
 		8ED097FA2444F6560016B4FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED097F92444F6560016B4FC /* SceneDelegate.swift */; };
 		8ED097FF2444F6560016B4FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED097FD2444F6560016B4FC /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E49D70B2445146700C332F8 /* AddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModel.swift; sourceTree = "<group>"; };
 		8ED097F42444F6560016B4FC /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED097F72444F6560016B4FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ED097F92444F6560016B4FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				8ED0980F2444FA240016B4FC /* MyWords.swift */,
+				8E49D70B2445146700C332F8 /* AddModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				8ED097F82444F6560016B4FC /* AppDelegate.swift in Sources */,
 				8ED098142444FA8A0016B4FC /* WordsDetailViewController.swift in Sources */,
 				8ED098102444FA240016B4FC /* MyWords.swift in Sources */,
+				8E49D70C2445146800C332F8 /* AddModel.swift in Sources */,
 				8ED097FA2444F6560016B4FC /* SceneDelegate.swift in Sources */,
 				8ED098122444FA780016B4FC /* WordsTableViewController.swift in Sources */,
 			);
