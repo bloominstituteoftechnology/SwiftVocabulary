@@ -9,11 +9,32 @@
 import UIKit
 
 class WordsDetailViewController: UIViewController {
+    
+    
+    // Outlets
+    @IBOutlet weak var wordLabel: UILabel!
 
+    
+    
+    @IBOutlet weak var definitionTextView: UITextView!
+    
+    var words: Vocabulary?
+    
+    func updateViews() {
+//        guard isViewLoaded else { return }
+        
+        if words != nil {
+            
+            wordLabel.text = words?.word
+            definitionTextView.text = words?.definition
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateViews()
 
-        
+        }
     }
     
-}
+

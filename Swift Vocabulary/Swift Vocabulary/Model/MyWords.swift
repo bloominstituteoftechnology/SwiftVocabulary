@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SwiftWords {
+struct Vocabulary {
     let word: String
     let definition: String
 }
