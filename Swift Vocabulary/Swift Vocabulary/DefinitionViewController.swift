@@ -15,18 +15,16 @@ class DefinitionViewController: UIViewController {
     
     var vocabWord: VocabularyWord?
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        updateViews()
+    } 
+
     func updateViews() {
         if let vocabWord = vocabWord {
             self.wordLabel.text = vocabWord.word
             self.definitionField.text = vocabWord.definition
         }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        updateViews()
-    }
-    
-
-
 }
