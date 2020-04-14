@@ -42,7 +42,13 @@
                             <outlet property="delegate" destination="Bkj-wB-cX0" id="viK-Ag-5TR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="0Xq-8B-DMs"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="0Xq-8B-DMs">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="nEM-kk-OPM">
+                            <connections>
+                                <segue destination="xRv-wp-fSI" kind="show" id="NVe-HZ-OGv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTD-fW-o6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,8 +68,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pvO-df-Td1">
-                                <rect key="frame" x="20" y="182" width="374" height="660"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pvO-df-Td1">
+                                <rect key="frame" x="20" y="182" width="374" height="280"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -79,8 +85,7 @@
                             <constraint firstItem="sqj-rd-ONv" firstAttribute="trailing" secondItem="pvO-df-Td1" secondAttribute="trailing" constant="20" id="Yb9-LA-ZoO"/>
                             <constraint firstItem="pvO-df-Td1" firstAttribute="leading" secondItem="sqj-rd-ONv" secondAttribute="leading" constant="20" id="eaK-nl-cLT"/>
                             <constraint firstItem="aC0-LB-ZDB" firstAttribute="top" secondItem="sqj-rd-ONv" secondAttribute="top" constant="20" id="giz-LJ-jGA"/>
-                            <constraint firstItem="pvO-df-Td1" firstAttribute="top" secondItem="aC0-LB-ZDB" secondAttribute="bottom" constant="20" id="qSU-OV-Xu9"/>
-                            <constraint firstItem="sqj-rd-ONv" firstAttribute="bottom" secondItem="pvO-df-Td1" secondAttribute="bottom" constant="20" id="z3x-un-pgB"/>
+                            <constraint firstItem="sqj-rd-ONv" firstAttribute="bottom" secondItem="pvO-df-Td1" secondAttribute="bottom" constant="400" id="z3x-un-pgB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sqj-rd-ONv"/>
                     </view>
@@ -93,6 +98,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oam-pN-V14" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1108.6956521739132" y="128.57142857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A3y-BI-MZ5">
+            <objects>
+                <viewController id="xRv-wp-fSI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N0m-MO-Pc5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add New Word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jBB-NS-BzY">
+                                <rect key="frame" x="20" y="148" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add New Word Definition" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zq-zu-Fo0">
+                                <rect key="frame" x="20" y="222" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EM-bA-MJR">
+                                <rect key="frame" x="20" y="296" width="374" height="34"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1EM-bA-MJR" firstAttribute="leading" secondItem="cBH-he-bsM" secondAttribute="leading" constant="20" id="3fV-fz-5ma"/>
+                            <constraint firstItem="cBH-he-bsM" firstAttribute="trailing" secondItem="jBB-NS-BzY" secondAttribute="trailing" constant="20" id="3g6-DX-yVm"/>
+                            <constraint firstItem="jBB-NS-BzY" firstAttribute="top" secondItem="cBH-he-bsM" secondAttribute="top" constant="60" id="8jB-Mz-ndR"/>
+                            <constraint firstItem="0zq-zu-Fo0" firstAttribute="leading" secondItem="cBH-he-bsM" secondAttribute="leading" constant="20" id="ETC-HX-b3U"/>
+                            <constraint firstItem="cBH-he-bsM" firstAttribute="trailing" secondItem="0zq-zu-Fo0" secondAttribute="trailing" constant="20" id="atc-2a-ERZ"/>
+                            <constraint firstItem="1EM-bA-MJR" firstAttribute="top" secondItem="0zq-zu-Fo0" secondAttribute="bottom" constant="40" id="grW-aj-EjC"/>
+                            <constraint firstItem="0zq-zu-Fo0" firstAttribute="top" secondItem="jBB-NS-BzY" secondAttribute="bottom" constant="40" id="gtn-N6-tya"/>
+                            <constraint firstItem="jBB-NS-BzY" firstAttribute="top" secondItem="cBH-he-bsM" secondAttribute="top" constant="60" id="lCZ-1z-2R9"/>
+                            <constraint firstItem="cBH-he-bsM" firstAttribute="trailing" secondItem="1EM-bA-MJR" secondAttribute="trailing" constant="20" id="m81-sp-Tdd"/>
+                            <constraint firstItem="jBB-NS-BzY" firstAttribute="leading" secondItem="cBH-he-bsM" secondAttribute="leading" constant="20" id="mtn-yd-bYi"/>
+                            <constraint firstItem="0zq-zu-Fo0" firstAttribute="top" secondItem="jBB-NS-BzY" secondAttribute="bottom" constant="40" id="zs7-tU-W6R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cBH-he-bsM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uvw-0p-qbo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZt-my-o3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127.536231884058" y="-525.66964285714289"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6BO-Xw-LOV">

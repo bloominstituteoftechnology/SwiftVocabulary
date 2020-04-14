@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7907128F2446097E00483A6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7907128E2446097E00483A6E /* SceneDelegate.swift */; };
 		79D1F1F02444FCFB008A4277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1F1EF2444FCFB008A4277 /* AppDelegate.swift */; };
 		79D1F1F42444FCFB008A4277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1F1F32444FCFB008A4277 /* ViewController.swift */; };
 		79D1F1F72444FCFB008A4277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D1F1F52444FCFB008A4277 /* Main.storyboard */; };
@@ -15,10 +16,11 @@
 		79D1F2062444FD83008A4277 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1F2052444FD83008A4277 /* WordsTableViewController.swift */; };
 		79D1F20A2445031D008A4277 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1F2092445031D008A4277 /* VocabularyWord.swift */; };
 		79D1F20C24450D3F008A4277 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1F20B24450D3F008A4277 /* DefinitionViewController.swift */; };
-		79D1F20E24450F21008A4277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1F20D24450F21008A4277 /* SceneDelegate.swift */; };
+		79D1F210244523A1008A4277 /* variable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79D1F20F244523A1008A4277 /* variable.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7907128E2446097E00483A6E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../DevelopmentiOS16/Rainbow/Rainbow/SceneDelegate.swift; sourceTree = "<group>"; };
 		79D1F1EC2444FCFB008A4277 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D1F1EF2444FCFB008A4277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D1F1F32444FCFB008A4277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +31,7 @@
 		79D1F2052444FD83008A4277 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WordsTableViewController.swift; path = "Swift Vocabulary/WordsTableViewController.swift"; sourceTree = "<group>"; };
 		79D1F2092445031D008A4277 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VocabularyWord.swift; path = "Swift Vocabulary/VocabularyWord.swift"; sourceTree = "<group>"; };
 		79D1F20B24450D3F008A4277 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DefinitionViewController.swift; path = "Swift Vocabulary/DefinitionViewController.swift"; sourceTree = "<group>"; };
-		79D1F20D24450F21008A4277 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../../.Trash/SceneDelegate.swift; sourceTree = "<group>"; };
+		79D1F20F244523A1008A4277 /* variable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = variable.jpg; path = ../../../../Desktop/variable.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 				79D1F2092445031D008A4277 /* VocabularyWord.swift */,
 				79D1F1EE2444FCFB008A4277 /* Swift Vocabulary */,
 				79D1F1ED2444FCFB008A4277 /* Products */,
+				79D1F20F244523A1008A4277 /* variable.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +72,7 @@
 				79D1F1F32444FCFB008A4277 /* ViewController.swift */,
 				79D1F1F52444FCFB008A4277 /* Main.storyboard */,
 				79D1F1F82444FCFC008A4277 /* Assets.xcassets */,
-				79D1F20D24450F21008A4277 /* SceneDelegate.swift */,
+				7907128E2446097E00483A6E /* SceneDelegate.swift */,
 				79D1F1FA2444FCFC008A4277 /* LaunchScreen.storyboard */,
 				79D1F1FD2444FCFC008A4277 /* Info.plist */,
 			);
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D1F1FC2444FCFC008A4277 /* LaunchScreen.storyboard in Resources */,
+				79D1F210244523A1008A4277 /* variable.jpg in Resources */,
 				79D1F1F92444FCFC008A4277 /* Assets.xcassets in Resources */,
 				79D1F1F72444FCFB008A4277 /* Main.storyboard in Resources */,
 			);
@@ -148,11 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D1F2062444FD83008A4277 /* WordsTableViewController.swift in Sources */,
+				7907128F2446097E00483A6E /* SceneDelegate.swift in Sources */,
 				79D1F20C24450D3F008A4277 /* DefinitionViewController.swift in Sources */,
 				79D1F1F42444FCFB008A4277 /* ViewController.swift in Sources */,
 				79D1F1F02444FCFB008A4277 /* AppDelegate.swift in Sources */,
 				79D1F20A2445031D008A4277 /* VocabularyWord.swift in Sources */,
-				79D1F20E24450F21008A4277 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
