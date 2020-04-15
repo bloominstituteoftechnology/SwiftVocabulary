@@ -10,7 +10,7 @@ import UIKit
 
 class WordsTableTableViewController: UITableViewController {
 
-    var vocabWord: [VocabularyWord] = []
+    var vocabWord: [VocabularyWord] = [VocabularyWord(word:"Cedric",definition:"Test")]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +25,7 @@ class WordsTableTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,26 +43,26 @@ class WordsTableTableViewController: UITableViewController {
         return cell
     }
 
-
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let newWord = vocabWord[indexPath.row]
+        vocabWordsPassed = newWord
+    }
 
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    var vocabWordsPassed: VocabularyWord?
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "ShowDefinitionSegue"{
-
-            let detailVC = segue.destination as? DefinitionViewController
-         
-            if let indexPath = tableView.indexPathForSelectedRow{
-                let word = vocabWord[indexPath.row]
-                detailVC?.vocabWord = word
-
-    }
+        if let detailVC = segue.destination as? DefinitionViewController {
+            
+            if let passedWords = vocabWordsPassed {
+                detailVC.vocabWord = passedWords
+            }
+        }
+ }
         
 
 }
-}
-}
+

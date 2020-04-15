@@ -27,7 +27,7 @@
 		237D459224452088007657DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		237D459524452088007657DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		237D459724452088007657DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		237D459D2445210E007657DE /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WordsTableTableViewController.swift; path = SwiftVoc/WordsTableTableViewController.swift; sourceTree = "<group>"; };
+		237D459D2445210E007657DE /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
 		237D459F24452134007657DE /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		237D45A124452452007657DE /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,8 +46,6 @@
 		237D457D24452076007657DE = {
 			isa = PBXGroup;
 			children = (
-				237D459D2445210E007657DE /* WordsTableTableViewController.swift */,
-				237D459F24452134007657DE /* DefinitionViewController.swift */,
 				237D458824452076007657DE /* SwiftVoc */,
 				237D458724452076007657DE /* Products */,
 			);
@@ -67,6 +65,8 @@
 				237D458924452076007657DE /* AppDelegate.swift */,
 				237D458B24452077007657DE /* SceneDelegate.swift */,
 				237D458D24452077007657DE /* ViewController.swift */,
+				237D459F24452134007657DE /* DefinitionViewController.swift */,
+				237D459D2445210E007657DE /* WordsTableTableViewController.swift */,
 				237D458F24452077007657DE /* Main.storyboard */,
 				237D45A124452452007657DE /* VocabularyWord.swift */,
 				237D459224452088007657DE /* Assets.xcassets */,

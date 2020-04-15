@@ -9,14 +9,21 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
-
+    // MARK: - Properties
+    
     var vocabWord: VocabularyWord?
+    
+    // MARK: - UpdatesUI
+    let UICellLabel: UILabel! = nil
+    let UITextView: UITextView! = nil
     func updateViews(){
-        if let word = vocabWord {
-            let UICellLabel = word.word
-            let UITextView = word.definition
+        if let word = vocabWord   {
+            UICellLabel.text = word.word
+            UITextView.text = word.definition
         }
     }
+    // MARK: - Lifecylce
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
