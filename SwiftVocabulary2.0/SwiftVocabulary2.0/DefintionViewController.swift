@@ -3,9 +3,13 @@ import UIKit
 class DefinitionViewController: UIViewController {
     //this is the mailbox for us to get the color from the table view controller
    
-    @IBOutlet var label: UILabel!
-    @IBOutlet var textView: UITextView!
-var vocabWord: VocabularyWord?
+   //MARK: OUTLETS
+    @IBOutlet weak var wordLabel: UILabel!
+   
+    @IBOutlet weak var wordTextView: UITextView!
+    
+    
+    var vocabWord: VocabularyWord?
  
     
     override func viewDidLoad() {
@@ -14,8 +18,8 @@ var vocabWord: VocabularyWord?
     }
     func updateViews() {
         if let unwrappedWord = vocabWord{
-            label.text = unwrappedWord.name
-            textView.text = unwrappedWord.name
+            wordLabel.text = unwrappedWord.name
+            wordTextView.text = unwrappedWord.definition
             
     
         }

@@ -44,9 +44,6 @@
 		B4939DD224456527000C25F8 = {
 			isa = PBXGroup;
 			children = (
-				B4939E0024456C72000C25F8 /* VocabularyWord.swift */,
-				B4939DFE2445676E000C25F8 /* DefintionViewController.swift */,
-				B4939DF6244566ED000C25F8 /* WordsTableViewController.swift */,
 				B4939DDD24456528000C25F8 /* SwiftVocabulary2.0 */,
 				B4939DDC24456528000C25F8 /* Products */,
 			);
@@ -63,6 +60,9 @@
 		B4939DDD24456528000C25F8 /* SwiftVocabulary2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				B4939E0024456C72000C25F8 /* VocabularyWord.swift */,
+				B4939DFE2445676E000C25F8 /* DefintionViewController.swift */,
+				B4939DF6244566ED000C25F8 /* WordsTableViewController.swift */,
 				B4939DF324456576000C25F8 /* Resources */,
 				B4939DE724456529000C25F8 /* Assets.xcassets */,
 				B4939DEC24456529000C25F8 /* Info.plist */,

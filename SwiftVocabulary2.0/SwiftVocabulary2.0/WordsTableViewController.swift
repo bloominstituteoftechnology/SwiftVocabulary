@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+    //MARK: TABLE VIEW VOCABULARY
 class WordsTableViewController: UITableViewController {
     var vocabWords: [VocabularyWord] = [VocabularyWord(name: "Constant", definition: "A value that’s initialized once and cannot change, indicated in Swift by the let keyword."), VocabularyWord(name: "Variable", definition: "A value that can change after it’s been initialized, indicated in Swift by the var keyword."), VocabularyWord(name: "Class", definition: "A piece of code that describes the behavior and properties common to any particular type of object, essentially providing a blueprint for the object."), VocabularyWord(name: "Struct", definition: "A data type that’s similar to a class, but doesn’t support inheritance and is passed by value instead of by reference.")]
 
@@ -24,7 +24,7 @@ class WordsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ShowDefinitionSegue", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
         let words = vocabWords[indexPath.row]
               
@@ -32,6 +32,7 @@ class WordsTableViewController: UITableViewController {
         
         return cell
     }
+    
     
     // MARK: - Navigation
 
