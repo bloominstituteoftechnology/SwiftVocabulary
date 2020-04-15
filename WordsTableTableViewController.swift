@@ -13,14 +13,15 @@ import UIKit
 class WordsTableTableViewController: UITableViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() {
         var vocabWords: [VocabularyWord] = [
         VocabularyWord(word: "word1", definition: "Def1"),
         VocabularyWord(word: "word2", definition: "def2"),
         VocabularyWord(word: "word3", definition: "def3"),
 
         ]
-
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -28,7 +29,7 @@ class WordsTableTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return vocabWords.count"
+        return vocabWords.count
     }
 
     
@@ -50,6 +51,5 @@ class WordsTableTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    
-
+    }
 }

@@ -9,6 +9,6 @@
 import Foundation
 
 struct VocabularyWord {
-    word: String
-    definition: String 
+    var word: String
+    var definition: String 
 }

@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB447A58243EB4DE0061A2C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447A57243EB4DE0061A2C4 /* AppDelegate.swift */; };
-		AB447A5A243EB4DE0061A2C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447A59243EB4DE0061A2C4 /* SceneDelegate.swift */; };
-		AB447A5F243EB4DE0061A2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB447A5D243EB4DE0061A2C4 /* Main.storyboard */; };
-		AB447A61243EB5170061A2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB447A60243EB5170061A2C4 /* Assets.xcassets */; };
-		AB447A64243EB5170061A2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB447A62243EB5170061A2C4 /* LaunchScreen.storyboard */; };
-		AB447A6C243EB7660061A2C4 /* WordsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447A6B243EB7660061A2C4 /* WordsTableTableViewController.swift */; };
-		AB447A6E243EB7F80061A2C4 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447A6D243EB7F80061A2C4 /* DefinitionViewController.swift */; };
-		AB447A70243ECB870061A2C4 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447A6F243ECB870061A2C4 /* VocabularyWord.swift */; };
+		AB26E7EF24476006000F339F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26E7EE24476006000F339F /* AppDelegate.swift */; };
+		AB26E7F124476006000F339F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26E7F024476006000F339F /* SceneDelegate.swift */; };
+		AB26E7F624476006000F339F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26E7F424476006000F339F /* Main.storyboard */; };
+		AB26E7F82447603A000F339F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB26E7F72447603A000F339F /* Assets.xcassets */; };
+		AB26E7FB2447603A000F339F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB26E7F92447603A000F339F /* LaunchScreen.storyboard */; };
+		AB26E803244763A9000F339F /* WordsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26E802244763A9000F339F /* WordsTableTableViewController.swift */; };
+		AB26E80524476422000F339F /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26E80424476422000F339F /* DefinitionViewController.swift */; };
+		AB26E80B24476CE5000F339F /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB26E80A24476CE5000F339F /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB447A54243EB4DD0061A2C4 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB447A57243EB4DE0061A2C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB447A59243EB4DE0061A2C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB447A5E243EB4DE0061A2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AB447A60243EB5170061A2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AB447A63243EB5170061A2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AB447A65243EB5170061A2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB447A6B243EB7660061A2C4 /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
-		AB447A6D243EB7F80061A2C4 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
-		AB447A6F243ECB870061A2C4 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
+		AB26E7EB24476006000F339F /* Swift Vocabulary 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB26E7EE24476006000F339F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB26E7F024476006000F339F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB26E7F524476006000F339F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB26E7F72447603A000F339F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB26E7FA2447603A000F339F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB26E7FC2447603A000F339F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB26E802244763A9000F339F /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
+		AB26E80424476422000F339F /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		AB26E80A24476CE5000F339F /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AB447A51243EB4DD0061A2C4 /* Frameworks */ = {
+		AB26E7E824476006000F339F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,74 +41,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB447A4B243EB4DD0061A2C4 = {
+		AB26E7E224476005000F339F = {
 			isa = PBXGroup;
 			children = (
-				AB447A6F243ECB870061A2C4 /* VocabularyWord.swift */,
-				AB447A6D243EB7F80061A2C4 /* DefinitionViewController.swift */,
-				AB447A6B243EB7660061A2C4 /* WordsTableTableViewController.swift */,
-				AB447A56243EB4DD0061A2C4 /* Swift Vocabulary */,
-				AB447A55243EB4DD0061A2C4 /* Products */,
+				AB26E7ED24476006000F339F /* Swift Vocabulary 2 */,
+				AB26E7EC24476006000F339F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AB447A55243EB4DD0061A2C4 /* Products */ = {
+		AB26E7EC24476006000F339F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB447A54243EB4DD0061A2C4 /* Swift Vocabulary.app */,
+				AB26E7EB24476006000F339F /* Swift Vocabulary 2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB447A56243EB4DD0061A2C4 /* Swift Vocabulary */ = {
+		AB26E7ED24476006000F339F /* Swift Vocabulary 2 */ = {
 			isa = PBXGroup;
 			children = (
-				AB447A57243EB4DE0061A2C4 /* AppDelegate.swift */,
-				AB447A59243EB4DE0061A2C4 /* SceneDelegate.swift */,
-				AB447A5D243EB4DE0061A2C4 /* Main.storyboard */,
-				AB447A60243EB5170061A2C4 /* Assets.xcassets */,
-				AB447A62243EB5170061A2C4 /* LaunchScreen.storyboard */,
-				AB447A65243EB5170061A2C4 /* Info.plist */,
+				AB26E80924476C5E000F339F /* resorces */,
+				AB26E80824476C25000F339F /* Veiw Controllers */,
+				AB26E80724476C1D000F339F /* Views */,
+				AB26E80624476C14000F339F /* Model */,
+				AB26E7FC2447603A000F339F /* Info.plist */,
 			);
-			path = "Swift Vocabulary";
+			path = "Swift Vocabulary 2";
+			sourceTree = "<group>";
+		};
+		AB26E80624476C14000F339F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB26E80A24476CE5000F339F /* VocabularyWord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB26E80724476C1D000F339F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB26E7F424476006000F339F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB26E80824476C25000F339F /* Veiw Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB26E802244763A9000F339F /* WordsTableTableViewController.swift */,
+				AB26E80424476422000F339F /* DefinitionViewController.swift */,
+			);
+			path = "Veiw Controllers";
+			sourceTree = "<group>";
+		};
+		AB26E80924476C5E000F339F /* resorces */ = {
+			isa = PBXGroup;
+			children = (
+				AB26E7F92447603A000F339F /* LaunchScreen.storyboard */,
+				AB26E7F72447603A000F339F /* Assets.xcassets */,
+				AB26E7F024476006000F339F /* SceneDelegate.swift */,
+				AB26E7EE24476006000F339F /* AppDelegate.swift */,
+			);
+			path = resorces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB447A53243EB4DD0061A2C4 /* Swift Vocabulary */ = {
+		AB26E7EA24476006000F339F /* Swift Vocabulary 2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB447A68243EB5170061A2C4 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */;
+			buildConfigurationList = AB26E7FF2447603A000F339F /* Build configuration list for PBXNativeTarget "Swift Vocabulary 2" */;
 			buildPhases = (
-				AB447A50243EB4DD0061A2C4 /* Sources */,
-				AB447A51243EB4DD0061A2C4 /* Frameworks */,
-				AB447A52243EB4DD0061A2C4 /* Resources */,
+				AB26E7E724476006000F339F /* Sources */,
+				AB26E7E824476006000F339F /* Frameworks */,
+				AB26E7E924476006000F339F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Swift Vocabulary";
-			productName = "Swift Vocabulary";
-			productReference = AB447A54243EB4DD0061A2C4 /* Swift Vocabulary.app */;
+			name = "Swift Vocabulary 2";
+			productName = "Swift Vocabulary 2";
+			productReference = AB26E7EB24476006000F339F /* Swift Vocabulary 2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AB447A4C243EB4DD0061A2C4 /* Project object */ = {
+		AB26E7E324476006000F339F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = LambdaStudent;
 				TargetAttributes = {
-					AB447A53243EB4DD0061A2C4 = {
+					AB26E7EA24476006000F339F = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = AB447A4F243EB4DD0061A2C4 /* Build configuration list for PBXProject "Swift Vocabulary" */;
+			buildConfigurationList = AB26E7E624476006000F339F /* Build configuration list for PBXProject "Swift Vocabulary 2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,57 +148,57 @@
 				en,
 				Base,
 			);
-			mainGroup = AB447A4B243EB4DD0061A2C4;
-			productRefGroup = AB447A55243EB4DD0061A2C4 /* Products */;
+			mainGroup = AB26E7E224476005000F339F;
+			productRefGroup = AB26E7EC24476006000F339F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB447A53243EB4DD0061A2C4 /* Swift Vocabulary */,
+				AB26E7EA24476006000F339F /* Swift Vocabulary 2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AB447A52243EB4DD0061A2C4 /* Resources */ = {
+		AB26E7E924476006000F339F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB447A64243EB5170061A2C4 /* LaunchScreen.storyboard in Resources */,
-				AB447A61243EB5170061A2C4 /* Assets.xcassets in Resources */,
-				AB447A5F243EB4DE0061A2C4 /* Main.storyboard in Resources */,
+				AB26E7FB2447603A000F339F /* LaunchScreen.storyboard in Resources */,
+				AB26E7F82447603A000F339F /* Assets.xcassets in Resources */,
+				AB26E7F624476006000F339F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AB447A50243EB4DD0061A2C4 /* Sources */ = {
+		AB26E7E724476006000F339F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB447A70243ECB870061A2C4 /* VocabularyWord.swift in Sources */,
-				AB447A6C243EB7660061A2C4 /* WordsTableTableViewController.swift in Sources */,
-				AB447A58243EB4DE0061A2C4 /* AppDelegate.swift in Sources */,
-				AB447A5A243EB4DE0061A2C4 /* SceneDelegate.swift in Sources */,
-				AB447A6E243EB7F80061A2C4 /* DefinitionViewController.swift in Sources */,
+				AB26E803244763A9000F339F /* WordsTableTableViewController.swift in Sources */,
+				AB26E7EF24476006000F339F /* AppDelegate.swift in Sources */,
+				AB26E80B24476CE5000F339F /* VocabularyWord.swift in Sources */,
+				AB26E7F124476006000F339F /* SceneDelegate.swift in Sources */,
+				AB26E80524476422000F339F /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB447A5D243EB4DE0061A2C4 /* Main.storyboard */ = {
+		AB26E7F424476006000F339F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AB447A5E243EB4DE0061A2C4 /* Base */,
+				AB26E7F524476006000F339F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AB447A62243EB5170061A2C4 /* LaunchScreen.storyboard */ = {
+		AB26E7F92447603A000F339F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AB447A63243EB5170061A2C4 /* Base */,
+				AB26E7FA2447603A000F339F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,7 +206,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AB447A66243EB5170061A2C4 /* Debug */ = {
+		AB26E7FD2447603A000F339F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +266,7 @@
 			};
 			name = Debug;
 		};
-		AB447A67243EB5170061A2C4 /* Release */ = {
+		AB26E7FE2447603A000F339F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,34 +320,34 @@
 			};
 			name = Release;
 		};
-		AB447A69243EB5170061A2C4 /* Debug */ = {
+		AB26E8002447603A000F339F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Swift Vocabulary/Info.plist";
+				INFOPLIST_FILE = "Swift Vocabulary 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zachthac.Swift-Vocabulary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zachthac.Swift-Vocabulary-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AB447A6A243EB5170061A2C4 /* Release */ = {
+		AB26E8012447603A000F339F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Swift Vocabulary/Info.plist";
+				INFOPLIST_FILE = "Swift Vocabulary 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zachthac.Swift-Vocabulary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zachthac.Swift-Vocabulary-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,25 +357,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB447A4F243EB4DD0061A2C4 /* Build configuration list for PBXProject "Swift Vocabulary" */ = {
+		AB26E7E624476006000F339F /* Build configuration list for PBXProject "Swift Vocabulary 2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB447A66243EB5170061A2C4 /* Debug */,
-				AB447A67243EB5170061A2C4 /* Release */,
+				AB26E7FD2447603A000F339F /* Debug */,
+				AB26E7FE2447603A000F339F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB447A68243EB5170061A2C4 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */ = {
+		AB26E7FF2447603A000F339F /* Build configuration list for PBXNativeTarget "Swift Vocabulary 2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB447A69243EB5170061A2C4 /* Debug */,
-				AB447A6A243EB5170061A2C4 /* Release */,
+				AB26E8002447603A000F339F /* Debug */,
+				AB26E8012447603A000F339F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AB447A4C243EB4DD0061A2C4 /* Project object */;
+	rootObject = AB26E7E324476006000F339F /* Project object */;
 }
