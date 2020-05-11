@@ -15,13 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfX-OH-QBE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfX-OH-QBE">
                                 <rect key="frame" x="186" y="134" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dcn-ck-7BI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dcn-ck-7BI">
                                 <rect key="frame" x="87" y="195" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -32,20 +32,27 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="GfX-OH-QBE" firstAttribute="centerX" secondItem="dcn-ck-7BI" secondAttribute="centerX" id="vu7-2F-66h"/>
+                            <constraint firstItem="GfX-OH-QBE" firstAttribute="top" secondItem="lUd-bv-J21" secondAttribute="top" constant="46" id="3qd-c9-Y3b"/>
+                            <constraint firstItem="GfX-OH-QBE" firstAttribute="centerX" secondItem="ndi-iK-mku" secondAttribute="centerX" id="7uF-z4-kCq"/>
+                            <constraint firstItem="dcn-ck-7BI" firstAttribute="top" secondItem="GfX-OH-QBE" secondAttribute="bottom" constant="40" id="bXg-Oa-oQn"/>
+                            <constraint firstItem="lUd-bv-J21" firstAttribute="bottom" secondItem="dcn-ck-7BI" secondAttribute="bottom" constant="539" id="kwE-4O-j4I"/>
+                            <constraint firstItem="dcn-ck-7BI" firstAttribute="leading" secondItem="lUd-bv-J21" secondAttribute="leading" constant="87" id="sx3-iJ-hef"/>
+                            <constraint firstItem="GfX-OH-QBE" firstAttribute="centerX" secondItem="dcn-ck-7BI" secondAttribute="centerX" id="y2c-PS-ofp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lUd-bv-J21"/>
                     </view>
                     <navigationItem key="navigationItem" id="QbU-Yz-m5q"/>
                     <connections>
-                        <outlet property="view" destination="dcn-ck-7BI" id="ddS-pY-4l0"/>
+                        <outlet property="Label" destination="GfX-OH-QBE" id="GPm-uc-j3x"/>
+                        <outlet property="TextView" destination="dcn-ck-7BI" id="fh3-Hv-sQP"/>
+                        <outlet property="view" destination="GfX-OH-QBE" id="RKn-PV-W1W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRd-2I-877" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1886.9565217391305" y="-435.26785714285711"/>
         </scene>
-        <!--Words Table View Controller-->
+        <!--Swift Vocabulary-->
         <scene sceneID="HqP-z5-4Dg">
             <objects>
                 <tableViewController id="uOb-oF-OKn" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,7 +87,7 @@
                             <outlet property="delegate" destination="uOb-oF-OKn" id="zRd-Gd-s9Q"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xzb-QE-O8K"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="xzb-QE-O8K"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7z-NP-blJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

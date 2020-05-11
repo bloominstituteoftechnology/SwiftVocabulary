@@ -9,6 +9,6 @@
 import UIKit
 
 struct VocabularyWord {
-   let word: String
-   let definition: String
+    let word: String
+    let definition: String
 }
