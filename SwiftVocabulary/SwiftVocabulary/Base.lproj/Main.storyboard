@@ -57,18 +57,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C7S-6S-JT7">
-                                <rect key="frame" x="152" y="348" width="46" height="50.5"/>
+                                <rect key="frame" x="0.0" y="88" width="415" height="140"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjG-gW-PHM">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Variable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjG-gW-PHM">
+                                        <rect key="frame" x="0.0" y="0.0" width="415" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="415" id="NI0-LD-sHZ"/>
+                                            <constraint firstAttribute="height" constant="60" id="Uhm-6Z-0gH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR8-a2-0W6">
-                                        <rect key="frame" x="0.0" y="20.5" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="A named variable used to store information.  Variables can be changed after being created" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mOt-Wf-kdS">
+                                        <rect key="frame" x="0.0" y="60" width="415" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="94I-I2-ak6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                         </subviews>
