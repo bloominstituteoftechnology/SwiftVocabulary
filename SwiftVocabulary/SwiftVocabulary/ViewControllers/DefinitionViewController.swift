@@ -20,7 +20,7 @@ class DefinitionViewController: UIViewController {
         updateViews()
         
     }
-    let vocabWord: VocabularyWord?
+    var vocabWord: VocabularyWord?
     func updateViews() {
         
         if let unwrappedVocabWord = vocabWord {

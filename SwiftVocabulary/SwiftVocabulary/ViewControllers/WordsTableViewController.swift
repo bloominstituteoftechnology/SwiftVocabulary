@@ -56,7 +56,7 @@ class WordsTableViewController: UITableViewController {
                 
                 let word = vocabWords[indexPath.row]
                 
-                definitionVC?.word = word
+                definitionVC?.vocabWord = word
                 
             }
         }
