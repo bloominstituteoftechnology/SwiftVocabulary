@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E862AC222469F59C00B15C0C /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862AC212469F59C00B15C0C /* WordsTableViewController.swift */; };
 		E862AC242469F5D700B15C0C /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862AC232469F5D700B15C0C /* DefinitionViewController.swift */; };
+		E862AC26246A03FB00B15C0C /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862AC25246A03FB00B15C0C /* VocabularyWord.swift */; };
 		E86CD6DB2469F47F009AB2DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CD6DA2469F47F009AB2DC /* AppDelegate.swift */; };
 		E86CD6DD2469F47F009AB2DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CD6DC2469F47F009AB2DC /* SceneDelegate.swift */; };
 		E86CD6E22469F47F009AB2DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86CD6E02469F47F009AB2DC /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		E862AC212469F59C00B15C0C /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		E862AC232469F5D700B15C0C /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		E862AC25246A03FB00B15C0C /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 		E86CD6D72469F47F009AB2DC /* SwiftVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86CD6DA2469F47F009AB2DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E86CD6DC2469F47F009AB2DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E862AC27246A040200B15C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E862AC25246A03FB00B15C0C /* VocabularyWord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E86CD6CE2469F47F009AB2DC = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		E86CD6D92469F47F009AB2DC /* SwiftVocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				E862AC27246A040200B15C0C /* Model */,
 				E86CD6EE2469F4CB009AB2DC /* Resources */,
 				E86CD6EF2469F4DA009AB2DC /* ViewControllers */,
 				E86CD6F02469F4FB009AB2DC /* StoryBoards */,
@@ -167,6 +178,7 @@
 			files = (
 				E86CD6DB2469F47F009AB2DC /* AppDelegate.swift in Sources */,
 				E862AC242469F5D700B15C0C /* DefinitionViewController.swift in Sources */,
+				E862AC26246A03FB00B15C0C /* VocabularyWord.swift in Sources */,
 				E86CD6DD2469F47F009AB2DC /* SceneDelegate.swift in Sources */,
 				E862AC222469F59C00B15C0C /* WordsTableViewController.swift in Sources */,
 			);
