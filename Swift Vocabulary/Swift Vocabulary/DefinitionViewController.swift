@@ -10,15 +10,15 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     
     var vocabWord: VocabularyWord?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
-
     }
     
     func updateViews() {
@@ -27,5 +27,4 @@ class DefinitionViewController: UIViewController {
             textView.text = unwrappedVocab.definition
         }
     }
-
 }
