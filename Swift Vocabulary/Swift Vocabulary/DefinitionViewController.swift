@@ -9,6 +9,15 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
+    
+    var vocabWord: VocabularyWord?
+    
+    func updateViews() {
+        if let uwVocabWord = vocabWord {
+            let label = uwVocabWord.word
+            let definition = uwVocabWord.definition
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

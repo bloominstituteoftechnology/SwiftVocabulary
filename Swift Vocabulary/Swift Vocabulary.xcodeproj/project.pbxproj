@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		B48222C02469E77500752463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48222BF2469E77500752463 /* AppDelegate.swift */; };
 		B48222C22469E77500752463 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48222C12469E77500752463 /* SceneDelegate.swift */; };
-		B48222C42469E77500752463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48222C32469E77500752463 /* ViewController.swift */; };
 		B48222C72469E77500752463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48222C52469E77500752463 /* Main.storyboard */; };
 		B48222C92469E77700752463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48222C82469E77700752463 /* Assets.xcassets */; };
 		B48222CC2469E77700752463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48222CA2469E77700752463 /* LaunchScreen.storyboard */; };
 		B48222D42469E7B300752463 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48222D32469E7B300752463 /* WordsTableViewController.swift */; };
 		B48222D62469E7D200752463 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48222D52469E7D200752463 /* DefinitionViewController.swift */; };
+		B48222D82469F62C00752463 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48222D72469F62C00752463 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B48222BC2469E77500752463 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48222BF2469E77500752463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B48222C12469E77500752463 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B48222C32469E77500752463 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B48222C62469E77500752463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B48222C82469E77700752463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48222CB2469E77700752463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B48222CD2469E77700752463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48222D32469E7B300752463 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		B48222D52469E7D200752463 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		B48222D72469F62C00752463 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +44,7 @@
 		B48222B32469E77500752463 = {
 			isa = PBXGroup;
 			children = (
+				B48222D72469F62C00752463 /* VocabularyWord.swift */,
 				B48222BE2469E77500752463 /* Swift Vocabulary */,
 				B48222BD2469E77500752463 /* Products */,
 			);
@@ -62,7 +63,6 @@
 			children = (
 				B48222BF2469E77500752463 /* AppDelegate.swift */,
 				B48222C12469E77500752463 /* SceneDelegate.swift */,
-				B48222C32469E77500752463 /* ViewController.swift */,
 				B48222C52469E77500752463 /* Main.storyboard */,
 				B48222D32469E7B300752463 /* WordsTableViewController.swift */,
 				B48222D52469E7D200752463 /* DefinitionViewController.swift */,
@@ -144,9 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48222C42469E77500752463 /* ViewController.swift in Sources */,
 				B48222C02469E77500752463 /* AppDelegate.swift in Sources */,
 				B48222C22469E77500752463 /* SceneDelegate.swift in Sources */,
+				B48222D82469F62C00752463 /* VocabularyWord.swift in Sources */,
 				B48222D42469E7B300752463 /* WordsTableViewController.swift in Sources */,
 				B48222D62469E7D200752463 /* DefinitionViewController.swift in Sources */,
 			);
