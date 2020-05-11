@@ -43,7 +43,9 @@
                             <outlet property="delegate" destination="Dsm-uH-alr" id="765-1U-nCL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9Rg-Ce-Fuj"/>
+                    <navigationItem key="navigationItem" id="9Rg-Ce-Fuj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oY9-4H-4xp"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rOT-kE-OxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
