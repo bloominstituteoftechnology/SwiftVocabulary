@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		4B4487BB2469D93D0034196C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4487BA2469D93D0034196C /* AppDelegate.swift */; };
 		4B4487BD2469D93D0034196C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4487BC2469D93D0034196C /* SceneDelegate.swift */; };
-		4B4487BF2469D93D0034196C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4487BE2469D93D0034196C /* ViewController.swift */; };
 		4B4487C22469D93D0034196C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4487C02469D93D0034196C /* Main.storyboard */; };
 		4B4487C42469D93F0034196C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4487C32469D93F0034196C /* Assets.xcassets */; };
 		4B4487C72469D93F0034196C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4487C52469D93F0034196C /* LaunchScreen.storyboard */; };
+		4B4487CF2469DB070034196C /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4487CE2469DB070034196C /* WordsTableViewController.swift */; };
+		4B4487D12469DB250034196C /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4487D02469DB250034196C /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B4487B72469D93D0034196C /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4487BA2469D93D0034196C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B4487BC2469D93D0034196C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4B4487BE2469D93D0034196C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B4487C12469D93D0034196C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B4487C32469D93F0034196C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B4487C62469D93F0034196C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B4487C82469D93F0034196C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B4487CE2469DB070034196C /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		4B4487D02469DB250034196C /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				4B4487BA2469D93D0034196C /* AppDelegate.swift */,
 				4B4487BC2469D93D0034196C /* SceneDelegate.swift */,
-				4B4487BE2469D93D0034196C /* ViewController.swift */,
 				4B4487C02469D93D0034196C /* Main.storyboard */,
+				4B4487CE2469DB070034196C /* WordsTableViewController.swift */,
+				4B4487D02469DB250034196C /* DefinitionViewController.swift */,
 				4B4487C32469D93F0034196C /* Assets.xcassets */,
 				4B4487C52469D93F0034196C /* LaunchScreen.storyboard */,
 				4B4487C82469D93F0034196C /* Info.plist */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B4487BF2469D93D0034196C /* ViewController.swift in Sources */,
 				4B4487BB2469D93D0034196C /* AppDelegate.swift in Sources */,
 				4B4487BD2469D93D0034196C /* SceneDelegate.swift in Sources */,
+				4B4487CF2469DB070034196C /* WordsTableViewController.swift in Sources */,
+				4B4487D12469DB250034196C /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
