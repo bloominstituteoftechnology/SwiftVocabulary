@@ -12,21 +12,23 @@ class DefinitionViewController: UIViewController {
     @IBOutlet var WordLabel: UILabel!
     @IBOutlet var DefinitionTextView: UITextView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        updateViews()
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    let vocabWord: VocabularyWord?
+    func updateViews() {
+        
+        if let unwrappedVocabWord = vocabWord {
+            
+            WordLabel.text = unwrappedVocabWord.word
+            
+            DefinitionTextView.text = unwrappedVocabWord.definition
+            
+        }
     }
-    */
-
 }
