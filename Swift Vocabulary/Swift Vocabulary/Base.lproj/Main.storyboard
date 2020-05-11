@@ -15,6 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfX-OH-QBE">
+                                <rect key="frame" x="186" y="134" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dcn-ck-7BI">
                                 <rect key="frame" x="87" y="195" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -23,22 +29,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfX-OH-QBE">
-                                <rect key="frame" x="186" y="134" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="GfX-OH-QBE" firstAttribute="width" secondItem="ndi-iK-mku" secondAttribute="width" multiplier="0.101449" id="097-uM-gij"/>
-                            <constraint firstItem="dcn-ck-7BI" firstAttribute="centerY" secondItem="lUd-bv-J21" secondAttribute="centerY" id="Dbo-Ff-J74"/>
-                            <constraint firstItem="dcn-ck-7BI" firstAttribute="centerX" secondItem="lUd-bv-J21" secondAttribute="centerX" id="KRA-rD-tTA"/>
-                            <constraint firstItem="dcn-ck-7BI" firstAttribute="width" secondItem="ndi-iK-mku" secondAttribute="width" multiplier="0.57971" id="QXb-fV-Ula"/>
-                            <constraint firstItem="GfX-OH-QBE" firstAttribute="centerX" secondItem="lUd-bv-J21" secondAttribute="centerX" id="QiL-Qi-zfi"/>
-                            <constraint firstItem="GfX-OH-QBE" firstAttribute="height" secondItem="ndi-iK-mku" secondAttribute="height" multiplier="0.0234375" id="rrI-je-fAn"/>
-                            <constraint firstItem="dcn-ck-7BI" firstAttribute="firstBaseline" secondItem="GfX-OH-QBE" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="xvs-SW-CEf"/>
+                            <constraint firstItem="GfX-OH-QBE" firstAttribute="centerX" secondItem="dcn-ck-7BI" secondAttribute="centerX" id="vu7-2F-66h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lUd-bv-J21"/>
                     </view>
