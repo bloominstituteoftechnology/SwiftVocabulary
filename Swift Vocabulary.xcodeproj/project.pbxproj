@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		380653932469F20A000F36F1 /* WordsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380653922469F20A000F36F1 /* WordsTableTableViewController.swift */; };
 		380653982469F2FC000F36F1 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380653972469F2FC000F36F1 /* DefinitionViewController.swift */; };
+		3806539A2469FF03000F36F1 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380653992469FF03000F36F1 /* VocabularyWord.swift */; };
 		38136E942469EE3000729B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38136E932469EE3000729B7D /* AppDelegate.swift */; };
 		38136E962469EE3000729B7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38136E952469EE3000729B7D /* SceneDelegate.swift */; };
-		38136E982469EE3000729B7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38136E972469EE3000729B7D /* ViewController.swift */; };
 		38136E9B2469EE3000729B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38136E992469EE3000729B7D /* Main.storyboard */; };
 		38136E9D2469EE3800729B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38136E9C2469EE3800729B7D /* Assets.xcassets */; };
 		38136EA02469EE3800729B7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38136E9E2469EE3800729B7D /* LaunchScreen.storyboard */; };
@@ -20,10 +20,10 @@
 /* Begin PBXFileReference section */
 		380653922469F20A000F36F1 /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
 		380653972469F2FC000F36F1 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		380653992469FF03000F36F1 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 		38136E902469EE3000729B7D /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38136E932469EE3000729B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38136E952469EE3000729B7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		38136E972469EE3000729B7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		38136E9A2469EE3000729B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38136E9C2469EE3800729B7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38136E9F2469EE3800729B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +44,7 @@
 		380653942469F234000F36F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				380653992469FF03000F36F1 /* VocabularyWord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -60,7 +61,6 @@
 		380653962469F24A000F36F1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				38136E972469EE3000729B7D /* ViewController.swift */,
 				380653922469F20A000F36F1 /* WordsTableTableViewController.swift */,
 				380653972469F2FC000F36F1 /* DefinitionViewController.swift */,
 			);
@@ -169,8 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				380653932469F20A000F36F1 /* WordsTableTableViewController.swift in Sources */,
-				38136E982469EE3000729B7D /* ViewController.swift in Sources */,
 				38136E942469EE3000729B7D /* AppDelegate.swift in Sources */,
+				3806539A2469FF03000F36F1 /* VocabularyWord.swift in Sources */,
 				38136E962469EE3000729B7D /* SceneDelegate.swift in Sources */,
 				380653982469F2FC000F36F1 /* DefinitionViewController.swift in Sources */,
 			);

@@ -13,10 +13,17 @@ class DefinitionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
 
+    @IBOutlet weak var definitionLabel: UILabel!
+    
+    
+    @IBOutlet weak var definitionBox: UITextView!
     /*
     // MARK: - Navigation
 
