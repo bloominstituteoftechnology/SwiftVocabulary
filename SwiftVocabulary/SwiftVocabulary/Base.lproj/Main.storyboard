@@ -57,20 +57,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C7S-6S-JT7">
-                                <rect key="frame" x="0.0" y="88" width="415" height="140"/>
+                                <rect key="frame" x="0.0" y="88" width="410" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Variable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjG-gW-PHM">
-                                        <rect key="frame" x="0.0" y="0.0" width="415" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="415" id="NI0-LD-sHZ"/>
+                                            <constraint firstAttribute="width" constant="410" id="NI0-LD-sHZ"/>
                                             <constraint firstAttribute="height" constant="60" id="Uhm-6Z-0gH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="A named variable used to store information.  Variables can be changed after being created" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mOt-Wf-kdS">
-                                        <rect key="frame" x="0.0" y="60" width="415" height="80"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="fill" text="A named variable used to store information.  Variables can be changed after being created" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mOt-Wf-kdS">
+                                        <rect key="frame" x="0.0" y="60" width="410" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="94I-I2-ak6"/>
                                         </constraints>
