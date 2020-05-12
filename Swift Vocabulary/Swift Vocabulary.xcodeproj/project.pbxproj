@@ -7,27 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A39189C6246A0E5E0070A097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39189C5246A0E5E0070A097 /* AppDelegate.swift */; };
-		A39189C8246A0E5E0070A097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39189C7246A0E5E0070A097 /* SceneDelegate.swift */; };
-		A39189CA246A0E5E0070A097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39189C9246A0E5E0070A097 /* ViewController.swift */; };
-		A39189CD246A0E5E0070A097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39189CB246A0E5E0070A097 /* Main.storyboard */; };
-		A39189CF246A0E5E0070A097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39189CE246A0E5E0070A097 /* Assets.xcassets */; };
-		A39189D2246A0E5E0070A097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39189D0246A0E5E0070A097 /* LaunchScreen.storyboard */; };
+		A3918A34246ABF320070A097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3918A33246ABF320070A097 /* AppDelegate.swift */; };
+		A3918A36246ABF320070A097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3918A35246ABF320070A097 /* SceneDelegate.swift */; };
+		A3918A3B246ABF320070A097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3918A39246ABF320070A097 /* Main.storyboard */; };
+		A3918A3D246ABF330070A097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3918A3C246ABF330070A097 /* Assets.xcassets */; };
+		A3918A40246ABF330070A097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3918A3E246ABF330070A097 /* LaunchScreen.storyboard */; };
+		A3918A48246ABFA40070A097 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3918A47246ABFA40070A097 /* WordsTableViewController.swift */; };
+		A3918A4A246ABFE00070A097 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3918A49246ABFE00070A097 /* DefinitionViewController.swift */; };
+		A3918A4C246AC7A70070A097 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3918A4B246AC7A70070A097 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A39189C2246A0E5E0070A097 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A39189C5246A0E5E0070A097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A39189C7246A0E5E0070A097 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A39189C9246A0E5E0070A097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A39189CC246A0E5E0070A097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A39189CE246A0E5E0070A097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A39189D1246A0E5E0070A097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A39189D3246A0E5E0070A097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3918A30246ABF320070A097 /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3918A33246ABF320070A097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3918A35246ABF320070A097 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A3918A3A246ABF320070A097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3918A3C246ABF330070A097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3918A3F246ABF330070A097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3918A41246ABF330070A097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3918A47246ABFA40070A097 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		A3918A49246ABFE00070A097 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		A3918A4B246AC7A70070A097 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A39189BF246A0E5E0070A097 /* Frameworks */ = {
+		A3918A2D246ABF320070A097 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +41,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A39189B9246A0E5E0070A097 = {
+		A3918A27246ABF320070A097 = {
 			isa = PBXGroup;
 			children = (
-				A39189C4246A0E5E0070A097 /* Swift Vocabulary */,
-				A39189C3246A0E5E0070A097 /* Products */,
+				A3918A32246ABF320070A097 /* Swift Vocabulary */,
+				A3918A31246ABF320070A097 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A39189C3246A0E5E0070A097 /* Products */ = {
+		A3918A31246ABF320070A097 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A39189C2246A0E5E0070A097 /* Swift Vocabulary.app */,
+				A3918A30246ABF320070A097 /* Swift Vocabulary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A39189C4246A0E5E0070A097 /* Swift Vocabulary */ = {
+		A3918A32246ABF320070A097 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				A39189C5246A0E5E0070A097 /* AppDelegate.swift */,
-				A39189C7246A0E5E0070A097 /* SceneDelegate.swift */,
-				A39189C9246A0E5E0070A097 /* ViewController.swift */,
-				A39189CB246A0E5E0070A097 /* Main.storyboard */,
-				A39189CE246A0E5E0070A097 /* Assets.xcassets */,
-				A39189D0246A0E5E0070A097 /* LaunchScreen.storyboard */,
-				A39189D3246A0E5E0070A097 /* Info.plist */,
+				A3918A33246ABF320070A097 /* AppDelegate.swift */,
+				A3918A35246ABF320070A097 /* SceneDelegate.swift */,
+				A3918A47246ABFA40070A097 /* WordsTableViewController.swift */,
+				A3918A4B246AC7A70070A097 /* VocabularyWord.swift */,
+				A3918A49246ABFE00070A097 /* DefinitionViewController.swift */,
+				A3918A39246ABF320070A097 /* Main.storyboard */,
+				A3918A3C246ABF330070A097 /* Assets.xcassets */,
+				A3918A3E246ABF330070A097 /* LaunchScreen.storyboard */,
+				A3918A41246ABF330070A097 /* Info.plist */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -70,13 +76,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A39189C1246A0E5E0070A097 /* Swift Vocabulary */ = {
+		A3918A2F246ABF320070A097 /* Swift Vocabulary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A39189D6246A0E5E0070A097 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */;
+			buildConfigurationList = A3918A44246ABF330070A097 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */;
 			buildPhases = (
-				A39189BE246A0E5E0070A097 /* Sources */,
-				A39189BF246A0E5E0070A097 /* Frameworks */,
-				A39189C0246A0E5E0070A097 /* Resources */,
+				A3918A2C246ABF320070A097 /* Sources */,
+				A3918A2D246ABF320070A097 /* Frameworks */,
+				A3918A2E246ABF320070A097 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +90,25 @@
 			);
 			name = "Swift Vocabulary";
 			productName = "Swift Vocabulary";
-			productReference = A39189C2246A0E5E0070A097 /* Swift Vocabulary.app */;
+			productReference = A3918A30246ABF320070A097 /* Swift Vocabulary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A39189BA246A0E5E0070A097 /* Project object */ = {
+		A3918A28246ABF320070A097 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Bryan Cress";
 				TargetAttributes = {
-					A39189C1246A0E5E0070A097 = {
+					A3918A2F246ABF320070A097 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
-			buildConfigurationList = A39189BD246A0E5E0070A097 /* Build configuration list for PBXProject "Swift Vocabulary" */;
+			buildConfigurationList = A3918A2B246ABF320070A097 /* Build configuration list for PBXProject "Swift Vocabulary" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = A39189B9246A0E5E0070A097;
-			productRefGroup = A39189C3246A0E5E0070A097 /* Products */;
+			mainGroup = A3918A27246ABF320070A097;
+			productRefGroup = A3918A31246ABF320070A097 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A39189C1246A0E5E0070A097 /* Swift Vocabulary */,
+				A3918A2F246ABF320070A097 /* Swift Vocabulary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A39189C0246A0E5E0070A097 /* Resources */ = {
+		A3918A2E246ABF320070A097 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A39189D2246A0E5E0070A097 /* LaunchScreen.storyboard in Resources */,
-				A39189CF246A0E5E0070A097 /* Assets.xcassets in Resources */,
-				A39189CD246A0E5E0070A097 /* Main.storyboard in Resources */,
+				A3918A40246ABF330070A097 /* LaunchScreen.storyboard in Resources */,
+				A3918A3D246ABF330070A097 /* Assets.xcassets in Resources */,
+				A3918A3B246ABF320070A097 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A39189BE246A0E5E0070A097 /* Sources */ = {
+		A3918A2C246ABF320070A097 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A39189CA246A0E5E0070A097 /* ViewController.swift in Sources */,
-				A39189C6246A0E5E0070A097 /* AppDelegate.swift in Sources */,
-				A39189C8246A0E5E0070A097 /* SceneDelegate.swift in Sources */,
+				A3918A34246ABF320070A097 /* AppDelegate.swift in Sources */,
+				A3918A36246ABF320070A097 /* SceneDelegate.swift in Sources */,
+				A3918A4C246AC7A70070A097 /* VocabularyWord.swift in Sources */,
+				A3918A48246ABFA40070A097 /* WordsTableViewController.swift in Sources */,
+				A3918A4A246ABFE00070A097 /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A39189CB246A0E5E0070A097 /* Main.storyboard */ = {
+		A3918A39246ABF320070A097 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A39189CC246A0E5E0070A097 /* Base */,
+				A3918A3A246ABF320070A097 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A39189D0246A0E5E0070A097 /* LaunchScreen.storyboard */ = {
+		A3918A3E246ABF330070A097 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A39189D1246A0E5E0070A097 /* Base */,
+				A3918A3F246ABF330070A097 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A39189D4246A0E5E0070A097 /* Debug */ = {
+		A3918A42246ABF330070A097 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +234,7 @@
 			};
 			name = Debug;
 		};
-		A39189D5246A0E5E0070A097 /* Release */ = {
+		A3918A43246ABF330070A097 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +288,7 @@
 			};
 			name = Release;
 		};
-		A39189D7246A0E5E0070A097 /* Debug */ = {
+		A3918A45246ABF330070A097 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -297,7 +305,7 @@
 			};
 			name = Debug;
 		};
-		A39189D8246A0E5E0070A097 /* Release */ = {
+		A3918A46246ABF330070A097 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -317,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A39189BD246A0E5E0070A097 /* Build configuration list for PBXProject "Swift Vocabulary" */ = {
+		A3918A2B246ABF320070A097 /* Build configuration list for PBXProject "Swift Vocabulary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A39189D4246A0E5E0070A097 /* Debug */,
-				A39189D5246A0E5E0070A097 /* Release */,
+				A3918A42246ABF330070A097 /* Debug */,
+				A3918A43246ABF330070A097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A39189D6246A0E5E0070A097 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */ = {
+		A3918A44246ABF330070A097 /* Build configuration list for PBXNativeTarget "Swift Vocabulary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A39189D7246A0E5E0070A097 /* Debug */,
-				A39189D8246A0E5E0070A097 /* Release */,
+				A3918A45246ABF330070A097 /* Debug */,
+				A3918A46246ABF330070A097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A39189BA246A0E5E0070A097 /* Project object */;
+	rootObject = A3918A28246ABF320070A097 /* Project object */;
 }
