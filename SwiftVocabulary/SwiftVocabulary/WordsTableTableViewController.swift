@@ -9,6 +9,12 @@
 import UIKit
 
 class WordsTableTableViewController: UITableViewController {
+    
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: <#T##String#>),
+                                        VocabularyWord(word: "Constant", definition: <#T##String#>),
+                                        VocabularyWord(word: "Function", definition: <#T##String#>)]
+    
+    func tableView(_ tableView:, numberOfRowsInSection section:)
 
     override func viewDidLoad() {
         super.viewDidLoad()
