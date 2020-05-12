@@ -14,7 +14,9 @@ class WordsTableTableViewController: UITableViewController {
                                         VocabularyWord(word: "Constant", definition: <#T##String#>),
                                         VocabularyWord(word: "Function", definition: <#T##String#>)]
     
-    func tableView(_ tableView:, numberOfRowsInSection section:)
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return vocabWords.count
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
