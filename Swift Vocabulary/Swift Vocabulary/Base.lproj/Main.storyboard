@@ -74,24 +74,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXP-uT-4qy" userLabel="word">
-                                <rect key="frame" x="20" y="119" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXP-uT-4qy" userLabel="wordLabel">
+                                <rect key="frame" x="20" y="114" width="215" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="do0-3s-qAG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKD-ag-d5W" userLabel="definition">
-                                <rect key="frame" x="20" y="148" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKD-ag-d5W" userLabel="definitionTextView">
+                                <rect key="frame" x="20" y="248" width="374" height="533"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BXP-uT-4qy" firstAttribute="top" secondItem="FvZ-Q4-ya8" secondAttribute="top" constant="26" id="MZL-yH-za2"/>
+                            <constraint firstItem="FvZ-Q4-ya8" firstAttribute="trailing" secondItem="AKD-ag-d5W" secondAttribute="trailing" constant="154" id="N3R-md-a9d"/>
+                            <constraint firstItem="AKD-ag-d5W" firstAttribute="leading" secondItem="kM0-ga-1Md" secondAttribute="leadingMargin" id="OaK-qn-4VI"/>
+                            <constraint firstItem="FvZ-Q4-ya8" firstAttribute="bottom" secondItem="AKD-ag-d5W" secondAttribute="bottom" constant="586" id="Vfr-0z-fMT"/>
+                            <constraint firstItem="FvZ-Q4-ya8" firstAttribute="trailing" secondItem="BXP-uT-4qy" secondAttribute="trailing" constant="179" id="acC-W2-s35"/>
+                            <constraint firstItem="BXP-uT-4qy" firstAttribute="leading" secondItem="AKD-ag-d5W" secondAttribute="leading" id="agL-Zn-7VG"/>
+                            <constraint firstItem="AKD-ag-d5W" firstAttribute="top" secondItem="BXP-uT-4qy" secondAttribute="bottom" constant="89" id="mvh-1q-LlF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FvZ-Q4-ya8"/>
                     </view>
                     <navigationItem key="navigationItem" id="5Z9-EB-DL2"/>

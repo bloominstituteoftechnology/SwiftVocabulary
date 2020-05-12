@@ -10,12 +10,9 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
-    
-    let word1 = VocabularyWord(word: "Variable", definition: "")
-    let word2 = VocabularyWord(word: "Constant", definition: "")
-    let word3 = VocabularyWord(word: "Function", definition: "")
-    
-    var vocabWords: [VocabularyWord] = [word1, word2, word3]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "Changeable property"),
+                                         VocabularyWord(word: "Constant", definition: "Unchangeable property"),
+                                         VocabularyWord(word: "Function", definition: "Set of instructions to process")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +35,7 @@ class WordsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
         // Configure the cell...
         
@@ -103,9 +100,8 @@ class WordsTableViewController: UITableViewController {
                 let vocabWord = vocabWords[indexPath.row]
             
             // Pass the object
-            
+           
                 definitionVC?.vocabWord = vocabWord
-    
             }
         }
  
