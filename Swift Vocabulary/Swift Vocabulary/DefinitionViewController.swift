@@ -10,17 +10,18 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var definitionTextView: UITextView!
+    
     var vocabWord: VocabularyWord?
-    var wordLabel: String?
-    var definitionTextView: String?
     
     func updateViews() {
         guard let vocabWord = vocabWord else {
             return
         }
         
-        wordLabel = vocabWord.word
-        definitionTextView = vocabWord.definition
+        wordLabel.text = vocabWord.word
+        definitionTextView.text = vocabWord.definition
         
         }
 

@@ -100,7 +100,6 @@ class WordsTableViewController: UITableViewController {
                 let vocabWord = vocabWords[indexPath.row]
             
             // Pass the object
-           
                 definitionVC?.vocabWord = vocabWord
             }
         }
