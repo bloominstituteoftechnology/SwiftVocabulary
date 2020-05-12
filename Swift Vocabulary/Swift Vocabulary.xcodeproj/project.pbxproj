@@ -44,7 +44,6 @@
 		B48222B32469E77500752463 = {
 			isa = PBXGroup;
 			children = (
-				B48222D72469F62C00752463 /* VocabularyWord.swift */,
 				B48222BE2469E77500752463 /* Swift Vocabulary */,
 				B48222BD2469E77500752463 /* Products */,
 			);
@@ -61,6 +60,7 @@
 		B48222BE2469E77500752463 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				B48222D72469F62C00752463 /* VocabularyWord.swift */,
 				B48222BF2469E77500752463 /* AppDelegate.swift */,
 				B48222C12469E77500752463 /* SceneDelegate.swift */,
 				B48222C52469E77500752463 /* Main.storyboard */,

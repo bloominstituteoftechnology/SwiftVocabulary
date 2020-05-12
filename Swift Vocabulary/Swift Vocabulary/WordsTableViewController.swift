@@ -10,7 +10,12 @@ import UIKit
 
 class WordsTableViewController: UITableViewController {
     
-    var vocabWords: [VocabularyWord]
+    
+    let word1 = VocabularyWord(word: "Variable", definition: "")
+    let word2 = VocabularyWord(word: "Constant", definition: "")
+    let word3 = VocabularyWord(word: "Function", definition: "")
+    
+    var vocabWords: [VocabularyWord] = [word1, word2, word3]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +45,6 @@ class WordsTableViewController: UITableViewController {
         let word = vocabWords[indexPath.row]
         
         cell.textLabel?.text = word.word
-        cell.
-        
         
         return cell
     }
