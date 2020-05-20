@@ -9,7 +9,7 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Yo man", definition: "Ya boy"), VocabularyWord(word: "Yo mom", definition: "My mom"), VocabularyWord(word: "shit", definition: "Shit")]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Ephemeral", definition: "Lasting a short while"), VocabularyWord(word: "Perseverance", definition: "Steady persistant in a course of action or state, despite of difficulties."), VocabularyWord(word: "Epiphany", definition: "Manifestation of a divine or supernatural being"), VocabularyWord(word: "Nullity", definition: "a thing of no importance or worth")]
     
 
 override func viewDidLoad() {

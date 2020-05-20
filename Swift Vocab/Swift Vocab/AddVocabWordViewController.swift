@@ -1,32 +1,17 @@
 //
-//  DefinitionViewController.swift
+//  AddVocabWordViewController.swift
 //  Swift Vocab
 //
-//  Created by Eugene White on 5/19/20.
+//  Created by Eugene White on 5/20/20.
 //  Copyright © 2020 Eugene White. All rights reserved.
 //
 
 import UIKit
 
-class DefinitionViewController: UIViewController {
+class AddVocabWordViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var definitionView: UITextView!
-    var vocabWord: VocabularyWord?
-    
-    func updateViews() {
-        if let unwrappedVocabWord = vocabWord {
-            self.label.text = unwrappedVocabWord.word
-            self.definitionView.text = unwrappedVocabWord.definition
-    
-        }
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateViews()
-        
-  
-        
 
         // Do any additional setup after loading the view.
     }

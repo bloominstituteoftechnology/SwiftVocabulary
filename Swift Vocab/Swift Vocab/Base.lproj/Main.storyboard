@@ -80,10 +80,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O2K-k5-HFc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2K-k5-HFc">
                                 <rect key="frame" x="20" y="248" width="374" height="76"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -100,15 +100,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="O2K-k5-HFc" firstAttribute="leading" secondItem="G48-Uf-7T4" secondAttribute="leadingMargin" id="2wj-Ay-qm2"/>
-                            <constraint firstItem="ksq-W3-qb5" firstAttribute="bottom" secondItem="O2K-k5-HFc" secondAttribute="bottom" constant="538" id="4M0-WK-B2c"/>
-                            <constraint firstItem="O2K-k5-HFc" firstAttribute="leading" secondItem="LYT-ep-9RT" secondAttribute="leading" id="Epm-Bb-1e3"/>
-                            <constraint firstItem="O2K-k5-HFc" firstAttribute="top" secondItem="LYT-ep-9RT" secondAttribute="bottom" constant="57" id="IiA-8Y-OdG"/>
+                            <constraint firstItem="O2K-k5-HFc" firstAttribute="leading" secondItem="G48-Uf-7T4" secondAttribute="leadingMargin" id="1Fm-1P-0Jz"/>
+                            <constraint firstItem="O2K-k5-HFc" firstAttribute="top" secondItem="LYT-ep-9RT" secondAttribute="bottom" constant="57" id="8pG-FM-oo4"/>
+                            <constraint firstItem="O2K-k5-HFc" firstAttribute="leading" secondItem="LYT-ep-9RT" secondAttribute="leading" id="HA4-M1-uQm"/>
                             <constraint firstItem="LYT-ep-9RT" firstAttribute="top" secondItem="ksq-W3-qb5" secondAttribute="top" constant="24" id="RG4-6K-zw4"/>
-                            <constraint firstItem="O2K-k5-HFc" firstAttribute="centerX" secondItem="G48-Uf-7T4" secondAttribute="centerX" id="Rf6-YV-aSn"/>
-                            <constraint firstItem="O2K-k5-HFc" firstAttribute="trailing" secondItem="G48-Uf-7T4" secondAttribute="trailingMargin" id="TxQ-Nb-ayb"/>
-                            <constraint firstItem="O2K-k5-HFc" firstAttribute="trailing" secondItem="LYT-ep-9RT" secondAttribute="trailing" id="iJm-pD-s6f"/>
+                            <constraint firstItem="O2K-k5-HFc" firstAttribute="trailing" secondItem="LYT-ep-9RT" secondAttribute="trailing" id="eS5-YS-RxJ"/>
+                            <constraint firstItem="O2K-k5-HFc" firstAttribute="trailing" secondItem="G48-Uf-7T4" secondAttribute="trailingMargin" id="fFx-s8-6fo"/>
                             <constraint firstItem="LYT-ep-9RT" firstAttribute="bottom" secondItem="YBP-4u-1mL" secondAttribute="bottom" id="lOy-oZ-Atq"/>
+                            <constraint firstItem="ksq-W3-qb5" firstAttribute="bottom" secondItem="O2K-k5-HFc" secondAttribute="bottom" constant="538" id="qiV-Vb-NzN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ksq-W3-qb5"/>
                     </view>
