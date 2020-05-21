@@ -56,40 +56,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="wordLabel" text="The Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-GW-DeC">
-                                <rect key="frame" x="96" y="101" width="223" height="40"/>
-                                <accessibility key="accessibilityConfiguration" identifier="lblDefinition"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="definitionTextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sxr-fW-Bdd">
-                                <rect key="frame" x="79" y="196" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="definitionTextView" text="The Definition" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sxr-fW-Bdd">
+                                <rect key="frame" x="87" y="336" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="definitionTextView"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="ZaZ-s5-2rx"/>
+                                    <constraint firstAttribute="height" constant="128" id="OcJ-3V-EkF"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Word to Define" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us1-mB-Cof">
+                                <rect key="frame" x="133" y="185" width="148.5" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="wordLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sxr-fW-Bdd" secondAttribute="trailing" constant="95" id="4rR-gp-Cun"/>
-                            <constraint firstItem="Sxr-fW-Bdd" firstAttribute="trailing" secondItem="SQe-GW-DeC" secondAttribute="trailing" id="5eZ-LG-uDN"/>
-                            <constraint firstItem="Sxr-fW-Bdd" firstAttribute="top" secondItem="SQe-GW-DeC" secondAttribute="bottom" constant="55" id="XI3-o3-jfU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sxr-fW-Bdd" secondAttribute="bottom" constant="538" id="igY-9U-oWJ"/>
-                            <constraint firstItem="Sxr-fW-Bdd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="nDK-YM-yVo"/>
+                            <constraint firstItem="Sxr-fW-Bdd" firstAttribute="centerX" secondItem="Us1-mB-Cof" secondAttribute="centerX" id="DFi-Lg-5nM"/>
+                            <constraint firstItem="Us1-mB-Cof" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="Dum-RX-avT"/>
+                            <constraint firstItem="Sxr-fW-Bdd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FFs-F8-zQe"/>
+                            <constraint firstItem="Us1-mB-Cof" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="Sab-WS-2xN"/>
+                            <constraint firstItem="Sxr-fW-Bdd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="bYb-FV-zsO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sxr-fW-Bdd" secondAttribute="bottom" constant="398" id="o4M-br-VAt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="zwr-7f-qzi"/>
                     <connections>
-                        <outlet property="definitionLabel" destination="SQe-GW-DeC" id="e9H-CF-Rpl"/>
-                        <outlet property="definitionTextView" destination="Sxr-fW-Bdd" id="OnS-n2-Wa1"/>
-                        <outlet property="lblDefinition" destination="SQe-GW-DeC" id="t6O-iF-4Iu"/>
+                        <outlet property="definitionTextView" destination="Sxr-fW-Bdd" id="eby-oX-Rie"/>
+                        <outlet property="wordLabel" destination="Us1-mB-Cof" id="PQU-td-gsc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
