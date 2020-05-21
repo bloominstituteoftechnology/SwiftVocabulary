@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddNewWordViewController: UIViewController {
+class AddNewWordViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var addWordTextField: UITextField!
     @IBOutlet weak var addDefintionTextField: UITextField!
     @IBOutlet weak var addNewWordButton: UIButton!
@@ -19,16 +19,32 @@ class AddNewWordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addWordTextField.delegate = self
+        addDefintionTextField.delegate = self
+        
+        self.addNewWordButton.isEnabled = false
+        
     
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func addButtonTapped(_ sender: Any) {
-            print(addDefintionTextField.text)
-            print(addWordTextField.text)
     
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if addWordTextField.text != "" && addDefintionTextField.text != "" {
+            self.addNewWordButton.isEnabled = true
+        }
     }
+    
+    
+    
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+            
+    }
+    
+
+    
     
     
     
