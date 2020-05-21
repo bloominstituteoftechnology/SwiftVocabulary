@@ -27,6 +27,7 @@ class DefinitionViewController: UIViewController {
         super.viewDidLoad()
 
        updateViews()
+        self.wordLabel.font = UIFont(name: "Helvetica", size: 40)
     }
     
 

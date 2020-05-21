@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 
 struct VocabularyWord {
@@ -16,3 +15,4 @@ struct VocabularyWord {
     var definition : String
     
 }
+
