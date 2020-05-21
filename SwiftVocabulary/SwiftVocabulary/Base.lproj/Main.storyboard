@@ -12,7 +12,7 @@
             <objects>
                 <tableViewController id="YaY-1N-fQ8" customClass="WordsTableViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="36W-qB-Sfr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -48,7 +48,7 @@
                     <navigationItem key="navigationItem" title="Words" id="b0E-sJ-Xnz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bUa-qU-OeU">
                             <connections>
-                                <segue destination="BRV-Zv-EuP" kind="presentation" modalTransitionStyle="flipHorizontal" id="E81-Ay-V09"/>
+                                <segue destination="BRV-Zv-EuP" kind="presentation" id="E81-Ay-V09"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -99,6 +99,7 @@
                                 <state key="normal" title="Add New Word"/>
                                 <connections>
                                     <action selector="addButtonTapped:" destination="BRV-Zv-EuP" eventType="touchUpInside" id="3gj-Sw-W8m"/>
+                                    <segue destination="U5x-yO-9Aj" kind="unwind" identifier="unwind" unwindAction="unwindFromDetailWithSegue:" id="zKI-k1-Qbj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add New Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re2-iM-e32">
@@ -120,10 +121,10 @@
                         <outlet property="addDefintionTextField" destination="5gN-0b-trJ" id="cab-0U-q1n"/>
                         <outlet property="addNewWordButton" destination="hjh-1J-kLA" id="Jef-Fs-Vgj"/>
                         <outlet property="addWordTextField" destination="13e-tG-7Cf" id="T5r-aq-eSK"/>
-                        <segue destination="YaY-1N-fQ8" kind="showDetail" identifier="AddNewWord" animates="NO" id="hSl-FN-6Wp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KL0-Cq-GU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="U5x-yO-9Aj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2271" y="-837"/>
         </scene>
@@ -191,8 +192,4 @@
             <point key="canvasLocation" x="502.89855072463774" y="-92.410714285714278"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="E81-Ay-V09"/>
-        <segue reference="hSl-FN-6Wp"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -13,10 +13,14 @@ import UIKit
 class WordsTableViewController: UITableViewController {
     
      var vocabWords : [VocabularyWord] = [VocabularyWord(word: "run", definition: "runn"), VocabularyWord(word: "yo", definition: "yoo whats up this is a really long definition. but not really."), VocabularyWord(word: "Two", definition: "Two is a number.")]
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    
+        
 
         print(vocabWords)
     }
@@ -40,6 +44,8 @@ class WordsTableViewController: UITableViewController {
         return cell
     }
     
+    
+//    
 
     
     // MARK: - Navigation
@@ -67,6 +73,31 @@ class WordsTableViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
+    
+    
+        @IBAction func unwindFromDetail (segue: UIStoryboardSegue) {
+
+    //        if segue.source is AddNewWordViewController {
+                if let senderVC = segue.source as? AddNewWordViewController {
+    //                senderVC.performSegue(withIdentifier: "unwind", sender: nil)
+
+                    
+                    if let newWord = senderVC.addWordTextField.text, let newDefinition = senderVC.addDefintionTextField.text {
+                        
+                        if newWord == "" || newDefinition == "" {
+                        } else {
+                            vocabWords.append(VocabularyWord(word: newWord, definition: newDefinition))
+                        }
+                        
+                    
+                                }
+                    tableView.reloadData()
+                }
+                
+            
+        }
+    
+
     
 
 }

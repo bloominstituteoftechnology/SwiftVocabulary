@@ -13,23 +13,21 @@ class AddNewWordViewController: UIViewController {
     @IBOutlet weak var addDefintionTextField: UITextField!
     @IBOutlet weak var addNewWordButton: UIButton!
     
+    
     var newVocabWord : VocabularyWord?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        print(addWordTextField.text)
+    
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
-        
-        if addWordTextField.text != "" && addDefintionTextField.text != "" {
-            
-            performSegue(withIdentifier: "AddNewWord", sender: sender)
-        }
+            print(addDefintionTextField.text)
+            print(addWordTextField.text)
+    
     }
     
     
@@ -37,31 +35,31 @@ class AddNewWordViewController: UIViewController {
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "AddNewWord" {
-            
-            guard let destinationVC = segue.destination as? WordsTableViewController else {
-                return
-            }
-            
-            
-            guard let newWord = addWordTextField.text, let newDefintion = addDefintionTextField.text else {
-                
-                print("missing something")
-                
-                return
-                
-            }
-            
-            destinationVC.vocabWords.append(VocabularyWord(word: newWord, definition: newDefintion))
-            self.dismiss(animated: true, completion: nil)
-            
-
-            
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if segue.identifier == "unwind" {
+//
+//            guard let destinationVC = segue.destination as? WordsTableViewController else {
+//                return
+//            }
+//
+//
+//            guard let newWord = addWordTextField.text, let newDefinition = addDefintionTextField.text else {
+//
+//                print("missing something")
+//
+//                return
+//
+//            }
+//
+//
+//
+//
+//    destinationVC.vocabWords.append(VocabularyWord(word: newWord, definition: newDefinition))
+//
+//
+//        }
+//    }
     
 
 }
