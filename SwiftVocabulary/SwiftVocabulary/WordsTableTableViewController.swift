@@ -14,14 +14,13 @@ class WordsTableViewController: UITableViewController {
     
      var vocabWords : [VocabularyWord] = [VocabularyWord(word: "run", definition: "runn"), VocabularyWord(word: "yo", definition: "yoo whats up this is a really long definition. but not really."), VocabularyWord(word: "Two", definition: "Two is a number.")]
     
+    var rainbowColors : [UIColor] = [.red, .blue, .cyan, .green, .systemPink]
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
-        
-
         print(vocabWords)
     }
 
@@ -39,6 +38,8 @@ class WordsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         cell.textLabel?.text = self.vocabWords[indexPath.row].word
+        cell.backgroundColor = self.rainbowColors.randomElement()
+        cell.textLabel?.font = UIFont(name: "Helvetica", size: 50)
         
     
         return cell
