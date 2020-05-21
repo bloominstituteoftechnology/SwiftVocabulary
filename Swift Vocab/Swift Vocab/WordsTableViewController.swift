@@ -9,10 +9,13 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
+
     var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Ephemeral", definition: "Lasting a short while"), VocabularyWord(word: "Perseverance", definition: "Steady persistant in a course of action or state, despite of difficulties."), VocabularyWord(word: "Epiphany", definition: "Manifestation of a divine or supernatural being"), VocabularyWord(word: "Nullity", definition: "a thing of no importance or worth")]
+    
     
 
 override func viewDidLoad() {
+    
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -31,7 +34,7 @@ override func viewDidLoad() {
 
 override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-    return self.vocabWords.count
+    return vocabWords.count
     }
 
 

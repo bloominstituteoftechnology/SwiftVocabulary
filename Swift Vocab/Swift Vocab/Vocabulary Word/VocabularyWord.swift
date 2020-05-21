@@ -6,8 +6,8 @@
 //  Copyright © 2020 Eugene White. All rights reserved.
 //
 
-import Foundation
-
+//import Foundation
+//
 struct VocabularyWord {
     var word: String
     var definition: String
