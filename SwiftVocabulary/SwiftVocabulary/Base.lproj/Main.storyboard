@@ -12,7 +12,7 @@
             <objects>
                 <tableViewController id="YaY-1N-fQ8" customClass="WordsTableViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="36W-qB-Sfr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -48,7 +48,7 @@
                     <navigationItem key="navigationItem" title="Words" id="b0E-sJ-Xnz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bUa-qU-OeU">
                             <connections>
-                                <segue destination="BRV-Zv-EuP" kind="show" id="E81-Ay-V09"/>
+                                <segue destination="BRV-Zv-EuP" kind="presentation" modalTransitionStyle="flipHorizontal" id="E81-Ay-V09"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -64,7 +64,7 @@
             <objects>
                 <viewController id="BRV-Zv-EuP" customClass="AddNewWordViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EAe-KN-VRj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="13e-tG-7Cf">
@@ -120,7 +120,7 @@
                         <outlet property="addDefintionTextField" destination="5gN-0b-trJ" id="cab-0U-q1n"/>
                         <outlet property="addNewWordButton" destination="hjh-1J-kLA" id="Jef-Fs-Vgj"/>
                         <outlet property="addWordTextField" destination="13e-tG-7Cf" id="T5r-aq-eSK"/>
-                        <segue destination="YaY-1N-fQ8" kind="show" identifier="AddNewWord" animates="NO" id="hSl-FN-6Wp"/>
+                        <segue destination="YaY-1N-fQ8" kind="showDetail" identifier="AddNewWord" animates="NO" id="hSl-FN-6Wp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KL0-Cq-GU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

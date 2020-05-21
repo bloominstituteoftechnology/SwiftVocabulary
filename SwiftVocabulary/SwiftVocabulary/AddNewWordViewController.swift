@@ -17,13 +17,22 @@ class AddNewWordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        print(addWordTextField.text)
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "AddNewWord", sender: addNewWordButton)
+        
+        if addWordTextField.text != "" && addDefintionTextField.text != "" {
+            
+            performSegue(withIdentifier: "AddNewWord", sender: sender)
+        }
     }
+    
+    
     
     
     // MARK: - Navigation
@@ -37,12 +46,17 @@ class AddNewWordViewController: UIViewController {
                 return
             }
             
+            
             guard let newWord = addWordTextField.text, let newDefintion = addDefintionTextField.text else {
+                
+                print("missing something")
+                
                 return
+                
             }
             
             destinationVC.vocabWords.append(VocabularyWord(word: newWord, definition: newDefintion))
-            
+            self.dismiss(animated: true, completion: nil)
             
 
             
