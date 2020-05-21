@@ -43,7 +43,13 @@
                             <outlet property="delegate" destination="OvC-uu-dWb" id="8A7-Al-Wgh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="lSQ-kN-JGV"/>
+                    <navigationItem key="navigationItem" id="lSQ-kN-JGV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bel-FZ-nw6">
+                            <connections>
+                                <action selector="alertButton_TouchUpInside:" destination="OvC-uu-dWb" id="hZn-xe-Hkv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TvA-mN-cDi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
