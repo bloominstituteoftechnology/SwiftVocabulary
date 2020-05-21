@@ -26,32 +26,44 @@ class WordsTableVC: UITableViewController, UITextFieldDelegate {
     @IBAction func alertButton_TouchUpInside(_ sender: UIBarButtonItem) {
         
         let alertController = UIAlertController(title: "Add Word", message: "Please add a new word and the meaning", preferredStyle: .alert)
-        
+
         alertController.addTextField { (_ textField: UITextField) -> Void in
             textField.placeholder = "Enter new word"
             textField.textAlignment = .center
-            textField.textColor = UIColor.blue
+            textField.textColor = UIColor.darkGray
         }
-        
+
         alertController.addTextField { (_ textField: UITextField) -> Void in
             textField.placeholder = "Enter meaning"
             textField.textAlignment = .center
-            textField.textColor = UIColor.blue
+            textField.textColor = UIColor.darkGray
         }
-        
-        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let saveButton = UIAlertAction(title: "Add", style: .default, handler: nil)
-        
-        
+
+//        var newWord: [NewWords] = []
+
+        let cancelButton = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+        let saveButton = UIAlertAction(title: "Add", style: .default) { (UIAlertAction) in
+            
+            if let secureWord = alertController.textFields?[0].text,
+                let secureDefinition = alertController.textFields?[1].text {
+                self.addNewWord(newWord: secureWord, newDefinition: secureDefinition)
+                self.tableView.reloadData()
+            }
+        }
+
+
         alertController.addAction(cancelButton)
         alertController.addAction(saveButton)
-        
-        
+
+
         self.present(alertController, animated: true, completion: nil)
         
     } // END Alert
     
-    
+    func addNewWord(newWord: String, newDefinition: String) {
+        let newWord = VocabularyWord(word: newWord, definition: newDefinition)
+        vocabWords.append(newWord)
+    }
     
     
 
