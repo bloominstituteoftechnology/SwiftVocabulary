@@ -18,8 +18,6 @@ class WordsTableViewController: UITableViewController {
     
     ]
 
-    
-
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,11 +39,15 @@ class WordsTableViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
+        
         if segue.identifier == "ShowDefinitionSegue" {
+            
+            let definitionVC = segue.destination as? DefinitionViewController
+            
             if let indexPath = tableView.indexPathForSelectedRow {
-                let definitionVC = segue.destination as? DefinitionViewController
                 
-                definitionVC?.vocabWord = vocabWords[indexPath.row].self
+                definitionVC?.vocabWord = vocabWords[indexPath.row]
+        
             }
             
         }

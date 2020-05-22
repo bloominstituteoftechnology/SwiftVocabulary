@@ -85,7 +85,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="cy8-Er-Oq9"/>
                     <connections>
+                        <outlet property="definitionOutlet" destination="A3x-zv-I6q" id="4eC-e4-L3P"/>
                         <outlet property="view" destination="A3x-zv-I6q" id="Yzm-td-c9o"/>
+                        <outlet property="wordOutlet" destination="O2L-au-oAb" id="5EN-l0-TnE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Dv-rt-E3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
