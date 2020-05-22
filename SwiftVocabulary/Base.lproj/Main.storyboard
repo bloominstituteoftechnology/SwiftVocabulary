@@ -57,13 +57,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2L-au-oAb">
-                                <rect key="frame" x="20" y="120" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="120" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A3x-zv-I6q">
-                                <rect key="frame" x="20" y="149" width="240" height="128"/>
+                                <rect key="frame" x="20" y="148.5" width="240" height="128.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -73,13 +73,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="kfx-wD-wmf" firstAttribute="trailing" secondItem="A3x-zv-I6q" secondAttribute="trailing" constant="154" id="9tI-S6-VjK"/>
-                            <constraint firstItem="O2L-au-oAb" firstAttribute="leading" secondItem="DOj-d2-0qH" secondAttribute="leadingMargin" id="Gdf-k4-5Dp"/>
-                            <constraint firstItem="O2L-au-oAb" firstAttribute="top" secondItem="kfx-wD-wmf" secondAttribute="top" constant="32" id="Hpu-cX-vhU"/>
-                            <constraint firstItem="kfx-wD-wmf" firstAttribute="bottom" secondItem="A3x-zv-I6q" secondAttribute="bottom" constant="585" id="eBa-kp-xfs"/>
-                            <constraint firstItem="O2L-au-oAb" firstAttribute="leading" secondItem="A3x-zv-I6q" secondAttribute="leading" id="lFe-93-4xM"/>
-                            <constraint firstItem="A3x-zv-I6q" firstAttribute="top" secondItem="O2L-au-oAb" secondAttribute="bottom" constant="8" id="ldt-dz-Fbt"/>
-                            <constraint firstItem="kfx-wD-wmf" firstAttribute="trailing" secondItem="O2L-au-oAb" secondAttribute="trailing" constant="352" id="qso-6s-Icr"/>
+                            <constraint firstItem="O2L-au-oAb" firstAttribute="leading" secondItem="DOj-d2-0qH" secondAttribute="leadingMargin" id="HMY-6p-T2X"/>
+                            <constraint firstItem="kfx-wD-wmf" firstAttribute="bottom" secondItem="A3x-zv-I6q" secondAttribute="bottom" constant="585" id="IxN-Fl-Vt4"/>
+                            <constraint firstItem="A3x-zv-I6q" firstAttribute="top" secondItem="O2L-au-oAb" secondAttribute="bottom" constant="8" id="ZPB-7M-vYP"/>
+                            <constraint firstItem="kfx-wD-wmf" firstAttribute="trailing" secondItem="A3x-zv-I6q" secondAttribute="trailing" constant="154" id="cpY-Uk-lqs"/>
+                            <constraint firstItem="O2L-au-oAb" firstAttribute="top" secondItem="kfx-wD-wmf" secondAttribute="top" constant="32" id="gk1-Sp-DMn"/>
+                            <constraint firstItem="O2L-au-oAb" firstAttribute="leading" secondItem="A3x-zv-I6q" secondAttribute="leading" id="sry-H5-HG5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kfx-wD-wmf"/>
                     </view>
