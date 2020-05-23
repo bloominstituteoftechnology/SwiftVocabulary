@@ -32,6 +32,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="P64-tB-Lrd" kind="show" identifier="ShowDefinitionSegue" id="tgt-kl-5eC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -40,9 +43,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="JE8-Pf-SP9"/>
-                    <connections>
-                        <segue destination="P64-tB-Lrd" kind="show" identifier="ShowDefinitionSegue" id="OBk-xF-IrN"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ju0-RS-G5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
