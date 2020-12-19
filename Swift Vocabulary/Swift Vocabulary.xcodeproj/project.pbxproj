@@ -106,9 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				B9355E862399C63500FB4890 /* Application */,
-				B9C47A4D2399CAC800040200 /* Model */,
-				B9355E872399C64A00FB4890 /* View */,
-				B9355E882399C65100FB4890 /* Controller */,
+				B9504FCB258E613200F2E5C9 /* Core */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -160,11 +158,21 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		B9504FCB258E613200F2E5C9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B9C47A4D2399CAC800040200 /* Model */,
+				B9355E872399C64A00FB4890 /* View */,
+				B9355E882399C65100FB4890 /* Controller */,
+				B9D260CD239B5FC600CF8A00 /* UIViewController+presentAlert */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		B9C47A4D2399CAC800040200 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				B9C47A4E2399CAE600040200 /* VocabularyWord.swift */,
-				B9D260CD239B5FC600CF8A00 /* UIViewController+presentAlert */,
 			);
 			path = Model;
 			sourceTree = "<group>";
