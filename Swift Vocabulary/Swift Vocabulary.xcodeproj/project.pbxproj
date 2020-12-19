@@ -105,10 +105,10 @@
 		B9355E532399C59300FB4890 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				B9355E862399C63500FB4890 /* Application */,
 				B9C47A4D2399CAC800040200 /* Model */,
 				B9355E872399C64A00FB4890 /* View */,
 				B9355E882399C65100FB4890 /* Controller */,
-				B9355E862399C63500FB4890 /* Utility */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			path = "Swift VocabularyUITests";
 			sourceTree = "<group>";
 		};
-		B9355E862399C63500FB4890 /* Utility */ = {
+		B9355E862399C63500FB4890 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				B9355E542399C59300FB4890 /* AppDelegate.swift */,
@@ -139,7 +139,7 @@
 				B9355E5D2399C59600FB4890 /* Assets.xcassets */,
 				B9355E622399C59600FB4890 /* Info.plist */,
 			);
-			path = Utility;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		B9355E872399C64A00FB4890 /* View */ = {
@@ -480,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34P4RF23ET;
-				INFOPLIST_FILE = "$(SRCROOT)/Swift Vocabulary/Utility/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift Vocabulary/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,7 +499,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34P4RF23ET;
-				INFOPLIST_FILE = "$(SRCROOT)/Swift Vocabulary/Utility/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift Vocabulary/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
