@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct VocabularyWord {
+struct VocabularyWord: Equatable {
     var word: String
     var definition: String
 
@@ -20,4 +20,8 @@ struct VocabularyWord {
         VocabularyWord(word: "optional",
                        definition: "Think of a box. You don't know what's in it until you unwrap it. An optional is a property with a value that may be nil (nothing).")
     ]
+
+    static func ==(lhs: VocabularyWord, rhs: VocabularyWord) -> Bool {
+        lhs.word == rhs.word
+    }
 }
