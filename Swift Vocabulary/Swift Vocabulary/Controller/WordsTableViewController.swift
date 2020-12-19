@@ -9,21 +9,16 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
-    //MARK: @IBActions
-    @IBAction func addWordBtn(_ sender: UIBarButtonItem) {
-        addWord()
-    }
-    //MARK: Class Properties
-    var vocabWords: [VocabularyWord] = VocabularyWord.mockWords
+    //MARK: - Properties -
+    var vocabWords: [VocabularyWord] = VocabularyWord.mockWords    
     
-    
-    //MARK: View Lifecycle
+    //MARK: - View Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.reloadData()
     }
     
-    //MARK: TableView Delegate and DataSource Methods
+    //MARK: - TableView Delegate and DataSource Methods -
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vocabWords.count
     }
@@ -37,8 +32,7 @@ class WordsTableViewController: UITableViewController {
         return cell
     }
     
-    // MARK: - Navigation
-    
+    // MARK: - Navigation -
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDefinitionSegue" {
             guard let destination = segue.destination as? DefinitionViewController else {
@@ -55,15 +49,18 @@ class WordsTableViewController: UITableViewController {
         }
     }
     
-    //MARK: Create
+    //MARK: - Create -
+    @IBAction func addWordBtn(_ sender: UIBarButtonItem) {
+        addWord()
+    }
     
     func addWord() {
-        Alert.instance.showWithInput(title: "Enter New Word", message: "Enter a Word and Definition", vc: self) { (entry) in
+        presentAlertWithInput(title: "Enter New Word", message: "Enter a Word and Definition", vc: self) { entry in
             if entry.word == "Enter Word" || entry.word.isEmpty {
-                Alert.instance.show(title: "Word Not Entered", message: "Please enter the word you wish to define", vc: self)
+                self.presentAlert(title: "Word Not Entered", message: "Please enter the word you wish to define", vc: self)
 
             } else if entry.definition == "Enter Definition" || entry.definition.isEmpty {
-                Alert.instance.show(title: "Definition Not Entered", message: "Please define the word you're entering", vc: self)
+                self.presentAlert(title: "Definition Not Entered", message: "Please define the word you're entering", vc: self)
 
             } else {
                 self.vocabWords.append(entry)
@@ -74,6 +71,6 @@ class WordsTableViewController: UITableViewController {
     }
     
     func genericError() {
-        Alert.instance.show(title: "Unknown Error", message: "Something Went Wrong.\nPlease Try Again.", vc: self)
+        presentAlert(title: "Unknown Error", message: "Something Went Wrong.\nPlease Try Again.", vc: self)
     }
 }
