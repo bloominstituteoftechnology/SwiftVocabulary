@@ -55,15 +55,16 @@ class WordsTableViewController: UITableViewController {
         }
     }
     
-    //MARK: Helper Methods
+    //MARK: Create
     
     func addWord() {
         Alert.instance.showWithInput(title: "Enter New Word", message: "Enter a Word and Definition", vc: self) { (entry) in
             if entry.word == "Enter Word" || entry.word.isEmpty {
                 Alert.instance.show(title: "Word Not Entered", message: "Please enter the word you wish to define", vc: self)
-            }
-            if entry.definition == "Enter Definition" || entry.definition.isEmpty {
+
+            } else if entry.definition == "Enter Definition" || entry.definition.isEmpty {
                 Alert.instance.show(title: "Definition Not Entered", message: "Please define the word you're entering", vc: self)
+
             } else {
                 self.vocabWords.append(entry)
                 self.tableView.reloadData()
