@@ -16,8 +16,8 @@
 		B9355E772399C59600FB4890 /* Swift_VocabularyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E762399C59600FB4890 /* Swift_VocabularyUITests.swift */; };
 		B9355E8A2399C6CE00FB4890 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E892399C6CE00FB4890 /* WordsTableViewController.swift */; };
 		B9355E8C2399C6E800FB4890 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9355E8B2399C6E800FB4890 /* DefinitionViewController.swift */; };
+		B9504FD5258E61FA00F2E5C9 /* UIViewController+presentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9504FD4258E61FA00F2E5C9 /* UIViewController+presentAlert.swift */; };
 		B9C47A4F2399CAE600040200 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C47A4E2399CAE600040200 /* VocabularyWord.swift */; };
-		B9D260CE239B5FC600CF8A00 /* UIViewController+presentAlert in Sources */ = {isa = PBXBuildFile; fileRef = B9D260CD239B5FC600CF8A00 /* UIViewController+presentAlert */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,8 @@
 		B9355E782399C59600FB4890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9355E892399C6CE00FB4890 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		B9355E8B2399C6E800FB4890 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		B9504FD4258E61FA00F2E5C9 /* UIViewController+presentAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+presentAlert.swift"; path = "Swift Vocabulary/Core/Controller/View Controllers/UIViewController+presentAlert.swift"; sourceTree = SOURCE_ROOT; };
 		B9C47A4E2399CAE600040200 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
-		B9D260CD239B5FC600CF8A00 /* UIViewController+presentAlert */ = {isa = PBXFileReference; lastKnownFileType = text; path = "UIViewController+presentAlert"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +152,7 @@
 		B9355E882399C65100FB4890 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B9355E892399C6CE00FB4890 /* WordsTableViewController.swift */,
-				B9355E8B2399C6E800FB4890 /* DefinitionViewController.swift */,
+				B9504FCC258E61A300F2E5C9 /* View Controllers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,9 +163,18 @@
 				B9C47A4D2399CAC800040200 /* Model */,
 				B9355E872399C64A00FB4890 /* View */,
 				B9355E882399C65100FB4890 /* Controller */,
-				B9D260CD239B5FC600CF8A00 /* UIViewController+presentAlert */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		B9504FCC258E61A300F2E5C9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9504FD4258E61FA00F2E5C9 /* UIViewController+presentAlert.swift */,
+				B9355E892399C6CE00FB4890 /* WordsTableViewController.swift */,
+				B9355E8B2399C6E800FB4890 /* DefinitionViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		B9C47A4D2399CAC800040200 /* Model */ = {
@@ -308,10 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D260CE239B5FC600CF8A00 /* UIViewController+presentAlert in Sources */,
 				B9C47A4F2399CAE600040200 /* VocabularyWord.swift in Sources */,
 				B9355E552399C59300FB4890 /* AppDelegate.swift in Sources */,
 				B9355E8C2399C6E800FB4890 /* DefinitionViewController.swift in Sources */,
+				B9504FD5258E61FA00F2E5C9 /* UIViewController+presentAlert.swift in Sources */,
 				B9355E572399C59300FB4890 /* SceneDelegate.swift in Sources */,
 				B9355E8A2399C6CE00FB4890 /* WordsTableViewController.swift in Sources */,
 			);

@@ -9,7 +9,6 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
-    //MARK: @IBOutlets
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var definitionField: UITextView!
     
