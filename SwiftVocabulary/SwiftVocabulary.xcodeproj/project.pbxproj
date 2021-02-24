@@ -13,6 +13,8 @@
 		225CC0AB25E7064900BE8E6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225CC0A925E7064900BE8E6C /* Main.storyboard */; };
 		225CC0AD25E7064900BE8E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225CC0AC25E7064900BE8E6C /* Assets.xcassets */; };
 		225CC0B025E7064900BE8E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225CC0AE25E7064900BE8E6C /* LaunchScreen.storyboard */; };
+		225CC0C625E70C0100BE8E6C /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CC0C525E70C0100BE8E6C /* WordsTableViewController.swift */; };
+		225CC0CA25E70C2A00BE8E6C /* DefintionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CC0C925E70C2A00BE8E6C /* DefintionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		225CC0AA25E7064900BE8E6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		225CC0AC25E7064900BE8E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225CC0AF25E7064900BE8E6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		225CC0B125E7064900BE8E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225CC0B125E7064900BE8E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftVocabulary/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		225CC0C525E70C0100BE8E6C /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		225CC0C925E70C2A00BE8E6C /* DefintionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefintionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		225CC0A225E7064900BE8E6C /* SwiftVocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				225CC0A325E7064900BE8E6C /* AppDelegate.swift */,
-				225CC0A525E7064900BE8E6C /* SceneDelegate.swift */,
+				225CC0C425E70BCF00BE8E6C /* Model */,
+				225CC0C325E70BC000BE8E6C /* View Controller */,
 				225CC0A725E7064900BE8E6C /* ViewController.swift */,
-				225CC0A925E7064900BE8E6C /* Main.storyboard */,
-				225CC0AC25E7064900BE8E6C /* Assets.xcassets */,
-				225CC0AE25E7064900BE8E6C /* LaunchScreen.storyboard */,
-				225CC0B125E7064900BE8E6C /* Info.plist */,
+				225CC0BA25E7080300BE8E6C /* Storyboards */,
+				225CC0B825E706F300BE8E6C /* Resources */,
 			);
 			path = SwiftVocabulary;
+			sourceTree = "<group>";
+		};
+		225CC0B825E706F300BE8E6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				225CC0B125E7064900BE8E6C /* Info.plist */,
+				225CC0A325E7064900BE8E6C /* AppDelegate.swift */,
+				225CC0A525E7064900BE8E6C /* SceneDelegate.swift */,
+				225CC0AC25E7064900BE8E6C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		225CC0BA25E7080300BE8E6C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				225CC0A925E7064900BE8E6C /* Main.storyboard */,
+				225CC0AE25E7064900BE8E6C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		225CC0C325E70BC000BE8E6C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				225CC0C525E70C0100BE8E6C /* WordsTableViewController.swift */,
+				225CC0C925E70C2A00BE8E6C /* DefintionViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		225CC0C425E70BCF00BE8E6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +178,8 @@
 				225CC0A825E7064900BE8E6C /* ViewController.swift in Sources */,
 				225CC0A425E7064900BE8E6C /* AppDelegate.swift in Sources */,
 				225CC0A625E7064900BE8E6C /* SceneDelegate.swift in Sources */,
+				225CC0CA25E70C2A00BE8E6C /* DefintionViewController.swift in Sources */,
+				225CC0C625E70C0100BE8E6C /* WordsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JH2MBZ5K9;
-				INFOPLIST_FILE = SwiftVocabulary/Info.plist;
+				INFOPLIST_FILE = SwiftVocabulary/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JH2MBZ5K9;
-				INFOPLIST_FILE = SwiftVocabulary/Info.plist;
+				INFOPLIST_FILE = SwiftVocabulary/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
