@@ -43,7 +43,13 @@
                             <outlet property="delegate" destination="h5j-TO-rfP" id="Lfg-ll-1XM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="FiR-YX-t7K"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="FiR-YX-t7K">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XjE-Bj-Jcb">
+                            <connections>
+                                <action selector="addNewWord:" destination="h5j-TO-rfP" id="d4w-hZ-uC6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hah-Xd-9pT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -25,11 +25,6 @@ class WordsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return vocabWords.count
@@ -58,5 +53,29 @@ class WordsTableViewController: UITableViewController {
             definitionVC.vocabWords = vocab
         }
     }
-
+    
+    
+    @IBAction func addNewWord(_ sender: Any) {
+        let alert = UIAlertController(title: "Added Word", message: "Add a new Vocab and Definiation", preferredStyle: .alert)
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "New Word"
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Definition"
+        }
+        
+        alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in
+            guard let newWord = alert.textFields?[0].text, !newWord.isEmpty,
+                  let newDefinition = alert.textFields?[1].text, !newDefinition.isEmpty else { return }
+            
+            let newVocab = VocabularyWord(word: newWord, definition: newDefinition)
+            
+            self.vocabWords.append(newVocab)
+            self.tableView.reloadData()
+        }))
+        
+        present(alert, animated: true, completion: nil)
+    }
 }
+
