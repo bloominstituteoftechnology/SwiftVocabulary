@@ -45,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				225CC0A225E7064900BE8E6C /* SwiftVocabulary */,
-				225CC0A125E7064900BE8E6C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +54,7 @@
 				225CC0A025E7064900BE8E6C /* SwiftVocabulary.app */,
 			);
 			name = Products;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		225CC0A225E7064900BE8E6C /* SwiftVocabulary */ = {
@@ -84,6 +84,7 @@
 			children = (
 				225CC0A925E7064900BE8E6C /* Main.storyboard */,
 				225CC0AE25E7064900BE8E6C /* LaunchScreen.storyboard */,
+				225CC0A125E7064900BE8E6C /* Products */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";

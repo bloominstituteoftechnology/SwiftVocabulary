@@ -10,7 +10,13 @@ import UIKit
 class WordsTableViewController: UITableViewController {
 
     // MARK: - Property
-    var vocabWords: [VocabularyWord] = []
+    var vocabWords: [VocabularyWord] = [
+        VocabularyWord(word: "Data", definition: "A type that holds any kind of binary data."),
+        VocabularyWord(word: "Condition", definition: "Any check that evaluates to true or false using an if statement. You can provide code to run when your condition is true, as well as an else"),
+        VocabularyWord(word: "Final class", definition: "A class that may not be inherited from by anything else."),
+        VocabularyWord(word: "Force unwrap", definition: "The process of using the value inside an optional without checking it exists first. If the optional is empty – if it has no value – force unwrapping will crash your code."),
+        VocabularyWord(word: "Hashable", definition: "A common Swift protocol that says conforming types can be represented using hash values."),
+        VocabularyWord(word: "Higher-order function", definition: "A function that accepts another function as a parameter, or sends back a function as its return value."),]
     
     override func viewDidLoad() {
         super.viewDidLoad()
