@@ -8,6 +8,9 @@
 import UIKit
 
 class DefintionViewController: UIViewController {
+    
+    // MARK: - Property
+    var vocabWords: VocabularyWord?
 
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var definitionTextView: UITextView!
