@@ -14,6 +14,7 @@
 		225CC0B025E7064900BE8E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225CC0AE25E7064900BE8E6C /* LaunchScreen.storyboard */; };
 		225CC0C625E70C0100BE8E6C /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CC0C525E70C0100BE8E6C /* WordsTableViewController.swift */; };
 		225CC0CA25E70C2A00BE8E6C /* DefintionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CC0C925E70C2A00BE8E6C /* DefintionViewController.swift */; };
+		22DB1CF225E7384800FC6914 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB1CF125E7384800FC6914 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		225CC0B125E7064900BE8E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftVocabulary/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		225CC0C525E70C0100BE8E6C /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		225CC0C925E70C2A00BE8E6C /* DefintionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefintionViewController.swift; sourceTree = "<group>"; };
+		22DB1CF125E7384800FC6914 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		225CC0C425E70BCF00BE8E6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22DB1CF125E7384800FC6914 /* VocabularyWord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				225CC0A425E7064900BE8E6C /* AppDelegate.swift in Sources */,
 				225CC0A625E7064900BE8E6C /* SceneDelegate.swift in Sources */,
+				22DB1CF225E7384800FC6914 /* VocabularyWord.swift in Sources */,
 				225CC0CA25E70C2A00BE8E6C /* DefintionViewController.swift in Sources */,
 				225CC0C625E70C0100BE8E6C /* WordsTableViewController.swift in Sources */,
 			);
