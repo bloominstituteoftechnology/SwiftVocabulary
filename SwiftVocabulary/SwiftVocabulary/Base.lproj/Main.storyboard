@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QOz-cO-veF">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swift Vocabulary-->
+        <scene sceneID="jYk-rk-hue">
+            <objects>
+                <tableViewController id="U1S-GQ-gC2" customClass="WordsTableViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CAa-gv-TJy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" id="0wj-ea-Lwo">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0wj-ea-Lwo" id="fYR-Fv-Ua0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Rwn-uI-FOc" kind="show" identifier="ShowDefinitionSegue" id="qvw-Ic-Cnp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="U1S-GQ-gC2" id="Tiv-Pd-EeB"/>
+                            <outlet property="delegate" destination="U1S-GQ-gC2" id="XW8-bk-LRT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="L3H-S5-wVg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpF-dM-ZOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628.98550724637687" y="-100.44642857142857"/>
+        </scene>
+        <!--Definition View Controller-->
+        <scene sceneID="f9e-5d-nwc">
+            <objects>
+                <viewController id="Rwn-uI-FOc" customClass="DefinitionViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MZD-N7-FBv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neV-Fy-pBW">
+                                <rect key="frame" x="20" y="158" width="111" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ju-CN-SQm">
+                                <rect key="frame" x="20" y="186.5" width="240" height="165.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="neV-Fy-pBW" firstAttribute="leading" secondItem="2MS-P2-soZ" secondAttribute="leading" constant="20" id="1ge-dZ-fh1"/>
+                            <constraint firstItem="0ju-CN-SQm" firstAttribute="top" secondItem="neV-Fy-pBW" secondAttribute="bottom" constant="45.5" id="CRq-64-NN7"/>
+                            <constraint firstItem="2MS-P2-soZ" firstAttribute="bottom" secondItem="0ju-CN-SQm" secondAttribute="bottom" constant="510" id="bIS-JM-9uM"/>
+                            <constraint firstItem="2MS-P2-soZ" firstAttribute="trailing" secondItem="0ju-CN-SQm" secondAttribute="trailing" constant="154" id="g0x-EL-e9x"/>
+                            <constraint firstItem="0ju-CN-SQm" firstAttribute="top" secondItem="neV-Fy-pBW" secondAttribute="bottom" constant="8" id="gMf-Km-7UY"/>
+                            <constraint firstItem="neV-Fy-pBW" firstAttribute="top" secondItem="2MS-P2-soZ" secondAttribute="top" constant="18" id="kbh-mj-OA2"/>
+                            <constraint firstItem="0ju-CN-SQm" firstAttribute="leading" secondItem="2MS-P2-soZ" secondAttribute="leading" constant="20" id="n8a-B3-tMD"/>
+                            <constraint firstItem="2MS-P2-soZ" firstAttribute="trailing" secondItem="neV-Fy-pBW" secondAttribute="trailing" constant="283" id="tBx-VH-ZSX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2MS-P2-soZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="DefinitionOfWord" destination="0ju-CN-SQm" id="a5W-OQ-KbU"/>
+                        <outlet property="Word" destination="neV-Fy-pBW" id="bvx-NW-rrN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNY-UA-ya8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1505.7971014492755" y="-100.44642857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cGk-X3-nvS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QOz-cO-veF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Bm0-Rf-0Ey">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="U1S-GQ-gC2" kind="relationship" relationship="rootViewController" id="uNe-wH-g5Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94X-b5-VCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-281.15942028985512" y="-100.44642857142857"/>
+        </scene>
+    </scenes>
+</document>
