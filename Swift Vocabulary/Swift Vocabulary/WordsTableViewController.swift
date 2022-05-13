@@ -10,7 +10,34 @@ import UIKit
 class WordsTableViewController: UITableViewController {
     
     //MARK: - Properties
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Hello World", definition: "This phrase is commonly used in programming, it's funny because it's like your code is coming to life and announcing its existing to the whole world! Basically by greeting it :)")] 
+    var vocabWords: [VocabularyWord] = []
+    
+    //MARK: - Presentable UIAlertControllers
+    var addWordAlert: UIAlertController {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        alert.title = "Add a new Vocabulary Word"
+        alert.message = "Enter the required details below to add your new word to the list."
+        alert.addTextField { textField in
+            textField.placeholder = "Word title"
+        }
+        alert.addTextField { textField in
+            textField.placeholder = "Word Definition"
+        }
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel)
+        let addButton = UIAlertAction(title: "Add", style: .default) { _ in
+            guard !alert.textFields![0].text!.isEmpty, !alert.textFields![1].text!.isEmpty else {
+                print("Input error for creating a new word")
+                return
+            }
+            let wordTitle = alert.textFields![0].text!
+            let wordDefinition = alert.textFields![1].text!
+            let newWord = VocabularyWord(word: wordTitle, definition: wordDefinition)
+            self.vocabWords.append(newWord)
+        }
+        alert.addAction(cancelButton)
+        alert.addAction(addButton)
+        return alert
+    }
     
     //MARK: - TableView Configuration Methods
     
