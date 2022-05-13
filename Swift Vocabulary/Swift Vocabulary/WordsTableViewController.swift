@@ -10,7 +10,7 @@ import UIKit
 class WordsTableViewController: UITableViewController {
     
     //MARK: - Properties
-    var vocabWords: [VocabularyWord] = []
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Hello World", definition: "This phrase is commonly used in programming, it's funny because it's like your code is coming to life and announcing its existing to the whole world! Basically by greeting it :)")] 
     
     //MARK: - TableView Configuration Methods
     
