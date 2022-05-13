@@ -40,8 +40,7 @@ class WordsTableViewController: UITableViewController {
         if segue.identifier == "ShowDefinitionSegue" {
             let selectedWord = vocabWords[tableView.indexPathForSelectedRow!.row]
             let definitionVC = segue.destination as! DefinitionViewController
-            definitionVC.wordLabel.text = selectedWord.word
-            definitionVC.wordDefinitionTextView.text = selectedWord.definition
+            definitionVC.vocabWord = selectedWord
         }
     }
     
