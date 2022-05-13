@@ -33,6 +33,7 @@ class WordsTableViewController: UITableViewController {
             let wordDefinition = alert.textFields![1].text!
             let newWord = VocabularyWord(word: wordTitle, definition: wordDefinition)
             self.vocabWords.append(newWord)
+            self.tableView.reloadData()
         }
         alert.addAction(cancelButton)
         alert.addAction(addButton)
@@ -69,6 +70,11 @@ class WordsTableViewController: UITableViewController {
             let definitionVC = segue.destination as! DefinitionViewController
             definitionVC.vocabWord = selectedWord
         }
+    }
+    
+    //MARK: - IBActions
+    @IBAction func AddWordButtonTapped(_ sender: Any) {
+        present(addWordAlert, animated: true)
     }
     
 
