@@ -9,9 +9,13 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
+    //MARK: - IBOutlets
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var wordDefinitionTextView: UITextView!
+    
+    //MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
